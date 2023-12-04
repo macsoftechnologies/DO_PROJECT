@@ -1,6 +1,5 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Observability from "./products/Observability";
-import HealthEm from "./products/HealthEm";
 import Datasense from "./products/Datasense";
 import Datacharts from "./products/Datacharts";
 import Domonitor from "./products/Domonitor";
@@ -49,7 +48,7 @@ function App() {
           <Route path="/industries" element={<Industries />} />
           <Route path="/gaming" element={<Gaming />} />
           <Route path="/media" element={<Media />} />
-          <Route path="/blog" element={<BlogsRedirect />} />
+          <Route path="/blog/:id" element={<BlogsRedirect />} />
           <Route path="/casestudies" element={<CasestudiesRedirect />} />
           <Route path="/ebooks" element={<Ebooks />} />
           <Route path="/genai" element={<Genai />} />

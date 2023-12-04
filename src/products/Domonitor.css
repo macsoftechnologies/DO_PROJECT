@@ -5,6 +5,10 @@
   justify-content: center;
   align-items: center;
 }
+
+.Domonitor-Header{
+  height: 0px;
+}
 .headicon-domonitor {
   width: 300px;
   margin-left: 150px;
@@ -86,10 +90,19 @@
   padding: 70px;
 }
 .bg2ndhead-domonitor {
+  
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+}
+ 
+.bg2ndhead-domonitors{
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
+
 .btn1-domonitor {
   font-size: 15px;
   /* width: 115px; */
@@ -115,7 +128,7 @@
   margin-top: 50px;
 }
 .sectionhead-domonitor {
-  text-align: left;
+  text-align: center;
   font-size: 27px;
 }
 .sectionpara-domonitor {
@@ -190,6 +203,9 @@
   display: flex;
   align-items: start;
   margin-top: 15px;
+  border-radius: 4px;
+    padding: 5px;
+    border: 2px solid #dadada;
 }
 .matricsimg-domonitor {
   width: 100%;
@@ -211,6 +227,7 @@
   justify-content: center;
   flex-direction: column;
   margin-top: 70px;
+  max-width: 100% !important;
 }
 .headfinalsec-domonitor {
   font-size: 25px;
@@ -220,7 +237,7 @@
 }
 .detectprob-domonitor {
   background: #fbfbfb;
-  height: 880px;
+  /* height: 880px; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -229,8 +246,6 @@
 .color-contain{
   color: #0275b8 !important;
 }
-
-
 
 
 .sidebar-col{
@@ -242,7 +257,14 @@
     margin-left: 24px;
     margin: 0 0 0 auto;
     max-width: 400px;
-    /* display: block; */
+    /* display: none; */
+    bottom: 100px;
+    /* right: 21px;
+    z-index: 99; */
+}
+
+.do-monitor-m{
+  position: relative;
 }
 
 .swiper-container {
@@ -271,8 +293,6 @@
   display: inline-block;
   vertical-align: top;
   padding-left: 37px;
-
-
 }
 
 .swiper-container ul a{
@@ -284,8 +304,6 @@ display: block;
   font-weight: 400;
   transition: all ease-out 250ms;
 } 
-
-
 
 .side-nav li {
   padding-bottom: 25px;
@@ -325,7 +343,6 @@ display: block;
   margin-left: 42px;
 }
 
-
 .check-domonitor-retrive{
   margin-top: 21%;
 }
@@ -357,4 +374,272 @@ display: block;
 .btn1-domonitor:hover{
   color: #0046e8;
   }
+  .do-mon{
+    height: 475px;
+  }
+  .new-domi{
+    margin-top: 20px;
+  }
+  .do360bannerclass-01{
+    height: 475px;
+  }
+
+ 
+  .scroll-to-top-button {
+    display: none;
+    position: fixed;
+    bottom: 100px;
+    right: 21px;
+    z-index: 99;
+    font-size: 30px;
+    border: none;
+    outline: none;
+    background-color: #0046e8;
+    color: white;
+    cursor: pointer;
+    padding: 10px;
+    border-radius: 30px;
+  }
+
+  .MoniTor-sizE{
+    padding: 0px;
+  }
+
+
+  @media only screen and (min-width: 320px) and (max-width: 467px)  {
+    .domonitor-mobile{
+      margin-top: 0px !important;
+      font-size: 14px !important;
+    }
+    
+    .monitor-text{
+      padding-top: 0px !important;
+    }
+    .do360bannerclass-01{
+      height: 280px;
+    }
+    .section1head {
+      font-size: 21px;
+    }
+    .check-domonitor-retrive {
+      margin-top: 0%;
+    }
+    .new-text{
+      font-size: 20px;
+    }
+    .new-text1{
+      font-size: 25px;
+    }
+    .do-point{
+      font-size: 20px;
+    }
+    .sectionhead-domonitor {
+      font-size: 20px;
+    }
+    .section1head {
+      margin-top: 30px;
+    }
+    .section-card-para-dom {
+      margin-bottom: 6px;
+    }
+    .headfinalsec-domonitor {
+      font-size: 20px;
+      text-align: center;
+  }
+  .sectioncards-domonitor {
+    display: block;
+  }
+  .do-mon{
+    height: 280px;
+  }
+  .demoClass {
+    margin-top: 0px;
+
+  }
+  .header-section {
+    top: 13%;
+  }
+  .mon-mobile{
+    margin: 0px 10px;
+  }
+  .sectioncard-domonitor-2 {
+    height: 235px;
+  }
+  .domonitpr-top{
+    margin-top: 22rem !important;
+  }
+  .last-point{
+    margin-top: 16rem !important;
+  }
+  .last-point1{
+    margin-top: 9rem !important;
+  }
+  .infrastructure{
+    margin-top: 19rem !important;
+  }
+  .deploy-4-img-div {
+    margin: 0% !important;
+  }
+  .sectioncard-domonitor-5 {
+    margin-top: 13rem !important;
+  }
+  .quality-image {
+    margin-bottom: 0% !important;
+  }
+  .linkclass-monitor {
+    font-size: 13px;
+  }
+  .finalsection1-domonitor{
+    margin-top: 40px;
+  }
+  /* dllksdkl */
+  .font-size{
+    font-size: 16px !important;
+  }
+  .domoniter-2ndbg{
+    padding: 10px;
+    margin: 10px;
+  }
+  .bg-head-domonitor{
+    font-size: 27px;
+    font-weight: 500;
+    line-height: 39.2px;
+    margin-top: -13px;
+  }
+  .bg-para-domonitor{
+    font-size: 12px;
+    line-height: 21.6px;
+  }
+  .btn-domonitor{
+    height: 39px;
+    padding: 14px 25px 14px 25px;
+    margin-top: 25px;
+  }
+  .btntext-domonitor{
+    font-size: 12px;
+  }
+
+  .headicon-domonitor {
+  width: 150px;
+  margin-left: 77px;
+  padding-top: 40px;
+  }
+  .btn-domonitor1{
+  display: flex;
+  flex-direction: column;
+  height: 70px;
+  /* / padding: 20px 46px 21px 48px; / */
+  justify-content: center;
+  align-items: center;
+  border: none;
+  margin-top: 20px;
+  border-radius: 5px;
+  background: #fff;
+  width: 124px
+  }
+  .btn1-domonitor{
+  font-size: 10px;
+  color: #0275B8;
+  margin-top: 10px;
+  }
+  
+  .domonitor2ndbg{
+  height: 550px;
+  }
+  
+  .dmtr2secs{
+  display: flex;
+  flex-wrap: wrap;
+  }
+  .qualityhead{
+    font-size: 18px;
+  }
+  .DO-MONITOR-alerts-PROBLEM{
+    margin-right: 0px !important;
+  }
+
+
+
+    
+  }
+
+  /* @media only screen and (min-width: 468px) and (max-width: 767px){
+    .domonitor2ndbg{
+      height: 711px;
+    }
+    .dmtr2secs{
+      display: flex;
+    }
+    .bg2ndhead-domonitor{
+      display: flow-root;
+    }
+    .bg2ndhead-domonitors{
+      display: flow-root;
+      margin-left: 22px;
+    }
+    .btn-domonitor1{
+      height: flex;
+      width: 175px;
+      height: 87px;
+    }
+    .sectioncard-domonitor-5{
+      margin-top: 192px;
+    }
+    .mon-mobile{
+      padding-left: 10px;
+      padding-right: 10px;
+    }
+    .section1head {
+      font-size: 28px;
+      margin-top: 24px;
+    }
+    .qualityhead{
+      font-weight: 600;
+      text-align: center;
+      font-size: 24px;
+      line-height: 34px;
+    }
+    .qualitymatter{
+      font-size: 15px;
+    }
+    .do-point{
+      line-height: 34px;
+      font-size: 24px;
+    }
+    .new-text1{
+      font-size: 26px;
+    }
+    .sectionpara-domonitor{
+      font-size: 15px;
+    }
+  
+   }
+    
+    
+    @media only screen and (min-width: 768px) and (max-width: 990px){
+    .dmtr2secs{
+      display: flex;
+    }
+    .domonitor2ndbg{
+      height: 799px;
+    }
+    .bg2ndhead-domonitor{
+      display: flow-root;
+      padding-left: 72px;
+    }
+    .bg2ndhead-domonitors{
+      display: flow-root;
+      margin-left: 41px;
+    }
+    .dm17r1{
+      padding-left: 67px!important;
+    }
+    .qualityimgclass{
+      margin-top: -348px;
+    }
+    .sectioncardm-domonitor{
+      margin-top: 41px;
+    }
+    
+  } */
 

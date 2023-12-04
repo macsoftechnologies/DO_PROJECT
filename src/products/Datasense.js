@@ -56,7 +56,7 @@ function Datasense() {
                     }}
                   />
                   <div className="container">
-                    <button className="demoClass">Get a demo</button>
+                    <button className="demoClass DEMO-Monitor">Get a demo</button>
                   </div>
                 </div>
                 <div className="col-md-6"></div>
@@ -83,19 +83,19 @@ function Datasense() {
           </div>
         </div>
       </section> */}
+
+
       <section className="iodefinitionClass">
         <div className="container def1Class">
-          <div>
             <h1 className="obsheading">What is Do Insights?</h1>
-            <div className="container">
-              <p className="obspara1-1">
+              <p className="obspara1-01">
                 DO Insights is meticulously crafted to streamline the process of
                 data analysis and reporting directly from your databases.
                 Powered by the Modern Data Stack, our platform offers an
                 intuitive interface, making it effortless for users to generate
                 intricate reports and extract valuable insights from their data.
               </p>
-              <p className="obspara2-2">
+              <p className="obspara2-02">
                 Do Insights strives to eliminate gaps by providing a
                 user-friendly solution that empowers non-technical users to
                 conduct data analysis independently, reducing the dependency on
@@ -103,60 +103,56 @@ function Datasense() {
                 and suitable for analysis, decision-making, and subsequent
                 processes.
               </p>
-            </div>
-          </div>
-          <section style={{ paddingTop: "10px" }}>
-            <div className="container mt-5">
+         
+            <div className="mt-5 pt-2">
               <div className="row">
                 <div className="col-md-4 text-center">
                   <div>
                     <img
-                      className="mobile-size"
+                      className="mobile-size1"
                       src="images/dollarprod.png"
                       alt="#"
-                      width={100}
-                    />
-                    <p className="cardText">Reduce Cost</p>
-                    <h1 className="cardHead">10x</h1>
-                    <p className="cardText2">Reduction in Data</p>
-                    <p className="cardText2">infrastructure task</p>
+                      width={100}/>
+                    <p className="cardText1">Reduce Cost</p>
+                    <h1 className="cardHead-1">10x</h1>
+                    <p className="cardText2-1">Reduction in Data</p>
+                    <p className="cardText2-1">infrastructure task</p>
                   </div>
                 </div>
-
                 <div className="col-md-4 text-center">
                   <div>
                     <img
-                      className="mobile-size"
+                      className="mobile-size1"
                       src="images/minimizerisk.png"
                       alt="#"
                       width={100}
                     />
-                    <p className="cardText">Minimize Risk</p>
-                    <h1 className="cardHead">95%</h1>
-                    <p className="cardText2">Reduction in</p>
-                    <p className="cardText2">Data downtime</p>
+                    <p className="cardText1">Minimize Risk</p>
+                    <h1 className="cardHead-1">95%</h1>
+                    <p className="cardText2-1">Reduction in</p>
+                    <p className="cardText2-1">Data downtime</p>
                   </div>
                 </div>
-
                 <div className="col-md-4 text-center">
                   <div>
                     <img
-                      className="mobile-size"
+                      className="mobile-size1"
                       src="images/savetime.png"
                       alt="#"
                       width={100}
                     />
-                    <p className="cardText">Save Time</p>
-                    <h1 className="cardHead">70%</h1>
-                    <p className="cardText2">Data Engineering Hours</p>
-                    <p className="cardText2">Saved per Quarter</p>
+                    <p className="cardText1">Save Time</p>
+                    <h1 className="cardHead-1">70%</h1>
+                    <p className="cardText2-1">Data Engineering Hours</p>
+                    <p className="cardText2-1">Saved per Quarter</p>
                   </div>
                 </div>
               </div>
             </div>
-          </section>
         </div>
       </section>
+
+
       <section className="pillarsClass mb-5">
         <div className="container pt-5 mt-3">
           <div>
@@ -396,14 +392,15 @@ function Datasense() {
           </div>
         </div>
       </section>
+
       <section className="tenetsclass">
         <div className="container">
           <div className="tenetsheading col-md-10 ml-5">
             Tenets of DO Insights to bring real-time data insights
           </div>
           <div className="row mt-4">
-            <div className="col-md-4 ">
-              <div className="showdowclass">
+            <div className="col-md-4 mt-5 ">
+              <div className="showdowclass-01">
                 <div className="issuesmatter">
                   <img
                     src="images/doinsightsecure.png"
@@ -421,7 +418,7 @@ function Datasense() {
               </div>
             </div>
             <div className="col-md-4 mt-5">
-              <div className="showdowclass">
+              <div className="showdowclass-01">
                 <div className="issuesmatter">
                   <img
                     src="images/doinsighteasydata.png"
@@ -437,7 +434,7 @@ function Datasense() {
               </div>
             </div>
             <div className="col-md-4 mt-5">
-              <div className="showdowclass">
+              <div className="showdowclass-01">
                 <div className="issuesmatter">
                   <img
                     src="images/doinsightvisualisation.png"
@@ -455,7 +452,7 @@ function Datasense() {
               </div>
             </div>
             <div className="col-md-4 mt-5">
-              <div className="showdowclass">
+              <div className="showdowclass-01">
                 <div className="issuesmatter">
                   <img
                     src="images/doinsightinteractive.png"
@@ -471,7 +468,7 @@ function Datasense() {
               </div>
             </div>
             <div className="col-md-4 mt-5">
-              <div className="showdowclass">
+              <div className="showdowclass-01">
                 <div className="issuesmatter">
                   <img
                     src="images/doinsightuserfriendly.png"
@@ -487,7 +484,7 @@ function Datasense() {
               </div>
             </div>
             <div className="col-md-4 mt-5 ">
-              <div className="showdowclass">
+              <div className="showdowclass-01">
                 <div className="issuesmatter">
                   <img
                     src="images/doinsightalert.png"
@@ -505,15 +502,16 @@ function Datasense() {
           </div>
         </div>
       </section>
+
       <section className="doinsightrequestguideclass">
         <div className="container guidecontainer">
           <div className="doinsightguideclass">
             <div className="row">
               <div className="col-md-8">
-                <h1 className="guidehead">
+                <h1 className="guidehead new-point">
                   Request Guidance from a DataObserve 360Expert
                 </h1>
-                <p className="guidetext">
+                <p className="new-guidetext">
                   Connect with our experts to harness the power of DataObserve
                   360.
                 </p>
@@ -532,6 +530,7 @@ function Datasense() {
           </div>
         </div>
       </section>
+
       <section className="recentworks">
         <div className="container">
           <h1 className="recentworkshead">Our most recent works</h1>
@@ -608,6 +607,7 @@ function Datasense() {
           </div>
         </div>
       </section>
+      
       <section class="card text-center" style={{ border: "0px" }}>
         <div class="card-body faq-class">
           <h5 class="card-title" style={{ color: "white" }}>

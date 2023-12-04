@@ -33,7 +33,7 @@ const BlogsRedirect = () => {
             <div className="col-md-8">
               <div>
                 <img
-                  src="images/blogbackgroundimg.png"
+                  src="./images/blogbackgroundimg.png"
                   alt="#"
                   className="blogimage1"
                 />
@@ -536,8 +536,8 @@ const BlogsRedirect = () => {
               </p>
             </div>
             <div
-              className="col-md-8 d-flex mt-5 mb-5"
-              style={{ alignItems: "center", justifyContent: "center" }}
+              className="col-md-8 d-flex mt-5 mb-5 wall"
+            
             >
               <div className="mr-5 bloglinkhead">Data Engineering</div>
               <div className="mr-5 bloglinkhead">Genai</div>

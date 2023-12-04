@@ -2,7 +2,8 @@ import React from "react";
 import Navbar from "../products/Navbar";
 import Footer from "../products/Footer";
 import "./Datacharts.css";
-import Faq from "./Faq";
+
+// import Faq from "./Faq";
 // import bussiness from "../../src/videos/bussiness.MOV";
 // import productVideo from "../../src/videos/productvideo.mp4";
 
@@ -13,7 +14,7 @@ function Datacharts() {
       {/* <video className="doinsightsvideo w-100 h-100" autoPlay loop muted>
         <source src={bussiness} type="video/mp4" />
       </video> */}
-      <div alt="#" className="doinsightsvideo-1 w-100" />
+      {/* <div alt="#" className="doinsightsvideo-1 w-100" />
       <section className="doinsightsheader">
         <div>
           <h1
@@ -70,14 +71,14 @@ function Datacharts() {
             {/* <video className="productplayClass" autoPlay loop muted>
                 <source src={productVideo} type="video/mp4" />
               </video> */}
-            <img
+      {/* <img
               src="images/product360videoimg.png"
               alt="#"
               className="playClass-1"
             />
           </div>
         </div>
-      </section>
+      </section> */}
       {/* <section className="doinsightsplayvideoclass-1">
         <div className="container">
           <div className="row">
@@ -85,19 +86,82 @@ function Datacharts() {
           </div>
         </div>
       </section> */}
+
+      <div className="observability-MAIN">
+        <img
+          src="./images/data-charts-01.png"
+          className="do360bannerclass do360Datacharts-01 w-100"
+          alt="#"
+        />
+
+        <div className="header-section">
+          <h1
+            className="container"
+            style={{ color: "#FFF", fontSize: "20px", fontWeight: "700" }}
+          >
+            Datacharts
+          </h1>
+          <div className="container data-pad">
+            <div
+              className="row"
+              style={{ display: "flex", flexDirection: "column" }}
+            >
+              <h1
+                className="col-md-6 mobile-data"
+                style={{ color: "#FFF", fontSize: "46px", fontWeight: "700" }}
+              >
+                A JavaScript Visualization Library with AI Chart generator and
+                simulator
+              </h1>
+              <p className="col-md-6 data-charts">
+                Meet DO Charts, a ready to use JavaScript Visual Library for
+                your Business Applications.
+              </p>
+
+              <input
+                placeholder="Businees Email"
+                className="col-md-9 emailClass"
+                style={{
+                  background: "none",
+                  borderBottom: "1px solid #FFFFFF",
+                  borderTop: "none",
+                  borderLeft: "none",
+                  borderRight: "none",
+                  color: "#FFFFFF",
+                }}
+              />
+              <br />
+              <div className="container">
+                <button className="demoClass">Get a demo</button>
+              </div>
+              <div className="productvideoClass-1 col-md-8">
+                {/* <video className="productplayClass" autoPlay loop muted>
+                <source src={productVideo} type="video/mp4" />
+              </video>  */}
+                <img
+                  src="images/product360videoimg.png"
+                  alt="#"
+                  className="playClass-1"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
       <section className="iodefinitionClass-1">
         <div className="container def1Class">
           <div>
             <h1 className="obsheading">What is DO Charts?</h1>
-            <div className="para container">
-              <p className="obspara1 text-center">
-                DO Charts is a Declarative Framework for Rapid Construction of
-                Web-based Visualization. It provides a wide range of chart types
-                with AI driven chart generator and simulator, including bar
-                charts, line charts, scatter plots, pie charts, and more, making
-                it a versatile tool for data visualization and presentation.
-              </p>
-              {/* <p className="obspara2 text-center">
+
+            <p className="obspara1 text-center">
+              DO Charts is a Declarative Framework for Rapid Construction of
+              Web-based Visualization. It provides a wide range of chart types
+              with AI driven chart generator and simulator, including bar
+              charts, line charts, scatter plots, pie charts, and more, making
+              it a versatile tool for data visualization and presentation.
+            </p>
+            {/* <p className="obspara2 text-center">
                 Do Insights strives to eliminate gaps by providing a
                 user-friendly solution that empowers non-technical users to
                 conduct data analysis independently, reducing the dependency on
@@ -105,49 +169,63 @@ function Datacharts() {
                 and suitable for analysis, decision-making, and subsequent
                 processes.
               </p> */}
-            </div>
           </div>
-          <section style={{ paddingTop: "10px" }}>
-            <div className="container mt-5">
-              <div className="row">
-                <div className="col-md-4 text-center">
-                  <div>
-                    <img src="images/dollarprod.png" alt="#" width={100} />
-                    <p className="cardText">Reduce Cost</p>
-                    <h1 className="cardHead">5x</h1>
-                    <p className="cardText2">Reduction in App</p>
-                    <p className="cardText2">infrastructure Costs</p>
-                  </div>
-                </div>
 
-                <div className="col-md-4 text-center">
-                  <div>
-                    <img src="images/minimizerisk.png" alt="#" width={100} />
-                    <p className="cardText">Minimize Risk</p>
-                    <h1 className="cardHead">98%</h1>
-                    <p className="cardText2">Reduction in</p>
-                    <p className="cardText2">Chart Rendering Downtime</p>
-                  </div>
+          <div className="mt-5 pt-2">
+            <div className="row">
+              <div className="col-md-4 text-center">
+                <div>
+                  <img
+                    className="mobile-size-01"
+                    src="images/dollarprod.png"
+                    alt="#"
+                    width={100}
+                  />
+                  <p className="cardText">Reduce Cost</p>
+                  <h1 className="cardHead">5x</h1>
+                  <p className="cardText2">Reduction in App</p>
+                  <p className="cardText2">infrastructure Costs</p>
                 </div>
+              </div>
 
-                <div className="col-md-4 text-center">
-                  <div>
-                    <img src="images/savetime.png" alt="#" width={100} />
-                    <p className="cardText">Save Time</p>
-                    <h1 className="cardHead">90%</h1>
-                    <p className="cardText2">Data Engineering Hours</p>
-                    <p className="cardText2">Saved per Quarter</p>
-                  </div>
+              <div className="col-md-4 text-center">
+                <div>
+                  <img
+                    className="mobile-size-01"
+                    src="images/minimizerisk.png"
+                    alt="#"
+                    width={100}
+                  />
+                  <p className="cardText">Minimize Risk</p>
+                  <h1 className="cardHead">98%</h1>
+                  <p className="cardText2">Reduction in</p>
+                  <p className="cardText2">Chart Rendering Downtime</p>
+                </div>
+              </div>
+
+              <div className="col-md-4 text-center">
+                <div>
+                  <img
+                    className="mobile-size-01"
+                    src="images/savetime.png"
+                    alt="#"
+                    width={100}
+                  />
+                  <p className="cardText">Save Time</p>
+                  <h1 className="cardHead">90%</h1>
+                  <p className="cardText2">Data Engineering Hours</p>
+                  <p className="cardText2">Saved per Quarter</p>
                 </div>
               </div>
             </div>
-          </section>
+          </div>
         </div>
       </section>
+
       <section className="pillarsClass mb-5">
         <div className="container pt-5 mt-3">
           <div>
-            <h1 className="headingpillars">Types of DO Charts</h1>
+            <h1 className="headingpillars-01">Types of DO Charts</h1>
           </div>
           <div className="pillarnavs mt-4">
             <ul
@@ -246,7 +324,6 @@ function Datacharts() {
                 aria-labelledby="pills-catalog-tab"
               >
                 <div className="row">
-                 
                   <div className="col-md-7">
                     <img
                       src="images/data-charts-img-6.png"
@@ -284,7 +361,6 @@ function Datacharts() {
                 aria-labelledby="pills-freshness-tab"
               >
                 <div className="row">
-                 
                   <div className="col-md-7">
                     <img
                       src="images/data-charts-img-5.png"
@@ -319,7 +395,6 @@ function Datacharts() {
                 aria-labelledby="pills-schema-tab"
               >
                 <div className="row">
-                 
                   <div className="col-md-7">
                     <img
                       src="images/data-charts-img-4.png"
@@ -358,7 +433,6 @@ function Datacharts() {
                 aria-labelledby="pills-volume-tab"
               >
                 <div className="row">
-                 
                   <div className="col-md-7">
                     <img
                       src="images/data-charts-img-3.png"
@@ -396,7 +470,6 @@ function Datacharts() {
                 aria-labelledby="pills-lineage-tab"
               >
                 <div className="row">
-                 
                   <div className="col-md-7">
                     <img
                       src="images/data-charts-img-2.png"
@@ -432,7 +505,6 @@ function Datacharts() {
                 aria-labelledby="pills-lineage-tab"
               >
                 <div className="row">
-                 
                   <div className="col-md-7">
                     <img
                       src="images/data-charts-img-1.png"
@@ -468,19 +540,19 @@ function Datacharts() {
       </section>
       <section className="tenetsclass-1">
         <div className="container">
-          <div className="tenetsheading-1 col-md-10 ml-5">
+          <div className="tenetsheading-01 col-md-10 ml-5">
             Tenets of DO Insights to bring real-time data insights
           </div>
           <div className="row mt-4">
             <div className="col-md-4 ">
-              <div className="showdowclass">
+              <div className="showdowclass-data">
                 <div className="issuesmatter">
                   <img
                     src="images/chartsecure-1.png"
                     alt="#"
                     className="issueimage"
                   />
-                  <h1 className="issuematterhead">Flexible Chart Types</h1>
+                  <h1 className="issuematterhead-01">Flexible Chart Types</h1>
                   <p className="issuematterpara">
                     Do Charts provides more than 20 chart types AI generated and
                     available out of the box, along with a dozen components, and
@@ -490,14 +562,16 @@ function Datacharts() {
               </div>
             </div>
             <div className="col-md-4 ">
-              <div className="showdowclass">
+              <div className="showdowclass-data">
                 <div className="issuesmatter">
                   <img
                     src="images/chartsecure-2.png"
                     alt="#"
                     className="issueimage"
                   />
-                  <h1 className="issuematterhead">Powerful Rendering Engine</h1>
+                  <h1 className="issuematterhead-01">
+                    Powerful Rendering Engine
+                  </h1>
                   <p className="issuematterpara">
                     Easily switch between Canvas and SVG rendering. Progressive
                     rendering and stream loading make it possible to render 10
@@ -507,14 +581,14 @@ function Datacharts() {
               </div>
             </div>
             <div className="col-md-4 ">
-              <div className="showdowclass">
+              <div className="showdowclass-data">
                 <div className="issuesmatter">
                   <img
                     src="images/chartsecure-3.png"
                     alt="#"
                     className="issueimage"
                   />
-                  <h1 className="issuematterhead">
+                  <h1 className="issuematterhead-01">
                     Professional Data Analysis
                   </h1>
                   <p className="issuematterpara">
@@ -527,46 +601,53 @@ function Datacharts() {
               </div>
             </div>
             <div className="col-md-4 mt-5">
-              <div className="showdowclass">
+              <div className="showdowclass-data">
                 <div className="issuesmatter">
                   <img
                     src="images/chartsecure-4.png"
                     alt="#"
                     className="issueimage"
                   />
-                  <h1 className="issuematterhead">Elegant Visual Design</h1>
+                  <h1 className="issuematterhead-01">Elegant Visual Design</h1>
                   <p className="issuematterpara">
-                  The default design follows visualization principles, supports responsive design. Flexible configurations make it easy to customize.
+                    The default design follows visualization principles,
+                    supports responsive design. Flexible configurations make it
+                    easy to customize.
                   </p>
                 </div>
               </div>
             </div>
             <div className="col-md-4 mt-5">
-              <div className="showdowclass">
+              <div className="showdowclass-data">
                 <div className="issuesmatter">
                   <img
                     src="images/chartsecure-5.png"
                     alt="#"
                     className="issueimage"
                   />
-                  <h1 className="issuematterhead">Accessibility-Friendly</h1>
+                  <h1 className="issuematterhead-01">Accessibility-Friendly</h1>
                   <p className="issuematterpara">
-                  Automatically generated chart descriptions and decal patterns help users with disabilities understand the content and the stories behind the charts.
+                    Automatically generated chart descriptions and decal
+                    patterns help users with disabilities understand the content
+                    and the stories behind the charts.
                   </p>
                 </div>
               </div>
             </div>
             <div className="col-md-4 mt-5 ">
-              <div className="showdowclass">
+              <div className="showdowclass-data">
                 <div className="issuesmatter">
                   <img
                     src="images/chartsecure-6.png"
                     alt="#"
                     className="issueimage"
                   />
-                  <h1 className="issuematterhead">Stay Informed with Alerts</h1>
+                  <h1 className="issuematterhead-01">
+                    Stay Informed with Alerts
+                  </h1>
                   <p className="issuematterpara">
-                  Stay up-to-date with important changes and trends in your charts through alerts and notifications.
+                    Stay up-to-date with important changes and trends in your
+                    charts through alerts and notifications.
                   </p>
                 </div>
               </div>
@@ -579,11 +660,12 @@ function Datacharts() {
           <div className="doinsightguideclass-1">
             <div className="row">
               <div className="col-md-9">
-                <h1 className="guidehead">
-                Request Guidance from a Data Charts Expert
+                <h1 className="guidehead text-mb">
+                  Request Guidance from a Data Charts Expert
                 </h1>
-                <p className="guidetext">
-                Connect with our experts to harness the  power of Data with DO Charts.
+                <p className="guidetext-01">
+                  Connect with our experts to harness the  power of Data with DO
+                  Charts.
                 </p>
               </div>
               <div className="col-md-3">
@@ -676,7 +758,8 @@ function Datacharts() {
           </div>
         </div>
       </section>
-      <section class="card text-center" style={{ border: "0px" }}>
+
+      {/* <section class="card text-center" style={{ border: "0px" }}>
         <div class="card-body faq-class">
           <h5 class="card-title" style={{ color: "white" }}>
             FAQs
@@ -1358,7 +1441,7 @@ function Datacharts() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
       <Footer />
     </>
   );

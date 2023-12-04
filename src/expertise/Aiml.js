@@ -2,97 +2,121 @@ import React from "react";
 import "./Aiml.css";
 // import Faq from "../products/Faq";
 import Navbar from "../products/Navbar";
-import artificial from "../../src/videos/artificial.mp4";
+// import artificial from "../../src/videos/artificial.mp4";
 import Footer from "../products/Footer";
+import Slider from "react-slick";
+
+function Arrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block", background: "black" }}
+      onClick={onClick}
+    />
+  );
+}
 
 const Aiml = () => {
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 2,
+    // nextArrow: <Arrow />,
+    // prevArrow: <Arrow />,
+
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+    ],
+  };
   return (
     <div>
       <Navbar />
 
-      <div>
+      <div className="Artificial-Learing-Main">
         <video className="artificial-machinelearn" autoPlay loop muted>
-          <source src={artificial} type="video/mp4" />
+          <source
+            src="https://storage.googleapis.com/do-website-resources/artificial.mp4"
+            type="video/mp4"
+          />
         </video>
-        <div className="enterprise">
-          <div className="container">
-            <div
+        <div className="Cloud-Main-hEading">
+          <p className="cLOUD-TRANSFORM">
+            <p
+              className="cloud-transform-Size"
               style={{
-                display: "inline-flex",
-                minHeight: "1080px",
-                // padding: "153px 676px 100px 255px",
-                flexDirection: "column",
-                alignItems: "flex-start",
-                marginTop: "115px",
-                position: "absolute",
-                top: "110px",
-                left: "10%",
+                fontWeight: "600",
+                fontSize: "20px",
+                letterSpacing: "1px",
               }}
             >
-              <p
+              AI & Machine Learning
+            </p>
+
+            <p className="col-md-6 Navigate-Journey">
+              Harness the potential of AI and ML to construct predictive
+              solutions that elevate your business.
+            </p>
+            <button
+              className="datatypes"
+              style={{
+                display: "flex",
+                height: "61px",
+                maxWidth: "255px",
+                padding: "20px 46px 21px 48px",
+                justifyContent: "center",
+                alignItems: "center",
+                border: "none",
+                marginTop: "70px",
+                borderRadius: "5px",
+              }}
+            >
+              <span
+                className="spans"
                 style={{
-                  color: "white",
-                  fontSize: "18px",
+                  color: "#0046E8",
+                  fontSize: "14px",
                   fontStyle: "normal",
                   fontWeight: "600",
+                  lineHeight: "19px",
                 }}
               >
-                AI & Machine Learning
-              </p>
-              <h4
+                Talk to us now
+              </span>{" "}
+              <i
+                className="fa fa-long-arrow-right ARROW-RIGHT-CLOUD"
                 style={{
-                  color: "white",
-                  fontSize: "26px",
-                  fontStyle: "normal",
-                  fontWeight: "700",
-                  lineHeight: "40px",
-                  paddingRight: "540px",
+                  width: "23px",
+                  fontSize: "29px",
+                  flexShrink: "0",
+                  color: "#0046E8",
+                  marginLeft: "12px",
                 }}
-              >
-                Harness the potential of AI and ML to construct predictive
-                solutions that elevate your business.
-              </h4>
-              <button
-                style={{
-                  display: "flex",
-                  height: "61px",
-                  maxWidth: "255px",
-                  padding: "20px 46px 21px 48px",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  border: "none",
-                  marginTop: "70px",
-                  borderRadius: "5px",
-                }}
-              >
-                <span
-                  style={{
-                    color: "#FF4925",
-                    fontSize: "14px",
-                    fontStyle: "normal",
-                    fontWeight: "600",
-                    lineHeight: "19px",
-                  }}
-                >
-                  Talk to us now
-                </span>{" "}
-                <i
-                  className="fa fa-long-arrow-right ml-3"
-                  style={{
-                    width: "23px",
-                    fontSize: "29px",
-                    flexShrink: "0",
-                    color: "#FF4925",
-                  }}
-                  aria-hidden="true"
-                ></i>
-              </button>
-            </div>
-          </div>
+                aria-hidden="true"
+              ></i>
+            </button>
+          </p>
         </div>
       </div>
 
       <div
+        className="container"
         style={{
           display: "flex",
           flexDirection: "column",
@@ -100,10 +124,8 @@ const Aiml = () => {
           alignItems: "center",
         }}
       >
-        <h4 style={{ textAlign: "center", fontWeight: 700, fontSize: "43px" }}>
-          Our Expertise in AWS AI and ML Services
-        </h4>
-        <p style={{ textAlign: "center", marginTop: "10px", width: "755px" }}>
+        <h4 className="migration">Our Expertise in AWS AI and ML Services</h4>
+        <p className="operational">
           With a collective industry experience exceeding four decades, our
           Artificial Intelligence and Machine Learning services are
           custom-designed to guide you toward operational excellence and
@@ -111,7 +133,7 @@ const Aiml = () => {
         </p>
       </div>
       <div>
-        <div className="cloudcards">
+        <div className="cloudcards d-md-block d-none">
           <div class="ccdiv w-100">
             <div className="cloudimgcard">
               <img className="notrepimg" src="/images/dl.png" alt="" />
@@ -175,9 +197,84 @@ const Aiml = () => {
             </div>
           </div>
         </div>
+        <div className="d-block d-md-none">
+          <section>
+            <div className="container">
+              <div>
+                <Slider {...settings}>
+                  <div className="cloudimgcard">
+                    <img className="notrepimg" src="/images/dl.png" alt="" />
+                    <div className="cloudcard card">
+                      <h1 className="cloudcardheading">Deep Learning</h1>
+                      <p className="cloudcardpara mb-0">
+                        We integrate software, computing power, memory, drivers,
+                        storage, and network resources to construct scalable
+                        deep-learning solutions for our clients.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="cloudimgcard">
+                    <img className="notrepimg" src="/images/prean.png" alt="" />
+                    <div className="cloudcard card">
+                      <h1 className="cloudcardheading">Predictive Analytics</h1>
+                      <p className="cloudcardpara mb-0">
+                        We gather and analyze existing data, customer
+                        information, market data, and other processes to offer
+                        you actionable insights and predictions that lead to
+                        improved business outcomes.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="cloudimgcard">
+                    <img className="notrepimg" src="/images/llms.png" alt="" />
+                    <div className="cloudcard card">
+                      <h1 className="cloudcardheading">LLM’s & AI Models</h1>
+                      <p className="cloudcardpara mb-0">
+                        We possess a diverse array of AI models capable of
+                        benefiting your business in various ways. These models
+                        undergo continuous refinement, becoming increasingly
+                        intelligent through data and machine learning.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="cloudimgcard">
+                    <img
+                      className="notrepimg"
+                      src="/images/aichatbot.png"
+                      alt=""
+                    />
+                    <div className="cloudcard card">
+                      <h1 className="cloudcardheading">AI Chatbots</h1>
+                      <p className="cloudcardpara mb-0">
+                        Enhance your customer experience with our AI-powered
+                        chatbots. These automated programs are capable of
+                        engaging in human-like conversations and can interact
+                        with your customers round the clock.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="cloudimgcard">
+                    <img className="notrepimg" src="/images/nlpg.png" alt="" />
+                    <div className="cloudcard card">
+                      <h1 className="cloudcardheading">
+                        Natural Language Processing & Gen AI
+                      </h1>
+                      <p className="cloudcardpara mb-0">
+                        Conduct sentiment analysis, language detection, text
+                        analysis, document categorization, content
+                        classification, and more using our Gen AI and NLP
+                        solutions.
+                      </p>
+                    </div>
+                  </div>
+                </Slider>
+              </div>
+            </div>
+          </section>
+        </div>
       </div>
       <div
-        class="container card mb-3 mt-5 Built-back-colour"
+        class="container  mb-3 mt-5 Built-back-colour"
         style={{
           backgroundColor: "#1A4AB9",
           borderRadius: "20px",
@@ -203,16 +300,16 @@ const Aiml = () => {
         >
           <div class="col-md-5">
             <img
-              style={{ height: "252px", width: "100%" }}
+              style={{ height: "250px", width: "100%" }}
               src="./images/build.png"
               className="card-img"
               alt="..."
             />
           </div>
-          <div class="col-md-7">
-            <div class="card-body">
+          <div class="col-md-7 cLOUD-Unified">
+            <div class="card-body CLOUD-bODY">
               <h5
-                class="card-title"
+                class="col-md-9 card-title CLouD-BULIT"
                 style={{
                   color: "white",
                   letterSpacing: "0.68px",
@@ -222,15 +319,15 @@ const Aiml = () => {
                 Built A Unified Augmented Analytics
                 <br /> decision intelligence Platform
               </h5>
-              <p class="card-text-3" style={{ fontSize: "13px",color: "#fff", opacity: "0.5" }}>
+              <p
+                class="col-md-9 card-text-3"
+                style={{ fontSize: "13px", color: "#fff", opacity: "0.5" }}
+              >
                 Learn how we created a self-service, predictive, insights
-                platform driven
-                <br /> by an adaptive machine learning engine which helps
-                improve decision-
-                <br />
-                making.
+                platform driven by an adaptive machine learning engine which
+                helps improve decision-making.
               </p>
-              <p class="card-text" style={{ color: "white" }}>
+              <p class=" col-md-9 card-text" style={{ color: "white" }}>
                 <p style={{ fontSize: 16 }}>
                   Read case study
                   <i class="fa fa-long-arrow-right ml-2" aria-hidden="true"></i>
@@ -241,7 +338,6 @@ const Aiml = () => {
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "space-around",
-                  marginLeft: "-20px",
                 }}
               >
                 <img
@@ -259,7 +355,7 @@ const Aiml = () => {
                   alt=""
                   style={{ width: "95px" }}
                 />
-                <img
+                <img className="srdsystems-cloud"
                   src="./images/srdsystems.png"
                   alt=""
                   style={{ width: "70px" }}
@@ -273,17 +369,25 @@ const Aiml = () => {
         <div
           style={{
             display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
             flexDirection: "column",
+            marginTop: "30px",
+            alignItems: "center",
           }}
         >
-          <h3 className="cloud-head">Benefits</h3>
-          <p style={{ width: "700px", textAlign: "center" }}>
+          <h4
+            className="mt-5 EXPERIENCE-cloud"
+            style={{ textAlign: "center", fontWeight: 700, fontSize: "43px" }}
+          >
+            Benefits
+          </h4>
+
+          <div className="container">
+          <p className="wides">
             DataObserve is the fastest-growing Cloud Transformation & Data
             Analytics company with strong expertise in Data lake solutions, Data
             Warehouse Engineering, Data Migration & Modernization.
           </p>
+          </div>
         </div>
         <div className="container mt-3">
           <div className="row box">
@@ -403,56 +507,55 @@ const Aiml = () => {
           </div>
           <div>
             <div
-              class="card mb-3 mt-5"
+              class="mb-3 mt-5"
               style={{
                 backgroundColor: "#1A4AB9",
                 maxWidth: "100%",
-                borderRadius: "20px",
+                borderRadius: "30px",
               }}
             >
               <div
                 class="row no-gutters"
                 style={{
-                  display: "flex",
                   alignItems: "center",
                   justifyContent: "spacebetween",
                 }}
               >
-                <div class="col-md-1"></div>
                 <div class="col-md-8">
-                  <div class="card-body expertcardbody d-flex">
+                  <div class="">
                     <div>
-                      <h5 class="card-title" style={{ color: "white" }}>
-                        Maximize Your AI/ML Investments For Powerful Data
-                        Insights
-                      </h5>
-                      <p
-                        class="card-text"
-                        style={{ color: "white", width: "500px" }}
+                      <h5
+                        class="card-title Cloud-title"
+                        style={{ color: "white", fontSize: "24px" }}
                       >
-                        Build a host of AI and ML-based data models for maximum
-                        business benefit. Our team of AI/ML experts can help you
-                        craft customized solutions for your business needs.
+                        Maximize Your AI/ML Investments For Powerful
+Data Insights
+                      </h5>
+                      <p class="card-text Cloud-color-paragraph">
+                      Build a host of AI and ML-based data models for maximum business benefit.
+Our team of AI/ML experts can help you craft customized solutions for your
+business needs.
                       </p>
                     </div>
-                    <div>
-                      <button
-                        style={{
-                          width: "200px",
-                          border: "none",
-                          height: "55px",
-                          margin: "42px",
-                          borderRadius: "6px",
-                        }}
-                      >
-                        Talk to us now{" "}
-                        <i
-                          class="fa fa-long-arrow-right"
-                          aria-hidden="true"
-                        ></i>
-                      </button>
-                    </div>
                   </div>
+                </div>
+                <div className="col-md-4">
+                  <button
+                    className="observers"
+                    style={{
+                      width: "200px",
+                      border: "none",
+                      height: "55px",
+                      margin: "42px",
+                      borderRadius: "6px",
+                    }}
+                  >
+                    Get a demo{" "}
+                    <i
+                      class="fa fa-long-arrow-right Arrow-cloud"
+                      aria-hidden="true"
+                    ></i>
+                  </button>
                 </div>
               </div>
             </div>
@@ -460,17 +563,30 @@ const Aiml = () => {
         </div>
       </div>
       <div>
-        <h3 className="cloud-head"> What Makes Us Stand Out</h3>
-        <p
+        <div
           className="container"
-          style={{ width: "700px", textAlign: "center" }}
+          style={{
+            justifyContent: "center",
+            flexDirection: "column",
+            display: "flex",
+          }}
         >
-          At DataObserve, we boast a dedicated team of developers and
-          machine-learning experts with decades of collective experience. Our
-          proficiency lies in crafting highly tailored machine-learning
-          solutions that can efficiently address your business requirements.
-          Here are several compelling reasons why we are the perfect choice:
-        </p>
+          <h3 className="cloud-head" style={{ textAlign: "center" }}>
+            What Makes Us Stand Out
+          </h3>
+          <p
+            className="CLoud-Text-pARA"
+            style={{
+              textAlign: "center",
+            }}
+          >
+            At DataObserve, we boast a dedicated team of developers and
+            machine-learning experts with decades of collective experience. Our
+            proficiency lies in crafting highly tailored machine-learning
+            solutions that can efficiently address your business requirements.
+            Here are several compelling reasons why we are the perfect choice:
+          </p>
+        </div>
         <div className="container mt-3">
           <div className="row box">
             <div className="col-md-4">

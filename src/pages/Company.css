@@ -156,6 +156,8 @@ font-weight: 400;
     .our-purpose-1{
         color: black !important;
         font-size: 25px;
+        padding-bottom: 10px;
+        margin-top: 10px;
     }
 
     .empower-para{
@@ -171,7 +173,7 @@ font-weight: 400;
     color: #707070;
     font-size: 15px;
 }
-.global-data{
+.global-data-company{
     padding-left: 24px;
     font-size: 18px;
     font-weight: 600;
@@ -191,8 +193,10 @@ font-weight: 400;
 
 
 
-@media only screen and (min-width: 320px) and (max-width: 468px)
-{
+@media only screen and (min-width: 320px) and (max-width: 468px){
+    .cult-page {
+        margin-bottom: 40px;
+    }
     .journey{
         padding-top: 0px;
         padding-left: 0px;
@@ -248,11 +252,17 @@ font-weight: 400;
     .data-science-image {
         width: 45px;
     }
-    .global-data {
-        font-size: 11px;
+    .global-data-company {
+        font-size: 15px;
     }
     .data-science-paragraph {
-        font-size: 8px;
+        font-size: 11px;
+    }
+    .ourpurpose-body {
+        margin-bottom: 40px;
+    }
+    .everyperson-data {
+        margin-bottom: 30px;
     }
 
 

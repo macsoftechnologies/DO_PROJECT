@@ -30,112 +30,52 @@ function Domonitor() {
 
  //scroll
 
+ const [visible, setVisible] = useState(false);
+ const [dotVisible, setdotVisible] = useState(false);
+ const toggleVisible = () => {
+   const scrolled = document.documentElement.scrollTop;
+   console.log(scrolled, "scrolled");
+   if (scrolled > 500) {
+     setVisible(true);
+     setdotVisible(true);
+   } else if (scrolled <= 500) {
+     setVisible(false);
+     setdotVisible(false);
+   }
+ };
+ // const dotVisibleData = () => {
+ //   const scrolled = document.getElementById("lastDiv")
+ //   console.log(scrolled)
+ //  if(scrolled){
+ //   display
+ //  }
+ // };
+ const scrollToTop = () => {
+   window.scrollTo({
+     top: 1000,
+     behavior: "smooth",
+   });
+ };
 
+ useEffect(() => {
+   window.addEventListener("scroll", toggleVisible);
+   return () => {
+     window.removeEventListener("scroll", toggleVisible);
+   };
+ }, []);
 
   return (
     <div>
       <div>
         <Navbar />
-        <div className="headbg-domonitor">
-          <div className="container">
-            <div className="row bgheadmat-domonitor">
-              <div className="col-md-6 bg-head-1">
-                <h3 className="bg-head-domonitor">
-                  The all-in-one,solution that lets you monitor anything
-                </h3>
-                <p className="bg-para-domonitor">
-                  Meet DO Monitor a single pane of glass view of your whole IT
-                  infrastructure stack
-                </p>
-                <p className="bg-text-domonitor">Business Email</p>
-                <hr className="horizontaltag-domonitor" />
-                <button className="btn-domonitor">
-                  <span className="btntext-domonitor">Get a demo</span>{" "}
-                </button>
-              </div>
-              <div className="col-md-6 bg-head-2">
-                <div>
-                  <img
-                    className="headicon-domonitor"
-                    src="images/domonitor.png"
-                    alt="#"
-                  />
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div className="domonitor2ndbg">
-        <div className="domoniter-2ndbg">
-          <h1>Explore DO Monitor features</h1>
-          <div className="bg2ndhead-domonitor">
-            <a href="#metric">
-              <button className="btn-domonitor1">
-                <img src="/images/icons_metric.png" alt="..." />
-                <span className="btn1-domonitor">Metric Collection</span>
-              </button>
-            </a>
-            <a href="#problem">
-              <button className="btn-domonitor1">
-                <img src="/images/icons_problem.png" alt="..." />
-                <span className="btn1-domonitor">Problem Detection</span>
-              </button>
-            </a>
-            <a href="#alerting1">
-              <button className="btn-domonitor1">
-                <img src="/images/icons_alerting.png" alt="..." />
-                <span className="btn1-domonitor">Alerting</span>
-              </button>
-            </a>
-            <a href="#datavisual">
-              <button className="btn-domonitor1">
-                <img src="/images/icons_data_visualization2.png" alt="..." />
-                <span className="btn1-domonitor">Data Visualization</span>
-              </button>
-            </a>
-            <a href="#singlepane">
-              <button className="btn-domonitor1">
-                <img src="/images/icons_single_pane_of_glass.png" alt="..." />
-                <span className="btn1-domonitor">Single Pane of Glass</span>
-              </button>
-            </a>
-          </div>
-          <div className="bg2ndhead-domonitor">
-            <a href="#business">
-              <button className="btn-domonitor1">
-                <img src="/images/icons_business_monitoring.png" alt="..." />
-                <span className="btn1-domonitor">Business Monitoring</span>
-              </button>
-            </a>
-            <a href="#integration">
-              <button className="btn-domonitor1">
-                <img src="/images/icons_integrations.png" alt="..." />
-                <span className="btn1-domonitor">Integrations</span>
-              </button>
-            </a>
-            <a href="#security">
-              <button className="btn-domonitor1">
-                <img src="/images/icons_security2.png" alt="..." />
-                <span className="btn1-domonitor">Security</span>
-              </button>
-            </a>
-            <a href="#deployment">
-              <button className="btn-domonitor1">
-                <img src="/images/icons_deployment1.png" alt="..." />
-                <span className="btn1-domonitor">Deployment</span>
-              </button>
-            </a>
-            <a href="#scalability">
-              <button className="btn-domonitor1">
-                <img src="/images/icons_scalability1.png" alt="..." />
-                <span className="btn1-domonitor">Scalability</span>
-              </button>
-            </a>
-          </div>
-        </div>
-      </div>
-      <div class="sidebar-col tablet-hidden mobile-hidden">
+        <div className="do-monitor-m">
+      
+          
+
+     
+
+<section className="web-point d-md-block d-none">
+     <div style={{ display: dotVisible ? "inline" : "none" }} class="sidebar-col tablet-hidden mobile-hidden">
         <div id="swiper-container" class="list-holder swiper-container">
           <ul class="side-nav">
             <li>
@@ -171,7 +111,273 @@ function Domonitor() {
           </ul>
         </div>
       </div>
-      <section  id="metric" className="one">
+   </section>
+        
+    <div className="observability-MAIN do-mon">
+      <img
+        src="./images/do-monitor-01.png"
+        className="do360bannerclass do360bannerclass-01 w-100"
+        alt="#"
+      />
+     
+      <div className="header-section Domonitor-Header">
+      <h1 className="container" style={{ color: "#FFF", fontSize: "20px", fontWeight: "700" }}>Domonitor</h1>
+      {/*change class  */}
+        <div className="container monitor-text" style={{ paddingTop: "20px" }}>
+          <div
+            className="row"
+            style={{ display: "flex", flexDirection: "column" }}
+>
+            <h1
+              className="col-md-6 mobile-text"
+              style={{ color: "#FFF", fontSize: "44px", fontWeight: "700" }}
+            >
+              The all-in-one,solution that lets you monitor anything
+            </h1>
+            {/*change class  */}
+            <p
+              className="col-md-6 domonitor-mobile"
+              style={{
+                marginTop: "15px",
+                fontSize: "16px",
+                color: "rgba(255, 255, 255, 0.80)",
+                fontWeight: "400px",
+              }}>
+              Meet DO Monitor a single pane of glass view of your whole IT
+                  infrastructure stack
+            </p>
+    
+            <input
+              placeholder="Businees Email"
+              className="col-md-9 emailClass"
+              style={{
+                background: "none",
+                borderBottom: "1px solid #FFFFFF",
+                borderTop: "none",
+                borderLeft: "none",
+                borderRight: "none",
+                color: "#FFFFFF",
+              }}
+            />
+            <br />
+            <div className="container">
+              <button className="demoClass new-domi">Get a demo</button>
+            </div>
+           {/* <div className="productvideoClass-1 col-md-8">
+            <video className="productplayClass" autoPlay loop muted>
+                <source src={productVideo} type="video/mp4" />
+              </video>  
+            <img
+              src="images/product360videoimg.png"
+              alt="#"
+              className="playClass-1"
+            />
+          </div>*/}
+          </div>
+        </div>
+      </div>
+      </div>
+      </div>
+      <div className="domonitor2ndbg">
+        <div className="domoniter-2ndbg">
+          <h1 className="font-size">Explore DO Monitor features</h1>
+          <div className="dmtr2secs">
+          <div className="bg2ndhead-domonitor">
+            <a href="#metric">
+              <button className="btn-domonitor1">
+                <img src="/images/icons_metric.png" alt="..." />
+                <span className="btn1-domonitor">Metric Collection</span>
+              </button>
+            </a>
+            <a href="#problem">
+              <button className="btn-domonitor1">
+                <img src="/images/icons_problem.png" alt="..." />
+                <span className="btn1-domonitor">Problem Detection</span>
+              </button>
+            </a>
+            <a href="#alerting1">
+              <button className="btn-domonitor1">
+                <img src="/images/icons_alerting.png" alt="..." />
+                <span className="btn1-domonitor">Alerting</span>
+              </button>
+            </a>
+            <a href="#datavisual">
+              <button className="btn-domonitor1">
+                <img src="/images/icons_data_visualization2.png" alt="..." />
+                <span className="btn1-domonitor">Data Visualization</span>
+              </button>
+            </a>
+            <a href="#singlepane">
+              <button className="btn-domonitor1">
+                <img src="/images/icons_single_pane_of_glass.png" alt="..." />
+                <span className="btn1-domonitor">Single Pane of Glass</span>
+              </button>
+            </a>
+            <a href="#business">
+              <button className="btn-domonitor1">
+                <img src="/images/icons_business_monitoring.png" alt="..." />
+                <span className="btn1-domonitor">Business Monitoring</span>
+              </button>
+            </a>
+            <a href="#integration">
+              <button className="btn-domonitor1">
+                <img src="/images/icons_integrations.png" alt="..." />
+                <span className="btn1-domonitor">Integrations</span>
+              </button>
+            </a>
+            <a href="#security">
+              <button className="btn-domonitor1">
+                <img src="/images/icons_security2.png" alt="..." />
+                <span className="btn1-domonitor">Security</span>
+              </button>
+            </a>
+            <a href="#deployment">
+              <button className="btn-domonitor1">
+                <img src="/images/icons_deployment1.png" alt="..." />
+                <span className="btn1-domonitor">Deployment</span>
+              </button>
+            </a>
+            <a href="#scalability">
+              <button className="btn-domonitor1">
+                <img src="/images/icons_scalability1.png" alt="..." />
+                <span className="btn1-domonitor">Scalability</span>
+              </button>
+            </a>
+          </div>
+          {/* <div className="bg2ndhead-domonitors">
+          
+          </div> */}
+          </div>
+        </div>
+      </div>
+
+{/* web */}
+
+     {/* <section className="web-point d-md-block d-none">
+     <div style={{ display: dotVisible ? "inline" : "none" }} class="sidebar-col tablet-hidden mobile-hidden">
+        <div id="swiper-container" class="list-holder swiper-container">
+          <ul class="side-nav">
+            <li>
+              <a href="#metric" className={activeLink === 'metric' ? 'nav-link active' : 'nav-link'} title="Metric Collection"></a>
+            </li>
+            <li>
+              <a href="#problem" className={activeLink === 'problem' ? 'nav-link active' : 'nav-link'} title="Problem Detection"></a>
+            </li>
+            <li>
+              <a href="#alerting1" className={activeLink === 'alerting1' ? 'nav-link active' : 'nav-link'} title="Alerting"></a>
+            </li>
+            <li>
+              <a href="#datavisual" className={activeLink === 'datavisual' ? 'nav-link active' : 'nav-link'} title="Visualization"></a>
+            </li>
+            <li>
+              <a href="#singlepane"  className={activeLink === 'singlepane' ? 'nav-link active' : 'nav-link'} title="Single Pane of Glass"></a>
+            </li>
+            <li>
+              <a href="#business" className={activeLink === 'business' ? 'nav-link active' : 'nav-link'} title="Business Monitoring"></a>
+            </li>
+            <li>
+              <a href="#integration" className={activeLink === 'integration' ? 'nav-link active' : 'nav-link'} title="Integrations"></a>
+            </li>
+            <li>
+              <a href="#security" className={activeLink === 'security' ? 'nav-link active' : 'nav-link'} title="Security"></a>
+            </li>
+            <li>
+              <a href="#deployment" className={activeLink === 'deployment' ? 'nav-link active' : 'nav-link'} title="Deployment"></a>
+            </li>
+            <li>
+              <a href="#scalability" className={activeLink === 'scalability' ? 'nav-link active' : 'nav-link'} title="Scalability"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+     </section> */}
+
+     {/* mobile */}
+
+     
+<section className="web-point d-md-block d-none">
+     <div style={{ display: dotVisible ? "inline" : "none" }} class="sidebar-col tablet-hidden mobile-hidden">
+        <div id="swiper-container" class="list-holder swiper-container">
+          <ul class="side-nav">
+            <li>
+              <a href="#metric" className={activeLink === 'metric' ? 'nav-link active' : 'nav-link'} title="Metric Collection"></a>
+            </li>
+            <li>
+              <a href="#problem" className={activeLink === 'problem' ? 'nav-link active' : 'nav-link'} title="Problem Detection"></a>
+            </li>
+            <li>
+              <a href="#alerting1" className={activeLink === 'alerting1' ? 'nav-link active' : 'nav-link'} title="Alerting"></a>
+            </li>
+            <li>
+              <a href="#datavisual" className={activeLink === 'datavisual' ? 'nav-link active' : 'nav-link'} title="Visualization"></a>
+            </li>
+            <li>
+              <a href="#singlepane"  className={activeLink === 'singlepane' ? 'nav-link active' : 'nav-link'} title="Single Pane of Glass"></a>
+            </li>
+            <li>
+              <a href="#business" className={activeLink === 'business' ? 'nav-link active' : 'nav-link'} title="Business Monitoring"></a>
+            </li>
+            <li>
+              <a href="#integration" className={activeLink === 'integration' ? 'nav-link active' : 'nav-link'} title="Integrations"></a>
+            </li>
+            <li>
+              <a href="#security" className={activeLink === 'security' ? 'nav-link active' : 'nav-link'} title="Security"></a>
+            </li>
+            <li>
+              <a href="#deployment" className={activeLink === 'deployment' ? 'nav-link active' : 'nav-link'} title="Deployment"></a>
+            </li>
+            <li>
+              <a href="#scalability" className={activeLink === 'scalability' ? 'nav-link active' : 'nav-link'} title="Scalability"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+   </section>
+
+     <section className="mobile-point d-md-none d-block">
+     <div class="sidebar-col tablet-hidden mobile-hidden">
+        <div id="swiper-container" class="list-holder swiper-container">
+          <ul class="side-nav">
+            <li>
+              <a href="#metric" className={activeLink === 'metric' ? 'nav-link active' : 'nav-link'} title="Metric Collection"></a>
+            </li>
+            <li>
+              <a href="#problem" className={activeLink === 'problem' ? 'nav-link active' : 'nav-link'} title="Problem Detection"></a>
+            </li>
+            <li>
+              <a href="#alerting1" className={activeLink === 'alerting1' ? 'nav-link active' : 'nav-link'} title="Alerting"></a>
+            </li>
+            <li>
+              <a href="#datavisual" className={activeLink === 'datavisual' ? 'nav-link active' : 'nav-link'} title="Visualization"></a>
+            </li>
+            <li>
+              <a href="#singlepane"  className={activeLink === 'singlepane' ? 'nav-link active' : 'nav-link'} title="Single Pane of Glass"></a>
+            </li>
+            <li>
+              <a href="#business" className={activeLink === 'business' ? 'nav-link active' : 'nav-link'} title="Business Monitoring"></a>
+            </li>
+            <li>
+              <a href="#integration" className={activeLink === 'integration' ? 'nav-link active' : 'nav-link'} title="Integrations"></a>
+            </li>
+            <li>
+              <a href="#security" className={activeLink === 'security' ? 'nav-link active' : 'nav-link'} title="Security"></a>
+            </li>
+            <li>
+              <a href="#deployment" className={activeLink === 'deployment' ? 'nav-link active' : 'nav-link'} title="Deployment"></a>
+            </li>
+            <li>
+              <a href="#scalability" className={activeLink === 'scalability' ? 'nav-link active' : 'nav-link'} title="Scalability"></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+     </section>
+
+
+
+
+{/* new */}
+     <section  id="metric" className="one">
         <div>
           <div className="container">
             <h2 className="section1head">
@@ -219,7 +425,7 @@ function Domonitor() {
                     aria-controls="pills-schema-keep-three"
                     aria-selected="false"
                   >
-                    Zabbix <br />
+                    DOM<br />
                     Agent
                   </a>
                 </li>
@@ -293,14 +499,13 @@ function Domonitor() {
                         Collect metrics from any source
                       </h3>
                       <p className="qualitymatter text-justify">
-                        Zabbix enables you to collect metrics but isn't limited
-                        to:
+                      Simple interface for prompt engineers to create, test, and change prompts .
                       </p>
                       <div className="sectioncards-domonitor">
                         <div className="row">
                           <div className="col-md-6">
                             <div className="check-domonitor">
-                              <ul>
+                              <ul className="MoniTor-sizE">
                                 <li className="d-flex">
                                   <img
                                     style={{ width: "23px", height: "23px" }}
@@ -366,7 +571,7 @@ function Domonitor() {
                           </div>
                           <div className="col-md-6">
                             <div className="check-domonitor">
-                              <ul>
+                              <ul className="MoniTor-sizE">
                                 <li className="d-flex">
                                   <img
                                     style={{ width: "23px", height: "23px" }}
@@ -470,7 +675,7 @@ function Domonitor() {
                         <div className="row">
                           <div className="col-md-6">
                             <div className="check-domonitor">
-                              <ul>
+                              <ul className="MoniTor-sizE">
                                 <p>High intensity data collection:</p>
                                 <li className="d-flex">
                                   <img
@@ -519,7 +724,7 @@ function Domonitor() {
                           </div>
                           <div className="col-md-6">
                             <div className="check-domonitor">
-                              <ul>
+                              <ul className="MoniTor-sizE">
                                 <p>Collect data of any type:</p>
                                 <li className="d-flex">
                                   <img
@@ -566,7 +771,7 @@ function Domonitor() {
                           </div>
                           <div className="col-md-6">
                             <div className="check-domonitor">
-                              <ul>
+                              <ul className="MoniTor-sizE">
                                 <p>Log file monitoring:</p>
                                 <li className="d-flex">
                                   <img
@@ -630,7 +835,7 @@ function Domonitor() {
                   <div className="row">
                     <div className="col-md-7 qualitypara">
                       <h3 className="qualityhead">
-                        Deploy Zabbix agent for in depth monitoring
+                        Deploy DOM agent for in depth monitoring
                       </h3>
                       <p className="qualitymatter text-justify">
                         Native high performance Agent for all Operating Systems
@@ -640,7 +845,7 @@ function Domonitor() {
                         <div className="row">
                           <div className="col-md-6">
                             <div className="check-domonitor">
-                              <ul>
+                              <ul  className="MoniTor-sizE">
                                 <li className="d-flex">
                                   <img
                                     style={{ width: "23px", height: "23px" }}
@@ -679,10 +884,9 @@ function Domonitor() {
                                   />
                                   <p className="section-card-para-dom">
                                     Easy to extend with plugins or
-                                    <span className="color-contain">
-                                      {" "}
+                                    
                                       external scripts
-                                    </span>
+                                    
                                   </p>
                                 </li>
                                 <li className="d-flex">
@@ -712,7 +916,7 @@ function Domonitor() {
                           </div>
                           <div className="col-md-6">
                             <div className="check-domonitor">
-                              <ul>
+                              <ul  className="MoniTor-sizE">
                                 <li className="d-flex">
                                   <img
                                     style={{ width: "23px", height: "23px" }}
@@ -731,9 +935,9 @@ function Domonitor() {
                                     alt="..."
                                   />
                                   <p className="section-card-para-dom">
-                                    Can report to multiple Zabbix Servers for
-                                    redundancy and{" "}
-                                    <span className="color-contain"> HA</span>
+                                    Can report to multiple DOM Servers for
+                                    redundancy and
+                                     HA
                                   </p>
                                 </li>
                                 <li className="d-flex">
@@ -744,10 +948,9 @@ function Domonitor() {
                                   />
                                   <p className="section-card-para-dom">
                                     Strong TLS or shared key{" "}
-                                    <span className="color-contain">
-                                      {" "}
+                                    
                                       encryption
-                                    </span>{" "}
+                                    
                                     for communications
                                   </p>
                                 </li>
@@ -759,12 +962,10 @@ function Domonitor() {
                                     alt="..."
                                   />
                                   <p className="section-card-para-dom">
-                                    Deploy Zabbix agent as a package, use MSI or
-                                    command line installer on Windows or deploy
-                                    <span className="color-contain">
-                                      {" "}
+                                  Deploy DOM agent as a package, use MSI or command line installer on Windows or deploy pre-compiled agent binaries
+                                   
                                       pre-compiled agent
-                                    </span>{" "}
+                                    
                                     binaries
                                   </p>
                                 </li>
@@ -772,11 +973,11 @@ function Domonitor() {
                             </div>
                           </div>
 
-                          <p>Deploy Zabbix agent on any operating system:</p>
+                          <p>Deploy DOM agent on any operating system:</p>
 
                           <div className="col-md-6">
                             <div className="check-domonitor">
-                              <ul>
+                              <ul  className="MoniTor-sizE">
                                 <li className="d-flex">
                                   <img
                                     style={{ width: "23px", height: "23px" }}
@@ -810,7 +1011,7 @@ function Domonitor() {
                           </div>
                           <div className="col-md-6">
                             <div className="check-domonitor">
-                              <ul>
+                              <ul  className="MoniTor-sizE">
                                 <li className="d-flex">
                                   <img
                                     style={{ width: "23px", height: "23px" }}
@@ -864,14 +1065,14 @@ function Domonitor() {
                         Utilize agent-less monitoring using any protocols
                       </h3>
                       <p className="qualitymatter text-justify">
-                        Zabbix supports whole range of various protocols for
+                        DOM supports whole range of various protocols for
                         remote monitoring of services:
                       </p>
                       <div className="sectioncards-domonitor">
                         <div className="row">
                           <div className="col-md-6">
                             <div className="check-domonitor">
-                              <ul>
+                              <ul className="MoniTor-sizE">
                                 <li className="d-flex">
                                   <img
                                     style={{ width: "23px", height: "23px" }}
@@ -889,10 +1090,10 @@ function Domonitor() {
                                     alt="..."
                                   />
                                   <p className="section-card-para-dom">
-                                    Scriptable{" "}
-                                    <span className="color-contain">
+                                    Scriptable
+                                   
                                       synthetic monitoring
-                                    </span>
+                                    
                                   </p>
                                 </li>
                                 <li className="d-flex">
@@ -938,7 +1139,7 @@ function Domonitor() {
                           </div>
                           <div className="col-md-6">
                             <div className="check-domonitor">
-                              <ul>
+                              <ul className="MoniTor-sizE">
                                 <li className="d-flex">
                                   <img
                                     style={{ width: "23px", height: "23px" }}
@@ -1036,7 +1237,7 @@ function Domonitor() {
                         <div className="">
                           <div className="col-md-12">
                             <div className="check-domonitor">
-                              <ul>
+                              <ul  className="MoniTor-sizE">
                                 <li className="d-flex">
                                   <img
                                     style={{ width: "23px", height: "23px" }}
@@ -1085,13 +1286,13 @@ function Domonitor() {
                         collection methods
                       </h2>
                       <p className="text-justify">
-                        Zabbix data collection can be easily extended using:
+                        DOM data collection can be easily extended using:
                       </p>
                       <div className="sectioncards-domonitor">
                         <div className="">
                           <div className="col-md-12">
                             <div className="check-domonitor">
-                              <ul>
+                              <ul  className="MoniTor-sizE">
                                 <li className="d-flex">
                                   <img
                                     style={{ width: "23px", height: "23px" }}
@@ -1128,12 +1329,11 @@ function Domonitor() {
                             </div>
                           </div>
                           <p style={{ textAlign: "justify" }}>
-                            Learn how to extend Zabbix agent and write your own
-                            Go plugins by visiting Zabbix Developer Center:
+                          DOM agent supports custom plugins, you can write your own plugins, call our support to enable.
                           </p>
                           <div className="col-md-12">
                             <div className="check-domonitor">
-                              <ul>
+                              <ul  className="MoniTor-sizE">
                                 <li className="d-flex">
                                   <img
                                     style={{ width: "23px", height: "23px" }}
@@ -1142,7 +1342,7 @@ function Domonitor() {
                                   />
                                   <p className="section-card-para-dom">
                                     Learn from a selection of examples provided
-                                    by Zabbix developers
+                                    by DOM developers
                                   </p>
                                 </li>
                                 <li className="d-flex">
@@ -1152,8 +1352,7 @@ function Domonitor() {
                                     alt="..."
                                   />
                                   <p className="section-card-para-dom">
-                                    Build your first Zabbix plugin by following
-                                    a step-by-step tutorial
+                                  Build your first DOM plugin by following a step-by-step tutorial
                                   </p>
                                 </li>
                               </ul>
@@ -1191,7 +1390,7 @@ function Domonitor() {
                         <div className="row">
                           <div className="col-md-6">
                             <div className="check-domonitor">
-                              <ul>
+                              <ul  className="MoniTor-sizE">
                                 <li className="d-flex">
                                   <img
                                     style={{ width: "23px", height: "23px" }}
@@ -1249,7 +1448,7 @@ function Domonitor() {
                           </div>
                           <div className="col-md-6">
                             <div className="check-domonitor">
-                              <ul>
+                              <ul className="MoniTor-sizE">
                                 <li className="d-flex">
                                   <img
                                     style={{ width: "23px", height: "23px" }}
@@ -1305,7 +1504,7 @@ function Domonitor() {
 
                           <div className="col-md-6">
                             <div className="check-domonitor">
-                              <ul>
+                              <ul className="MoniTor-sizE">
                                 <li className="d-flex">
                                   <img
                                     style={{ width: "23px", height: "23px" }}
@@ -1332,7 +1531,7 @@ function Domonitor() {
                           </div>
                           <div className="col-md-6">
                             <div className="check-domonitor">
-                              <ul>
+                              <ul className="MoniTor-sizE">
                                 <li className="d-flex">
                                   <img
                                     style={{ width: "23px", height: "23px" }}
@@ -1375,6 +1574,9 @@ function Domonitor() {
           </div>
         </div>
       </section>
+
+
+
       <section id="problem" className="two">
         <div className="detectprob-domonitor">
           <div className="container">
@@ -1434,12 +1636,12 @@ function Domonitor() {
                 >
                   <div className="row">
                   <div className="col-md-7 qualitypara">
-                      <h3 className="qualityhead">
+                      <h3 className="qualityhead new-text">
                       Define smart problem thresholds
 
                       </h3>
                       <p className="qualitymatter text-justify">
-                      Forget about tracking your metrics manually. With Zabbix you can detect problem states within the incoming metric flow automatically:
+                      Forget about tracking your metrics manually. With DOM you can detect problem states within the incoming metric flow automatically:
 
 
                       </p>
@@ -1447,7 +1649,7 @@ function Domonitor() {
                         <div className="row">
                           <div className="col-md-6">
                             <div className="check-domonitor">
-                              <ul>
+                              <ul className="MoniTor-sizE">
                                 <li className="d-flex">
                                   <img
                                     style={{ width: "23px", height: "23px" }}
@@ -1525,7 +1727,7 @@ function Domonitor() {
                           </div>
                           <div className="col-md-6">
                             <div className="check-domonitor">
-                              <ul>
+                              <ul className="MoniTor-sizE">
                                 <li className="d-flex">
                                   <img
                                     style={{ width: "23px", height: "23px" }}
@@ -1583,8 +1785,8 @@ function Domonitor() {
                             </div>
                           </div>
 
-                          <p style={{textAlign:"justify"}}>
-                          Zabbix provides its users with very flexible, intelligent threshold definition options. While a threshold for trigger may be as simple as "bigger than x", it is possible to use all power of supported functions and operators for statistical analysis of history data.
+                          <p className="mon-mobile" style={{textAlign:"justify"}}>
+                          DOM provides its users with very flexible, intelligent threshold definition options. While a threshold for trigger may be as simple as "bigger than x", it is possible to use all power of supported functions and operators for statistical analysis of history data.
 
 
                           </p>
@@ -1610,12 +1812,12 @@ function Domonitor() {
                 >
                   <div className="row">
                   <div className="col-md-7 qualitypara">
-                      <h3 className="qualityhead">
+                      <h3 className="qualityhead new-text">
                       React proactively with trend prediction
 
                       </h3>
                       <p className="qualitymatter text-justify">
-                      While it is nice to have thresholds for problem detection, it's more efficient to react to issues proactively. Zabbix predictive functions can help you achieve that goal:
+                      While it is nice to have thresholds for problem detection, it's more efficient to react to issues proactively. DOM predictive functions can help you achieve that goal:
 
 
 
@@ -1624,7 +1826,7 @@ function Domonitor() {
                         <div className="">
                           <div className="col-md-12">
                             <div className="check-domonitor">
-                              <ul>
+                              <ul className="MoniTor-sizE">
                                 <li className="d-flex">
                                   <img
                                     style={{ width: "23px", height: "23px" }}
@@ -1679,12 +1881,12 @@ function Domonitor() {
                 >
                   <div className="row">
                   <div className="col-md-7 qualitypara">
-                      <h3 className="qualityhead">
+                      <h3 className="qualityhead new-text">
                       Detect anomalies by using baseline monitoring
 
                       </h3>
                       <p className="qualitymatter text-justify">
-                      Defining problem thresholds manually is not always an efficient approach. In dynamic environments where the baseline values can periodically change it is important to automatically calculate a reference point against which the problem threshold will be calculated. Zabbix Baseline monitoring enables you to do just that:
+                      Defining problem thresholds manually is not always an efficient approach. In dynamic environments where the baseline values can periodically change it is important to automatically calculate a reference point against which the problem threshold will be calculated. DOM Baseline monitoring enables you to do just that:
 
 
 
@@ -1694,7 +1896,7 @@ function Domonitor() {
                         <div className="">
                           <div className="col-md-12">
                             <div className="check-domonitor">
-                              <ul>
+                              <ul className="MoniTor-sizE">
                                 <li className="d-flex">
                                   <img
                                     style={{ width: "23px", height: "23px" }}
@@ -1822,16 +2024,16 @@ function Domonitor() {
                     <h1 className="qualityhead">Receive problem Alerts</h1>
                     <p className="qualitymatter text-justify">
                       Use multiple
-                      <span className="color-contain"> messaging</span> channels
+                      messaging channels
                       to notify the responsible person or people about the
                       different kinds of events occurring in your environment:
                     </p>
                     <div className="sectioncards-domonitor">
                       <div className="sectioncard-domonitor-2">
-                        <div className="row">
+                        <div className="row DO-MONITOR-alerts-PROBLEM">
                           <div className="col-md-6">
                             <div className="check-domonitor">
-                              <ul>
+                              <ul className="MoniTor-sizE">
                                 <li className="d-flex">
                                   <img
                                     style={{ width: "23px", height: "23px" }}
@@ -1839,10 +2041,10 @@ function Domonitor() {
                                     alt="..."
                                   />
                                   <p className="section-card-para-dom">
-                                    <span className="color-contain">
+                                    
                                       Alerting systems
-                                    </span>
-                                    <ul className="d-flex">
+                                    
+                                    <ul  className="d-flex MoniTor-sizE">
                                       <div className="list-type">
                                         <li>VictorOPS</li>
                                         <li>Opsgenie</li>
@@ -1888,7 +2090,7 @@ function Domonitor() {
                           </div>
                           <div className="col-md-6">
                             <div className="check-domonitor">
-                              <ul>
+                              <ul className="MoniTor-sizE">
                                 <li className="d-flex">
                                   <img
                                     style={{ width: "23px", height: "23px" }}
@@ -1896,10 +2098,9 @@ function Domonitor() {
                                     alt="..."
                                   />
                                   <p className="section-card-para-dom">
-                                    <span className="color-contain">
                                       communication platforms:
-                                    </span>
-                                    <ul className="d-flex">
+                                   
+                                    <ul className="d-flex MoniTor-sizE">
                                       <div className="list-type">
                                         <li>Slack</li>
                                         <li style={{ fontSize: "15px" }}>
@@ -1933,7 +2134,7 @@ function Domonitor() {
                       </div>
                     </div>
                   </div>
-                  <div className="col-md-5 mt-5">
+                  <div className="col-md-5 mt-5 last-point">
                     <img
                       src="images/messages.png"
                       alt="#"
@@ -1961,7 +2162,7 @@ function Domonitor() {
                       <div className="row">
                         <div className="col-md-6">
                           <div className="check-domonitor">
-                            <ul>
+                            <ul className="MoniTor-sizE">
                               <li className="d-flex">
                                 <img
                                   style={{ width: "23px", height: "23px" }}
@@ -1970,7 +2171,7 @@ function Domonitor() {
                                 />
                                 <p className="section-card-para-dom">
                                   Customize messages based on issue type and the{" "}
-                                  <span className="color-contain">role</span> of
+                                  role of
                                   the recipient
                                 </p>
                               </li>
@@ -1982,9 +2183,9 @@ function Domonitor() {
                                 />
                                 <p className="section-card-para-dom">
                                   Enrich messages with any runtime and
-                                  <span className="color-contain">
+                                 
                                     inventory
-                                  </span>{" "}
+                                  {" "}
                                   information
                                 </p>
                               </li>
@@ -1993,7 +2194,7 @@ function Domonitor() {
                         </div>
                         <div className="col-md-6">
                           <div className="check-domonitor">
-                            <ul>
+                            <ul className="MoniTor-sizE">
                               <li className="d-flex">
                                 <img
                                   style={{ width: "23px", height: "23px" }}
@@ -2002,7 +2203,7 @@ function Domonitor() {
                                 />
                                 <p className="section-card-para-dom">
                                   Send scheduled PDF{" "}
-                                  <span className="color-contain">reports</span>{" "}
+                                  reports{" "}
                                   for insight and long term analysis of data
                                 </p>
                               </li>
@@ -2037,14 +2238,14 @@ function Domonitor() {
                       depending on the required workflow. From simple
                       notifications and escalations to different users, to
                       delayed notifications and{" "}
-                      <span className="color-contain">automatic</span> issue
+                     automatic issue
                       remediation:
                     </p>
                     <div className="sectioncards-domonitor">
                       <div className="row">
                         <div className="col-md-6">
                           <div className="check-domonitor">
-                            <ul>
+                            <ul className="MoniTor-sizE">
                               <li className="d-flex">
                                 <img
                                   style={{ width: "23px", height: "23px" }}
@@ -2090,7 +2291,7 @@ function Domonitor() {
                         </div>
                         <div className="col-md-6">
                           <div className="check-domonitor">
-                            <ul>
+                            <ul className="MoniTor-sizE">
                               <li className="d-flex">
                                 <img
                                   style={{ width: "23px", height: "23px" }}
@@ -2158,10 +2359,10 @@ function Domonitor() {
                 <div className="row">
                   <div className="col-md-7 qualitypara">
                     <h1 className="qualityhead">
-                      Let Zabbix resolve your issues automatically
+                      Let DOM resolve your issues automatically
                     </h1>
                     <p className="qualitymatter text-justify">
-                      With Zabbix you can not only receive a notification about
+                      With DOM you can not only receive a notification about
                       a problem but also automatically resolve it. A remediation
                       script or command can be executed to attempt and resolve
                       the issue:
@@ -2174,7 +2375,7 @@ function Domonitor() {
                       <div className="row">
                         <div className="col-md-6">
                           <div className="check-domonitor">
-                            <ul>
+                            <ul className="MoniTor-sizE">
                               <li className="d-flex">
                                 <img
                                   style={{ width: "23px", height: "23px" }}
@@ -2200,7 +2401,7 @@ function Domonitor() {
                         </div>
                         <div className="col-md-6">
                           <div className="check-domonitor">
-                            <ul>
+                            <ul className="MoniTor-sizE">
                               <li className="d-flex">
                                 <img
                                   style={{ width: "23px", height: "23px" }}
@@ -2244,7 +2445,7 @@ function Domonitor() {
         <div  className="detectprob-domonitor">
           <div className="container pt-5 mt-3 ">
             <div>
-              <h2 style={{ textAlign: "center" }}>
+              <h2 className="do-point" style={{ textAlign: "center" }}>
                 Gain additional insights and extend observability by powerful
                 data visualization
               </h2>
@@ -2391,15 +2592,15 @@ function Domonitor() {
                               />
                               <p className="section-card-para-dom">
                                 Display metrics,
-                                <span className="color-contain">
+                               
                                   {" "}
                                   problems,{" "}
-                                </span>{" "}
+                                {" "}
                                 infrastructure and
-                                <span className="color-contain">
+                               
                                   {" "}
                                   geo maps
-                                </span>{" "}
+                                {" "}
                                 on your dashboards
                               </p>
                             </li>
@@ -2411,7 +2612,7 @@ function Domonitor() {
                               />
                               <p className="section-card-para-dom">
                                 Display your current business service{" "}
-                                <span className="color-contain">SLA</span>{" "}
+                                SLA{" "}
                                 information on your dashboards
                               </p>
                             </li>
@@ -2440,7 +2641,7 @@ function Domonitor() {
                 >
                   <div className="row">
                     <div className="col-md-7 qualitypara">
-                      <h2>Analyze and correlate metrics with graphs</h2>
+                      <h2 className="new-text1">Analyze and correlate metrics with graphs</h2>
                       <p className="qualitymatter text-justify">
                         Define custom graphs or access ad-hoc graphs with a
                         click of a button:
@@ -2450,7 +2651,7 @@ function Domonitor() {
                           <div className="row">
                             <div className="col-md-6">
                               <div className="check-domonitor">
-                                <ul>
+                                <ul className="MoniTor-sizE">
                                   <li className="d-flex">
                                     <img
                                       style={{ width: "23px", height: "23px" }}
@@ -2497,7 +2698,7 @@ function Domonitor() {
                             </div>
                             <div className="col-md-6">
                               <div className="check-domonitor">
-                                <ul>
+                                <ul className="MoniTor-sizE">
                                   <li className="d-flex">
                                     <img
                                       style={{ width: "23px", height: "23px" }}
@@ -2547,7 +2748,7 @@ function Domonitor() {
                         </div>
                       </div>
                     </div>
-                    <div className="col-md-5 mt-5">
+                    <div className="col-md-5 mt-5 last-point">
                       <img
                         src="images/dashboard.png"
                         alt="#"
@@ -2564,17 +2765,17 @@ function Domonitor() {
                 >
                   <div className="row">
                     <div className="col-md-7 qualitypara">
-                      <h4>
+                      <h2 className="new-text">
                         Keep track of your monitoring targets on an interactive
                         geo-map
-                      </h4>
+                      </h2>
 
                       <div>
                         <div className="sectioncard-domonitor-2">
                           <div className="row">
                             <div className="col-md-6">
                               <div className="check-domonitor">
-                                <ul>
+                                <ul className="MoniTor-sizE">
                                   <li className="d-flex">
                                     <img
                                       style={{ width: "23px", height: "23px" }}
@@ -2593,7 +2794,7 @@ function Domonitor() {
                                     />
                                     <p className="section-card-para-dom">
                                       Display a geographical overview of your
-                                      environment on Zabbix dashboards
+                                      environment on DOM dashboards
                                     </p>
                                   </li>
                                   <li className="d-flex">
@@ -2612,7 +2813,7 @@ function Domonitor() {
                             </div>
                             <div className="col-md-6">
                               <div className="check-domonitor">
-                                <ul>
+                                <ul className="MoniTor-sizE">
                                   <li className="d-flex">
                                     <img
                                       style={{ width: "23px", height: "23px" }}
@@ -2642,7 +2843,7 @@ function Domonitor() {
                         </div>
                       </div>
                     </div>
-                    <div className="col-md-5 mt-5">
+                    <div className="col-md-5 mt-5 last-point1">
                       <img
                         src="images/geomaps.png"
                         alt="#"
@@ -2659,18 +2860,18 @@ function Domonitor() {
                 >
                   <div className="row">
                     <div className="col-md-7 qualitypara">
-                      <h2>Present status of your infrastructure on maps</h2>
+                      <h2 className="new-text1">Present status of your infrastructure on maps</h2>
                       <p className="qualitymatter text-justify">
                         Display statuses of your elements together with real
                         time data to get a detailed overview of your
-                        infrastructure on a Zabbix map:
+                        infrastructure on a DOM map:
                       </p>
                       <div>
                         <div className="sectioncard-domonitor-2">
                           <div className="row">
                             <div className="col-md-6">
                               <div className="check-domonitor">
-                                <ul>
+                                <ul className="MoniTor-sizE">
                                   <li className="d-flex">
                                     <img
                                       style={{ width: "23px", height: "23px" }}
@@ -2718,7 +2919,7 @@ function Domonitor() {
                             </div>
                             <div className="col-md-6">
                               <div className="check-domonitor">
-                                <ul>
+                                <ul className="MoniTor-sizE">
                                   <li className="d-flex">
                                     <img
                                       style={{ width: "23px", height: "23px" }}
@@ -2768,7 +2969,7 @@ function Domonitor() {
                         </div>
                       </div>
                     </div>
-                    <div className="col-md-5 mt-5">
+                    <div className="col-md-5 mt-5 infrastructure">
                       <img
                         src="images/infra-maps.png"
                         alt="#"
@@ -2785,7 +2986,7 @@ function Domonitor() {
                 >
                   <div className="row">
                     <div className="col-md-7 qualitypara">
-                      <h2>Generate scheduled PDF reports</h2>
+                      <h2 className="new-text1">Generate scheduled PDF reports</h2>
                       <p className="qualitymatter text-justify">
                         Receive scheduled PDF reports providing useful
                         statistics of your environment:
@@ -2828,8 +3029,8 @@ function Domonitor() {
                               </li>
                             </ul>
                             <p className="gainparain-domonitor">
-                              Now any Zabbix{" "}
-                              <span className="color-contain">dashboard</span>{" "}
+                              Now any DOM{" "}
+                              dashboard{" "}
                               can be turned into a PDF report!
                             </p>
                           </div>
@@ -2853,12 +3054,12 @@ function Domonitor() {
                 >
                   <div className="row">
                     <div className="col-md-7 qualitypara">
-                      <h4>
-                        Extend Zabbix frontend and create custom dashboard
+                      <h2 className="new-text1">
+                        Extend DOM frontend and create custom dashboard
                         widgets
-                      </h4>
+                      </h2>
                       <p className="qualitymatter text-justify">
-                        Extend the native Zabbix frontend functionality by
+                        Extend the native DOM frontend functionality by
                         developing your own frontend widgets and modules:
                       </p>
                       <div>
@@ -2899,8 +3100,8 @@ function Domonitor() {
                               </li>
                             </ul>
                             <p className="gainparain-domonitor">
-                              Learn how to extend Zabbix frontend and create
-                              your own widgets and modules by visiting Zabbix
+                              Learn how to extend DOM frontend and create
+                              your own widgets and modules by visiting DOM
                               Developer Center:
                             </p>
                             <ul>
@@ -2912,7 +3113,7 @@ function Domonitor() {
                                 />
                                 <p className="section-card-para-dom">
                                   Learn from a selection of examples provided by
-                                  Zabbix developers
+                                  DOM developers
                                 </p>
                               </li>
                               <li className="d-flex">
@@ -2922,7 +3123,7 @@ function Domonitor() {
                                   alt="..."
                                 />
                                 <p className="section-card-para-dom">
-                                  Write your first Zabbix module or widget by
+                                  Write your first DOM module or widget by
                                   following a step-by-step tutorial
                                 </p>
                               </li>
@@ -2942,7 +3143,7 @@ function Domonitor() {
                         </div>
                       </div>
                     </div>
-                    <div className="col-md-5 mt-5">
+                    <div className="col-md-5 mt-5 domonitpr-top">
                       <img
                         src="images/custom-dash.png"
                         alt="#"
@@ -3020,7 +3221,7 @@ function Domonitor() {
                       Create flexible widget based dashboards
                     </h3>
                     <p className="sectionpara-domonitor">
-                      Zabbix web UI provides multiple ways of presenting a
+                      DOM web UI provides multiple ways of presenting a
                       visual overview of your IT environment:
                     </p>
                     <div>
@@ -3029,7 +3230,7 @@ function Domonitor() {
                           <div className="row">
                             <div className="col-md-6">
                               <div className="check-domonitor">
-                                <ul>
+                                <ul className="MoniTor-sizE">
                                   <li className="d-flex">
                                     <img
                                       style={{ width: "23px", height: "23px" }}
@@ -3076,7 +3277,7 @@ function Domonitor() {
                             </div>
                             <div className="col-md-6">
                               <div className="check-domonitor">
-                                <ul>
+                                <ul className="MoniTor-sizE">
                                   <li className="d-flex">
                                     <img
                                       style={{ width: "23px", height: "23px" }}
@@ -3095,9 +3296,9 @@ function Domonitor() {
                                     />
                                     <p className="section-card-para-dom">
                                       Flexible{" "}
-                                      <span className="color-contain">
+                                      
                                         graphs
-                                      </span>{" "}
+                                      {" "}
                                       capable of displaying regular and
                                       aggregate data
                                     </p>
@@ -3110,7 +3311,7 @@ function Domonitor() {
                                     />
                                     <p className="section-card-para-dom">
                                       Create{" "}
-                                      <span className="color-contain">map</span>{" "}
+                                     map{" "}
                                       hierarchy trees and use them to navigate
                                       through your infrastructure
                                     </p>
@@ -3136,9 +3337,9 @@ function Domonitor() {
                               Each of the dashboard elements is extremely
                               flexible and supports multiple view, filters and
                               respects user{" "}
-                              <span className="color-contain">
+                              
                                 permissions:
-                              </span>
+                              
                             </p>
                           </div>
 
@@ -3209,7 +3410,7 @@ function Domonitor() {
                       environments
                     </h3>
                     <p className="sectionpara-domonitor">
-                      Deploy Zabbix as the central point of monitoring for
+                      Deploy DOM as the central point of monitoring for
                       multiple organizations:
                     </p>
                     <div>
@@ -3218,7 +3419,7 @@ function Domonitor() {
                           <div className="row">
                             <div className="col-md-6">
                               <div className="check-domonitor">
-                                <ul>
+                                <ul className="MoniTor-sizE">
                                   <li className="d-flex">
                                     <img
                                       style={{ width: "23px", height: "23px" }}
@@ -3238,11 +3439,11 @@ function Domonitor() {
                                     />
                                     <p className="section-card-para-dom">
                                       Define
-                                      <span className="color-contain">
-                                        {" "}
-                                        user roles
-                                      </span>{" "}
-                                      to control user access to different Zabbix
+                                      
+                                      
+                                         user roles
+                                     
+                                      to control user access to different DOM
                                       functions
                                     </p>
                                   </li>
@@ -3251,7 +3452,7 @@ function Domonitor() {
                             </div>
                             <div className="col-md-6">
                               <div className="check-domonitor">
-                                <ul>
+                                <ul className="MoniTor-sizE">
                                   <li className="d-flex">
                                     <img
                                       style={{ width: "23px", height: "23px" }}
@@ -3260,9 +3461,9 @@ function Domonitor() {
                                     />
                                     <p className="section-card-para-dom">
                                       Create unique dashboards, maps and{" "}
-                                      <span className="color-contain">
+                                     
                                         templates
-                                      </span>{" "}
+                                      
                                       for different tenants
                                     </p>
                                   </li>
@@ -3275,9 +3476,9 @@ function Domonitor() {
                                     <p className="section-card-para-dom">
                                       Keep your tenants up to date with their
                                       environment by configuring scheduled{" "}
-                                      <span className="color-contain">
+                                     
                                         reports
-                                      </span>
+                                    
                                     </p>
                                   </li>
                                 </ul>
@@ -3326,7 +3527,7 @@ function Domonitor() {
                           />
                           <p className="section-card-para-dom">
                             Use collected{" "}
-                            <span className="color-contain">metrics</span> to
+                            metrics  to
                             provide inventory information about your hosts
                           </p>
                         </li>
@@ -3337,8 +3538,8 @@ function Domonitor() {
                             alt="..."
                           />
                           <p className="section-card-para-dom">
-                            Combine native inventory data collection with Zabbix{" "}
-                            <span className="color-contain">API</span> to
+                            Combine native inventory data collection with DOM{" "}
+                           API to
                             provide additional inventory data
                           </p>
                         </li>
@@ -3361,7 +3562,7 @@ function Domonitor() {
                           />
                           <p className="section-card-para-dom">
                             Provide and keep track of{" "}
-                            <span className="color-contain">geo-map</span>{" "}
+                           geo-map{" "}
                             monitoring target coordinates
                           </p>
                         </li>
@@ -3487,7 +3688,7 @@ function Domonitor() {
                                 alt="..."
                               />
                               <p className="section-card-para-dom">
-                                Close any related incoming <a href="#problem_detection">problems</a> if the root cause is not resolved
+                                Close any related incoming problems if the root cause is not resolved
                               </p>
                             </div>
                             
@@ -3551,7 +3752,7 @@ function Domonitor() {
                                 alt="..."
                               />
                               <p className="section-card-para-dom">
-                                Define and monitor business service <a href="#sla_monitoring">SLA</a> levels
+                                Define and monitor business service SLA levels
                               </p>
                             </div>
                             <div className="check-domonitor">
@@ -3595,7 +3796,7 @@ function Domonitor() {
                             </div>
                           </div>
                        </div>
-                      <p>Business services provide full support for <a href="#multitalent">multi-talent</a> environments with a flexible permission schema:
+                      <p>Business services provide full support for multi-talent environments with a flexible permission schema:
                             </p>
                             <div className="row">
                            <div className="col-md-6">
@@ -3605,7 +3806,7 @@ function Domonitor() {
                                 alt="..."
                               />
                               <p className="section-card-para-dom">
-                              Define <a href="#user-roles">roles</a>  with limited access to particular services
+                              Define roles  with limited access to particular services
                               </p>
                             </div>
                            </div>
@@ -3616,7 +3817,7 @@ function Domonitor() {
                                 alt="..."
                               />
                               <p className="section-card-para-dom">
-                              Secure your roles with read or write  <a href="#permissions">permissions</a> for your service trees
+                              Secure your roles with read or write  permissions for your service trees
                               </p>
                             </div>
                            </div>
@@ -3711,7 +3912,7 @@ function Domonitor() {
                               src="/images/Mask groupdomonitor.png"
                               alt="..."
                             />
-                            <p> Decrease SLA when either single or all of the components of a service are in a <a href="#problem_detection">problem</a> state
+                            <p> Decrease SLA when either single or all of the components of a service are in a problem state
                             </p>
                           </div>
 
@@ -3720,7 +3921,7 @@ function Domonitor() {
                               src="/images/Mask groupdomonitor.png"
                               alt="..."
                             />
-                            <p> Decrease SLA when either single or all of the components of a service are in a <a href="#problem_detection">problem</a> state
+                            <p> Decrease SLA when either single or all of the components of a service are in a problem state
                             </p>
                           </div>
                         </div>
@@ -3738,7 +3939,7 @@ function Domonitor() {
                               src="/images/Mask groupdomonitor.png"
                               alt="..."
                             />
-                            <p> Decrease SLA when either single or all of the components of a service are in a <a href="#problem_detection">problem</a> state
+                            <p> Decrease SLA when either single or all of the components of a service are in a problem state
                             </p>
                           </div>
 
@@ -3767,7 +3968,7 @@ function Domonitor() {
       <section id="integration" className="seven">
         <div  className="container">
           <h2 className="section1head">
-            Seamlessly deploy Zabbix within your infrastructure
+            Seamlessly deploy DOM within your infrastructure
           </h2>
           <div className="pillarnavs mt-4">
             <ul
@@ -3884,10 +4085,10 @@ function Domonitor() {
                 <div className="row">
                   <div className="col-md-7">
                     <h2 className="sectionhead-domonitor">
-                      Integrate Zabbix with existing system
+                      Integrate DOM with existing system
                     </h2>
                     <p className="sectionpara-domonitor">
-                      <a href="https://www.zabbix.com/integrations?cat=official_templates">out of the box</a> monitoring for leading software and hardware vendors:
+                     out of the box monitoring for leading software and hardware vendors:
                     </p>
                     <div>
                       <div className="sectioncard-domonitor-4-1">
@@ -4025,7 +4226,7 @@ function Domonitor() {
                       <div className="sectioncard-domonitor-5">
                         <div className="container sectioncardm-domonitor">
                           <p>
-                            With Zabbix you can improve monitoring and problem remediation workflows for your DevOPS and ITOps teams. Integrate Zabbix with your existing systems:
+                            With DOM you can improve monitoring and problem remediation workflows for your DevOPS and ITOps teams. Integrate DOM with your existing systems:
                           </p>
                           <div className="row">
                             <div className="col-md-6">
@@ -4039,7 +4240,7 @@ function Domonitor() {
                                     />
                                   </span>
                                   <p className="section-card-para-dom">
-                                    Monitor your Docker <a href="https://www.zabbix.com/integrations?cat=containers">containers</a>
+                                    Monitor your Docker containers
                                   </p>
                                 </li>
                                 <li>
@@ -4052,7 +4253,7 @@ function Domonitor() {
                                   </span>
                                   <span className="section-card-para-dom">
                                     {" "}
-                                    <a href="https://www.zabbix.com/integrations?cat=web">web</a> server backends - IIS,Apache, Nginx and more
+                       web server backends - IIS,Apache, Nginx and more
                                   </span>
                                 </li>
                                 <li className="d-flex">
@@ -4064,7 +4265,7 @@ function Domonitor() {
                                     />
                                   </span>
                                   <p className="section-card-para-dom">
-                                    <a href="https://www.zabbix.com/integrations?cat=databases"> Database </a> backends such as MySQL, PostgreSQL, Microsoft SQL, MongoDB and more
+                                   Database  backends such as MySQL, PostgreSQL, Microsoft SQL, MongoDB and more
                                   </p>
                                 </li>
                               </ul>
@@ -4080,7 +4281,7 @@ function Domonitor() {
                                     />
                                   </span>
                                   <p className="section-card-para-dom">
-                                    Monitor any <a href="https://www.zabbix.com/integrations?cat=os">operating system</a> Linux, Windows,
+                                    Monitor any operating system Linux, Windows,
                                     Solaris, BSD,MacOS and more
                                   </p>
                                 </li>
@@ -4093,7 +4294,7 @@ function Domonitor() {
                                     />
                                   </span>
                                   <p className="section-card-para-dom">
-                                    <a href="https://www.zabbix.com/integrations?cat=clouds">Cloud services</a>  such as AWS, Amazon cloud,
+                                   Cloud services  such as AWS, Amazon cloud,
                                     Google cloud and more
                                   </p>
                                 </li>
@@ -4106,7 +4307,7 @@ function Domonitor() {
                                     />
                                   </span>
                                   <span className="section-card-para-dom">
-                                    <a href="https://www.zabbix.com/integrations?cat=telephony">IP telephony</a>  services
+                                   IP telephony  services
                                   </span>
                                 </li>
                               </ul>
@@ -4139,7 +4340,7 @@ function Domonitor() {
                       Forward alerts to ITSM and messaging systems
                     </h2>
                     <p className="sectionpara-domonitor">
-                      Out of the box integrations with leading <a href="https://www.zabbix.com/integrations?cat=helpdesks">ISTM systems</a>
+                      Out of the box integrations with leading ISTM systems
                     </p>
                     <div>
                       <div className="sectioncard-domonitor-4-1">
@@ -4250,7 +4451,7 @@ function Domonitor() {
                       <div className="sectioncard-domonitor-5">
                         <div className="container sectioncardm-domonitor">
                           <p>
-                            Integrations are provided in a form of customizable JavaScript <a href="https://www.zabbix.com/documentation/current/en/manual/config/notifications/media/webhook">Webhooks</a>
+                            Integrations are provided in a form of customizable JavaScript Webooks
                           </p>
                           <div className="row">
                             <div className="col-md-6">
@@ -4277,7 +4478,7 @@ function Domonitor() {
                                   </span>
                                   <span className="section-card-para-dom">
                                     {" "}
-                                    Import an integration from the <a href="https://www.zabbix.com/community">community</a> share                                 </span>
+                                    Import an integration from the community share                                 </span>
                                 </li>
 
                               </ul>
@@ -4293,7 +4494,7 @@ function Domonitor() {
                                     />
                                   </span>
                                   <p className="section-card-para-dom">
-                                    Export your custom integration and share it with the Zabbix community
+                                    Export your custom integration and share it with the DOM community
                                   </p>
                                 </li>
 
@@ -4329,7 +4530,7 @@ function Domonitor() {
                         alt="..."
                       />
                       <p className="section-card-para-dom">
-                        Automatic <a href="network-discovery">Discovery</a>and monitoring of Kubernetes nodes and pods                              </p>
+                        Automatic Discovery and monitoring of Kubernetes nodes and pods                              </p>
                     </div>
                     <div className="check-domonitor">
                       <img
@@ -4337,7 +4538,7 @@ function Domonitor() {
                         alt="..."
                       />
                       <p className="section-card-para-dom">
-                        Create dashboard to <a href="data-visualization">visualize</a>  the status of your Kubernetes nodes and pod
+                        Create dashboard to  visualize  the status of your Kubernetes nodes and pod
                       </p>
                     </div>
                     <p className="sectionpara-domonitor">
@@ -4384,7 +4585,7 @@ function Domonitor() {
                       </p>
                     </div>
                     <p className="qualityhead">
-                      Zabbix is also capable of monitoring pods, nodes and Kubernetes components in the <a href="https://www.zabbix.com/cloud_images">Redhat OpenShift</a> container infrastructures.
+                      DOM is also capable of monitoring pods, nodes and Kubernetes components in the Redhat OpenShift  container infrastructures.
                     </p>
                   </div>
                   <div className="col-md-5 deploy-3rd-div">
@@ -4408,7 +4609,7 @@ function Domonitor() {
                 <div className="row">
                   <div className="col-md-7 qualitypara">
                     <h1 className="qualityhead">
-                      Seamlessly deploy Zabbix within your infrastructure
+                      Seamlessly deploy DOM within your infrastructure
                     </h1>
                     <p className="qualitymatter text-justify">
                       Platform-agnostic out-of-the-box cloud monitoring:
@@ -4428,7 +4629,7 @@ function Domonitor() {
                         alt="..."
                       />
                       <p className="section-card-para-dom">
-                        Leverage Zabbix discovery features to improve the observability of your cloud environment                              </p>
+                        Leverage DOM discovery features to improve the observability of your cloud environment                              </p>
                     </div>
                     <div className="check-domonitor">
                       <img
@@ -4444,9 +4645,9 @@ function Domonitor() {
                         alt="..."
                       />
                       <p className="section-card-para-dom">
-                        Represent your cloud infrastructure in a single pane of glass view with Zabbix maps and dashboards                              </p>
+                        Represent your cloud infrastructure in a single pane of glass view with DOM maps and dashboards                              </p>
                     </div>
-                    <p>Monitor your AWS cloud environment with the official Zabbix templates:</p>
+                    <p>Monitor your AWS cloud environment with the official DOM templates:</p>
                     <div className="check-domonitor">
                       <img
                         src="/images/Mask groupdomonitor.png"
@@ -4479,7 +4680,7 @@ function Domonitor() {
                       <p className="section-card-para-dom">
                         Collect information about your AWS S3 buckets and receive notifications about alarm state changes                              </p>
                     </div>
-                    <p>Monitor your Microsoft Azure cloud deployments with the official Zabbix templates:</p>
+                    <p>Monitor your Microsoft Azure cloud deployments with the official DOM templates:</p>
                     <div className="check-domonitor">
                       <img
                         src="/images/Mask groupdomonitor.png"
@@ -4521,7 +4722,7 @@ function Domonitor() {
                     </h1>
                     <p className="qualitymatter text-justify">
 
-                      Connect Zabbix to your VMware instance and automatically discover VMware guests, clusters, hypervisors and datastores:
+                      Connect DOM to your VMware instance and automatically discover VMware guests, clusters, hypervisors and datastores:
                     </p>
 
                     <div className="row">
@@ -4667,7 +4868,7 @@ function Domonitor() {
                           </ul>
                         </div>
                       </div>
-                      <p className="qualitymatter text-justify">Zabbix also provides an official template for VMWare SD-WAN VeloCloud component discovery and monitoring:
+                      <p className="qualitymatter text-justify">DOM also provides an official template for VMWare SD-WAN VeloCloud component discovery and monitoring:
 
                       </p>
                       <div>
@@ -4729,11 +4930,11 @@ function Domonitor() {
                 <div className="row">
                   <div className="col-md-7 qualitypara">
                     <h1 className="qualityhead">
-                      Customize your integration with Zabbix API
+                      Customize your integration with DOM API
                     </h1>
                     <p className="qualitymatter text-justify">
 
-                      Create automation workflows and integrate with other systems using well- <a href="https://www.zabbix.com/documentation/current/en/manual/api">documented</a>
+                      Create automation workflows and integrate with other systems using well-documented
                     </p>
                     <p className="qualitymatter text-justify">
                       JSON RPC API:
@@ -4751,7 +4952,7 @@ function Domonitor() {
                               />
                             </span>
                             <span className="section-card-para-dom">
-                              Automate Zabbix management via API
+                              Automate DOM management via API
                             </span>
                           </li>
                           <li>
@@ -4775,7 +4976,7 @@ function Domonitor() {
                               />
                             </span>
                             <span className="section-card-para-dom">
-                              Create new applications to work with Zabbix
+                              Create new applications to work with DOM
                             </span>
                           </li>
                           <li>
@@ -4787,7 +4988,7 @@ function Domonitor() {
                               />
                             </span>
                             <span className="section-card-para-dom">
-                              Integrate Zabbix with third party software: Configuration management, <a className="https://www.zabbix.com/integrations?cat=helpdesks">ticketing</a> systems
+                              Integrate DOM with third party software: Configuration management, <a className="https://www.DOM.com/integrations?cat=helpdesks">ticketing</a> systems
                             </span>
                           </li>
                         </ul>
@@ -4825,7 +5026,7 @@ function Domonitor() {
                   </div>
                   <div className="col-md-5 deploy-5-img-div">
                     <img
-                      src="images/api-zabbix.png"
+                      src="images/api-DOM.png"
                       alt="#"
                       className="qualityimgclass"
                     />
@@ -4844,7 +5045,7 @@ function Domonitor() {
                     <h1 className="qualityhead">Stream metrics and events over HTTP</h1>
                     <p className="qualitymatter text-justify">
 
-                      Make Zabbix a part of your data pipeline:
+                      Make DOM a part of your data pipeline:
 
                     </p>
                     <div className="check-domonitor">
@@ -4853,7 +5054,7 @@ function Domonitor() {
                         alt="..."
                       />
                       <p className="section-card-para-dom">
-                        Stream Zabbix metrics and events to message brokers like Amazon SQS, Kafka, RabbitMQ and Amazon Kinesis
+                        Stream DOM metrics and events to message brokers like Amazon SQS, Kafka, RabbitMQ and Amazon Kinesis
                       </p>
                     </div>
                     <div className="check-domonitor">
@@ -4862,7 +5063,7 @@ function Domonitor() {
                         alt="..."
                       />
                       <p className="section-card-para-dom">
-                        React to Zabbix events and automatically adapt your system behavior accordingly
+                        React to DOM events and automatically adapt your system behavior accordingly
                       </p>
                     </div>
                     <div className="check-domonitor">
@@ -4880,7 +5081,7 @@ function Domonitor() {
                         alt="..."
                       />
                       <p className="section-card-para-dom">
-                        Zabbix data and events can also be exported to a file in real-time
+                        DOM data and events can also be exported to a file in real-time
                       </p>
 
                     </div>
@@ -5030,8 +5231,8 @@ function Domonitor() {
                         Encrypt communication between DO Monitor Components
                       </h2>
                       <p className="sectionpara-domonitor">
-                        Zabbix supports encrypting any communication stream
-                        between different Zabbix components:
+                        DOM supports encrypting any communication stream
+                        between different DOM components:
                       </p>
                       <div className="sectioncards-domonitor">
                         <div className="sectioncard-domonitor-3">
@@ -5042,8 +5243,8 @@ function Domonitor() {
                                 alt="..."
                               />
                               <p className="section-card-para-dom">
-                                All communications between various Zabbix
-                                components (such as Zabbix server, proxies,
+                                All communications between various DOM
+                                components (such as DOM server, proxies,
                                 agents and command-line utilities) support TLS
                                 protocol
                               </p>
@@ -5080,7 +5281,7 @@ function Domonitor() {
                               <p className="section-card-para-dom">
                                 All sensitive information is encrypted and can
                                 be stored in an external{" "}
-                                <a href="secret_values">secret</a> for
+                               secret for
                                 additional security
                               </p>
                             </div>
@@ -5121,10 +5322,10 @@ function Domonitor() {
                         Restrict access with a flexible permission schema
                       </h2>
                       <p className="sectionpara-domonitor">
-                        Zabbix provides a flexible user permission schema which
+                        DOM provides a flexible user permission schema which
                         can be efficiently used to manage user permissions
-                        within one Zabbix installation or in a{" "}
-                        <a href="#remote_monitoring">Distributed</a> environment{" "}
+                        within one DOM installation or in a{" "}
+                      Distributed environment{" "}
                       </p>
                       <p className="sectionpara-domonitor">
                         You can define three levels of permissions:
@@ -5179,7 +5380,7 @@ function Domonitor() {
                                 alt="..."
                               />
                               <p className="section-card-para-dom">
-                                Zabbix User have read-only permissions on
+                                DOM User have read-only permissions on
                                 collected data and Events
                               </p>
                             </div>
@@ -5189,7 +5390,7 @@ function Domonitor() {
                                 alt="..."
                               />
                               <p className="section-card-para-dom">
-                                Zabbix Admins can manage your monitoring
+                                DOM Admins can manage your monitoring
                                 configuration and read the collected data and
                                 events
                               </p>
@@ -5204,9 +5405,9 @@ function Domonitor() {
                                 alt="..."
                               />
                               <p className="section-card-para-dom">
-                                Zabbix Super Admins are capable of managing
-                                Zabbix instance configuration, in addition to
-                                having Zabbix Admin privileges
+                                DOM Super Admins are capable of managing
+                                DOM instance configuration, in addition to
+                                having DOM Admin privileges
                               </p>
                             </div>
                           </div>
@@ -5241,7 +5442,7 @@ function Domonitor() {
                         environment.
                       </p>
                       <p className="sectionpara-domonitor">
-                        User roles also enable you to Hide or show Zabbix UI
+                        User roles also enable you to Hide or show DOM UI
                         elements to fit the needs of your users and customers.
                       </p>
                       <div className="sectioncards-domonitor">
@@ -5277,7 +5478,7 @@ function Domonitor() {
                               />
                               <p className="section-card-para-dom">
                                 Create an allow or deny list for specific{" "}
-                                <a href="#api">API</a> method
+                               API method
                               </p>
                             </div>
                           </div>
@@ -5307,8 +5508,8 @@ function Domonitor() {
                         Authenticate users by utilizing existing infrastructure
                       </h2>
                       <p className="sectionpara-domonitor">
-                        Integrate Zabbix together with your existing
-                        authentication mechanisms. Zabbix supports a variety of
+                        Integrate DOM together with your existing
+                        authentication mechanisms. DOM supports a variety of
                         authentication methods:{" "}
                       </p>
 
@@ -5321,7 +5522,7 @@ function Domonitor() {
                                 alt="..."
                               />
                               <p className="section-card-para-dom">
-                                Internal Zabbix logins
+                                Internal DOM logins
                               </p>
                             </div>
                             <div className="check-domonitor">
@@ -5398,7 +5599,7 @@ function Domonitor() {
                         With native support for HTTP, LDAP and SAML
                         authentication you can provide an additional layer of
                         security and improve the user experience while working
-                        with Zabbix.
+                        with DOM.
                       </p>
                     </div>
 
@@ -5452,7 +5653,7 @@ function Domonitor() {
                               />
                               <p className="section-card-para-dom">
                                 Hidden information cannot be retrieved via{" "}
-                                <a href="#api">API</a>
+                              API
                               </p>
                             </div>
                           </div>
@@ -5545,7 +5746,7 @@ function Domonitor() {
                                 alt="..."
                               />
                               <p className="section-card-para-dom">
-                                Find out which user made changes to any Zabbix
+                                Find out which user made changes to any DOM
                                 entities{" "}
                               </p>
                             </div>
@@ -5556,7 +5757,7 @@ function Domonitor() {
                               />
                               <p className="section-card-para-dom">
                                 Tracks the IP address from which the user logged
-                                into Zabbix
+                                into DOM
                               </p>
                             </div>
                           </div>
@@ -5580,7 +5781,7 @@ function Domonitor() {
                               />
                               <p className="section-card-para-dom">
                                 Export full or filtered audit log via{" "}
-                                <a href="#api">API</a> for further analysis
+                               API for further analysis
                               </p>
                             </div>
                           </div>
@@ -5611,7 +5812,7 @@ function Domonitor() {
                       </h2>
                       <p className="sectionpara-domonitor">
                         Restrict access to sensitive information by limiting
-                        which <a href="#metric_collection">metric</a> can be
+                        which metric can be
                         collected in your environment:
                       </p>
                       <div className="sectioncards-domonitor">
@@ -5665,7 +5866,7 @@ function Domonitor() {
                                 alt="..."
                               />
                               <p className="section-card-para-dom">
-                                Restrict <a href="#encryption">unencrypted</a>{" "}
+                                Restrict unencrypted{" "}
                                 connections to your monitoring targets
                               </p>
                             </div>
@@ -5693,12 +5894,12 @@ function Domonitor() {
                   <div className="row">
                     <div className="col-md-7">
                       <h2 className="sectionhead-domonitor">
-                        Automatically provision your Zabbix users
+                        Automatically provision your DOM users
                       </h2>
                       <p className="sectionpara-domonitor">
                         Just-in-Time user provisioning enables you to integrate
-                        Zabbix with your existing LDAP or SAML infrastructure
-                        and automatically provision Zabbix users in a
+                        DOM with your existing LDAP or SAML infrastructure
+                        and automatically provision DOM users in a
                         centralized and secure way:
                       </p>
                       <div className="sectioncards-domonitor">
@@ -5875,11 +6076,11 @@ function Domonitor() {
                 <div className="row">
                   <div className="col-md-7">
                     <h2 className="sectionhead-domonitor">
-                      Install Zabbix in minutes
+                      Install DOM in minutes
                     </h2>
                     <p className="sectionpara-domonitor">
-                      Zabbix provides many different ways how you can deploy
-                      individual Zabbix components:
+                      DOM provides many different ways how you can deploy
+                      individual DOM components:
                     </p>
                     <div className="sectioncards-domonitor">
                       <div className="row">
@@ -5891,11 +6092,11 @@ function Domonitor() {
                             />
                             <p className="section-card-para-dom">
                               Use official
-                              <span className="color-contain"> packages</span> ,
-                              <span className="color-contain">docker</span> or{" "}
-                              <span className="color-contain">
+                              packages,
+                              docker or
+                              
                                 cloud images
-                              </span>{" "}
+                             
                               for fast deployment
                             </p>
                           </div>
@@ -5918,8 +6119,8 @@ function Domonitor() {
                             />
                             <p className="section-card-para-dom">
                               Deploy a PoC environment from a preconfigured
-                              virtual machine{" "}
-                              <span className="color-contain">appliance</span>{" "}
+                              virtual machine
+                             appliance
                               image
                             </p>
                           </div>
@@ -5950,10 +6151,10 @@ function Domonitor() {
                     </h3>
                     <p className="sectionpara-domonitor">
                       Vast selection of
-                      <span className="color-contain">
-                        {" "}
-                        out-of-the-box templates{" "}
-                      </span>{" "}
+                     
+                  
+                        out-of-the-box templates
+                    
                       provides the ability to immediately start monitoring your
                       infrastructure: :
                     </p>
@@ -5963,7 +6164,7 @@ function Domonitor() {
                           <div className="row">
                             <div className="col-md-6">
                               <div className="check-domonitor">
-                                <ul>
+                                <ul className="MoniTor-sizE">
                                   <li className="d-flex">
                                     <img
                                       style={{ width: "23px", height: "23px" }}
@@ -5993,7 +6194,7 @@ function Domonitor() {
                                       alt="..."
                                     />
                                     <p className="section-card-para-dom">
-                                      Use hundreds of templates built by Zabbix
+                                      Use hundreds of templates built by DOM
                                       community
                                     </p>
                                   </li>
@@ -6002,7 +6203,7 @@ function Domonitor() {
                             </div>
                             <div className="col-md-6">
                               <div className="check-domonitor">
-                                <ul>
+                                <ul className="MoniTor-sizE">
                                   <li className="d-flex">
                                     <img
                                       style={{ width: "23px", height: "23px" }}
@@ -6011,7 +6212,7 @@ function Domonitor() {
                                     />
                                     <p className="section-card-para-dom">
                                       Apply for the Professional template
-                                      building service from the Zabbix team
+                                      building service from the DOM team
                                     </p>
                                   </li>
                                   <li className="d-flex">
@@ -6059,7 +6260,7 @@ function Domonitor() {
                       Discover devices and services on your network
                     </h3>
                     <p className="sectionpara-domonitor">
-                      Zabbix will automatically scan your network and add
+                      DOM will automatically scan your network and add
                       discovered devices for monitoring:
                     </p>
                     <div>
@@ -6068,7 +6269,7 @@ function Domonitor() {
                           <div className="row">
                             <div className="col-md-6">
                               <div className="check-domonitor">
-                                <ul>
+                                <ul className="MoniTor-sizE">
                                   <li className="d-flex">
                                     <img
                                       style={{ width: "23px", height: "23px" }}
@@ -6102,10 +6303,10 @@ function Domonitor() {
                                 />
                                 <p className="section-card-para-dom">
                                   Detect lost devices and define custom
-                                  <span className="color-contain">
-                                    {" "}
+                               
+                               
                                     offboarding
-                                  </span>{" "}
+                            
                                   logic
                                 </p>
                               </div>
@@ -6121,7 +6322,7 @@ function Domonitor() {
                           <div className="row">
                             <div className="col-md-6">
                               <div className="check-domonitor">
-                                <ul>
+                                <ul className="MoniTor-sizE">
                                   <li className="d-flex">
                                     <img
                                       style={{ width: "23px", height: "23px" }}
@@ -6149,10 +6350,10 @@ function Domonitor() {
                                       alt="..."
                                     />
                                     <p className="section-card-para-dom">
-                                      Look for response from Zabbix{" "}
-                                      <span className="color-contain">
+                                      Look for response from DOM
+                              
                                         agent
-                                      </span>
+                                   
                                     </p>
                                   </li>
                                 </ul>
@@ -6160,7 +6361,7 @@ function Domonitor() {
                             </div>
                             <div className="col-md-6">
                               <div className="check-domonitor">
-                                <ul>
+                                <ul className="MoniTor-sizE">
                                   <li className="d-flex">
                                     <img
                                       style={{ width: "23px", height: "23px" }}
@@ -6215,7 +6416,7 @@ function Domonitor() {
                       Automate metric collection and problem threshold creation
                     </h3>
                     <p className="sectionpara-domonitor">
-                      Resource discovery enables Zabbix to automatically
+                      Resource discovery enables DOM to automatically
                       discover metrics on your monitoring endpoints:
                     </p>
                     <div>
@@ -6258,7 +6459,7 @@ function Domonitor() {
                           <div className="row">
                             <div className="col-md-6">
                               <div className="check-domonitor">
-                                <ul>
+                                <ul className="MoniTor-sizE">
                                   <li className="d-flex">
                                     <img
                                       style={{ width: "23px", height: "23px" }}
@@ -6324,7 +6525,7 @@ function Domonitor() {
                             </div>
                             <div className="col-md-6">
                               <div className="check-domonitor">
-                                <ul>
+                                <ul className="MoniTor-sizE">
                                   <li className="d-flex">
                                     <img
                                       style={{ width: "23px", height: "23px" }}
@@ -6400,8 +6601,8 @@ function Domonitor() {
                       Automate agent deployment
                     </h3>
                     <p className="sectionpara-domonitor">
-                      Automatically discover your Zabbix{" "}
-                      <span className="color-contain">agents</span> and start
+                      Automatically discover your DOM
+                      agents and start
                       monitoring them immediately:
                     </p>
                     <div>
@@ -6410,7 +6611,7 @@ function Domonitor() {
                           <div className="row">
                             <div className="col-md-6">
                               <div className="check-domonitor">
-                                <ul>
+                                <ul className="MoniTor-sizE">
                                   <li className="d-flex">
                                     <img
                                       style={{ width: "23px", height: "23px" }}
@@ -6428,10 +6629,10 @@ function Domonitor() {
                                       alt="..."
                                     />
                                     <p className="section-card-para-dom">
-                                      Define custom{" "}
-                                      <span className="color-contain">
+                                      Define custom
+                                      
                                         onboarding workflows
-                                      </span>{" "}
+                                     
                                       which will react to different metadata
                                       values
                                     </p>
@@ -6441,7 +6642,7 @@ function Domonitor() {
                             </div>
                             <div className="col-md-6">
                               <div className="check-domonitor">
-                                <ul>
+                                <ul className="MoniTor-sizE">
                                   <li className="d-flex">
                                     <img
                                       style={{ width: "23px", height: "23px" }}
@@ -6466,7 +6667,7 @@ function Domonitor() {
                           <div className="row">
                             <div className="col-md-6">
                               <div className="check-domonitor">
-                                <ul>
+                                <ul className="MoniTor-sizE">
                                   <li className="d-flex">
                                     <img
                                       style={{ width: "23px", height: "23px" }}
@@ -6493,7 +6694,7 @@ function Domonitor() {
                             </div>
                             <div className="col-md-6">
                               <div className="check-domonitor">
-                                <ul>
+                                <ul className="MoniTor-sizE">
                                   <li className="d-flex">
                                     <img
                                       style={{ width: "23px", height: "23px" }}
@@ -6501,9 +6702,9 @@ function Domonitor() {
                                       alt="..."
                                     />
                                     <p className="section-card-para-dom">
-                                      <span className="color-contain">
+                                     
                                         Notify
-                                      </span>{" "}
+                                     
                                       your administrators
                                     </p>
                                   </li>
@@ -6560,7 +6761,7 @@ function Domonitor() {
                           <div className="row">
                             <div className="col-md-6">
                               <div className="check-domonitor">
-                                <ul>
+                                <ul className="MoniTor-sizE">
                                   <li className="d-flex">
                                     <img
                                       style={{ width: "23px", height: "23px" }}
@@ -6578,10 +6779,8 @@ function Domonitor() {
                                       alt="..."
                                     />
                                     <p className="section-card-para-dom">
-                                      Apply a monitoring{" "}
-                                      <span className="color-contain">
-                                        template
-                                      </span>{" "}
+                                      Apply a monitoring  template
+                                     
                                       that matches the discovered service
                                     </p>
                                   </li>
@@ -6590,7 +6789,7 @@ function Domonitor() {
                             </div>
                             <div className="col-md-6">
                               <div className="check-domonitor">
-                                <ul>
+                                <ul className="MoniTor-sizE">
                                   <li className="d-flex">
                                     <img
                                       style={{ width: "23px", height: "23px" }}
@@ -6598,9 +6797,9 @@ function Domonitor() {
                                       alt="..."
                                     />
                                     <p className="section-card-para-dom">
-                                      <span className="color-contain">
+                                      
                                         Notify
-                                      </span>{" "}
+                                     
                                       your administrators
                                     </p>
                                   </li>
@@ -6648,8 +6847,8 @@ function Domonitor() {
                       Keep your infrastructure up to date with seamless upgrades
                     </h3>
                     <p className="sectionpara-domonitor">
-                      The Zabbix upgrade process is simple - just deploy the new
-                      version of Zabbix Server, Proxy and UI and you are done.
+                      The DOM upgrade process is simple - just deploy the new
+                      version of DOM Server, Proxy and UI and you are done.
                       No loss of existing data, configuration or functionality:
                     </p>
                     <div>
@@ -6657,7 +6856,11 @@ function Domonitor() {
                         <div className="sectioncardm-domonitor">
                           <div className="">
                             <div className="col-md-12">
-                              <ul>
+                            
+                            </div>
+                            <div>
+                              <div className="check-domonitor">
+                              <ul className="MoniTor-sizE">
                                 <li className="d-flex">
                                   <img
                                     style={{ width: "20px", height: "20px" }}
@@ -6677,7 +6880,7 @@ function Domonitor() {
                                   />
                                   <p className="section-card-para-dom">
                                     Backward and forward compatibility of all
-                                    Zabbix components within one major release
+                                    DOM components within one major release
                                     to ensure quick and easy upgrade process
                                   </p>
                                 </li>
@@ -6688,17 +6891,15 @@ function Domonitor() {
                                     alt="..."
                                   />
                                   <p className="section-card-para-dom">
-                                    Zabbix agents are backwards compatible with
+                                    DOM agents are backwards compatible with
                                     previous major{" "}
-                                    <span className="color-contain">
+                                  
                                       releases
-                                    </span>
+                                 
                                   </p>
                                 </li>
                               </ul>
-                            </div>
-                            <div>
-                              <div className="check-domonitor"></div>
+                              </div>
                             </div>
                           </div>
                         </div>
@@ -6808,13 +7009,13 @@ function Domonitor() {
                   <div className="row">
                     <div className="col-md-7">
                       <h3 className="sectionhead-domonitor">
-                        Scale up your Zabbix infrastructure
+                        Scale up your DOM infrastructure
                       </h3>
                       <p className="sectionpara-domonitor">
-                        Add an extra layer of scalability by deploying Zabbix
+                        Add an extra layer of scalability by deploying DOM
                         proxies. Scale up to collect millions of metrics from
                         hundreds of thousands of devices, services,
-                        applications, and more. Zabbix proxies are easy to
+                        applications, and more. DOM proxies are easy to
                         deploy and enable unlimited vertical scalability:
                       </p>
                       <div className="sectioncards-domonitor">
@@ -6827,9 +7028,9 @@ function Domonitor() {
                               />
                               <p className="section-card-para-dom">
                                 Delegate{" "}
-                                <span className="color-contain">
+                               
                                   metric collection
-                                </span>{" "}
+                             
                                 to DO Monitor proxies
                               </p>
                             </div>
@@ -6849,10 +7050,10 @@ function Domonitor() {
                               />
                               <p className="section-card-para-dom">
                                 Monitor thousands of
-                                <span className="color-contain">
+                             
                                   {" "}
                                   remote
-                                </span>{" "}
+                             
                                 locations, company branches, data center
                               </p>
                             </div>
@@ -6862,7 +7063,7 @@ function Domonitor() {
                                 alt="..."
                               />
                               <p className="section-card-para-dom">
-                                <span className="color-contain">Deploy</span> DO
+                               Deploy  DO
                                 monitor proxies from packages, containers and
                                 cloud images
                               </p>
@@ -6878,7 +7079,7 @@ function Domonitor() {
                               />
                               <p className="section-card-para-dom">
                                 Reduce network overhead - traffic between
-                                central Zabbix server backend and proxies is
+                                central DOM server backend and proxies is
                                 compressed!
                               </p>
                             </div>
@@ -6890,9 +7091,9 @@ function Domonitor() {
                               <p>
                                 Stay compliant with the highest security
                                 standards by using TLS PSK or certificate{" "}
-                                <span className="color-contain">
+                              
                                   encryption
-                                </span>{" "}
+                            
                                 with full control of permitted security
                                 algorithms
                               </p>
@@ -6925,8 +7126,8 @@ function Domonitor() {
                       <p className="sectionpara-domonitor">
                         Monitor locations all over the globe! Collect metrics
                         from remote locations securely and prevent data loss
-                        even in case of a network outage. By deploying Zabbix{" "}
-                        <span className="color-contain">proxies</span> you can
+                        even in case of a network outage. By deploying DOM{" "}
+                        proxies you can
                       </p>
                       <div className="sectioncards-domonitor">
                         <div className="sectioncard-domonitor-4">
@@ -6956,11 +7157,11 @@ function Domonitor() {
                               />
                               <p className="section-card-para-dom">
                                 Remotely run custom{" "}
-                                <span className="color-contain">scripts</span>{" "}
+                                scripts{" "}
                                 on monitoring targets for automatic problem{" "}
-                                <span className="color-contain">
+                               
                                   remediation
-                                </span>
+                             
                               </p>
                             </div>
                           </div>
@@ -6984,7 +7185,7 @@ function Domonitor() {
                               />
                               <p>
                                 Instantly sync configuration changes across your
-                                whole Zabbix infrastructure
+                                whole DOM infrastructure
                               </p>
                             </div>
                           </div>
@@ -6992,9 +7193,9 @@ function Domonitor() {
                       </div>
                       <div>
                         <p>
-                          With Zabbix proxies you can execute remote commands in
+                          With DOM proxies you can execute remote commands in
                           remote locations - either on the proxies themselves or
-                          on the <span className="color-contain">agents</span>{" "}
+                          on the agents 
                           monitored by the proxy.
                         </p>
                       </div>
@@ -7022,7 +7223,7 @@ function Domonitor() {
                       </h3>
                       <p className="sectionpara-domonitor">
                         Prevent data loss and add an extra layer of redundancy
-                        with Zabbix High availability:
+                        with DOM High availability:
                       </p>
                       <div>
                         <div>
@@ -7035,7 +7236,7 @@ function Domonitor() {
                                     alt="..."
                                   />
                                   <p className="section-card-para-dom">
-                                    Deploy a secondary Zabbix backend server to
+                                    Deploy a secondary DOM backend server to
                                     prevent data loss in case of an issue
                                   </p>
                                 </div>
@@ -7056,8 +7257,8 @@ function Domonitor() {
                             </div>
                             <div>
                               <p>
-                                Deploy multiple Zabbix{" "}
-                                <span className="color-contain">frontends</span>{" "}
+                                Deploy multiple DOM{" "}
+                               frontends 
                                 to avoid downtime and improve the user
                                 experience:
                               </p>
@@ -7150,7 +7351,7 @@ function Domonitor() {
                         <div className="row">
                           <div className="col-md-6">
                             <div className="check-domonitor">
-                              <ul>
+                              <ul className="MoniTor-sizE">
                                 <li className="d-flex">
                                   <img
                                     style={{ width: "23px", height: "23px" }}
@@ -7186,7 +7387,7 @@ function Domonitor() {
                           </div>
                           <div className="col-md-6">
                             <div className="check-domonitor">
-                              <ul>
+                              <ul className="MoniTor-sizE">
                                 <li className="d-flex">
                                   <img
                                     style={{ width: "23px", height: "23px" }}
@@ -7223,7 +7424,7 @@ function Domonitor() {
                         </div>
                         <div>
                           <p>
-                            Zabbix is capable of storing history metrics and
+                            DOM is capable of storing history metrics and
                             collecting hourly metric trends for an unlimited
                             time period.
                           </p>
@@ -7244,7 +7445,7 @@ function Domonitor() {
                             performance and ease of removing old data
                           </p>
                         </div>
-                        <p>With Zabbix you are the sole owner of your data:</p>
+                        <p>With DOM you are the sole owner of your data:</p>
 
                         <div className="d-flex">
                           <img
@@ -7254,10 +7455,10 @@ function Domonitor() {
                           />
                           <p className="section-card-para-dom">
                             None of the{" "}
-                            <span className="color-contain">
+                           
                               collected data
-                            </span>{" "}
-                            or telemetry get sent to Zabbix LLC or any other 3rd
+                           
+                            or telemetry get sent to DOM LLC or any other 3rd
                             parties
                           </p>
                         </div>
@@ -7280,7 +7481,7 @@ function Domonitor() {
       </section>
       <div className="container finalsection-domonitor">
         <div className="row ">
-          <div className="col-md-4 finalsection1-domonitor">
+          <div className="col-md-6 finalsection1-domonitor">
             <img src="/images/addvalue.png" alt="#" />
             <h3 className="headfinalsec-domonitor">
               Add value to your business with DO Monitoring
@@ -7299,45 +7500,33 @@ function Domonitor() {
               </p>
             </p>
           </div>
-          <div className="col-md-4 finalsection1-domonitor">
-            <img
-              src="/images/zabbix.png"
-              className="zabbix-domonitor"
-              alt="#"
-            />
-            <h3 className="headfinalsec-domonitor">
-              Zabbix is 100% open source
-            </h3>
+          <div className="col-md-6 finalsection1-domonitor">
+            <img src="/images/do-language-01.png" alt="#" />
+            <h3 className="headfinalsec-domonitor">DOM in your language</h3>
             <p>
-              Zabbix positions itself as a universal monitoring solution for all
-              possible use cases. Zabbix is 100% free and open-source, released
-              under the GNU General Public License (GPL) version 2 . This
-              provides many unique benefits that you won’t find with proprietary
-              software:
-            </p>
-            <p>
-              While Zabbix source code is audited internally, you are always
-              free to perform internal audits to check if Zabbix code aligns
-              with your internal security policies
-            </p>
-          </div>
-          <div className="col-md-4 finalsection1-domonitor">
-            <img src="/images/zabbixlanguage.png" alt="#" />
-            <h3 className="headfinalsec-domonitor">Zabbix in your language</h3>
-            <p>
-              Zabbix frontend and documentation are available in many different
-              languages. Our goal is to make Zabbix easy to use for people all
-              over the globe. With Zabbix community localization tools you have
-              the opportunity to help us translate Zabbix into your language.
+              DOM frontend and documentation are available in many different
+              languages. Our goal is to make DOM easy to use for people all
+              over the globe. With DOM community localization tools you have
+              the opportunity to help us translate DOM into your language.
             </p>
             <p>A vast selection of languages available out of the box</p>
             <p>
-              Easy to use localization tools for both the Zabbix Frontend and
+              Easy to use localization tools for both the DOM Frontend and
               the documentation
             </p>
           </div>
+          </div>
+       
         </div>
       </div>
+      
+      <button
+        className="scroll-to-top-button"
+        onClick={scrollToTop}
+        style={{ display: visible ? "inline" : "none" }}
+      >
+        <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
+      </button>
       <Faq />
       <Footer />
     </div>

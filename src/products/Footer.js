@@ -1,11 +1,20 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "./Footer.css";
 import { Link, Navigate, useNavigate } from "react-router-dom";
 
-
 function Footer() {
   const Navigate = useNavigate();
+  // useEffect(() => {
+  //   setTimeout(() => {
+  //     const script = document.createElement("script");
 
+  //     script.src =
+  //       "https://dataobserve.myfreshworks.com/crm/sales/web_forms/3bb315e5ced066d76d0a5422db2d9724ded4938333d17e75ec4c1192ae934cf4/form.js";
+  //     script.async = true;
+
+  //     document.getElementById("footerForm").appendChild(script);
+  //   }, 20000);
+  // }, []);
   return (
     <div>
       <div className="bg-color">
@@ -27,8 +36,10 @@ function Footer() {
                       Got a question? Dont a hesitate to give us a call today or
                       shoot us an email
                     </p>
-                    <i class="fa fa-envelope" aria-hidden="true">
-                      <span classname="hello" style={{marginLeft: "10px"}}>hello@dataserve.io</span>
+                    <i class="fa fa-envelope" aria-hidden="true" style={{fontSize:"14px"}}>
+                      <span classname="hello" style={{ marginLeft: "10px" ,fontSize:"14px"}}>
+                        hello@dataserve.io
+                      </span>
                     </i>
                   </div>
                 </div>
@@ -36,6 +47,7 @@ function Footer() {
             </div>
             <div className="col-md-6">
               <div>
+               <div>
                 <div>
                   <form>
                     <div className="form-group">
@@ -55,9 +67,11 @@ function Footer() {
                   </form>
                 </div>
               </div>
+              </div>
             </div>
           </div>
         </div>
+
         <div class="footer">
           <div className="container">
             <div className="row">
@@ -67,8 +81,8 @@ function Footer() {
                     Company
                   </h1>
                   <ul>
-                    <li>About Us</li>
-                    <li>People and Careers</li>
+                    <li><a href="./company" style={{color:"white",textDecoration:"none"}}>About Us</a></li>
+                    <li><a href="./people" style={{color:"white",textDecoration:"none"}}>People and Careers</a></li>
                   </ul>
                 </div>
               </div>
@@ -78,13 +92,13 @@ function Footer() {
                     Services
                   </h1>
                   <ul>
-                    <li>Cloud transformation</li>
-                    <li>Data Engineering</li>
-                    <li>Data Analytics and BI</li>
-                    <li>AI & Machine Learning</li>
-                    <li>evOps-as-a-service</li>
-                    <li>Application Modernization</li>
-                    <li>Talent as a Service</li>
+                    <li><a href="./cloud" style={{color:"white",textDecoration:"none"}}>Cloud transformation</a></li>
+                    <li><a href="./dataeng" style={{color:"white",textDecoration:"none"}}>Data Engineering</a></li>
+                    <li><a href="./databi" style={{color:"white",textDecoration:"none"}}>Data Analytics and BI</a></li>
+                    <li><a href="./aiml" style={{color:"white",textDecoration:"none"}}>AI & Machine Learning</a></li>
+                    <li><a href="./devops" style={{color:"white",textDecoration:"none"}}>DevOps-as-a-service</a></li>
+                    <li><a href="./application" style={{color:"white",textDecoration:"none"}}>Application Modernization</a></li>
+                    <li><a href="./talent" style={{color:"white",textDecoration:"none"}}>Talent as a Service</a></li>
                   </ul>
                 </div>
               </div>
@@ -95,15 +109,15 @@ function Footer() {
                     Industries
                   </h1>
                   <ul>
-                    <li>Life sciences and Pharma</li>
-                    <li>Media & Entertainment</li>
-                    <li>Gaming and gambling</li>
+                    <li><a href="./industries" style={{color:"white",textDecoration:"none"}}>Life sciences and Pharma</a></li>
+                    <li><a href="./media" style={{color:"white",textDecoration:"none"}}>Media & Entertainment</a></li>
+                    <li><a href="./gaming" style={{color:"white",textDecoration:"none"}}>Gaming and gambling</a></li>
                   </ul>
                   <h1 className="footer-heading" style={{ color: "#1A4AB9" }}>
                     Products
                   </h1>
                   <ul>
-                    <li>
+                    <li><a href="./observability" style={{color:"white",textDecoration:"none"}}>
                       DO{" "}
                       <span
                         style={{
@@ -116,9 +130,15 @@ function Footer() {
                       >
                         360
                       </span>
+                      </a>
                     </li>
                     {/* <li>Health EM</li> */}
-                    <li>DOInsights</li>
+                    <li><a href="./datainsights" style={{color:"white",textDecoration:"none"}}>DO Insights</a></li>
+                    <li><a href="./datacharts" style={{color:"white",textDecoration:"none"}}>DO Charts</a></li>
+                    <li><a href="./datamonitor" style={{color:"white",textDecoration:"none"}}>DO Monitor</a></li>
+                    <li><a href="./dataprompt" style={{color:"white",textDecoration:"none"}}>Do Prompt</a></li>
+
+
                   </ul>
                 </div>
               </div>
@@ -129,10 +149,10 @@ function Footer() {
                     Insights
                   </h1>
                   <ul>
-                    <li>Case Studies</li>
-                    <li>Blogs</li>
-                    <li>Ebooks</li>
-                    <li>Webinars & Videos</li>
+                    <li><a href="./casestudies" style={{color:"white",textDecoration:"none"}}>Case Studies</a></li>
+                    <li><a href="./blog" style={{color:"white",textDecoration:"none"}}>Blogs</a></li>
+                    <li><a href="./ebooks" style={{color:"white",textDecoration:"none"}}>Ebooks</a></li>
+                    <li><a href="#" style={{color:"white",textDecoration:"none"}}>Webinars & Videos</a></li>
                   </ul>
                 </div>
               </div>

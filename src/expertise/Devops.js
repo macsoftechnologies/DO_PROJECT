@@ -2,92 +2,122 @@ import React from "react";
 import "./Devops.css";
 // import Faq from "../products/Faq";
 import Navbar from "../products/Navbar";
-import devops from "../../src/videos/devops.mp4";
+// import devops from "../../src/videos/devops.mp4";
 import Footer from "../products/Footer";
+import Slider from "react-slick";
+
+function Arrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block", background: "black" }}
+      onClick={onClick}
+    />
+  );
+}
 
 const Devops = () => {
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 2,
+    // nextArrow: <Arrow />,
+    // prevArrow: <Arrow />,
+
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+    ],
+  };
+
   return (
     <div>
       <Navbar />
-      <div className="em_power">
+      <div className="Deveps_power">
         <div>
           <video className="devops" autoPlay loop muted>
-            <source src={devops} type="video/mp4" />
+            <source
+              src="https://storage.googleapis.com/do-website-resources/devops.mp4"
+              type="video/mp4"
+            />
           </video>
-          <div
-            style={{
-              display: "inline-flex",
-              minHeight: "1080px",
-              padding: "42px 493px 100px 255px",
-              flexDirection: "column",
-              alignItems: "flex-start",
-              position: "absolute",
-              top: "170px",
-              left: "-121px",
-            }}
-          >
-            <p
-              style={{
-                color: "white",
-                fontSize: "18px",
-                fontStyle: "normal",
-                fontWeight: "600",
-              }}
-            >
-              DevOps As A Service
-            </p>
-            <h4
-              style={{
-                color: "white",
-                fontSize: "32px",
-                fontStyle: "normal",
-                fontWeight: "700",
-                lineHeight: "47px",
-              }}
-            >
-              Speed up software delivery with end-to-end automation and
-              continuous delivery that cut costs
-            </h4>
-            <button
-              style={{
-                display: "flex",
-                height: "61px",
-                maxWidth: "255px",
-                padding: "20px 46px 21px 48px",
-                justifyContent: "center",
-                alignItems: "center",
-                border: "none",
-                marginTop: "70px",
-                borderRadius: "5px",
-              }}
-            >
-              <span
+          <div className="Devops-Main-hEading">
+            <p className="cLOUD-TRANSFORM">
+              <p
+                className="cloud-transform-Size"
                 style={{
-                  color: "#FF4925",
-                  fontSize: "14px",
-                  fontStyle: "normal",
                   fontWeight: "600",
-                  lineHeight: "19px",
+                  fontSize: "20px",
+                  letterSpacing: "1px",
                 }}
               >
-                Talk to us now
-              </span>{" "}
-              <i
-                className="fa fa-long-arrow-right"
+                DevOps As A Service
+              </p>
+
+              <p className="col-md-6 Navigate-Journey">
+                Accelerate software delivery by implementing end-to-end
+                automation and continuous delivery practices that reduce costs.
+              </p>
+              <button
+                className="datatypes"
                 style={{
-                  width: "23px",
-                  fontSize: "29px",
-                  flexShrink: "0",
-                  color: "#FF4925",
-                  marginLeft: "12px",
+                  display: "flex",
+                  height: "61px",
+                  maxWidth: "255px",
+                  padding: "20px 46px 21px 48px",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  border: "none",
+                  marginTop: "70px",
+                  borderRadius: "5px",
                 }}
-                aria-hidden="true"
-              ></i>
-            </button>
+              >
+                <span
+                  className="spans"
+                  style={{
+                    color: "#0046E8",
+                    fontSize: "14px",
+                    fontStyle: "normal",
+                    fontWeight: "600",
+                    lineHeight: "19px",
+                  }}
+                >
+                  Talk to us now
+                </span>{" "}
+                <i
+                  className="fa fa-long-arrow-right ARROW-RIGHT-CLOUD"
+                  style={{
+                    width: "23px",
+                    fontSize: "29px",
+                    flexShrink: "0",
+                    color: "#0046E8",
+                    marginLeft: "12px",
+                  }}
+                  aria-hidden="true"
+                ></i>
+              </button>
+            </p>
           </div>
         </div>
       </div>
       <div
+        className="container"
         style={{
           display: "flex",
           flexDirection: "column",
@@ -95,10 +125,8 @@ const Devops = () => {
           alignItems: "center",
         }}
       >
-        <h4 style={{ textAlign: "center", fontWeight: 700, fontSize: "43px" }}>
-          Our DevOps Services
-        </h4>
-        <p style={{ textAlign: "center", marginTop: "10px", width: "755px" }}>
+        <h4 className="migration">Our DevOps Services</h4>
+        <p className="operational">
           DataObserve's DevOps services offer cutting-edge and established
           technologies to enhance your organization's efficiency. By
           streamlining data flow, we foster improved collaboration between your
@@ -107,7 +135,7 @@ const Devops = () => {
           software development and automation expertise.
         </p>
       </div>
-      <div className="cloudcards">
+      <div className="cloudcards d-md-block d-none">
         <div class="ccdiv w-100">
           <div className="cloudimgcard">
             <img className="notrepimg" src="/images/cops.png" alt="" />
@@ -180,8 +208,93 @@ const Devops = () => {
           </div>
         </div>
       </div>
+
+      <div className="d-block d-md-none">
+        <section>
+          <div className="container">
+            <div>
+              <Slider {...settings}>
+                <div className="cloudimgcard">
+                  <img className="notrepimg" src="/images/cops.png" alt="" />
+                  <div className="cloudcard card">
+                    <h1 className="cloudcardheading">DevOps on Cloud</h1>
+                    <p className="cloudcardpara mb-0">
+                      Implement DevOps within your organization using services
+                      offered by our cloud partners, designed for
+                      straightforward utilization. Automate manual tasks,
+                      effectively manage intricate environments, and keep your
+                      engineers in control of high-velocity development.
+                    </p>
+                  </div>
+                </div>
+                <div className="cloudimgcard">
+                  <img className="notrepimg" src="/images/inasc.png" alt="" />
+                  <div className="cloudcard card">
+                    <h1 className="cloudcardheading">Infrastructure as Code</h1>
+                    <p className="cloudcardpara mb-0">
+                      Leverage codes and templates for provisioning,
+                      configuring, and overseeing your cloud infrastructure
+                      resources, all while monitoring and ensuring compliance
+                      with infrastructure standards.
+                    </p>
+                  </div>
+                </div>
+                <div className="cloudimgcard">
+                  <img
+                    className="notrepimg"
+                    src="/images/ms.png"
+                    alt=""
+                    style={{ height: "114%" }}
+                  />
+                  <div className="cloudcard card">
+                    <h1 className="cloudcardheading">Microservices</h1>
+                    <p className="cloudcardpara mb-0">
+                      Utilize containers or serverless computing to construct
+                      and launch a microservices architecture.
+                    </p>
+                  </div>
+                </div>
+                <div className="cloudimgcard">
+                  <img
+                    className="notrepimg"
+                    src="/images/rtct.png"
+                    alt=""
+                    style={{ height: "108%" }}
+                  />
+                  <div className="cloudcard card">
+                    <h1 className="cloudcardheading">
+                      Round the Clock tracking
+                    </h1>
+                    <p className="cloudcardpara mb-0">
+                      Consistently gauge DevOps productivity and implement
+                      data-driven enhancements using our robust monitoring
+                      system. Access detailed analytical reports with just a
+                      click.
+                    </p>
+                  </div>
+                </div>
+                <div className="cloudimgcard">
+                  <img className="notrepimg" src="/images/esap.png" alt="" />
+                  <div className="cloudcard card">
+                    <h1 className="cloudcardheading">
+                      Enhanced security and protection
+                    </h1>
+                    <p className="cloudcardpara mb-0">
+                      Guarantee heightened security for user data with our
+                      impenetrable security measures, which encompass threat
+                      modeling and risk analysis to swiftly identify security
+                      vulnerabilities.
+                    </p>
+                  </div>
+                </div>
+              </Slider>
+            </div>
+          </div>
+        </section>
+      </div>
+
       <div
-        class="container card mb-3 mt-5 Built-back-colour"
+        class="container  mb-3 mt-5 Built-back-colour"
         style={{
           backgroundColor: "#1A4AB9",
           borderRadius: "20px",
@@ -207,16 +320,16 @@ const Devops = () => {
         >
           <div class="col-md-5">
             <img
-              style={{ height: "252px", width: "100%" }}
+              style={{ height: "250px", width: "100%" }}
               src="./images/build.png"
               className="card-img"
               alt="..."
             />
           </div>
-          <div class="col-md-7">
-            <div class="card-body">
+          <div class="col-md-7 cLOUD-Unified">
+            <div class="card-body CLOUD-bODY">
               <h5
-                class="card-title"
+                class="col-md-9 card-title CLouD-BULIT"
                 style={{
                   color: "white",
                   letterSpacing: "0.68px",
@@ -227,17 +340,14 @@ const Devops = () => {
                 <br /> decision intelligence Platform
               </h5>
               <p
-                class="card-text-3"
+                class="col-md-9 card-text-3"
                 style={{ fontSize: "13px", color: "#fff", opacity: "0.5" }}
               >
                 Learn how we created a self-service, predictive, insights
-                platform driven
-                <br /> by an adaptive machine learning engine which helps
-                improve decision-
-                <br />
-                making.
+                platform driven by an adaptive machine learning engine which
+                helps improve decision-making.
               </p>
-              <p class="card-text" style={{ color: "white" }}>
+              <p class=" col-md-9 card-text" style={{ color: "white" }}>
                 <p style={{ fontSize: 16 }}>
                   Read case study
                   <i class="fa fa-long-arrow-right ml-2" aria-hidden="true"></i>
@@ -248,7 +358,6 @@ const Devops = () => {
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "space-around",
-                  marginLeft: "-20px",
                 }}
               >
                 <img
@@ -266,7 +375,7 @@ const Devops = () => {
                   alt=""
                   style={{ width: "95px" }}
                 />
-                <img
+                <img className="srdsystems-cloud"
                   src="./images/srdsystems.png"
                   alt=""
                   style={{ width: "70px" }}
@@ -277,22 +386,22 @@ const Devops = () => {
         </div>
       </div>
       <div>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            flexDirection: "column",
-          }}
+        <h4
+          className="mt-5 EXPERIENCE-cloud"
+          style={{ textAlign: "center", fontWeight: 700, fontSize: "43px" }}
         >
-          <h3 className="cloud-head">Benefits</h3>
-          <p style={{ width: "700px", textAlign: "center" }}>
+          Benefits
+        </h4>
+
+        <div className="container">
+          <p className="wides">
             DataObserve is the rapidly expanding leader in Cloud Transformation
             and Data Analytics, distinguished by its substantial proficiency in
             Data Lake solutions, Data Warehouse Engineering, and Data Migration
             & Modernization.
           </p>
         </div>
+
         <div className="container mt-3">
           <div className="row box">
             <div
@@ -442,58 +551,58 @@ const Devops = () => {
           </div>
           <div>
             <div
-              class="card mb-3 mt-5"
+              class="mb-3 mt-5"
               style={{
                 backgroundColor: "#1A4AB9",
                 maxWidth: "100%",
-                borderRadius: "20px",
+                borderRadius: "30px",
               }}
             >
               <div
                 class="row no-gutters"
                 style={{
-                  display: "flex",
                   alignItems: "center",
                   justifyContent: "spacebetween",
                 }}
               >
-                <div class="col-md-1"></div>
                 <div class="col-md-8">
-                  <div class="card-body expertcardbody d-flex">
+                  <div class="">
                     <div>
-                      <h5 class="card-title" style={{ color: "white" }}>
-                        Harness Our DevOps Proficiency to Enhance Your Cloud
-                        Migration
-                      </h5>
-                      <p
-                        class="card-text"
-                        style={{ color: "white", width: "500px" }}
+                      <h5
+                        class="card-title Cloud-title"
+                        style={{ color: "white", fontSize: "24px" }}
                       >
-                        Attain seamless development and integration through our
-                        DevOps services. Whether you need assistance managing
-                        your AWS infrastructure or deploying microservices, our
-                        team is here to support you every step of the way.
+                        Maximize Your Cloud Capabilities with the DataObserve
+                        Advantage
+                      </h5>
+                      <p class="card-text Cloud-color-paragraph">
+                        Streamline your cloud-driven business transformation
+                        with DataObserve's comprehensive suite of cloud
+                        services, encompassing consulting, optimization,
+                        migration, and modernization. Our team of seasoned cloud
+                        experts is at your disposal, ready to provide guidance
+                        and support.
                       </p>
                     </div>
-                    <div>
-                      <button
-                        style={{
-                          width: "200px",
-                          border: "none",
-                          height: "55px",
-                          margin: "42px",
-                          borderRadius: "6px",
-                        }}
-                      >
-                        Talk to us now{" "}
-                        <i
-                          class="fa fa-long-arrow-right"
-                          aria-hidden="true"
-                          style={{ marginLeft: "12px" }}
-                        ></i>
-                      </button>
-                    </div>
                   </div>
+                </div>
+                <div className="col-md-4">
+                  <button
+                    className="observers"
+                    style={{
+                      width: "200px",
+                      border: "none",
+                      height: "55px",
+                      margin: "42px",
+                      borderRadius: "6px",
+                    }}
+                  >
+                    Talk to us now{" "}
+                    <i
+                      class="fa fa-long-arrow-right Arrow-cloud"
+                      aria-hidden="true"
+                    ></i>
+                  </button>
                 </div>
               </div>
             </div>
@@ -1038,8 +1147,8 @@ const Devops = () => {
                     }}
                   >
                     <p style={{ margin: "0px" }}>
-                      How does DevOps as a Service address security concerns
-                      in software development?
+                      How does DevOps as a Service address security concerns in
+                      software development?
                     </p>
                     <p
                       style={{

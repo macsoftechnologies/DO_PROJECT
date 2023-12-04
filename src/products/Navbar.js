@@ -38,7 +38,7 @@ function Navbar() {
             <ul class="navbar-nav navbar-just-up">
               <li class="nav-item dropdown expertise">
                 <a
-                  class="nav-link dropdown-toggle text-dark"
+                  class="nav-link text-dark Dark-Text"
                   href="#"
                   id="navbarDropdownMenuLink"
                   data-toggle="dropdown"
@@ -46,6 +46,7 @@ function Navbar() {
                   aria-expanded="false"
                 >
                   Expertise
+                  <i class="fa fa-angle-down icon-01" aria-hidden="true"></i>
                 </a>
                 <div
                   class="dropdown-menu navlinksdropdown"
@@ -107,9 +108,10 @@ function Navbar() {
                   </a>
                 </div>
               </li>
+
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle text-dark"
+                  class="nav-link text-dark Dark-Text"
                   href="#"
                   id="navbarDropdownMenuLink"
                   data-toggle="dropdown"
@@ -117,6 +119,7 @@ function Navbar() {
                   aria-expanded="false"
                 >
                   Products
+                  <i class="fa fa-angle-down icon-01" aria-hidden="true"></i>
                 </a>
                 <div
                   class="dropdown-menu navlinksdropdown"
@@ -126,7 +129,7 @@ function Navbar() {
                     <a
                       href="#"
                       className="navcard2 pl-2"
-                      style={{ paddingTop: "35px" ,paddingBottom:"25px" }}
+                      style={{ paddingTop: "35px", paddingBottom: "25px" }}
                     >
                       <a class="dropdown-item linksclass" href="/observability">
                         DO 360
@@ -155,7 +158,6 @@ function Navbar() {
                       <a class="dropdown-item linksclass" href="/dataprompt">
                         DO Prompt
                       </a>
-                     
                     </a>
                     <img
                       src="./images/navlink2gif.gif"
@@ -172,7 +174,7 @@ function Navbar() {
               </li>
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle text-dark"
+                  class="nav-link text-dark Dark-Text"
                   href="#"
                   id="navbarDropdownMenuLink"
                   data-toggle="dropdown"
@@ -180,6 +182,7 @@ function Navbar() {
                   aria-expanded="false"
                 >
                   Industries
+                  <i class="fa fa-angle-down icon-01" aria-hidden="true"></i>
                 </a>
                 <div
                   class="dropdown-menu navlinksdropdown"
@@ -213,7 +216,7 @@ function Navbar() {
               </li>
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle text-dark"
+                  class="nav-link  text-dark Dark-Text"
                   href="#"
                   id="navbarDropdownMenuLink"
                   data-toggle="dropdown"
@@ -221,6 +224,7 @@ function Navbar() {
                   aria-expanded="false"
                 >
                   Insights
+                  <i class="fa fa-angle-down icon-01" aria-hidden="true"></i>
                 </a>
                 <div
                   class="dropdown-menu navlinksdropdown insights-width-parent"
@@ -837,7 +841,7 @@ function Navbar() {
               </li>
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle text-dark"
+                  class="nav-link text-dark Dark-Text"
                   href="#"
                   id="navbarDropdownMenuLink"
                   data-toggle="dropdown"
@@ -845,6 +849,7 @@ function Navbar() {
                   aria-expanded="false"
                 >
                   Company
+                  <i class="fa fa-angle-down icon-01" aria-hidden="true"></i>
                 </a>
                 <div
                   class="dropdown-menu navlinksdropdown"
@@ -999,7 +1004,7 @@ function Navbar() {
                       <a class="dropdown-item linksclass" href="/observability">
                         DO 360
                       </a>
-                     
+
                       <a class="dropdown-item linksclass" href="/datainsights">
                         DO Insights
                       </a>
@@ -1085,48 +1090,54 @@ function Navbar() {
                 >
                   <div className="d-flex">
                     <a href="#" className="d-flex  navcard ml-3">
-                    <div className="n-w">
+                      <div className="n-w">
                         <div className="col-md-5">
-                        <a href="#" className="col-md-3 navcard2 mt-5 pl-2">
-                      <a class="dropdown-item linksclass" href="allinsights">
-                        All Insights
-                      </a>
-                      <HashLink
-                        to="/allinsights#casestudies"
-                        class="dropdown-item linksclass"
-                      >
-                        Case Studies
-                      </HashLink>
+                          <a href="#" className="col-md-3 navcard2 mt-5 pl-2">
+                            <a
+                              class="dropdown-item linksclass"
+                              href="allinsights"
+                            >
+                              All Insights
+                            </a>
+                            <HashLink
+                              to="/allinsights#casestudies"
+                              class="dropdown-item linksclass"
+                            >
+                              Case Studies
+                            </HashLink>
 
-                      <HashLink
-                        to="/allinsights#blogs"
-                        class="dropdown-item linksclass"
-                      >
-                        Blogs
-                      </HashLink>
-                    </a>
+                            <HashLink
+                              to="/allinsights#blogs"
+                              class="dropdown-item linksclass"
+                            >
+                              Blogs
+                            </HashLink>
+                          </a>
                         </div>
                         <div className="col-md-5">
-                        <a href="#ebooks" className="col-md-3 navcard2 pt-5 pl-2">
-                      <HashLink
-                        to="/allinsights#ebooks"
-                        class="dropdown-item linksclass"
-                      >
-                        Ebooks
-                      </HashLink>
-                      <HashLink
-                        to="/allinsights#whitepapers"
-                        class="dropdown-item linksclass"
-                      >
-                        Whitepapers
-                      </HashLink>
-                      <HashLink
-                        to="/allinsights#top10insights"
-                        class="dropdown-item linksclass"
-                      >
-                        Events
-                      </HashLink>
-                    </a>
+                          <a
+                            href="#ebooks"
+                            className="col-md-3 navcard2 pt-5 pl-2"
+                          >
+                            <HashLink
+                              to="/allinsights#ebooks"
+                              class="dropdown-item linksclass"
+                            >
+                              Ebooks
+                            </HashLink>
+                            <HashLink
+                              to="/allinsights#whitepapers"
+                              class="dropdown-item linksclass"
+                            >
+                              Whitepapers
+                            </HashLink>
+                            <HashLink
+                              to="/allinsights#top10insights"
+                              class="dropdown-item linksclass"
+                            >
+                              Events
+                            </HashLink>
+                          </a>
                         </div>
                       </div>
 
@@ -1148,7 +1159,7 @@ function Navbar() {
               </li>
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link dropdown-toggle text-dark"
+                  class="nav-link dropdown-toggle text-dark Dark-Text"
                   href="#"
                   id="navbarDropdownMenuLink"
                   data-toggle="dropdown"

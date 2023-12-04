@@ -12,7 +12,16 @@ function Contact() {
             <div className="row">
               <div className="col-md-5">
                 <div>
-              <p style={{fontWeight:"600" ,color:"white",fontSize:"20px",letterSpacing:"1px"}}>Contact</p>
+                  <p
+                    style={{
+                      fontWeight: "600",
+                      color: "white",
+                      fontSize: "20px",
+                      letterSpacing: "1px",
+                    }}
+                  >
+                    Contact
+                  </p>
 
                   <h3 className="contact-heading">
                     Let’s
@@ -21,7 +30,6 @@ function Contact() {
                   </h3>
                   <p className="contact-paragraph">
                     Got a question? Don’t hesitate to give us a call today or
-                    <br />
                     shoot us an email.
                   </p>
 
@@ -48,13 +56,29 @@ function Contact() {
                     <div className="all-names-form">
                       <div className="form-group full-g">
                         <label className="full-name required">Full Name</label>
-                        <input type="text" className="form-control name-1" style={{background:"none",boxShadow:"none"}}/>
+                        <input
+                          type="text"
+                          className="form-control name-1"
+                          style={{ background: "none", boxShadow: "none" }}
+                        />
                         <label className="full-name required">Work Email</label>
-                        <input type="text" className="form-control name-1" style={{background:"none",boxShadow:"none"}} />
+                        <input
+                          type="text"
+                          className="form-control name-1"
+                          style={{ background: "none", boxShadow: "none" }}
+                        />
                         <label className="full-name">Contact Number</label>
-                        <input type="text" className="form-control name-1" style={{background:"none",boxShadow:"none"}} />
+                        <input
+                          type="text"
+                          className="form-control name-1"
+                          style={{ background: "none", boxShadow: "none" }}
+                        />
                         <label className="full-name">Message</label>
-                        <textarea type="text" className="form-control name-1" style={{background:"none",boxShadow:"none"}} />
+                        <textarea
+                          type="text"
+                          className="form-control name-1"
+                          style={{ background: "none", boxShadow: "none" }}
+                        />
 
                         <button className="contact-us-3">Contact Us</button>
                       </div>
@@ -152,7 +176,10 @@ function Contact() {
           <div className="row">
             <div className="col-md-8">
               <div>
-                <img src="./images/location-background-contact.png" className="Location-Contact"/>
+                <img
+                  src="./images/location-background-contact.png"
+                  className="Location-Contact"
+                />
               </div>
               <div className="location-places">
                 <div className="overall-location-text">
@@ -171,11 +198,11 @@ function Contact() {
               <div className="coming-office-head">
                 <h4 className="come-soon">Coming Soon offices in</h4>
                 <ul className="canada-list-singa">
-                  <li>Canada</li>
-                  <li>North America</li>
-                  <li>Dubai</li>
-                  <li>Amsterdam</li>
-                  <li>Singapore</li>
+                  <li className="cndas">Canada</li>
+                  <li className="cndas">North America</li>
+                  <li className="cndas">Dubai</li>
+                  <li className="cndas">Amsterdam</li>
+                  <li className="cndas">Singapore</li>
                 </ul>
               </div>
             </div>
@@ -196,9 +223,9 @@ function Contact() {
                     Company
                   </h1>
                   <ul>
-                    <li>About Us</li>
+                    <li><a href="./company" style={{color:"white",textDecoration:"none"}}>About Us</a></li>
                     <li>Newsroom</li>
-                    <li>People and Careers</li>
+                    <li><a href="./people" style={{color:"white",textDecoration:"none"}}>People and Careers</a></li>
                     <li>CSR</li>
                   </ul>
                   <h1 className="footer-heading company">Partners</h1>
@@ -213,13 +240,13 @@ function Contact() {
                 <div class="coll">
                   <h1 className="footer-heading company">Services</h1>
                   <ul className="cloud">
-                    <li>Cloud transformation</li>
-                    <li>Data Engineering</li>
-                    <li>Data Analytics and BI</li>
-                    <li>AI & Machine Learning</li>
-                    <li>DevOps-as-a-service</li>
-                    <li>Application Modernization</li>
-                    <li>Talent as a Service</li>
+                    <li><a href="./cloud" style={{color:"white",textDecoration:"none"}}>Cloud transformation</a></li>
+                    <li><a href="./dataeng" style={{color:"white",textDecoration:"none"}}>Data Engineering</a></li>
+                    <li><a href="./databi" style={{color:"white",textDecoration:"none"}}>Data Analytics and BI</a></li>
+                    <li><a href="./aiml" style={{color:"white",textDecoration:"none"}}>AI & Machine Learning</a></li>
+                    <li><a href="./devops" style={{color:"white",textDecoration:"none"}}>DevOps-as-a-service</a></li>
+                    <li><a href="./application" style={{color:"white",textDecoration:"none"}}>Application Modernization</a></li>
+                    <li><a href="./talent" style={{color:"white",textDecoration:"none"}}>Talent as a Service</a></li>
                   </ul>
                 </div>
               </div>
@@ -228,14 +255,15 @@ function Contact() {
                 <div class="coll">
                   <h1 className="footer-heading company">Industries</h1>
                   <ul>
-                    <li>Life sciences and Pharma</li>
-                    <li>Media & Entertainment</li>
-                    <li>Gaming and gambling</li>
+                    <li><a href="./industries" style={{color:"white",textDecoration:"none"}}>Life sciences and Pharma</a></li>
+                    <li><a href="./media" style={{color:"white",textDecoration:"none"}}>Media & Entertainment</a></li>
+                    <li><a href="./gaming" style={{color:"white",textDecoration:"none"}}>Gaming and gambling</a></li>
                   </ul>
                   <h1 className="footer-heading company">Solutions</h1>
                   <ul>
-                    <li>DO{" "}
-                    <span
+                  <li><a href="./observability" style={{color:"white",textDecoration:"none"}}>
+                      DO{" "}
+                      <span
                         style={{
                           color: "rgba(255, 255, 255, 0.70)",
                           fontSize: "15px",
@@ -246,6 +274,7 @@ function Contact() {
                       >
                         360
                       </span>
+                      </a>
                     </li>
                     <li>DOInsights</li>
                   </ul>
@@ -256,11 +285,10 @@ function Contact() {
                 <div class="coll">
                   <h1 className="footer-heading company">Insights</h1>
                   <ul>
-                    <li>Case Studies</li>
-                    <li>Blogs</li>
-                    <li>Ebooks</li>
-                    <li>Webinars & Videos</li>
-                    <li>Event</li>
+                  <li><a href="./datainsights" style={{color:"white",textDecoration:"none"}}>DO Insights</a></li>
+                    <li><a href="./datacharts" style={{color:"white",textDecoration:"none"}}>DO Charts</a></li>
+                    <li><a href="./datamonitor" style={{color:"white",textDecoration:"none"}}>DO Monitor</a></li>
+                    <li><a href="./dataprompt" style={{color:"white",textDecoration:"none"}}>Do Prompt</a></li>
                   </ul>
                 </div>
               </div>
@@ -304,7 +332,9 @@ function Contact() {
                     </span>
                   </span>
                    
-                  <span className="privacy-policy-1">Privacy Policy &nbsp;|</span>
+                  <span className="privacy-policy-1">
+                    Privacy Policy &nbsp;|
+                  </span>
                   &nbsp;
                   <span className="terms-condition-1">
                     Terms and Conditions

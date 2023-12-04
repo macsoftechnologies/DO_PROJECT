@@ -2,7 +2,7 @@ import React from "react";
 import "./People.css";
 // import Faq from "../products/Faq";
 import Navbar from "../products/Navbar";
-import careers from "../../src/videos/careers.mp4";
+// import careers from "../../src/videos/careers.mp4";
 import Footer from "../products/Footer";
 function People() {
   return (
@@ -11,7 +11,7 @@ function People() {
       <section>
         <div className="People-Careers-Main">
           <video className="people-careers-video" autoPlay loop muted>
-            <source src={careers} type="video/mp4" />
+            <source src="https://storage.googleapis.com/do-website-resources/careers.mp4" type="video/mp4" />
           </video>
           <div className="background">
             <div className="container people-data-observe">
@@ -368,7 +368,7 @@ function People() {
             </div>
           </div>
           <div className="container">
-            <div className="empower">
+            <div className="empower-People">
               <div className="container people-data-observe-1">
                 <h1 className="people-career-1">
                   DataObserve

@@ -8,22 +8,22 @@ function Observability() {
   return (
     <div>
       <Navbar />
+      <div className="observability-MAIN vability-do">
       <img
         src="images/do360finalbanner.png"
         className="do360bannerclass w-100"
         alt="#"
       />
+     
       <div className="header-section">
       <h1 className="container" style={{ color: "#FFF", fontSize: "20px", fontWeight: "700" }}>DO360</h1>
-        <div className="container" style={{ paddingTop: "30px" }}>
+        <div className="container size-font">
           <div
             className="row"
             style={{ display: "flex", flexDirection: "column" }}
           >
             <h1
-              className="col-md-9"
-              style={{ color: "#FFF", fontSize: "46px", fontWeight: "700" }}
-            >
+              className="col-md-9 mobile-observa">
               Data Observability
               <br />
               Solution - Elevate
@@ -31,25 +31,12 @@ function Observability() {
               Data Dependability
             </h1>
             <p
-              className="col-md-9"
-              style={{
-                marginTop: "28px",
-                fontSize: "16px",
-                color: "rgba(255, 255, 255, 0.80)",
-                fontWeight: "400px",
-              }}
-            >
+              className="col-md-9 text-observa"
+  >
               Unleash the true potential of your data.
             </p>
             <p
-              className="col-md-5"
-              style={{
-                marginTop: "26px",
-                fontSize: "16px",
-                color: "rgba(255, 255, 255, 0.80)",
-                fontWeight: "400px",
-              }}
-            >
+              className="col-md-6 text-observa">
               Attain profound insights into its quality and visibility for swift
               resolution of real-time data issues and minimized downtime through
               our Data Observability solution.
@@ -68,7 +55,7 @@ function Observability() {
             />
             <br />
             <div className="container">
-              <button className="demoClass">Get a demo</button>
+              <button className="demoClass class-demo">Get a demo</button>
             </div>
             <div className="videoClass col-md-8">
               <video className="playClass" controls>
@@ -83,12 +70,11 @@ function Observability() {
           </div>
         </div>
       </div>
+      </div>
 
       <div className="definitionClass">
         <div className="container def1Class">
-          <div>
             <h1 className="obsheading">What is observability?</h1>
-            <div className="para container">
               <p className="obspara1">
                 Data observability is about ensuring the quality, reliability,
                 and performance of your data in the system by monitoring,
@@ -103,14 +89,11 @@ function Observability() {
                 strategies helps improve your overall operational efficiency,
                 mitigate associated data risks with quality and productivity.
               </p>
-            </div>
-          </div>
-          <section style={{ paddingTop: "10px" }}>
-            <div className="container mt-5">
+            <div className="mt-5 pt-2">
               <div className="row">
                 <div className="col-md-4 text-center">
                   <div>
-                    <img src="images/dollarprod.png" alt="#" width={100} />
+                    <img className="mobile-size" src="images/dollarprod.png" alt="#" width={100} />
                     <p className="cardText">Reduce Cost</p>
                     <h1 className="cardHead">3x</h1>
                     <p className="cardText2">Reduction in Data</p>
@@ -120,7 +103,7 @@ function Observability() {
 
                 <div className="col-md-4 text-center">
                   <div>
-                    <img src="images/minimizerisk.png" alt="#" width={100} />
+                    <img className="mobile-size" src="images/minimizerisk.png" alt="#" width={100} />
                     <p className="cardText">Minimize Risk</p>
                     <h1 className="cardHead">80%</h1>
                     <p className="cardText2">Reduction in</p>
@@ -130,7 +113,7 @@ function Observability() {
 
                 <div className="col-md-4 text-center">
                   <div>
-                    <img src="images/savetime.png" alt="#" width={100} />
+                    <img className="mobile-size" src="images/savetime.png" alt="#" width={100} />
                     <p className="cardText">Save Time</p>
                     <h1 className="cardHead">30%</h1>
                     <p className="cardText2">Data Engineering Hours</p>
@@ -139,9 +122,13 @@ function Observability() {
                 </div>
               </div>
             </div>
-          </section>
         </div>
       </div>
+
+
+
+
+
       <section className="pillarsClass mb-5">
         <div className="container pt-5 mt-3">
           <div>
@@ -469,12 +456,12 @@ function Observability() {
               </p>
             </div>
             <div className="container">
-              <div className="row differencepart">
-                <div className="col-md-12">
+              <div className="differencepart">
+          
                   <h1 className="do2">
                     How Data Observability differs from Monitoring
                   </h1>
-                </div>
+  
 
                 <div className="row maindiffernce">
                   <div className="col-md-6 do3class">
@@ -762,7 +749,7 @@ function Observability() {
       </section>
       <section>
         <div className="container plugclass">
-          <h1 className="col-md-12 plugplay">
+          <h1 className="col-md-12 plugplay mb-p">
             Why choose DataObserve 360 as plug and play solution?
           </h1>
           <div className="row plugcards">
@@ -790,7 +777,7 @@ function Observability() {
           <div className="guideclass">
             <div className="row">
               <div className="col-md-9">
-                <h1 className="guidehead">
+                <h1 className="guidehead mb-p">
                   Request Guidance from a DataObserve 360Expert
                 </h1>
                 <p className="guidetext">

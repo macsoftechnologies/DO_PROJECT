@@ -346,6 +346,7 @@
 .all-image-text-head-contact{
   margin-right: 62px;
 }
+
 .canada-list-singa li{
   margin-top: 14px;
   margin-bottom: 14px;
@@ -354,6 +355,9 @@
   font-size: 19px;
   color: #0046E8;
   font-weight: 600;
+}
+.canada-list-singa{
+  list-style-type: none;
 }
 .come-soon{
   font-size: 15px;
@@ -637,6 +641,11 @@ font-weight: 500;
   .canada-list-singa li{
     font-size: 10px;
   }
+  .canada-list-singa{
+    margin-bottom: 0px !important;
+    list-style-type: none;
+
+  }
   .overall-location-text{
    
     position: absolute !important;
@@ -673,8 +682,7 @@ font-weight: 500;
     margin: 0px;
   }
   .socialmedia-images{
-    margin-left: -21px;
-    /* margin-top: -1px; */
+   
     margin-bottom: 0px ;
   }
   .fb{
@@ -692,5 +700,328 @@ font-weight: 500;
   }
   .Location-Contact{
     margin-top: 32px;
+    height: 177px;
+  }
+}
+
+@media only screen and (min-width: 468px) and (max-width: 768px)
+{
+  .contact-heading{
+    color: white;
+    font-size: 37px;
+    font-family: Poppins;
+    font-weight: 800;
+    line-height: 40px
+  }
+  .contact-paragraph{
+    font-size: 13px;
+    line-height: 23px;
+  }
+  .contact-us-3 {
+    width: 44%;
+    padding: 5px;
+    font-weight: 500;
+    padding: 10px 12px;
+    font-size: 15px;
+  }
+
+  .our-location{
+    font-size: 24px;
+  }
+  .map-location-size{
+    font-size: 21px;
+  }
+
+  .location-india{
+    margin-top: 10%;
+  }
+  .map{
+    margin-bottom: 6px !important;
+  }
+  .come-soon{
+    font-size: 13px;
+  }
+  .canada-list-singa li{
+    font-size: 12px;
+  }
+  .overall-location-text{
+   
+    position: absolute !important;
+    top: 38px;
+    left: 33px;
+   
+  }
+
+  .india-main {
+    font-size: 17px;
+  }
+  .hyderabad-main {
+    font-size: 13px;
+  }
+  .local-main-text {
+    font-size: 11px;
+  }
+  
+  .coming-office-head{
+    margin-top: 30px;
+    width: 100%;
+
+  }
+  .last-foot-m{
+    margin-top: 45px;
+  }
+
+  .logo-contact-page{
+    margin-left: 0px;
+  }
+  .privacy-dataobserve-text{
+    margin-left: 0px;
+    margin-top: 12px;
+    margin: 0px;
+  }
+  .socialmedia-images{
+   
+    margin-bottom: 0px ;
+  }
+  .fb{
+    height: 34px;
+    width: 34px;
+  }
+  .connectpage-1{
+    width: 100% !important;
+  }
+  .full-name {
+    font-size: 16px;
+  }
+  .mobile-number{
+    font-size: 15px !important;
+  }
+  .Location-Contact{
+    margin-top: 32px;
+    height: 200px;
+  }
+  .full-g {
+    padding: 20px;
+  }
+  .contact-bg-color{
+    height: 836px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px)
+{
+  .contact-heading{
+    color: white;
+    font-size: 44px;
+    font-family: Poppins;
+    font-weight: 800;
+    line-height: 43px
+  }
+  .contact-paragraph{
+    font-size: 13px;
+    line-height: 23px;
+  }
+  .contact-us-3 {
+    width: 44%;
+    padding: 5px;
+    font-weight: 500;
+    padding: 10px 12px;
+    font-size: 15px;
+  }
+
+  .our-location{
+    font-size: 25px;
+  }
+  .map-location-size{
+    font-size: 24px;
+  }
+
+  .location-india{
+    margin-top: 10%;
+  }
+  .map{
+    margin-bottom: 6px !important;
+  }
+  .come-soon{
+    font-size: 13px;
+  }
+  .canada-list-singa li{
+    font-size: 12px;
+  }
+  .overall-location-text{
+   
+    position: absolute !important;
+    top: 38px;
+    left: 33px;
+   
+  }
+
+  .india-main {
+    font-size: 17px;
+  }
+  .hyderabad-main {
+    font-size: 13px;
+  }
+  .local-main-text {
+    font-size: 11px;
+  }
+  
+  .coming-office-head{
+    margin-top: 30px;
+    width: 100%;
+
+  }
+  .last-foot-m{
+    margin-top: 45px;
+  }
+
+  .logo-contact-page{
+    margin-left: 0px;
+  }
+  .privacy-dataobserve-text{
+    margin-left: 0px;
+    margin-top: 12px;
+    margin: 0px;
+  }
+  .socialmedia-images{
+   
+    margin-bottom: 0px ;
+  }
+  .fb{
+    height: 34px;
+    width: 34px;
+  }
+  .connectpage-1{
+    width: 100% !important;
+  }
+  .full-name {
+    font-size: 16px;
+  }
+  .mobile-number{
+    font-size: 15px !important;
+  }
+  .Location-Contact{
+    margin-top: 32px;
+    height: 210px;
+  }
+  .full-g {
+    padding: 20px;
+  }
+  .contact-bg-color{
+    height: 836px;
+  }
+  .canada-list-singa li{
+    margin-top: 11px;
+    margin-bottom: 11px;
+  }
+}
+
+
+@media only screen and (min-width: 990px) and (max-width: 1024px)
+{
+  .contact-heading{
+    color: white;
+    font-size: 44px;
+    font-family: Poppins;
+    font-weight: 800;
+    line-height: 46px
+  }
+  .contact-paragraph{
+    font-size: 13px;
+    line-height: 23px;
+  }
+  .contact-us-3 {
+    width: 44%;
+    padding: 5px;
+    font-weight: 500;
+    padding: 10px 12px;
+    font-size: 15px;
+  }
+
+  .our-location{
+    font-size: 25px;
+  }
+  .map-location-size{
+    font-size: 24px;
+  }
+
+  .location-india{
+    margin-top: 10%;
+  }
+  .map{
+    margin-bottom: 6px !important;
+  }
+  .come-soon{
+    font-size: 13px;
+  }
+  .canada-list-singa li{
+    font-size: 12px;
+  }
+
+  .overall-location-text{
+   
+    position: absolute !important;
+    top: 38px;
+    left: 33px;
+   
+  }
+
+  .india-main {
+    font-size: 17px;
+  }
+  .hyderabad-main {
+    font-size: 13px;
+  }
+  .local-main-text {
+    font-size: 11px;
+  }
+  
+  .coming-office-head{
+    margin-top: 30px;
+    width: 100%;
+
+  }
+  .last-foot-m{
+    margin-top: 45px;
+  }
+
+  .logo-contact-page{
+    margin-left: 0px;
+  }
+  .privacy-dataobserve-text{
+    margin-left: 0px;
+    margin-top: 12px;
+    margin: 0px;
+  }
+  .socialmedia-images{
+   
+    margin-bottom: 0px ;
+  }
+  .fb{
+    height: 34px;
+    width: 34px;
+  }
+  .connectpage-1{
+    width: 100% !important;
+  }
+  .full-name {
+    font-size: 16px;
+  }
+  .mobile-number{
+    font-size: 15px !important;
+  }
+  .Location-Contact{
+    margin-top: 32px;
+    height: 210px;
+  }
+  .full-g {
+    padding: 20px;
+  }
+  .contact-bg-color{
+    height: 836px;
+  }
+  .canada-list-singa li{
+    margin-top: 11px;
+    margin-bottom: 11px;
   }
 }

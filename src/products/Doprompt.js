@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/alt-text */
 import React from 'react'
 import Navbar from "./Navbar";
 import Footer from "./Footer";
@@ -16,14 +17,12 @@ function Doprompt() {
           className="dopromptvideo"
         />
         <section className="dopromptheader">
-          <h1 className="container" style={{ color: "#FFF", fontSize: "20px", fontWeight: "700", marginBottom: "20px" }}>DOInsights</h1>
           <div className="container">
-            <div className="row">
-              <h1 className="dopromptheading col-md-6 mb-0">
-                Simple. Crafted. Powerful.
-              </h1>
+          <h1 className="col-md-6" style={{ color: "#FFF", fontSize: "20px", fontWeight: "700", marginBottom: "20px" }}>DO Prompt</h1>
 
-              <h1 className="dopromptheading col-md-12"> Data Analysis.</h1>
+              <h1 className="dopromptheading-pro col-md-6 mb-0">
+              Get ahead in Generative AI with an advanced prompt engineering platform for teams
+              </h1>
               <p className="dopromptheaderpara col-md-4">
                 Meet DO Insights, Business Intelligence Tool built for everyone on
                 your team.
@@ -47,12 +46,11 @@ function Doprompt() {
             <div className="dopromptvideoClass col-md-8">
 
               <img
-                src="images/product360videoimg.png"
+                src="images/dptn1.png"
                 alt="#"
                 className="playClass"
               />
             </div>
-          </div>
         </section>
 
         <section className='promptsection2'>
@@ -60,8 +58,8 @@ function Doprompt() {
             <div className='row'>
               <div className='col-md-6'>
                 <div className='generative'>
-                  <div className='feedback-div1 d-flex'>
-                    <img src='./images/arcticons_simple.png' width={"50px"} />
+                  <div className='feedback-disv1 d-flex'>
+                    <img className='text-img' src='./images/arcticons_simple.png'style={{width:"50px"}}/>
                     <h1 className='generative-h1'>Generative AI Playground</h1>
                   </div>
                   <p className='generative-para'>Create new prompts, make changes, and keep track of different versions without any hassle. Use prompt templates with parameters to create a  prompt once, then reuse it effortlessly with different data</p>
@@ -69,7 +67,7 @@ function Doprompt() {
 
                 <div className='feedback-loop'>
                   <div className='feedback-div2 d-flex'>
-                    <img src='./images/hsk.png' width={"50px"} />
+                    <img className='text-img' src='./images/hsk.png' width={"50px"} />
                     <h1 className='generative-h1'>Feedback Loop & Interations</h1>
                   </div>
                   <p className='generative-para'>With our Prompt API, say goodbye to the bottleneck of developer-only modifications. Developers just integrate the Prompt API once, enabling prompt engineers to effortlessly tune prompts in parallel and in real-time using a user-friendly interface.</p>
@@ -91,9 +89,9 @@ function Doprompt() {
           </div>
         </section>
 
-        <section className='promptsection3'>
-          <div className='container available-full-div'>
-            <div className='row'>
+        <section className='promptsection3 mb-4'>
+          <div className='container'>
+            <div className='row pro-available'>
               <div className='col-md-6'>
                 <h1 className='available-h1'>Built for Enterprises, Available to Everyone</h1>
                 <p className='available-p'>Meet your enterprise needs with an ever-growing bundle of add-ons & features.</p>
@@ -159,7 +157,7 @@ function Doprompt() {
                   <p className='benfits-para'>Search usage history and stay up-to-date with responses generated from your prompts</p>
                 </div>
                 <div className='col-md-4 benfit-divs'>
-                  {/* <img src='./images/promptmanagement.png' width={"50px"}/> */}
+                  <img src='./images/dptn2.png' width={"50px"}/>
                   <h1 className='benfits-h1b'>Performance tracking</h1>
                   <p className='benfits-para'>Make sure your clients are delighted.</p>
                 </div>
@@ -175,10 +173,10 @@ function Doprompt() {
           
         </section>
 
-        <section className='promptsection5'>
+        <section className='promptsection5 mt-5'>
           <div className='translate-full-div'>
           <div className='container'>
-            <div className='row'>
+            <div className='row pro-available'>
               <div className='col-md-6'>
                 <img src='./images/translate.png' width={"100%"} />
               </div>
@@ -211,12 +209,12 @@ function Doprompt() {
           
         </section>
 
-        <section className='promptsection6'>
+        <section className='promptsection6 mt-4'>
           <div className='container'>
             <h1 className='library-head'>Prompt Engineering Library</h1>
             <p className='library-head-para'>From enhanced functionality to streamlined operations, the prompt <br/> engineering library can help take your product to the next level.</p>
             <div className='library-img-div'>
-              <img src='./images/librarymiddle.png' width={"50%"} />
+              <img src='./images/dptn3.png' width={"50%"} />
             </div>
 
             <div className='row'>
@@ -257,7 +255,7 @@ function Doprompt() {
           </div>
         </section>
 
-        <section className='promptsection7'>
+        <section className='promptsection7 mt-4'>
           <div className='container'>
             <div className='row'>
 
@@ -281,21 +279,21 @@ function Doprompt() {
                   <h2 className='everyone-heads'>with the prompt engineering platformStay ahead of the competition and streamline your Generative AI solutions for maximum efficiency.</h2>
                 </div>
               </div>
-              <div className='col-md-6'>
-                <img src='./images/ppt-enterprises.png' width={"110%"} />
+              <div className='col-md-6' style={{ margin: "auto" }}>
+                <img src='./images/ppt-enterprises.png' width={"100%"} />
               </div>
             </div>
           </div>
         </section>
 
-        <section className='promptsection8'>
+        <section className='promptsection8 mt-4'>
           <div className='container'>
             <div>
               <h1 className='ppt-api-h1'>Prompt Engineering API</h1>
               <p className='ppt-api-para'>Meet your enterprise needs with an ever-growing & bundle of add-ons & features.</p>
             </div>
             <div className='ppt-api-img'>
-              <img src='./images/ppt-api.png' />
+              <img src='./images/dptn4.png' width={"50%"} />
             </div>
 
             <div className='row'>

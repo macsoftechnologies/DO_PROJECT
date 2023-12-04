@@ -3,91 +3,85 @@ import "./Gaming.css";
 import Navbar from "../products/Navbar";
 import Faq from "../products/Faq";
 import Footer from "../products/Footer";
-import gaming from "../../src/videos/gaming.mp4";
+// import gaming from "../../src/videos/gaming.mp4";
 function Gaming() {
   return (
     <div>
       <Navbar />
       {/* !--nav bar ends--! */}
 
-      <div>
+      <div className="gaming1st-div">
         <video className="play-gaming-videos" autoPlay loop muted>
-          <source src={gaming} type="video/mp4" />
+          <source
+            src="https://storage.googleapis.com/do-website-resources/gaming.mp4"
+            type="video/mp4"
+          />
         </video>
-        <div className="gaming-main-img">
-          <p className="headinggame">
-            <div className="mainhead">
-              {" "}
-              <p
+        <div className="container Gaming-Main">
+          <div className="row">
+            <div className="col-md-6">
+              <h4 className="Gaming-HeadiNG" style={{ color: "white" }}>
+                Gaming
+              </h4>
+              <p className="Gaming-DES">
+                Empower customer experiences with data-driven solutions that
+                facilitate gamification.
+              </p>
+              <p className="Gaming-content">
+                Experience seamless and rapid online gaming and gambling with
+                DataObserve's Cloud platform. Collaborate with DataObserve for
+                tailor-made cloud solutions that cater to every aspect of the
+                gaming lifecycle.
+              </p>
+              <button
+                className="datatypes"
                 style={{
-                  color: "white",
-                  fontSize: "20px",
-                  fontStyle: "normal",
-                  fontWeight: "600",
+                  display: "flex",
+                  height: "61px",
+                  maxWidth: "255px",
+                  padding: "20px 46px 21px 48px",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  border: "none",
+                  marginTop: "70px",
+                  borderRadius: "5px",
                 }}
               >
-                Gaming
-              </p>
-              <span>
-                Empower customer
-                <br /> experiences with data-
-                <br />
-                driven solutions that
-                <br /> facilitate gamification.
-              </span>
-              <br />
+                <span
+                  className="spans"
+                  style={{
+                    color: "#0046E8",
+                    fontSize: "18px",
+                    fontStyle: "normal",
+                    fontWeight: "600",
+                    lineHeight: "19px",
+                  }}
+                >
+                  Get in touch
+                </span>{" "}
+                <i
+                  className="fa fa-long-arrow-right ARROW-RIGHT-CLOUD"
+                  style={{
+                    width: "23px",
+                    fontSize: "29px",
+                    flexShrink: "0",
+                    color: "#0046E8",
+                    marginLeft: "12px",
+                  }}
+                  aria-hidden="true"
+                ></i>
+              </button>
             </div>
-            <p className="subhead">
-              Experience seamless and rapid online gaming with DataObserve's
-              Cloud platform.
-              <br /> Collaborate with DataObserve for tailor-made cloud
-              solutions that cater to every aspect of the
-              <br /> gaming lifecycle.
-            </p>
-          </p>
-          <button
-            style={{
-              display: "flex",
-              height: "61px",
-              maxWidth: "255px",
-              padding: "20px 46px 21px 48px",
-              justifyContent: "center",
-              alignItems: "center",
-              border: "none",
-              marginTop: "40px",
-              borderRadius: "5px",
-              marginLeft: "14%",
-            }}
-          >
-            <span
-              style={{
-                color: "#FF4925",
-                fontSize: "14px",
-                fontStyle: "normal",
-                fontWeight: "600",
-                lineHeight: "19px",
-              }}
-            >
-              Talk to us now
-            </span>{" "}
-            <i
-              className="fa fa-long-arrow-right ml-3"
-              style={{
-                width: "23px",
-                fontSize: "29px",
-                flexShrink: "0",
-                color: "#FF4925",
-              }}
-              aria-hidden="true"
-            ></i>
-          </button>
+
+            <div className="col-md-6"></div>
+          </div>
         </div>
       </div>
 
       {/* !--6box stArt--! */}
 
       <div style={{ paddingTop: "30px", marginBottom: "6%" }}>
-        <h3 className="platforms">
+        <h3 className="gaming-platforms">
           Our Expertise in data & cloud for Online Gaming
         </h3>
         <p className="platformspara">
@@ -99,148 +93,170 @@ function Gaming() {
 
         <div className="container mt-3">
           <div className="row box">
-            <div className="col-md-4 Bb-1">
-              <div className="box-padding bb-line" style={{ height: "333px" }}>
-                <div className="d-flex">
-                  <img
-                    src="./images/game1.png"
-                    className="App-logo business"
-                    alt="logo"
-                    width={45}
-                    height={48}
-                  />
-                  <h6 className="boxhead-1">Gaming Analytics</h6>
+            <div className="col-md-4 ind-bb-sg-1">
+              <div className="bx1-border Media-Box">
+                <div className="text-initial">
+                  <div className="d-flex">
+                    <img
+                      src="./images/game1.png"
+                      className="App-logo-industrie business"
+                      alt="logo"
+                      width={45}
+                      style={{
+                        marginBottom: "10px",
+                        marginTop: "-2px",
+                      }}
+                    />
+                    <h5 className="ind-boxhead">Gaming Analytics</h5>
+                  </div>
+                  <p className="boxtext text-initial">
+                    Utilize our cloud-powered gaming analytics to extract
+                    valuable insights that enhance the personalized and engaging
+                    gaming experience for online players. These analytics also
+                    enable the detection of gaming fraud and the monitoring of
+                    game performance.
+                  </p>
                 </div>
-
-                <p className="boxtext" style={{ marginTop: "10px" }}>
-                  Utilize our cloud-powered gaming analytics to extract valuable
-                  insights that enhance the personalized and engaging gaming
-                  experience for online players. These analytics also enable the
-                  detection of gaming fraud and the monitoring of game
-                  performance.
-                </p>
               </div>
             </div>
 
-            <div className="col-md-4 Bb-2">
-              <div className="box-padding" style={{ height: "333px" }}>
-                <div className="d-flex">
-                  <img
-                    src="./images/game2.png"
-                    className="App-logo arrow"
-                    alt="logo"
-                    width={100}
-                  />
-                  <h6 className="boxhead-1">
-                    Data Lakehouses for
-                    <br />
-                    Gaming
-                  </h6>
+            <div className="col-md-4 ind-bb-sg-2">
+              <div className="bx1-border Media-Box">
+                <div className="text-initial">
+                  <div className="d-flex">
+                    <img
+                      src="./images/game2.png"
+                      className="App-logo-industrie business"
+                      alt="logo"
+                      width={45}
+                      style={{
+                        marginBottom: "10px",
+                        marginTop: "-2px",
+                      }}
+                    />
+                    <h5 className="ind-boxhead">Data Lakehouses for Gaming</h5>
+                  </div>
+                  <p className="boxtext text-initial">
+                    Utilize our cloud expertise to consolidate all your gaming
+                    analytics and big data in a single data lakehouse, combining
+                    the capabilities of data lakes and data warehouses. This
+                    integration allows you to merge structured and unstructured
+                    gaming data, resulting in real-time insights that enhance
+                    the gaming experience.
+                  </p>
                 </div>
-
-                <p className="boxtext">
-                  Utilize our cloud expertise to consolidate all your gaming
-                  analytics and big data in a single data lakehouse, combining
-                  the capabilities of data lakes and data warehouses. This
-                  integration allows you to merge structured and unstructured
-                  gaming data, resulting in real-time insights that enhance the
-                  gaming experience.{" "}
-                </p>
               </div>
             </div>
 
-            <div className="col-md-4 Bb-3">
-              <div className="box-padding" style={{ height: "333px" }}>
-                <div className="d-flex">
-                  <img
-                    src="./images/game3.png"
-                    className="App-logo  unified-logo"
-                    alt="logo"
-                  />
-                  <h5 className="boxhead-1">
-                    {" "}
-                    Big Data with
-                    <br />
-                    Augmented Analytics  
-                  </h5>
+            <div className="col-md-4 ind-bb-sg-3">
+              <div className="bx1-border Media-Box">
+                <div className="text-initial">
+                  <div className="d-flex">
+                    <img
+                      src="./images/game3.png"
+                      className="App-logo-industrie business"
+                      alt="logo"
+                      width={45}
+                      style={{
+                        marginBottom: "10px",
+                        marginTop: "-2px",
+                      }}
+                    />
+                    <h5 className="ind-boxhead">
+                      Big Data with Augmented Analytics 
+                    </h5>
+                  </div>
+                  <p className="boxtext text-initial">
+                    The utilization of Big Data in the Gaming & Gambling
+                    industry has seen a significant surge. Elevate your online
+                    gaming and gambling designs with our cloud partner-powered
+                    Big Data solutions. Enhance your business intelligence
+                    through the adoption of Augmented Analytics, automating
+                    gaming insights for improved outcomes.
+                  </p>
                 </div>
-
-                <p className="boxtext">
-                  The utilization of Big Data in the online Gaming industry has
-                  seen a significant surge. Elevate your online gaming designs
-                  with our cloud partner-powered Big Data solutions. Enhance
-                  your business intelligence through the adoption of Augmented
-                  Analytics, automating gaming insights for improved outcomes.{" "}
-                </p>
               </div>
             </div>
 
-            <div className="col-md-4 Bb-4">
-              <div className="box-padding" style={{ height: "333px" }}>
-                <div className="d-flex">
-                  <img
-                    src="./images/game4.png"
-                    className="App-logo unified-logo"
-                    alt="logo"
-                  />
-                  <h5 className="boxhead-1">
-                    {" "}
-                    Customer Retention on
-                    <br />
-                    Advanced BI  
-                  </h5>
+            <div className="col-md-4 ind-bb-sg-4">
+              <div className="bx1-border Media-Box">
+                <div className="text-initial">
+                  <div className="d-flex">
+                    <img
+                      src="./images/game4.png"
+                      className="App-logo-industrie business"
+                      alt="logo"
+                      width={45}
+                      style={{
+                        marginBottom: "10px",
+                        marginTop: "-2px",
+                      }}
+                    />
+                    <h5 className="ind-boxhead">
+                      Customer Retention on Advanced BI
+                    </h5>
+                  </div>
+                  <p className="boxtext text-initial">
+                    Harness the synergy of Business Intelligence (BI) and
+                    Analytics to gain instant insights into player behavior and
+                    loyalty. Elevate customer retention through our BI-enabled
+                    personalized services tailored for online players and
+                    gamblers.
+                  </p>
                 </div>
-
-                <p className="boxtext">
-                  Harness the synergy of Business Intelligence (BI) and
-                  Analytics to gain instant insights into player behavior and
-                  loyalty. Elevate customer retention through our BI-enabled
-                  personalized services tailored for online players and
-                  gamblers.
-                </p>
               </div>
             </div>
 
-            <div className="col-md-4 Bb-5">
-              <div className="box-padding" style={{ height: "333px" }}>
-                <div className="d-flex">
-                  <img
-                    src="./images/game5.png"
-                    className="App-logo arrow"
-                    alt="logo"
-                    width={100}
-                  />
-                  <h5 className="boxhead-1"> AI/ML Predictive Models</h5>
+            <div className="col-md-4 ind-bb-sg-5">
+              <div className="bx1-border Media-Box">
+                <div className="text-initial">
+                  <div className="d-flex">
+                    <img
+                      src="./images/game5.png"
+                      className="App-logo-industrie business"
+                      alt="logo"
+                      width={45}
+                      style={{
+                        marginBottom: "10px",
+                        marginTop: "-2px",
+                      }}
+                    />
+                    <h5 className="ind-boxhead">AI/ML Predictive Models</h5>
+                  </div>
+                  <p className="boxtext text-initial">
+                    Unleash the full potential of AI and ML predictive models
+                    deployed on our partner Cloud platform. Infuse the
+                    capabilities of AI, ML, and predictive analytics into online
+                    gaming and gambling solutions.
+                  </p>
                 </div>
-
-                <p className="boxtext" style={{ marginTop: "9px" }}>
-                  Unleash the full potential of AI and ML predictive models
-                  deployed on our partner Cloud platform. Infuse the
-                  capabilities of AI, ML, and predictive analytics into online
-                  gaming and gambling solutions.
-                </p>
               </div>
             </div>
 
-            <div className="col-md-4 Bb-6">
-              <div className="box-padding" style={{ height: "333px" }}>
-                <div className="d-flex">
-                  <img
-                    src="./images/game6.png"
-                    className="App-logo arrow"
-                    alt="logo"
-                    width={100}
-                  />
-                  <h5 className="boxhead-1">AWS for Gaming</h5>
+            <div className="col-md-4 ind-bb-sg-6">
+              <div className="bx1-border Media-Box">
+                <div className="text-initial">
+                  <div className="d-flex">
+                    <img
+                      src="./images/game6.png"
+                      className="App-logo-industrie business"
+                      alt="logo"
+                      width={45}
+                      style={{
+                        marginBottom: "10px",
+                        marginTop: "-2px",
+                      }}
+                    />
+                    <h5 className="ind-boxhead">AWS for Gaming </h5>
+                  </div>
+                  <p className="boxtext text-initial">
+                    Develop faster and more innovative games on any platform or
+                    device using the Cloud. Harness the extensive cloud
+                    infrastructure offered by our gaming and gambling partners
+                    to run games securely and efficiently in the cloud,
+                    utilizing flexible computing capacity.
+                  </p>
                 </div>
-
-                <p className="boxtext" style={{ marginTop: "9px" }}>
-                  Develop faster and more innovative games on any platform or
-                  device using the Cloud. Harness the extensive cloud
-                  infrastructure offered by our gaming and gambling partners to
-                  run games securely and efficiently in the cloud, utilizing
-                  flexible computing capacity.
-                </p>
               </div>
             </div>
           </div>
@@ -255,15 +271,13 @@ function Gaming() {
         <h1 className="case">Our Case Studies</h1>
         <p className="media-case-para" style={{ marginTop: "40px" }}>
           The DataObserve team, consisting of industry experts, stands prepared
-          to help online gaming <br />
-          enterprises achieve their business objectives. Explore our customer
-          success stories to learn how you
-          <br /> can maximize the potential of cloud solutions for games and
-          esports.
+          to help online gaming enterprises achieve their business objectives.<br/>
+          Explore our customer success stories to learn how you can maximize the
+          potential of cloud solutions for games and esports.
         </p>
 
         <div
-          class="container card mb-3 mt-5 Built-back-colour"
+          class="container  mb-3 mt-5 Built-back-colour"
           style={{
             backgroundColor: "#1A4AB9",
             borderRadius: "20px",
@@ -289,16 +303,16 @@ function Gaming() {
           >
             <div class="col-md-5">
               <img
-                style={{ height: "252px", width: "100%" }}
-                src="./images/media-enter-image.png"
+                style={{ height: "250px", width: "100%" }}
+                src="./images/build.png"
                 className="card-img"
                 alt="..."
               />
             </div>
-            <div class="col-md-7">
-              <div class="card-body">
+            <div class="col-md-7 cLOUD-Unified">
+              <div class="card-body CLOUD-bODY">
                 <h5
-                  class="card-title"
+                  class="col-md-9 card-title CLouD-BULIT"
                   style={{
                     color: "white",
                     letterSpacing: "0.68px",
@@ -308,15 +322,15 @@ function Gaming() {
                   Built A Unified Augmented Analytics
                   <br /> decision intelligence Platform
                 </h5>
-                <p class="card-text-3">
+                <p
+                  class="col-md-9 card-text-3"
+                  style={{ fontSize: "13px", color: "#fff", opacity: "0.5" }}
+                >
                   Learn how we created a self-service, predictive, insights
-                  platform driven
-                  <br /> by an adaptive machine learning engine which helps
-                  improve decision-
-                  <br />
-                  making.
+                  platform driven by an adaptive machine learning engine which
+                  helps improve decision-making.
                 </p>
-                <p class="card-text" style={{ color: "white" }}>
+                <p class=" col-md-9 card-text" style={{ color: "white" }}>
                   <p style={{ fontSize: 16 }}>
                     Read case study
                     <i
@@ -330,26 +344,26 @@ function Gaming() {
                     display: "flex",
                     alignItems: "center",
                     justifyContent: "space-around",
-                    marginLeft: "-20px",
                   }}
                 >
                   <img
-                    src="./images/newaccede.png"
+                    src="./images/accede.png"
                     alt=""
                     style={{ width: "60px", height: "20px" }}
                   />
                   <img
-                    src="./images/slokaenergy.png"
+                    src="./images/solakhen.png"
                     alt=""
                     style={{ width: "100px" }}
                   />
                   <img
-                    src="./images/gbreco.png"
+                    src="./images/grbeco.png"
                     alt=""
                     style={{ width: "95px" }}
                   />
                   <img
-                    src="./images/newsrdsystems.png"
+                    className="srdsystems-cloud"
+                    src="./images/srdsystems.png"
                     alt=""
                     style={{ width: "70px" }}
                   />
@@ -365,22 +379,15 @@ function Gaming() {
       <div className="gameimg">
         <div className="gaming-img-section">
           <div className="lab-data-gaming mb-0">
-            {/* <div
-              class="card"
-              style={{
-                border: "none",
-                background: "none",
-                width: "500px",
-                marginLeft: "585px",
-              }}
-            >
+            <div class="card gaming-card-last">
               <div
                 class="card-body gaming-bg-pink"
-                style={{
-                  borderRadius: "27px",
-                  height: "225px",
-                  width: "390px",
-                }}
+                // style={{
+                //   borderRadius: "27px",
+                //   height: "271px",
+                //   width: "435px",
+                //   padding: "33px",
+                // }}
               >
                 <p className="doc">
                   {" "}
@@ -390,61 +397,7 @@ function Gaming() {
                   BLOG{" "}
                 </p>
                 <h5
-                  class="card-title"
-                  style={{ fontSize: "15px", fontWeight: "600px" }}
-                >
-                  The Critical Role of Talent in the Digital Transformation
-                  Journey
-                </h5>
-                <h6
-                  class="gaming-card-subtitle mb-2"
-                  style={{ fontSize: "11px", marginTop: "5px" }}
-                >
-                  In 2022, digital transformation stands as the primary driver
-                  of success for any organization.
-                </h6>
-                <p
-                  class="readmore"
-                  style={{ color: "white", marginTop: "25px" }}
-                >
-                  <small>
-                    Download
-                    <i
-                      class="fa fa-long-arrow-right ml-3"
-                      aria-hidden="true"
-                    ></i>
-                  </small>
-                </p>
-              </div>
-            </div> */}
-            <div
-              class="card gaming-card-last"
-              style={{
-                border: "none",
-                background: "none",
-                width: "500px",
-                marginLeft: "54%",
-                marginTop: "8%",
-              }}
-            >
-              <div
-                class="card-body media-bg-pink"
-                style={{
-                  borderRadius: "27px",
-                  height: "271px",
-                  width: "435px",
-                  padding: "33px",
-                }}
-              >
-                <p className="doc">
-                  {" "}
-                  <span>
-                    <img src="./images/doc.png" />
-                  </span>{" "}
-                  BLOG{" "}
-                </p>
-                <h5
-                  class="card-title"
+                  class="gaming-card-title"
                   style={{
                     fontSize: "15px",
                     fontWeight: "600px",
@@ -535,7 +488,7 @@ function Gaming() {
                       justifyContent: "space-between",
                     }}
                   >
-                    <p style={{ margin: "0px" }}>
+                    <p className="industry">
                       What are Gaming Industry Data Solutions, and how do they
                       enhance gaming experiences?
                     </p>
@@ -605,7 +558,7 @@ function Gaming() {
                       justifyContent: "space-between",
                     }}
                   >
-                    <p style={{ margin: "0px" }}>
+                    <p style={{ margin: "0px" }} className="industry">
                       How do Gaming Industry Data Solutions benefit game
                       developers and publishers?
                     </p>
@@ -673,7 +626,7 @@ function Gaming() {
                       justifyContent: "space-between",
                     }}
                   >
-                    <p style={{ margin: "0px" }}>
+                    <p style={{ margin: "0px" }} className="industry">
                       What challenges do Gaming Industry Data Solutions address
                       within the gaming sector?
                     </p>
@@ -741,7 +694,7 @@ function Gaming() {
                       justifyContent: "space-between",
                     }}
                   >
-                    <p style={{ margin: "0px" }}>
+                    <p style={{ margin: "0px" }} className="industry">
                       Can Gaming Industry Data Solutions be customized for
                       specific game genres or platforms?
                     </p>
@@ -809,7 +762,7 @@ function Gaming() {
                       justifyContent: "space-between",
                     }}
                   >
-                    <p style={{ margin: "0px" }}>
+                    <p style={{ margin: "0px" }} className="industry">
                       How do Data Solutions foster collaboration within the
                       Gaming Industry?
                     </p>
@@ -877,7 +830,7 @@ function Gaming() {
                       justifyContent: "space-between",
                     }}
                   >
-                    <p style={{ margin: "0px" }}>
+                    <p style={{ margin: "0px" }} className="industry">
                       Are Gaming Industry Data Solutions compliant with gaming
                       industry regulations and player privacy standards?
                     </p>
@@ -945,7 +898,7 @@ function Gaming() {
                       justifyContent: "space-between",
                     }}
                   >
-                    <p style={{ margin: "0px" }}>
+                    <p style={{ margin: "0px" }} className="industry">
                       How do Gaming Industry Data Solutions contribute to player
                       engagement and personalization?
                     </p>
@@ -1013,7 +966,7 @@ function Gaming() {
                       justifyContent: "space-between",
                     }}
                   >
-                    <p style={{ margin: "0px" }}>
+                    <p style={{ margin: "0px" }} className="industry">
                       Can Data Solutions be integrated with existing game
                       development and distribution systems?
                     </p>
@@ -1081,7 +1034,7 @@ function Gaming() {
                       justifyContent: "space-between",
                     }}
                   >
-                    <p style={{ margin: "0px" }}>
+                    <p style={{ margin: "0px" }} className="industry">
                       What kind of analytics capabilities do Gaming Industry
                       Data Solutions offer for game development?
                     </p>
@@ -1149,7 +1102,7 @@ function Gaming() {
                       justifyContent: "space-between",
                     }}
                   >
-                    <p style={{ margin: "0px" }}>
+                    <p style={{ margin: "0px" }} className="industry">
                       How can organizations in the Gaming Industry get started
                       with implementing Data Solutions?
                     </p>

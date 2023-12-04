@@ -1,25 +1,11 @@
-/* .faq-class {
-  background-color: #1a4ab9;
-  border-radius: 10px 10px 0px 0px !important;
-  border: none;
-  height: fit-content;
-  padding: 67px;
-} */
-/* .enterprise {
-  background-image: url("../../public/images/enterprise.jpeg");
-  height: 600px;
-  width: 100%;
-  font-size: 50px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  
-} */
 
+.enterprise{
+  position: relative;
+
+}
 .data-engineer {
   width: 100%;
   object-fit: cover;
-  position: relative;
 }
 .contact {
   background-color: blue;
@@ -43,7 +29,7 @@
 .data {
   color: #0046e8;
   font-size: 19.6px;
-  font-family: Roboto;
+  font-family: Poppins;
   font-weight: 200;
   line-height: 30.49px;
   letter-spacing: 0.39px;
@@ -52,7 +38,7 @@
 .observe {
   color: #0046e8;
   font-size: 19.6px;
-  font-family: Roboto;
+  font-family: Poppins;
   font-weight: 800;
   line-height: 30.49px;
 }

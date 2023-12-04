@@ -1,160 +1,154 @@
-
-/* ....navbar start... */
-* {
-  margin: 0;
-  padding: 0;
+.HomePage-Video{
+  position: relative;
+  height: 764px;
 }
-
-body{
-  font-family: 'Poppins', sans-serif;
-}
-
-.contact{
-    background-color: blue;
-    color: white;
-    padding: 5px 10px;
-    border-radius: 6px;
-    font-weight: 500;
-    border: 1px solid blue;
-}
-
-.logo-main{
-  width: 38px;
-  height: 24px;
-  margin-top: 17px;
-  margin-right: 10px;
-  cursor: pointer;
-}
-.logo-text{
-  margin-top: 10px;
-}
-
-
-.data{
-  color: #0046E8;
-font-size: 19.60px;
-font-family: Roboto;
-font-weight: 200;
-line-height: 30.49px;
-letter-spacing: 0.39px;
-word-wrap: break-word;
-cursor: pointer;
-
-
-}
-
-
-.observe{
-  color: #0046E8;
-font-size: 19.60px;
-font-family: Roboto;
-font-weight: 800;
-line-height: 30.49px;
-
-}
-
-.text-dark{
-  font-weight: 500;
-}
-/* .expertise{
-  margin-left: 50px;
-} */
-/* .....navabar end.... */
-
-/* ...slide start.... */
-
-
-.slide{
+.Landing-Page-video {
   width: 100%;
-}
-
-.Homeslide{
-width: 100%;
-height: 735px;
-background-image: url('../../public/images/Homeslide.png');
-background-repeat: no-repeat;
-background-size: cover;
-}
-
-.homeslide-1{
-  padding-top: 12%;
-  padding-left: 6%;
-}
-
-
-.home-slide-heading{
-  color: white;
-  font-size: 47px;
-  font-weight: 800;
-}
-.home-slide-paragraph{
-color: rgba(255, 255, 255, 0.70);
-font-size: 12px;
+  object-fit: cover;
+  /* background-color: lightgray 50%;
+opacity: 0.8; */
 
 }
-.home-slide-paragraph-2{
-  color: rgba(255, 255, 255, 0.70);
-  font-size: 12px;
+
+.Landing-Page-video::after{
+  content: "";
   
-  }
-.halfcircle{
+    background-color: rgba(0, 0, 0, 0.25);
+ 
+
+}
+
+.Landing-page-Main{
+  position:absolute;
+  top:125px;
+  left:133px;
+}
+
+.cLOUD-TRANSFORM{
+  color: white;
+  font-size: 40px;
+  font-family: Poppins;
+  font-weight: 500;
+
+}
+
+.Landing-page-DES{
+  color: #FFF;
+font-family: Poppins;
+font-size: 65px;
+font-style: normal;
+font-weight: bold;
+line-height: 78px; /* 120% */
+letter-spacing: -0.32px;
+
+}
+
+.Homepage-dataobserve-content{
+
+color: rgba(255, 255, 255, 0.70);
+font-family: Poppins;
+font-size: 16px;
+font-style: normal;
+font-weight: 700;
+line-height: 25.6px; /* 160% */
+letter-spacing: -0.32px;
+}
+
+
+.landingpage-datatypes{
+  display: flex;
+height: 61.19px;
+max-width: 531.06px;
+padding: 20px 46px 21.19px 48px;
+justify-content: center;
+align-items: center;
+gap: 9.39px;
+border-radius: 4px;
+border: 1px solid #FFF;
+background: #FFF;
+}
+
+
+
+.Landing-Page-video-we-do{
   width: 100%;
-}
-.half{
-  margin-top: -10%;
-}
-
-.allanimation-mainone{
-  margin: 82px 30px 86px 85px;
-  height: 60%;
-  width: 90%;
-}
-
-.slide-contact{
-  color: #1A4AB9;
-  padding: 12px 46px 12px 48px;
-  background-color: white;
-  font-weight: 600;
-  border: 1px solid white;
-  border-radius: 4px;
-}
+  border-radius: 12px;
+ 
 
 
-.right-1 {
-  width: 90px;
-  height: 180px;
-  border-radius: 0 12rem 12rem 0;
-  background-color: white;
-  margin-left: 29%;
-  margin-top: 30px;
-  /* color: white; */
 }
-.left-1 {
-  width: 180px;
-  height: 180px;
-  border-radius: 12rem 12rem 12rem 12rem;
-  background-color: white;
-  margin-left: 50%;
-  margin-top: -177px;
-
+.landing-page-what-we-do-02{
+  background-color: #0046E8;
+  width: 100%;
+  height: 666px;
+  
 }
 
-.circles-1{
-  padding-top: 33%;
+.confidence-landing-Page{
+  color: #F4F4F4;
+  font-family: Poppins;
+  font-size: 34.563px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
-/* ....slide end... */
+
+.Effective-landing-wedo{
+color: #F4F4F4;
+font-family: Poppins;
+font-size: 15px;
+font-style: normal;
+font-weight: 400;
+line-height: 28px; /* 266.667% */
+text-align: justify;
+}
+
+.WHAT-LANDING{
+  color: #FFF;
+font-family: Poppins;
+font-size: 15.375px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 156.098% */
+text-transform: uppercase;
+}
+
+.landing-Read{
+  color: #FFF;
+font-family: Poppins;
+font-size: 15px;
+font-style: normal;
+font-weight: 500;
+margin-bottom: 9px;
+/* border-bottom: 1px solid white; */
+/* width: 200px; */
+}
+
+
+.Landing-Page-what-wedo-2{
+  padding-top: 7%;
+  height: 680px;
+}
+
 
 .customers{
   text-align: center;
   margin-top: 37px;
   font-weight: 700;
   margin-bottom: 26px;
+  font-size: 40px;
 }
 
-/* ....happy .customers images... */
+.HAPPY-Customers-images{
+  margin-top: 20px;
+}
+
+
+
+
 
 .Digital-Overall-gap{
-  margin-bottom: 6%;
+  margin-bottom: 3%;
 }
 
 .acco{
@@ -168,14 +162,7 @@ font-size: 12px;
   margin-left: 20px;
 }
 
-/* .genman{
-  margin-left: 2%;
-} */
 
-/* .gen-1{
-  margin-left: 40px;
-  margin-right: 26px;
-} */
 
 .happy-customers-shadowletters{
   border-radius: none!important;
@@ -242,944 +229,462 @@ font-size: 12px;
   width: 83%;
 }
 
-/* ....happy .customers images end...  */
 
-/* ....digital transformation....  */
-
-.cloud-head{
-  text-align: center;
-  font-weight: 800;
-}
-
-.digital-transfor-mation{
-  margin-bottom: 10px!important;
-}
-/* .box{
- 
-  margin: 0px!important;
-} */
-.cloud-mar-gin{
-  margin-bottom: 10px!important;
-}
-
-.arrow{
-  width: 47px !important;
-  height: 43px!important;
-  text-align: center;
-  justify-content: center;
-  margin-bottom: 10px;
-  margin-left: 0px !important;
-}
-.arrowtext{
-  font-size: 14px;
-  text-align: center;
-  justify-content: center;
-  max-height: 125px;
-  color: rgba(0, 0, 0, 0.70);
-
-}
-.box-padding{
-  padding: 30px 20px;
-  box-shadow: 2px 2px 35px -18px #323c8d;
-  border-radius: 20px;
-  margin: 25px 0px;
-  height: 100%;
-}
-
-.cloud-top{
-  margin-bottom: 9%;
-}
-
-.boxPad{
-  background-color: white;
-  /* margin-top: 57px; */
-  /* height: fit-content; */
-  padding: 21px;
-  padding-top: 36px;
-  border-radius: 30px;
-  height: 320px;
-  box-shadow: 2px 2px 35px -18px #323c8d;
-}
-
-.down-bot{
-  margin-top: 50px;
-}
-
-.cloud-trans-formation{
-  font-weight: 600;
-  font-size: 18px;
-  margin-bottom: 13px;
-  margin-top: 10px;
-}
-
-/* ....digital transformation end... */
-
-/* .....circles start unleash....  */
-
-.homeland-page{
+.landing-Dna{
   width: 100%;
-  
+  height: 450px;
 }
 
-.main-home-page{
+.Landingpage-dna-image{
   position: relative;
 }
-.main-landing-Page{
+
+.landingpag-dna-text{
   position: absolute;
-  top: 5%;
-  left: 10%;
-
+  top: 10%;
 }
 
-.landingpage-paragraph{
-  color: white;
-  font-size: 22px;
-  font-family: Poppins;
-  font-weight: 700;
-  line-height: 33.50px;
-  letter-spacing: 0.90px;
-  word-wrap: break-word
-}
-
-.landingpage-paragraph2{
-  color: white;
-  font-size: 11px;
-  /* font-family: Roboto; */
-  font-weight: 700;
-  line-height: 25.50px;
-  letter-spacing: 0.90px;
-  word-wrap: break-word
-  
-}
-.circle-background{
-  background-color: #EDF5FF;
-  /* padding: 10px 0px 30px 0px; */
-  padding-top: 20px;
-  padding-bottom: 30px;
-  
-}
-
-.right {
-  width: 90px;
-  height: 180px;
-  border-radius: 0 12rem 12rem 0;
-  background-color: #0046E8;
-  margin-left: 41%;
-  margin-top: 30px;
-}
-.left{
-  width: 180px;
-  height: 180px;
-  border-radius: 12rem 12rem 12rem 12rem;
-  background-color: #0046E8;
-  margin-left: 50%;
-  margin-top: -177px;
-
-}
-.unleash{
-  margin-top: 30px;
-  font-weight: 700;
-  /* align-items: center; */
-  text-align: center;
-}
-
-.contact-decoration{
-  text-decoration: none!important;
-}
-
-
-
-/* .....circles start unleash end....  */
-
-
-/* ....cloud partners.. */
-.capability{
-  margin-top: 22px;
-}
-
-.competencies{
-  margin-top: 23px;
-color: #1A4AB9;
+.landing-power-us{
+color: #FFF;
 font-family: Poppins;
-font-size: 22px;
-font-style: normal;
-font-weight: 500;
-line-height: 26.4px; /* 120% */
-letter-spacing: -0.32px;
-border-bottom: 1px solid rgba(5, 5, 5, 0.10);
-/* padding: 0px 717.5px 18.39px 0px; */
-padding-bottom: 15px;
-align-items: center;
-width: 877.5px;
-
-}
-
-.dataobserve-heading{
-  color: #505050;
-font-family: Poppins;
-font-size: 31.348px;
+font-size: 31.125px;
 font-style: normal;
 font-weight: 700;
-line-height: 50.156px; /* 160% */
-letter-spacing: -0.627px;
+line-height: normal;
 }
 
-.dataobserve-paragraph-cloud{
-  color: rgba(0, 0, 0, 0.70);
+.landing-observer-dna{
+  color: #FFF;
+font-family: Poppins;
+font-size: 30.125px;
+font-style: normal;
+font-weight: 700;
+line-height: normal;
+padding-bottom: 21px;
+}
+
+.landing-dna-paragraph{
+  color: #F4F4F4;
+font-family: Poppins;
+font-size: 14.875px;
+font-style: normal;
+font-weight: 400;
+line-height: 24px; /* 161.345% */
+padding-bottom: 21px;
+text-align: justify;
+
+}
+
+.landing-How-WE-work{
+border-radius: 5px;
+border: 2px solid #FFF;
+padding: 10px 20px;
+color: #000;
+text-align: center;
+font-family: Poppins;
+font-size: 19.313px;
+font-style: normal;
+font-weight: 500;
+
+}
+.landing-How-WE-work-1{
+  border-radius: 5px;
+  border: 2px solid #FFF;
+  padding: 10px 20px;
+  color: #000;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 19.313px;
+  font-style: normal;
+  font-weight: 500;
+  
+  margin-left: 15px;
+  }
+
+  .advisory-landing{
+    width: 230px;
+    height: 230px;
+    margin-top: 44px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .Gen-devops-talent{
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.70);
+text-align: center;
 font-family: Poppins;
 font-size: 16px;
 font-style: normal;
 font-weight: 400;
 line-height: 25.6px; /* 160% */
 letter-spacing: -0.32px;
-}
-
-.tick-bullet{
-  margin-right: 10px;
-}
-.competen-text{
-  color: #050505;
-font-family: Poppins;
-font-size: 16px;
-font-style: normal;
-font-weight: 700;
-/* line-height: 25.6px;  */
-/* letter-spacing: -0.32px; */
-}
-.image2{
-  width: 200px;
-  /* margin-top: 20px; */
-  height: fit-content;
-}
-/* .aws-azure-images{
-  display: flex;
-} */
-
-/* .aws-cloud-base{
-  margin-top: 73px;
-} */
-.azure-cloud-base{
-margin-top: 10px;
-margin-left: 13px;
-}
-
-/* ..cloud partners end... */
-
-/* ...data lake...  */
-
-.datalake{
-  height: 70%;
-  background-color: #EDF5FF;
-  position: relative;
-  margin-top: 21px;
-}
-.datalake-half-piece{
-  position: absolute;
-  top: 0%;
-}
-
-.datalake-half-piece-01{
-  position: absolute;
-  bottom: 13%;
-  /* left: 87%; */
-  right: 5%;
-}
-.lake-text{
-  text-align: center;
-  padding: 50px 18px 18px 18px;;
-  font-weight: 700;
-}
-
-.lake-para{
-color: rgba(0, 0, 0, 0.70);
-font-size: 16px;
-font-family: Poppins;
-font-weight: 400;
-line-height: 25.60px;
-text-align: center;
-}
-.flow-chart-img img{
-  width: 100%;
-}
-.datalake-1{
-  margin-top: 18px;
-}
-.contact-us{
-  color: white;
-  font-size: 16px;
-  font-family: Poppins;
-  font-weight: 600;
-  line-height: 25.60px;
-  word-wrap: break-word;
-  text-align: center;
-  justify-content: center;
-  background-color: #1A4AB9;
-  margin-left: 38%;
-  margin-top: 40px;
-  padding: 6px 18px;
-  margin-bottom: 30px;
-  border: 1px solid blue;
-  border-radius: 4px;
-  width: 239px;
+padding-bottom: 17%;
   }
-
-  .data-lake-image{
-    width: 100%;
-  }
-  .datalake-card{
-    width: 100%;
-    background-color: #1A4AB9;
-    border-radius: 15px;
-    position: relative;
-  }
-
-  ul li {
-    list-style-type: none;
-  }
-
-  .datalakes-names{
-    color: white;
-  }
-  .datalakes-names li{
-    padding: 20px 0px 20px 0px ;
-    border-bottom: 1px solid #0858bb; 
-    /* width: 10px; */
-  }
-  .lake-pad{
-    padding: 37px 0px 30px 0px;
-  }
-
-  .lake-House{
-    margin-top: 6px;
-    font-weight: 700;
-
-  }
-  .landing-PageE{
-    margin-right: 0px;
-  }
-  .Contact-Home-redirect:hover{
-    text-decoration: none;  
-  }
-  /* ....data lake end..  */
-
-  /* ....aws images...  */
-
-  .aws-image{
-    height: 30px;
-    width: 53px;
-  }
-  .technology{
-    background-color: #F6F9FF;
-    margin-top: 30px;
-    height: 205px;
-  }
-  .platform{
-    padding-top: 30px;
-    margin-bottom: 22px;
-    font-weight: 700;
-  }
-
-  
-  .technology-platform{
-    text-align: center;
-    justify-content: space-between;
+  .Gen-devops-talent-1{
     align-items: center;
-  }
-  .partner{
-    margin-top: 10px;
-    font-weight: 500;
-
-  }
-
-  /* ....aws images end...  */
-
-  /* ...talk to us...  */
-
-  .bg-color{
-    background-color: #1A4AB9;
-    height: 418px;
-    padding: 60px 0px 0px 0px;
-  }
-  .card-body-1{
-    background-color: #1A4AB9;
-    border-radius: 10px 10px 0px 0px!important;
-    height: 327px;
-    padding: 67px;
-
-  }
-  .card-1{
-    border-radius: 10px!important;
-  }
-  .title{
-    color: white;
-    font-weight: 700;
-    font-size: 30px;
-  }
-  .question{
-    color: white;
+    display: flex;
+    justify-content: center;
+    color: #050505;
+text-align: center;
+font-family: Poppins;
+font-size: 17px;
+font-style: normal;
+font-weight: 600;
+line-height: 28.6px; /* 130% */
   }
 
-  .fa-envelope{
-    color: white;
-    
+  .Landing-strategy-all{
+    border-radius: 16px;
+background: rgba(0, 70, 232, 0.10);
+height: 500px;
+max-width: 24%!important;
+margin: 4px;
   }
-  .hello{
-    margin: 20px;
-    
-  }
-  .bg-white{
-    padding-top: 30px;
-    border-radius: 13px 13px 0px 0px;
-  }
-  .name{
-    border: none;
-    margin-top: 10px;
-    margin-bottom: 10px;
-      }
-.contact-us-2{
-      width: 100%;
-      background-color: #0046E8;
-      color: white;
-      border: 1px solid blue;
-      padding: 5px;
-      font-weight: 500;
-      padding: 10px 5px;
-      border-radius: 8px;
-      }
 
-      /* ...talk to us end...   */
-      .full-bg-color{
-        background-color: #F6F9FF;
-        padding: 1px;
-      }
-      .required::after {
-        content: ' *';
-        color: red;
-      }  
-
-  /* ...footer... */
-  .footer {
+  .building-Landing{
     width: 100%;
-    position: relative;
-    height: auto;
-    background-color: black;
-  }
-  .footer .coll {
-   
-    height: auto;
-    float: left;
-    box-sizing: border-box;
-    -webkit-box-sizing: border-box;
-    -moz-box-sizing: border-box;
-    padding: 0px 20px 20px 20px;
-  }
-  .footer .coll h1 {
-    margin: 0;
-    padding: 0;
-    font-family: inherit;
-    font-size: 15px;
-    line-height: 17px;
-    padding: 20px 0px 5px 0px;
-    color: rgba(255,255,255,0.2);
-    font-weight: normal;
-    text-transform: uppercase;
-    letter-spacing: 0.250em;
-  }
-  .footer .coll ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-  }
-  .footer .coll ul li {
-    color: #999999;
-    font-size: 14px;
-    font-family: inherit;
-    font-weight: bold;
-    padding: 5px 0px 5px 0px;
-    cursor: pointer;
-    transition: .2s;
-    -webkit-transition: .2s;
-    -moz-transition: .2s;
-  }
-  .social ul li {
-    display: inline-block;
-    padding-right: 5px !important;
-  }
-  
-  .footer .coll ul li:hover {
-    color: #ffffff;
-    transition: .1s;
-    -webkit-transition: .1s;
-    -moz-transition: .1s;
-  }
-  .clearfix {
-    clear: both;
-  }
-  .footer-data{
-    margin-top: 30px;
-    margin-bottom: 50px;
   }
 
-  .footer-heading{
-    color: #0046E8!important;
+
+  .Landing-building-image{
+    position: relative;
   }
-  .cloud li{
-    font-size: 8px;
+
+  .landing-building-text{
+    position: absolute;
+    top: 10%;
   }
-  
-  @media only screen and (min-width: 1280px) {
-    .contain {
-      width: 1200px;
-      margin: 0 auto;
-    }
+
+  .Building-Heading{
+    color: #21314F;
+font-family: Poppins;
+font-size: 38.906px;
+/* font-style: normal; */
+font-weight: 700;
+line-height: 44px; /* 113.092% */
   }
-  @media only screen and (max-width: 1139px) {
-    .contain .social {
-      width: 1000px;
-      display: block;
-    }
-    .social h1 {
-      margin: 0px;
-    }
+  .Building-paragraph{
+    color: #092556;
+font-family: Poppins;
+font-size: 13.75px;
+/* font-style: normal; */
+font-weight: 400;
+line-height: 28px; /* 160% */
   }
-  @media only screen and (max-width: 950px) {
-    .footer .col {
-      width: 33%;
-    }
-    .footer .col h1 {
-      font-size: 14px;
-    }
-    .footer .col ul li {
-      font-size: 13px;
-    }
+
+
+  .AI-Journey{
+    color: #F4F4F4;
+font-family: Poppins;
+font-size: 29.625px;
+font-style: normal;
+font-weight: 300;
+line-height: 35.2px; /* 111.304% */
+
+margin: 30px 0px;
+padding: 30px 0px;
+
   }
-  @media only screen and (max-width: 500px) {
-      .footer .col {
-        width: 50%;
-      }
-      .footer .col h1 {
-        font-size: 14px;
-      }
-      .footer .col ul li {
-        font-size: 13px;
-      }
+  .ai-Journey-image{
+    width: 100%;
+    border-radius: 5px;
   }
+
+  .AI-journey-main-background{
+    background: linear-gradient(94deg, #031730 2.95%, #393A61 99.46%);
+    height: 550px;
+  }
+
+  .journey-Ai{
+    padding-top: 6%;
+  }
+  .Microsoft{
+    width: 168.23px;
+/* height: 100.19px; */
+/* flex-shrink: 0; */
+  }
+
+  .software-Coures{
+    justify-content: space-evenly;
+  }
+ 
+
+  .software-homePAGE{
+    background: #F6F9FF;
+    height: 324px;
+    align-items: center;
+  padding-top: 4%;
+  margin-bottom: 83px;
+  }
+
+  .Home-PAGE-Latest{
+    padding: 15px 0px;
+    margin: 15px 0px;
+  }
+
+  .landing-PartnerdBRING{
+    color: #312E2D;
+font-family: Poppins;
+font-size: 31.938px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+padding-bottom: 38px;
+  }
+
+  .all-mgasd{
+    border-radius: 16px 0px 0px 16px;
+background: #FFF;
+/* padding: 36px; */
+padding-top: 33px;
+  }
+
+  .potential-Landing{
+    padding-top: 7%;
+  }
+
+  .Unlock-landing{
+    position: relative;
+    border-radius: 15px 0px 0px 15px;
+background: #1A4AB9;
+height: 375px;
+/* margin-bottom: 15.3%; */
+
+  }
+
+  .landing-Limit{
+    position: absolute;
+    top: 11.3%;
+    left: 49%;
+  }
+
+  .limit-Image-1{
+    width: 100%;
+    height: 461px;
+    border-radius: 5px 5px 0px 0px;
+   
+  }
+
+  .Potential{
+    color: #FFF;
+font-family: Poppins;
+font-size: 39.375px;
+font-style: normal;
+font-weight: 400;
+/* line-height: normal; */
+line-height: 50px;
+  }
+
+  .landing-EXplore{
+    color: #FFF;
+font-family: Poppins;
+font-size: 22.313px;
+font-style: normal;
+font-weight: 400;
+line-height: 40px; /* 179.272% */
+  }
+
+  .Home-Career-page{
+    margin-left: 30px;
+    margin-bottom: 58.2px;
+  }
+
+  .Coures-IMAGES{
+    margin-right: 0px !important;
+  }
+
+  .Intelligent-Action{
+    margin-bottom: 86px;
+  }
+
+  .Gen-devops-talent-3 {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    color: rgba(0, 0, 0, 0.70);
+    text-align: center;
+    font-family: Poppins;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 25.6px;
+    letter-spacing: -0.32px;
+    padding-bottom: 28%;
+  }
+
+  .Intelligent-Heading{
+    color: #312E2D;
+font-family: Poppins;
+font-size: 30.875px;
+font-style: normal;
+font-weight: 300;
+line-height: 35.2px; /* 114.008% */
+padding: 35px 0px;
+margin: 22px 0px;
+  }
+
+
+
   @media only screen and (min-width: 320px) and (max-width: 468px)
 {
-    .lake-para{
-      text-align: justify;
-    }
-    .boxPad{
-      padding: 17px;
-    /* padding-top: 27px; */
-    border-radius: 30px;
-    height: 286px;
-    }
-    .datalakes-names{
-      font-size: 14px;
-    }
-    .technology-platform{
-      flex-wrap: wrap!important;
-      text-align: center;
-      justify-content: space-evenly;
-      align-items: center;
-    }
+  .Landing-page-Main{
+    top: 0px;
+    left: 0px;
+  }
 
-    .platform{
-      font-size: 18px;
-    }
-    .technology{
-      height: 364px;
-    }
-    .competencies{
-      width: 200px;
-    }
-    .contact-us{
-      margin-left: 14%;
-      margin-top: 23%;
-    }
-    .Homeslide{
-      height: 181px !important;
-    }
-    .image2{
-      width: 150px;
-    } 
-    .home-slide-heading {
-      font-size: 13px;
-      margin-left: 21px;
-      /* margin-bottom: 63px; */
-    }
-    .slide-contact{
-      padding: 6px 10px 8px 10px;
-      font-size: 10px;
-      margin-left: 23px;
-    }
-    .home-slide-paragraph {
-      color: rgba(255, 255, 255, 0.70);
-      font-size: 7px;
-      margin-bottom: 3px;
-    }
-    .home-slide-paragraph-2 {
-      color: rgba(255, 255, 255, 0.70);
-      font-size: 8px;
-      margin-left: 22px;
-    }
-  
-    .allanimation-mainone {
-      margin-left: 153px;
-    margin-top: -179px;
-    height: 244%;
-    width: 48%;
-    padding-left: 5%;
+  .Landing-page-DES{
+    font-size: 18px;
+    line-height: 15px;
+    letter-spacing: 0.68px;
+    padding-top: 13px;
+  }
+
+  .Homepage-dataobserve-content{
+    font-size: 14px;
+    line-height: 19.6px;
+  }
+  .HomePage-Video{
+    height: 181px;
+  }
+
+  .confidence-landing-Page{
+    font-size: 17px;
+  }
+  .Effective-landing-wedo{
+    line-height: 22px;
+    font-size: 14px;
+  }
+  .landing-page-what-we-do-02 {
+    background-color: #0046E8;
+    width: 100%;
+    /* height: 665px; */
+    /* padding-top: 42px; */
 }
+/* .WHAT-LANDING{
+  padding-top: 40px;
+} */
 .customers{
-  font-size: 14px;
+  font-size: 17px;
 }
-
-.cloud-head {
-  font-size: 15px;
-}
-.happy-customers-data-observe {
-  align-items: center;
-  justify-content: space-evenly;
-  /* margin-top: 15px; */
+.happy-customers-data-observe{
   flex-wrap: wrap;
-  margin-top: 0px !important;
 }
 
 .happy-customers-shadowletters{
-  padding: 5px;
- height: fit-content
+  height: 150px;
 }
-.cloud-trans-formation{
-  font-size: 16px;
+.landing-power-us {
+  font-size: 20px;
 }
-.arrowtext{
-  font-size: 13px;
+.landing-observer-dna{
+  font-size: 20px;
 }
-.down-bot{
-  margin-top: 17px;
+.landing-How-WE-work {
+  line-height: 18px;
+  font-size: 12px;
+  height: 49px;
+  /* width: 155px; */
+  /* padding: 16px; */
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
+
 }
-.text-center {
-  margin-bottom: 35px;
-  font-size: 13px !important;
-    } 
-    .homeland-page {
-      height: 337px;
-    }
-    .landingpage-paragraph {
-      font-size: 9px;
-      line-height: 13px;
-    }
-    .landingpage-paragraph2{
-      font-size: 9px;
-      line-height: 15.5px;
-    }
+.landing-How-WE-work-1 {
+  line-height: 18px;
+  font-size: 12px;
+  height: 49px;
+  /* width: 155px; */
+  /* padding: 16px; */
+  text-align: center;
+  padding-top: 5px;
+  padding-bottom: 5px;
 
-    .home-button-main-page{
-      padding: 9px 18px !important;
-      height: 40px !important;
-      margin-left: 15px;
-    }
-
-    .home-ArroW{
-      font-size: 21px !important;
-    }
-    .dataobserve-heading{
-      font-size: 19px;
-    }
-    .dataobserve-paragraph-cloud {
-      font-size: 10px;
-    }
-    .competen-text {
-      font-size: 12px;
-      margin-top: 4px;
-    }
-    .lake-text {
-      font-size: 17px;
-      padding: 104px 13px 18px 18px;
-          }
-          .lake-House {
-            font-size: 17px;
-                }
-                .lake-para {
-                  font-size: 10px;
-                  line-height: 20.6px;
-                }
-
-                .datalake-card {
-                  bottom: -10%;
-                }
-
-                .datalake-half-piece-01 {
-                  position: absolute;
-                  bottom: 8%;
-                  /* left: 87%; */
-                  right: 1%;
-                }
-                .right{
-                  margin-left: 14%;
-                  width: 80px;
-                  height: 154px;
-                  margin-top: 66px;
-                }
-                .left{
-                  margin-left: 42%;
-                  width: 153px;
-                  height: 153px;
-                  margin-top: -152px;
-                }
-
-                .card-title{
-                  font-size: 20px;
-                }
-                .card-text{
-                  font-size: 11px !important;
-                line-height: 14px !important;
-
-                }
-              .card-title{
-                font-size: 20px !important;
-              }
-              .databricks{
-                width: 100px;
-              }
-              .azure{
-                width: 100px;
-              }
-              .snowflake{
-                width: 100px;
-              }
-              .salesforce{
-                width: 86px;
-                height: 68px;
-              }
-              .tablu{
-               width: 100px;
-              }
-              .partner{
-                font-size: 12px;
-                margin-top: 48px;
-              }
-              .googlecloud{
-                width: 100px;
-              }
-             .competencies{
-              font-size: 19px;
-              font-weight: 700 !important;
-             }
-             .landing-PageE{
-              margin-left: 0px !important;
-              margin-right: 0px !important;
-             }
-             .dataobserve-paragraph-cloud {
-              line-height: 18.6px;
-             }
+}
+.landing-Dna {
+  height: 530px;
+}
+.Intelligent-Heading{
+  font-size: 18px;
+  line-height: 25px;
 }
 
-@media only screen and (min-width: 469px) and (max-width: 759px){
- 
-   
-  .technology-platform{
-    flex-wrap: wrap!important;
-    text-align: center;
-    justify-content: space-evenly;
-    align-items: center;
-  }
-
-  .platform{
-    font-size: 19px;
-  }
-  .technology{
-    height: 364px;
-  }
-  .competencies{
-    width: 200px;
-  }
-  .contact-us{
-    margin-left: 14%;
-    margin-top: 23%;
-  }
-  .Homeslide{
-    height: 263px !important;
-  }
-  .image2{
-    width: 150px;
-  } 
-  .home-slide-heading {
-    font-size: 16px;
-    margin-left: 24px;
-    /* margin-bottom: 63px; */
-    line-height: 27px;
-  }
-  .slide-contact{
-    padding: 6px 10px 8px 10px;
-    font-size: 10px;
-    margin-left: 23px;
-  }
-  .home-slide-paragraph {
-    color: rgba(255, 255, 255, 0.70);
-    font-size: 7px;
-    margin-bottom: 3px;
-  }
-  .home-slide-paragraph-2 {
-    color: rgba(255, 255, 255, 0.70);
-    font-size: 10px;
-    margin-left: 22px;
-  }
-
-  .allanimation-mainone {
-    margin-left: 181px;
-  margin-top: -210px;
-  height: 342%;
-  width: 50%;
-  padding-left: 5%;
+.Landing-strategy-all{
+  max-width: 100% !important;
+  margin: 0px 20px 10px 20px;
 }
-.customers{
-font-size: 19px;
+.Building-Heading{
+  font-size: 15px;
+  line-height: 22px;
 }
-
-.cloud-head {
-font-size: 19px;
+.Building-paragraph{
+  font-size: 12px;
+  line-height: 12px;
 }
-.happy-customers-data-observe {
-align-items: center;
-justify-content: space-evenly;
-margin-top: 0px !important;
-flex-wrap: wrap;
-}
-
-.happy-customers-shadowletters{
-padding: 5px;
-height: fit-content;
-}
-.cloud-trans-formation{
-font-size: 19px;
-}
-.arrowtext{
-font-size: 13px;
-}
-.down-bot{
-margin-top: 17px;
-}
-.text-center {
-margin-bottom: 35px;
-font-size: 15px !important;
-  } 
-  .homeland-page {
-    height: 337px;
-  }
-  .landingpage-paragraph {
-    font-size: 9px;
-    line-height: 13px;
-  }
-  .landingpage-paragraph2{
-    font-size: 9px;
-    line-height: 15.5px;
-  }
-
-  .home-button-main-page{
-    padding: 9px 18px !important;
-    height: 40px !important;
-    margin-left: 15px;
-  }
-
-  .home-ArroW{
-    font-size: 21px !important;
-  }
-  .dataobserve-heading{
-    font-size: 19px;
-  }
-  .dataobserve-paragraph-cloud {
-    font-size: 10px;
-  }
-  .competen-text {
-    font-size: 12px;
-    margin-top: 4px;
-  }
-  .lake-text {
-    font-size: 19px;
-    padding: 104px 13px 18px 18px;
-        }
-        .lake-House {
-          font-size: 17px;
-              }
-              .lake-para {
-                font-size: 14px;
-                line-height: 23.6px;
-              }
-
-              .datalake-card {
-                bottom: -10%;
-              }
-
-              .datalake-half-piece-01 {
-                position: absolute;
-                bottom: 8%;
-                /* left: 87%; */
-                right: 1%;
-              }
-              .right{
-                margin-left: 25%;
-                width: 80px;
-                height: 154px;
-                margin-top: 66px;
-              }
-              .left{
-                margin-left: 42%;
-                width: 153px;
-                height: 153px;
-                margin-top: -152px;
-              }
-
-              .card-title{
-                font-size: 20px;
-              }
-              .card-text{
-                font-size: 11px !important;
-              line-height: 14px !important;
-
-              }
-            .card-title{
-              font-size: 20px !important;
-            }
-            .databricks{
-              width: 100px;
-            }
-            .azure{
-              width: 100px;
-            }
-            .snowflake{
-              width: 100px;
-            }
-            .salesforce{
-              width: 86px;
-              height: 68px;
-            }
-            .tablu{
-             width: 100px;
-            }
-            .partner{
-              font-size: 14px;
-              margin-top: 48px;
-            }
-            .googlecloud{
-              width: 100px;
-            }
-           .competencies{
-            font-size: 19px;
-            font-weight: 700 !important;
-           }
-           .landing-PageE{
-            margin-left: 0px !important;
-            margin-right: 0px !important;
-           }
-           .dataobserve-paragraph-cloud {
-            line-height: 18.6px;
-           }
-}
-
-
-
-
+.AI-Journey{
+  font-size: 17px;
+  line-height: 32px;
+  margin-bottom: 10px;
+  padding-bottom: 10px;
   
+}
+
+.AI-journey-main-background {
+  height: 450px;
+}
+
+.landing-PartnerdBRING{
+  font-size: 20px;
+}
+.Home-PAGE-Latest{
+  padding-left: 39px;
+}
+.Microsoft {
+  width: 91px;
+}
+
+.Potential {
+  font-size: 16px;
+  line-height: 23px;
+}
+.landing-EXplore{
+  font-size: 14px;
+  line-height: 23px;
+}
+.landing-Limit {
+  top: 41%;
+  left: 0px;
+}
+.advisory-landing {
+  width: 150px;
+  height: 150px;
+}
+
+.circles-Landing{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.limit-Image-1{
+  height: 194px;
+}
+
+.all-mgasd{
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.Landing-Page-what-wedo-2{
+  padding-top: 15%;
+}
+
+.landing-dna-paragraph{
+  font-size:13px;
+}
+}

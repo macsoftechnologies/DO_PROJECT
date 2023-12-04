@@ -3,91 +3,119 @@ import "./Databi.css";
 // import Faq from "../products/Faq";
 import Navbar from "../products/Navbar";
 import Footer from "../products/Footer";
-import databi from "../../src/videos/datanalytics.mp4";
+// import databi from "../../src/videos/datanalytics.mp4";
+import Slider from "react-slick";
+
+function Arrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block", background: "black" }}
+      onClick={onClick}
+    />
+  );
+}
 
 const Databi = () => {
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 2,
+    // nextArrow: <Arrow />,
+    // prevArrow: <Arrow />,
+
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+    ],
+  };
   return (
     <div>
       <Navbar />
       <div className="drives">
         <div>
           <video className="daba-bi-anal" autoPlay loop muted>
-            <source src={databi} type="video/mp4" />
+            <source
+              src="https://storage.googleapis.com/do-website-resources/datanalytics.mp4"
+              type="video/mp4"
+            />
           </video>
-          <div
-            style={{
-              display: "inline-flex",
-              minHeight: "1080px",
-              padding: "42px 400px 100px 255px",
-              flexDirection: "column",
-              alignItems: "flex-start",
-              position: "absolute",
-              top: "170px",
-              left: "-121px",
-            }}
-          >
-            <p
-              style={{
-                color: "white",
-                fontSize: "18px",
-                fontStyle: "normal",
-                fontWeight: "600",
-              }}
-            >
-              Business Intelligence and Analytics
-            </p>
-            <h4
-              style={{
-                color: "white",
-                fontSize: "32px",
-                fontStyle: "normal",
-                fontWeight: "700",
-                lineHeight: "47px",
-              }}
-            >
-              Achieve scalable business expansion through our Business
-              Intelligence and Data Analytics services.
-            </h4>
-            <button
-              style={{
-                display: "flex",
-                height: "61px",
-                maxWidth: "255px",
-                padding: "20px 46px 21px 48px",
-                justifyContent: "center",
-                alignItems: "center",
-                border: "none",
-                marginTop: "70px",
-                borderRadius: "5px",
-              }}
-            >
-              <span
+          <div className="DATA-Main-hEading">
+            <p className="DATA-TRANSFORM">
+              <p
+                className="DATA-transform-Size"
                 style={{
-                  color: "#FF4925",
-                  fontSize: "14px",
-                  fontStyle: "normal",
                   fontWeight: "600",
-                  lineHeight: "19px",
+                  fontSize: "20px",
+                  letterSpacing: "1px",
                 }}
               >
-                Talk to us now
-              </span>
-              <i
-                className="fa fa-long-arrow-right"
+                Business Intelligence and Analytics
+              </p>
+
+              <p className="col-md-6 Navigate-Journey">
+                Achieve scalable business expansion through our Business
+                Intelligence and Data Analytics services.
+              </p>
+              <button
+                className="datatypes"
                 style={{
-                  width: "23px",
-                  fontSize: "29px",
-                  flexShrink: "0",
-                  color: "#FF4925",
-                  marginLeft: "12px",
+                  display: "flex",
+                  height: "61px",
+                  maxWidth: "255px",
+                  padding: "20px 46px 21px 48px",
+                  justifyContent: "center",
+                  alignItems: "center",
+                  border: "none",
+                  marginTop: "70px",
+                  borderRadius: "5px",
                 }}
-                aria-hidden="true"
-              ></i>
-            </button>
+              >
+                <span
+                  className="spans"
+                  style={{
+                    color: "#0046E8",
+                    fontSize: "14px",
+                    fontStyle: "normal",
+                    fontWeight: "600",
+                    lineHeight: "19px",
+                  }}
+                >
+                  Talk to us now
+                </span>{" "}
+                <i
+                  className="fa fa-long-arrow-right ARROW-RIGHT-CLOUD"
+                  style={{
+                    width: "23px",
+                    fontSize: "29px",
+                    flexShrink: "0",
+                    color: "#0046E8",
+                    marginLeft: "12px",
+                  }}
+                  aria-hidden="true"
+                ></i>
+              </button>
+            </p>
           </div>
         </div>
       </div>
-      <div
+      <div className="container"
         style={{
           display: "flex",
           flexDirection: "column",
@@ -95,16 +123,16 @@ const Databi = () => {
           alignItems: "center",
         }}
       >
-        <h4 style={{ textAlign: "center", fontWeight: 700, fontSize: "43px" }}>
+        <h4 className="DataBi-migration">
           Our Expertis in BI and Analytics services
         </h4>
-        <p style={{ textAlign: "center", marginTop: "10px", width: "755px" }}>
+        <p className="DataBi-operational">
           With a collective industry experience exceeding four decades, our
           business intelligence and analytics services are custom-designed to
           guide you toward operational excellence and comprehensive growth.
         </p>
       </div>
-      <div className="cloudcards">
+      <div className="cloudcards d-md-block d-none">
         <div class="ccdiv w-100">
           <div className="cloudimgcard">
             <img className="notrepimg" src="/images/dvc.png" alt="" />
@@ -168,16 +196,91 @@ const Databi = () => {
           </div>
         </div>
       </div>
+
+      <div className="d-block d-md-none">
+        <section>
+          <div className="container">
+            <div>
+              <Slider {...settings}>
+                <div className="cloudimgcard">
+                  <img className="notrepimg" src="/images/dvc.png" alt="" />
+                  <div className="cloudcard card">
+                    <h1 className="cloudcardheading">
+                      Data visualization consulting
+                    </h1>
+                    <p className="cloudcardpara mb-0">
+                      Data Observe's core expertise lies in consulting and our
+                      Data visualization capabilities empower organizations to
+                      Simplify intricate data and craft compelling narratives
+                      through its utilization.
+                    </p>
+                  </div>
+                </div>
+                <div className="cloudimgcard">
+                  <img className="notrepimg" src="/images/dap.png" alt="" />
+                  <div className="cloudcard card">
+                    <h1 className="cloudcardheading">
+                      Data Analytics Products
+                    </h1>
+                    <p className="cloudcardpara mb-0">
+                      utilizing our array of advanced tools, we assist in the
+                      creation of user-friendly and engaging dashboards that
+                      enable organizations to easily monitor key performance
+                      indicators and other valuable information
+                    </p>
+                  </div>
+                </div>
+                <div className="cloudimgcard">
+                  <img className="notrepimg" src="/images/bim (2).png" alt="" />
+                  <div className="cloudcard card">
+                    <h1 className="cloudcardheading">BI Migration</h1>
+                    <p className="cloudcardpara mb-0">
+                      Effortlessly transfer your data analytics between
+                      locations, change formats, or migrate it from your current
+                      Business Intelligence environment to a new one without any
+                      complications.
+                    </p>
+                  </div>
+                </div>
+                <div className="cloudimgcard">
+                  <img className="notrepimg" src="/images/ssbi.png" alt="" />
+                  <div className="cloudcard card">
+                    <h1 className="cloudcardheading">Self-service BI</h1>
+                    <p className="cloudcardpara mb-0">
+                      Our self-service Business Intelligence empowers various
+                      business teams and departments to independently analyze
+                      data and address inquiries without relying on IT teams or
+                      submitting formal requests.
+                    </p>
+                  </div>
+                </div>
+                <div className="cloudimgcard">
+                  <img className="notrepimg" src="/images/dg.png" alt="" />
+                  <div className="cloudcard card">
+                    <h1 className="cloudcardheading">Data governance</h1>
+                    <p className="cloudcardpara mb-0">
+                      At DataObserve, we are committed to democratizing data
+                      governance and have implemented a collaborative and
+                      purpose-built data governance framework.
+                    </p>
+                  </div>
+                </div>
+              </Slider>
+            </div>
+          </div>
+        </section>
+      </div>
+
       <div
-        class="container card mb-3 mt-5 Built-back-colour"
+        class="container mb-3 mt-5 DATAbi-Built-back-colour"
         style={{
           backgroundColor: "#1A4AB9",
           borderRadius: "20px",
         }}
       >
-        <div className="right-media-Corner">
+        <div className="DATAbi-right-media-Corner">
           <img
-            className="built-corner-image"
+            className="DATAbi-built-corner-image"
             src="./images/right-corner-media.png"
             alt="media"
             width={100}
@@ -195,16 +298,16 @@ const Databi = () => {
         >
           <div class="col-md-5">
             <img
-              style={{ height: "252px", width: "100%" }}
+              style={{ height: "250px", width: "100%"}}
               src="./images/build.png"
               className="card-img"
               alt="..."
             />
           </div>
-          <div class="col-md-7">
-            <div class="card-body">
+          <div class="col-md-7 cLOUD-Unified">
+            <div class="card-body CLOUD-bODY">
               <h5
-                class="card-title"
+                class="col-md-9 card-title CLouD-BULIT"
                 style={{
                   color: "white",
                   letterSpacing: "0.68px",
@@ -215,17 +318,14 @@ const Databi = () => {
                 <br /> decision intelligence Platform
               </h5>
               <p
-                class="card-text-3"
+                class="col-md-9 card-text-3"
                 style={{ fontSize: "13px", color: "#fff", opacity: "0.5" }}
               >
                 Learn how we created a self-service, predictive, insights
-                platform driven
-                <br /> by an adaptive machine learning engine which helps
-                improve decision-
-                <br />
-                making.
+                platform driven by an adaptive machine learning engine which
+                helps improve decision-making.
               </p>
-              <p class="card-text" style={{ color: "white" }}>
+              <p class="col-md-9 card-text" style={{ color: "white" }}>
                 <p style={{ fontSize: 16 }}>
                   Read case study
                   <i class="fa fa-long-arrow-right ml-2" aria-hidden="true"></i>
@@ -236,7 +336,6 @@ const Databi = () => {
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "space-around",
-                  marginLeft: "-20px",
                 }}
               >
                 <img
@@ -254,8 +353,8 @@ const Databi = () => {
                   alt=""
                   style={{ width: "95px" }}
                 />
-                <img
-                  src="./images/srdsystems.png"
+                <img className="srdsystems-cloud"
+                  src="./images/srdsystems.png" 
                   alt=""
                   style={{ width: "70px" }}
                 />
@@ -264,20 +363,27 @@ const Databi = () => {
           </div>
         </div>
       </div>
-      <div>
-        <div
+      <div> 
+        <div className="container"
           style={{
             display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
             flexDirection: "column",
+            marginTop: "30px",
+            alignItems: "center",
           }}
         >
-          <h3 className="cloud-head">Benefits</h3>
-          <p style={{ width: "700px", textAlign: "center" }}>
-            DataObserve is the fastest-growing Business Intelligence & Data
-            Analytics company with strong expertise in Data lake solutions, Data
-            Warehouse Engineering, Data Migration & Modernization.
+          <h4
+            className="mt-5 EXPERIENCE-cloud"
+            style={{ textAlign: "center", fontWeight: 700, fontSize: "43px" }}
+          >
+            Benefits
+          </h4>
+
+          <p className="Databi-wides">
+            DataObserve is the rapidly expanding Business Intelligence & Data
+            Analytics company, renowned for its robust expertise in Data Lake
+            solutions, Data Warehouse Engineering, Data Migration, and
+            Modernization.
           </p>
         </div>
         <div className="container mt-3">
@@ -431,35 +537,34 @@ const Databi = () => {
               </div>
             </div>
           </div>
+
           <div>
             <div
-              class="card mb-3 mt-5"
+              class="mb-3 mt-5"
               style={{
                 backgroundColor: "#1A4AB9",
                 maxWidth: "100%",
-                borderRadius: "20px",
+                borderRadius: "30px",
               }}
             >
               <div
                 class="row no-gutters"
                 style={{
-                  display: "flex",
                   alignItems: "center",
                   justifyContent: "spacebetween",
                 }}
               >
-                <div class="col-md-1"></div>
                 <div class="col-md-8">
-                  <div class="card-body expertcardbody d-flex">
+                  <div class="">
                     <div>
-                      <h5 class="card-title" style={{ color: "white" }}>
+                      <h5
+                        class="card-title Cloud-title"
+                        style={{ color: "white", fontSize: "24px" }}
+                      >
                         Elevate Your Business Decision-Making with Amazon
                         QuickSight or Microsoft Power BI.
                       </h5>
-                      <p
-                        class="card-text"
-                        style={{ color: "white", width: "500px" }}
-                      >
+                      <p class="card-text Cloud-color-paragraph">
                         Looking to maximize the potential of Business
                         Intelligence (BI) in Amazon QuickSight or Microsoft
                         Power BI? Our team of BI experts is ready to provide
@@ -467,25 +572,25 @@ const Databi = () => {
                         BI solution.
                       </p>
                     </div>
-                    <div>
-                      <button
-                        style={{
-                          width: "200px",
-                          border: "none",
-                          height: "55px",
-                          margin: "42px",
-                          borderRadius: "6px",
-                        }}
-                      >
-                        Talk to us now{" "}
-                        <i
-                          class="fa fa-long-arrow-right"
-                          style={{ marginLeft: "12px" }}
-                          aria-hidden="true"
-                        ></i>
-                      </button>
-                    </div>
                   </div>
+                </div>
+                <div className="col-md-4">
+                  <button
+                    className="observers"
+                    style={{
+                      width: "200px",
+                      border: "none",
+                      height: "55px",
+                      margin: "42px",
+                      borderRadius: "6px",
+                    }}
+                  >
+                    Talk to us now{" "}
+                    <i
+                      class="fa fa-long-arrow-right Arrow-cloud"
+                      aria-hidden="true"
+                    ></i>
+                  </button>
                 </div>
               </div>
             </div>

@@ -6,23 +6,22 @@
   font-weight: 500;
   border: 1px solid blue;
 }
-/* .em_power {
-  background-image: url("../../public/images/empower1.png");
-  height: 600px;
-  width: 100%;
-  font-size: 50px;
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-  
-} */
 
+.Deveps_power{
+ position: relative; 
+
+}
 .devops {
   width: 100%;
   object-fit: cover;
-  position: relative;
+ 
 }
 
+.Devops-Main-hEading{
+  position:absolute;
+  top:125px;
+  left:133px;
+}
 .logo-main {
   width: 38px;
   height: 24px;
@@ -307,3 +306,19 @@
   height: fit-content;
   padding: 67px;
 } */
+
+
+
+
+
+
+
+@media only screen and (min-width: 320px) and (max-width: 468px){
+
+  .Devops-Main-hEading{
+    top:8px;
+    font-size: 14px;
+    left: 20px;
+    
+  }
+}

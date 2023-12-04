@@ -18,6 +18,8 @@
   margin-left: 15px;
 }
 
+
+
 .platforms {
   text-align: center;
   color: #050505;
@@ -51,7 +53,6 @@
   font-size: 14px;
   text-align: inherit;
   justify-content: center;
-
 }
 
 .box {
@@ -90,25 +91,36 @@
   width: 50px;
 height: 60px;
 } */
+.instudrie-box{
+  height: 260px !important; 
+ padding: 30px 30px;
+ box-shadow: 2px 2px 35px -24px #323c8d;
+ border-radius: 20px;
+ margin: 25px 0px;
+}
+.industries-play-bg-video {
+  position: relative;
+  height: 759px;
+}
 
 .life-science-video {
   width: 100%;
   object-fit: cover;
-  position: relative;
+  /* position: relative; */
 }
 
 .mainimg {
   position: absolute;
-  top: 60px;
-  left: 16px;
+  top: 196px;
+  left: 116px;
 }
-
+/* 
 .indheading {
   padding-top: 195px;
   padding-left: 115px;
 
 
-}
+} */
 
 .industies-mainhead {
   color: #FFF;
@@ -136,6 +148,7 @@ height: 60px;
   font-weight: 400;
   line-height: 25.6px;
   letter-spacing: -0.32px;
+  margin-top: 41px;
 
   display: flex;
   width: 789px;
@@ -206,10 +219,10 @@ height: 60px;
   color: rgba(0, 0, 0, 0.80);
   text-align: center;
   font-family: Poppins;
-  font-size: 16px;
+  font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 25.6px;
+  line-height: 29.6px;
   letter-spacing: -0.32px;
 }
 
@@ -259,6 +272,11 @@ height: 60px;
 
 .industriesexpclass {
   background-color: #F6F9FF;
+  height: 960px;
+}
+
+.pmt {
+  margin-top: 50px;
 }
 
 .cs-div {
@@ -302,7 +320,7 @@ height: 60px;
   line-height: 25.6px;
   /* 160% */
   letter-spacing: -0.32px;
-  width: 824px;
+ 
 }
 
 .ble-s {
@@ -494,16 +512,12 @@ height: 60px;
   margin-top: 5px;
 }
 
-.dood {
-  top: 58%;
-  /* height: 100px; */
-  left: 80%;
-  position: absolute;
-}
+
 
 .labimg {
   position: relative;
-  margin-top: 175px;
+  margin-top: 45px;
+  padding-top: 45px;
 }
 
 .lab-img-section img {
@@ -512,19 +526,19 @@ height: 60px;
 
 .labimg .lab-data-industries {
   position: absolute;
-  top: 30%;
-  left: 45%;
-  width: 511px;
+  top: 27%;
+  left: 50%;  
+  /* width: 511px;
   height: 367.38px;
   padding: 8px;
-  margin-top: -64px;
+  margin-top: -64px; */
 }
 
 .industries-bg-pink {
   background-color: #EF7179;
 }
 
-.card-title {
+.ind-card-title {
   color: #FFF;
   color: #FFF;
   font-family: Poppins;
@@ -717,9 +731,10 @@ letter-spacing: -0.32px;
   margin-top: -27px;
 }
 
+
 .ind-bb-sg-4::after {
   content: "";
-  border-bottom: 2px solid #fff;
+  border-bottom: 2px solid #00B686;
   width: 90%;
   display: block;
   margin: auto;
@@ -750,7 +765,7 @@ letter-spacing: -0.32px;
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 25.6px;
+  line-height: 23.6px;
   letter-spacing: -0.32px;
 }
 
@@ -765,4 +780,1232 @@ letter-spacing: -0.32px;
   font-weight: 400;
   line-height: 25.6px;
   letter-spacing: -0.32px;
+}
+
+.life {
+  color: white;
+  font-size: 22px;
+  font-Style: normal;
+  font-Weight: 600;
+  text-align: left;
+}
+
+.button1 {
+  display: flex;
+  height: 61px;
+  max-width: 255px;
+  padding: 20px 46px 21px 48px;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  margin-top: 50px;
+  border-radius: 5px;
+  /* margin-left: 13%!important; */
+}
+
+.span1 {
+  color: #FF4925;
+  font-size: 14px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 19px;
+}
+
+.fa fa-long-arrow-right ml-3 {
+  width: 23px;
+  font-size: 29px;
+  flex-shrink: 0;
+  color: #FF4925;
+}
+
+.newaccede {
+  width: 60px !important;
+  height: 20px !important;
+}
+
+.slokaenergy {
+  width: 100px !important;
+}
+
+.gbreco {
+  width: 95px !important;
+}
+
+.newsrdsystems {
+  width: 70px !important;
+}
+
+.tlnt-btn {
+
+  border: none;
+  border-radius: 4px;
+  display: flex;
+  padding: 10px 20px;
+  align-items:center;
+  justify-content: space-between;
+
+}
+
+.tlnt-botn {
+  padding: 10px 20px;
+  font-size: 15px;
+  color: white;
+  border-radius: 4px;
+  background: #1A4AB9;
+  border: none;
+  height: 47px;
+  /* align-items: baseline; */
+  /* align-items: center; */
+
+}
+
+/* .card-body industries-{
+                border-radius:27px;
+                height: 250px;
+                width: 390px;
+              } */
+.doodpng {
+  height: 100px;
+}
+
+.card-industries {
+  border: none;
+  background: none;
+  /* transform: translatey(-10px); */
+  /* width: 390px; */
+  /* padding-left:129px; */
+}
+
+.tlnt-card {
+  border-radius: 30px;
+  width: 100%;
+  margin-left: -15px;
+}
+
+.tlnt-card-web-img {
+  width: 80%;
+  border-radius: 30px;
+  margin-left: -15px;
+}
+
+.faq {
+  margin: 0px;
+
+}
+
+.eng {
+  margin-top: 40px;
+  /* margin-left: -100px; */
+
+}
+
+.industries-pharama {
+  width: 91%;
+  height: 75%;
+  padding-top: 65px;
+
+
+}
+
+.longclinicaltrials {
+  width: 86%;
+  height: 81%;
+  padding-top: 60px;
+}
+
+.longmedicaldevices {
+  width: 79%;
+  height: 93%;
+  padding-top: 104px;
+  /* margin-left: 38px; */
+}
+
+.multiomics {
+  width: 72%;
+  height: 86%;
+  padding-top: 86px;
+}
+
+.cardsdetails {
+  color: white;
+}
+
+.card-imgs{
+height: 278px;
+width: 100%;
+}
+
+.card-imgs{
+  margin-bottom: 46px;
+  margin-left: -10px;
+  border-radius: 20px;
+}
+
+
+.ind-card-text-3{
+  color: white;
+}
+
+
+
+
+
+@media only screen and (min-width:320px) and (max-width:468px) {
+  .instudrie-box{
+    height: fit-content !important
+  }
+
+  .mainimg {
+    width: fit-content !important;
+    position: absolute;
+    top: 16px;
+    left: 14px;
+  }
+
+  .Industrie-FInd{
+    margin-left: 0px !important;
+    margin-right: 0px !important;
+  }
+
+  .down-logo{
+    width: 65px;
+    height: 80px;
+  }
+
+  .percentage {
+    font-size: 25px;
+  }
+
+  .ble-s {
+    font-size: 18px;
+  }
+
+
+  .life {
+    font-size: 13px;
+    line-height: 22px;
+    margin-top: 0% !important;
+  }
+
+  .industies-mainhead {
+    line-height: 22px;
+    font-size: 15px;
+    width: 294px !important;
+    font-weight: 500;
+  }
+
+  .industies-mainhead {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 17px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20.2px;
+    letter-spacing: -0.32px;
+    display: flex;
+    width: 759px;
+    height: fit-content;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .industries-subhead {
+    font-size: 9px;
+    line-height: 12.6px;
+    margin-top: -37px;
+    width: 294px;
+  }
+
+  .data1 {
+    margin-top: -18px;
+  }
+
+  .button1 {
+    display: flex;
+    height: 26px !important;
+    max-width: 232px !important;
+    padding: 14px 22px 14px 22px !important;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    margin-top: -26px !important;
+    border-radius: 5px !important;
+    /* margin-left: 2px !important; */
+  }
+
+  .span1 {
+    color: #FF4925;
+    font-size: 10px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 19px;
+  }
+
+  .fa fa-long-arrow-right ml-3 {
+    width: 23px;
+    font-size: 29px;
+    flex-shrink: 0;
+    color: #FF4925;
+  }
+
+  .industriesexpclass {
+    background-color: #F6F9FF;
+    height: fit-content;
+    padding-bottom: 10px;
+  }
+
+  .expertiseind {
+    /* margin-top: -53px; */
+    font-size: 25px;
+  }
+
+  .exp-para {
+    text-align: justify;
+    word-spacing: 0px;
+    font-size: 15px;
+    line-height: 23px;
+
+  }
+
+  .pcmdheads {
+    align-items: center;
+    justify-content: center;
+    font-size: 15px;
+  }
+
+  .platforms {
+    font-size: 17px;
+    line-height: 25px;
+    /* margin-top: 47px; */
+  }
+
+  .pmt {
+    margin-top: 20px;
+  }
+
+  
+
+  .ind-boxhead {
+    margin-left: 20px;
+    font-weight: 600 !important;
+    font-size: 16px;
+}
+
+  .ind-card-title {
+    font-size: 14px !important;
+    line-height: 20.5px;
+    text-align: left;
+  }
+
+  .ind-card-text-3 {
+    font-size: 10px;
+    line-height: 14.8px;
+    color: white;
+    text-align: left;
+
+  }
+
+  .card-imgs {
+    margin-left: -10px;
+
+    /* padding-top: 4px; */
+    width: 113% !important;
+    height: 278px !important;
+    margin-top: 6px;
+    
+  }
+
+  /* .Built-back-colour-1 {
+    height: 556px;
+  } */
+
+  .industries-play-bg-video{
+    height: 180px;
+  }
+  .newaccede {
+    margin-left: 17px;
+    width: 50px !important;
+    height: 15px !important;
+  }
+
+  .slokaenergy {
+    margin-left: 6px;
+    width: 85px !important;
+  }
+
+  .gbreco {
+    padding-left: 6px;
+    width: 84px !important;
+  }
+
+  .newsrdsystems {
+    width: 73px !important;
+  }
+
+  .mpara {
+    width: 100%;
+    text-align: center;
+    font-size: 15px;
+    line-height: 25.5px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .guidelines {
+    /* width: fit-content; */
+    font-size: 13px;
+    line-height: 21.6px;
+    padding-left: 10px;
+  }
+
+  .tasdiv{
+    margin-top: 30px !important;
+  }
+
+  .tlnt-heading {
+    font-size: 24px;
+    line-height: 47px;
+  }
+
+  .tlnt-para {
+    text-align: justify;
+    font-size: 13px;
+    line-height: 25.6px;
+
+  }
+
+  .tlnt-card-para {
+    text-align: justify;
+    /* margin-left: 107px; */
+    font-size: 10px;
+    line-height: 19.9px;
+  }
+
+  .tlnt-docreators {
+    /* margin-left: 108px; */
+    font-size: 19px;
+  }
+
+  .tlnt-btn {
+    border: none;
+    border-radius: 4px;
+    padding: 10px 0px;
+  
+   
+  }
+
+  .tlnt-botn {
+    padding: 10px 20px;
+    font-size: 10px;
+    color: white;
+    background: rgb(26, 74, 185);
+    border: none;
+    
+  }
+  /* .dood {
+    top: 62%;
+   left: 81%;
+    position: absolute;
+} */
+  .newlab {
+    height: 161px;
+    width: 320px;
+  }
+
+  .lab-img {
+    display: none;
+    /* height: 161px;
+    width: 320px; */
+  }
+
+  .industries-bg-pink {
+ 
+    margin-top: -40px;
+    height: 224px !important;
+    width: 320px !important;
+  }
+
+  .labimg .lab-data-industries {
+    left: 0%;
+  }
+
+  .mb-2 {
+    text-align: justify;
+    font-size: 8px !important;
+    line-height: 14px !important;
+    margin-top: 5px !important;
+  }
+
+  .readmore {
+    margin-top: 9px !important;
+  }
+
+  .benfits {
+    padding-top: 90px;
+    margin-top: 90px;
+    font-size: 18px;
+    line-height: 26px;
+    font-weight: 500;
+  }
+
+  .benfits-para {
+    font-size: 15px;
+    line-height: 23.6px;
+  }
+
+ 
+
+  .lab-data-industries {
+    width: 175px !important;
+  }
+
+ 
+
+ 
+
+  .ind-platformspara {
+    line-height: 18.6px;
+    
+    text-align: center;
+    font-size: 12px;
+  }
+
+  .text-left {
+    text-align: center !important;
+  }
+
+  .boxtext {
+    font-size: 14px;
+  }
+
+  /* .card {
+    width: 100% !important;
+    margin-top: 0px !important;
+  } */
+
+  .faq {
+    font-size: 10px;
+    margin: 0px;
+  }
+
+  .card-bodys {
+    font-size: 8px !important;
+    text-align: justify;
+  }
+
+  .cardsdetails {
+    font-size: 12px;
+    /* margin-left: 72px !important; */
+    color: white;
+    text-align: center;
+  }
+
+  .ind-card-title {
+    text-wrap: wrap;
+    /* margin-left: -78px!important; */
+  }
+
+  .question {
+    line-height: 14.8px;
+    font-size: 8px;
+
+  }
+
+  .industries-pharama {
+    width: 91%;
+    height: 75%;
+    padding-top: 28px;
+    margin-left: 7px !important;
+
+  }
+
+  .longclinicaltrials {
+    margin-left: 27px;
+    width: 81%;
+    height: 81%;
+    padding-top: 28px;
+}
+
+.longmedicaldevices {
+  width: 93%;
+  height: 93%;
+  padding-top: 28px;
+  margin-left: 16px;
+}
+
+  .multiomics {
+    width: 86%;
+    height: 86%;
+    padding-top: 28px;
+    margin-left: 17px;
+  }
+
+  .tlnt-card-web-img {
+    width: 100%;
+    border-radius: 0px;
+    /* margin-left: -15px; */
+}
+
+.bles-div{
+  margin-top: 0px;
+}
+
+
+.doodpng{
+  height: 69px;
+}
+
+.App-logo-industrie{
+  height: 46px;
+  width: 45px;
+}
+
+}
+
+@media only screen and (min-width:469px) and (max-width:768px) {
+  .life-science-video {
+    width: 469px !important;
+    object-fit: cover;
+    position: relative;
+  }
+
+  .mainimg {
+    position: absolute;
+    top: -7px;
+    left: 17px;
+    /* width: 567px; */
+  }
+
+  .life {
+    font-size: 18px;
+    font-weight: 600;
+  }
+
+  .data1 {
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 27.2px !important;
+  }
+
+  .industries-subhead {
+    font-size: 9px;
+    line-height: 13.6px;
+    margin-top: -42px;
+    height: 72px;
+    width: 451px;
+  }
+
+  .button1 {
+    height: 40px !important;
+    margin-top: -22px !important;
+    /* margin-left: 116px !important; */
+    padding: 21px 46px 21px 46px !important;
+  }
+
+  .industies-mainhead {
+    width: 450px;
+    font-size: 22px;
+    line-height: 30.2px;
+    font-weight: 500 !important;
+  }
+
+  .expertiseind {
+    font-size: 33px;
+    font-weight: 600;
+    line-height: 55px;
+  }
+
+  .exp-para {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23.6px;
+  }
+
+  .platforms {
+    font-size: 33px;
+    font-weight: 500;
+    line-height: 43px;
+  }
+
+  .case {
+    font-size: 39px;
+    font-weight: 500;
+  }
+
+  /* .Built-back-colour-1 {
+    height: 592px !important;
+  } */
+
+  .mpara {
+    /* width: 460px; */
+    font-size: 19px;
+    font-weight: 500;
+    line-height: 32.5px !important;
+    padding-left: 9px;
+  }
+
+  .guidelines {
+    padding-left: 9px;
+    font-weight: 500;
+    line-height: 23.6px;
+    font-size: 16px;
+    width: fit-content;
+    padding-right: 5px;
+  }
+
+  .tlnt-heading {
+    font-size: 34px;
+    font-weight: 500;
+
+  }
+
+  .tlnt-para {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 21.6px;
+  }
+
+  .tlnt-card-para {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 25.9px;
+    margin-left: 99px;
+  }
+
+  .tlnt-docreators {
+    margin-left: 99px;
+    font-weight: 600;
+    font-size: 25px;
+
+  }
+
+  .tlnt-btn {
+    margin-left: 97px;
+    margin-top: 72px;
+    margin-bottom: 37px;
+  }
+
+  .tlnt-botn {
+    font-size: 12px !important;
+  }
+
+  .doodpng {
+    margin-top: 38px;
+    height: 93px;
+    margin-left: 15px !important;
+  }
+
+  .industries-bg-pink {
+    height: 263px !important;
+    border-radius: 27px;
+    /* height: 263px; */
+    width: 377px !important;
+    padding: 15px !important;
+
+  }
+
+  /* .lab-img {
+    display: none;
+  } */
+
+  .benfits {
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 43px;
+    padding-top: 126px;
+  }
+
+  .benfits-para {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 23.6px;
+    padding-bottom: 0px;
+  }
+
+  .card-industries {
+    margin-top: -80px !important;
+    margin-left: -180px !important;
+  }
+
+  .text-left {
+    text-align: center !important;
+  }
+
+  .tlnt-card {
+    
+    border-radius: 0px; 
+    width: 100%;
+    margin-left: 7px;
+    margin-top: 16px;
+
+  }
+
+  .labimg .lab-data-industries {
+    width: 270px !important;
+  }
+
+  .lab-img-section {
+    display: none;
+  }
+
+  .faq {
+    font-size: 11px;
+    margin: 0px;
+  }
+
+ 
+
+  .industries-pharama {
+    width: 91%;
+    height: 75%;
+    padding-top: 65px;
+    margin-left: 31px;
+
+  }
+
+  .longclinicaltrials {
+    margin-left: 37px;
+    width: 86%;
+    height: 81%;
+    padding-top: 60px;
+  }
+
+  .longmedicaldevices {
+    width: 79%;
+    height: 93%;
+    padding-top: 104px;
+    margin-left: 56px;
+  }
+
+  .multiomics {
+    width: 72%;
+    height: 86%;
+    padding-top: 86px;
+    margin-left: 75px;
+  }
+
+  .industriesexpclass {
+    background-color: #F6F9FF;
+    height: 1500px;
+    /* padding-bottom: 10%; */
+}
+.ind-platformspara{
+  font-size: 12px;
+  text-align: center;
+}
+.instudrie-box{
+  height: 250px !important; 
+  padding: 30px 30px;
+  box-shadow: 2px 2px 35px 0px #323c8d;
+  border-radius: 20px;
+  margin: 25px 0px;
+}
+.boxtext{
+  margin-top: 10px;
+  line-height: 23px !important;
+}
+
+.card-imgs{
+  height: 100%;
+  width: 100%;
+  margin-top: 12px !important;
+}
+.ind-card-title{
+  color: white;
+  letter-spacing: 0px;
+  font-size: 24px;
+  margin-top: 10px;
+}
+.ind-card-text-3{
+  color: #FFF;
+}
+.card-text{
+  margin: inherit;
+}
+.bles-div {
+  padding-top: 8px;
+  margin-top: 35px;
+}
+
+.tlnt-card-web-img {
+  width: 107%;
+  border-radius: 0px;
+  margin-left: -15px;
+}
+
+
+}
+
+@media only screen and (min-width:769px) and (max-width:991px) {
+
+  .indheading {
+    width: 752px;
+  }
+
+  .mainimg {
+    top: 0px;
+    left: 17px;
+  }
+
+  .industies-mainhead {
+    width: 636px;
+    /* margin-left: -40px;
+    margin-top: -133px; */
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 41.2px;
+  }
+
+  .industries-subhead {
+    /* margin-left: -34px; */
+    font-size: 15px;
+    line-height: 23.6px;
+    width: 485px;
+    margin-top: 0px;
+
+  }
+
+  .button1 {
+    margin-left: 11% !important;
+    margin-top: 41px !important;
+  }
+
+  h5 {
+    font-size: 15px !important;
+  }
+
+  .boxtext {
+    font-size: 12px !important;
+  }
+
+  .platforms {
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 46px;
+  }
+
+  .platformspara {
+    font-size: 16px;
+    font-weight: 400;
+  }
+
+  .card-imgs {
+    margin-top: 0px;
+    margin-left: -11px;
+    width: 105%;
+
+
+  }
+
+ 
+
+  .mpara {
+    width: 745px;
+    font-size: 29px;
+    font-weight: 600;
+    line-height: 50.5px;
+  }
+
+  .guidelines {
+    font-size: 15px;
+    line-height: 24.6px;
+    /* width: 724px; */
+  }
+
+  .lab-data-industries {
+    width: 423px !important;
+
+  }
+
+  .lab-img {
+    height: 326px !important;
+  }
+
+  .card-industries {
+    margin-top: 14px;
+  }
+
+  .tlnt-card {
+    width: 104%;
+    margin-left: -15px;
+  }
+
+  .tlnt-card-para {
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 27.9px;
+  }
+
+  .tlnt-docreators {
+    font-size: 22px;
+
+  }
+
+  .tlnt-botn {
+    padding: 13px 25px 13px 25px;
+    font-size: 13px;
+    margin-bottom: 26px;
+
+  }
+
+  .dood {
+    top: 60%;
+    left: 58%;
+  }
+
+  .doodpng {
+    height: 93px;
+  }
+
+  .eng {
+    margin-left: -18px;
+  }
+
+  .cardsdetails {
+    color: white !important;
+    font-size: 18px !important;
+  }
+
+  .tlnt-heading {
+    font-weight: 600;
+    font-size: 36px;
+  }
+
+  .benfits {
+    font-size: 34px;
+    font-weight: 600;
+  }
+
+  .platforms {
+    font-size: 36px !important;
+    font-weight: 600 !important;
+  }
+
+  .platformspara {
+    font-size: 17px !important;
+  }
+
+  .industries-pharama {
+    width: 91%;
+    height: 75%;
+    padding-top: 65px;
+    margin-top: 80px;
+  }
+
+  .longclinicaltrials {
+    margin-top: 37px !important;
+    width: 86%;
+    height: 81%;
+    padding-top: 60px;
+    margin-left: 20px;
+  }
+
+  .longmedicaldevices {
+    width: 93%;
+    height: 93%;
+    padding-top: 182px;
+    margin-left: 37px;
+  }
+
+  .multiomics {
+    width: 72%;
+    height: 86%;
+    padding-top: 86px;
+    margin-top: 66px;
+    margin-left: 30px;
+  }
+
+  .card-bodys {
+    font-size: 12px;
+  }
+.ind-card-text-3{
+  color: white;
+}
+
+.tlnt-card-web-img {
+  width: 100%;
+  border-radius: 0px;
+  margin-left: -15px;
+  height: 100%;
+}
+}
+
+@media only screen and (min-width:991px) and (max-width:1024px) {
+
+  .mainimg { 
+    top: 105px !important;
+    left: 15px !important;
+  }
+
+  .industies-mainhead {
+    color: #FFF;
+    font-family: Poppins;
+    font-size: 44px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 58.2px;
+    letter-spacing: -0.32px;
+    display: flex;
+    /* width: 759px; */
+    /* height: 202px; */
+    flex-direction: column;
+    justify-content: center;
+}
+
+.industries-subhead {
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 25.6px;
+  letter-spacing: -0.32px;
+  margin-top: 15px;
+  display: flex;
+  width: 789px;
+  /* height: 72px; */
+  flex-direction: column;
+  justify-content: center;
+}
+
+  .subhead {
+    width: 560px;
+    font-size: 17px;
+    line-height: 26.6px;
+  }
+
+  .button1 {
+    margin-left: 0% !important;
+    margin-top: 0px;
+  }
+
+  .longclinicaltrials {
+    margin-top: 24px;
+    width: 91%;
+    height: 91%;
+    /* padding-top: 60px; */
+}
+
+  .longmedicaldevices {
+    width: 84%;
+    height: 84%;
+    /* padding-top: 182px; */
+    /* margin-left: 38px; */
+    margin-top: 79px;
+}
+
+.industries-pharama {
+  width: 91%;
+  height: 91%;
+  /* padding-top: 65px; */
+  margin-top: 44px;
+}
+
+.multiomics {
+  width: 90%;
+  height: 84%;
+  /* padding-top: 86px; */
+  margin-top: 73px;
+}
+
+.business{
+  width: 20%;
+  height: 20%;
+}
+
+.ind-boxhead{
+  font-size: 10px;
+}
+.boxtext {
+  color: rgba(0, 0, 0, 0.70);
+  font-family: Poppins;
+  font-size: 11px;
+  font-style: normal;
+  font-weight: 360;
+  line-height: 19.6px;
+  letter-spacing: -0.32px;
+  text-align: inherit;
+  /* width: 306px; */
+}
+
+.ind-card-title {
+  color: #FFF;
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 27.5px;
+  letter-spacing: -0.32px;
+}
+
+.card-imgs {
+  margin-bottom: 17px;
+  margin-left: -10px;
+  border-radius: 20px;
+}
+
+.ind-card-text-3{
+  color: #FFF;
+}
+.mpara {
+  text-align: center;
+  color: #050505;
+  font-family: Poppins;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 39.5px;
+  letter-spacing: -0.32px;
+}
+
+.guidelines{
+  width: fit-content;
+}
+
+.bles-data{
+  font-size: 13px;
+}
+.tasdiv{
+  margin-top: 20px !important;
+}
+
+.tlnt-card-web-img {
+  width: 100%;
+  height: 100%;
+  border-radius: 30px;
+  margin-left: -15px;
+}
+.eng {
+  margin-top: 40px;
+  margin-left: 0px;
+}
+
+
+
+.doodpng {
+  height: 65px;
+}
+
+.tlnt-botn {
+  padding: 16px 20px 16px 20px !important;
+  font-size: 15px;
+  color: white;
+  border-radius: 4px;
+  background: #1A4AB9;
+  border: none;
+}
+
+.boxtext {
+  color: rgba(0, 0, 0, 0.70);
+  font-family: Poppins;
+  font-size: 10px !important;
+  font-style: normal;
+  font-weight: 360;
+  line-height: 19.6px !important;
+  letter-spacing: -0.32px;
+  text-align: inherit;
+  /* width: 306px; */
+}
+
 }

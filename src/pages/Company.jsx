@@ -1,7 +1,7 @@
 import React from "react";
 import "./Company.css";
 import Navbar from "../products/Navbar";
-import companyvideo from "../../src/videos/company.mp4";
+// import companyvideo from "../../src/videos/company.mp4";
 import Footer from "../products/Footer";
 
 function company() {
@@ -11,7 +11,7 @@ function company() {
 
       <div className="company-play-bg-video">
         <video className="COMPANY-VIdeo" autoPlay loop muted>
-          <source src={companyvideo} type="video/mp4" />
+          <source src="https://storage.googleapis.com/do-website-resources/company.mp4"type="video/mp4" />
         </video>
 
         <div className="body-science">
@@ -28,7 +28,7 @@ function company() {
             <span className="our-story">Our Story </span>
            <p className="col-md-6 Navigate-Journey">
            Navigating your journey
-             from insights to value
+            from insights to value
             realization
            </p>
           
@@ -177,7 +177,7 @@ function company() {
                     alt="target"
                     width={100}
                   />
-                  <h6 class="card-subtitle mb-2 text-muted our-purpose-1">
+                  <h6 class="card-subtitle   our-purpose-1">
                     Our purpose
                   </h6>
                   <p class="card-text empower-para">
@@ -195,7 +195,7 @@ function company() {
                     alt="target"
                     width={100}
                   />
-                  <h6 class="card-subtitle mb-2 text-muted our-purpose-1">
+                  <h6 class="card-subtitle  our-purpose-1">
                     Our vision
                   </h6>
                   <p class="card-text empower-para">
@@ -214,7 +214,7 @@ function company() {
                     alt="target"
                     width={100}
                   />
-                  <h6 class="card-subtitle mb-2 text-muted our-purpose-1">
+                  <h6 class="card-subtitle  our-purpose-1">
                     ACE framework
                   </h6>
                   <p class="card-text empower-para">
@@ -244,7 +244,7 @@ function company() {
                     />
                   </div>
                   <div className="global-left-customers">
-                    <h4 className="global-data">Data Scientists</h4>
+                    <h4 className="global-data-company">Data Scientists</h4>
                     <p className="data-science-paragraph">
                       Every person at DataObserve brings their whole self to
                       work and helps us create a culture of curiosity and
@@ -262,7 +262,7 @@ function company() {
                     />
                   </div>
                   <div className="global-left-customers">
-                    <h4 className="global-data">Global Delivery Centres</h4>
+                    <h4 className="global-data-company">Global Delivery Centres</h4>
                     <p className="data-science-paragraph">
                       Ready to Enable user-driven analytics for some of the
                       world’s largest Fortune 50 companies
@@ -279,7 +279,7 @@ function company() {
                     />
                   </div>
                   <div className="global-left-customers">
-                    <h4 className="global-data">Global Customers</h4>
+                    <h4 className="global-data-company">Global Customers</h4>
                     <p className="data-science-paragraph">
                       Trust us to help them create sustainable impact by
                       systematizing the last mile adoption of analytics
@@ -296,7 +296,7 @@ function company() {
                     />
                   </div>
                   <div className="global-left-customers">
-                    <h4 className="global-data">
+                    <h4 className="global-data-company">
                       Unprecedented operational excellence
                     </h4>
                     <p className="data-science-paragraph">
@@ -315,7 +315,7 @@ function company() {
                     />
                   </div>
                   <div className="global-left-customers">
-                    <h4 className="global-data">
+                    <h4 className="global-data-company">
                       One enterprise AI Studio & Labs
                     </h4>
                     <p className="data-science-paragraph">

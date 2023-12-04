@@ -1,4 +1,4 @@
-import React ,{useEffect,useRef} from"react";
+import React ,{ useState} from"react";
 import "./Allinsights.css";
 import Navbar from "../products/Navbar";
 import allinsights from "../../src/videos/allinsights-banner.MOV";
@@ -7,10 +7,15 @@ import Footer from "../products/Footer";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import { BlogsCarousel } from "../components/carousel/BlogCarousel";
+import Modal from "../components/modal/Modal";
+import BlogJson from './insightsJsons/blogs.json';
+import AllBlogsModalContent from "./AllBlogsModal";
 // import { useSection } from './SectionContext';
 
 
 function Arrow(props) {
+  
   const { className, style, onClick } = props;
   return (
     <div
@@ -19,9 +24,15 @@ function Arrow(props) {
       onClick={onClick}
     />
   );
-}
+  }
 
 function Allinsights() {
+  const [isModalOpen, setIsModalOpen] = useState(false);
+  const [isHovered, setIsHovered] = useState(false);
+
+  const closeModal = () => {
+    setIsModalOpen(false);
+  };
   var settings = {
     dots: true,
     infinite: true,
@@ -620,157 +631,30 @@ function Allinsights() {
       <section className="All-insights-back-ground" id="blogs">
         <div className="container-fluid">
           <div>
-            <h3 className="case-study-insights">Blogs & Articles</h3>
+            <h3 className="case-study-insights">
+              Blogs {!isHovered ?
+                <span onMouseEnter={() => setIsHovered(true)}>
+                  <img src="/images/doubleArrow.png" alt="doublearrow" height="15px" />
+                </span> :
+                <span style={{ fontSize: '12px', cursor: 'pointer' }} onClick={() => setIsModalOpen(true)} onMouseLeave={() => setIsHovered(false)}>
+                  View all
+                  <img src="/images/doubleArrow.png" alt="doublearrow" height="15px" />
+                </span>}
+            </h3>
           </div>
-
           <div>
             <div className="container-fluid">
               <div>
-                <Slider {...settings}>
-                  <div>
-                    <Link to="/blog" className="insights-main">
-                      <div className="card myDIV">
-                        <div>
-                          <p className="insights-paragraph-future">
-                            The future of data engineering in digital product
-                            engineering lies with Gen AI
-                          </p>
-                        </div>
-                        <div>
-                          <img
-                            src="./images/top10-insights.png"
-                            alt="recent-1"
-                            className="w-100 case-study-image"
-                          />
-                        </div>
-                        <div>
-                          <p className="hide-text">
-                            The practice of data engineering in digital product
-                            engineering, involving data collection,
-                            transformation, and organization for analysis, is on
-                            the brink of a major revolution thanks to the
-                            emergence of Generative Artificial Intelligence (Gen
-                            AI)....
-                            <span className="read-more-insights">
-                              Read more
-                            </span>{" "}
-                          </p>
-                        </div>
-
-                        <div className="card-body">
-                          <h6 className="rvs-praveen">Posted by D.O Team</h6>
-                          <div className="d-flex domain-share">
-                            <div className="domain-insigts">
-                              <p className="domain">Domain</p>
-                            </div>
-                            <div>
-                              <img
-                                className="share"
-                                src="./images/share.png"
-                                alt="like"
-                                width={28}
-                                height={28}
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </Link>
-                  </div>
-                  <div>
-                    <Link to="#" className="insights-main">
-                      <div className="card myDIV">
-                        <div>
-                          <p className="insights-paragraph-future-blog">
-                            How Does Multi-cloud Differ From A Hybrid Cloud
-                          </p>
-                        </div>
-                        <div>
-                          <img
-                            src="./images/cloud-blog.png"
-                            alt="recent-1"
-                            className="w-100 case-study-image"
-                          />
-                        </div>
-                        <div>
-                          <p className="hide-text">
-                            Coming Soon
-                            <span className="read-more-insights">
-                              Read more
-                            </span>{" "}
-                          </p>
-                        </div>
-
-                        <div className="card-body">
-                          <h6 className="rvs-praveen">Posted by D.O Team</h6>
-                          <div className="d-flex domain-share">
-                            <div className="domain-insigts">
-                              <p className="domain">Domain</p>
-                            </div>
-                            <div>
-                              <img
-                                className="share"
-                                src="./images/share.png"
-                                alt="like"
-                                width={28}
-                                height={28}
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </Link>
-                  </div>
-                  <div>
-                    <Link to="#" className="insights-main">
-                    <div className="card myDIV">
-                        <div>
-                          <p className="insights-paragraph-future-blog">
-                          Design Thinking Led Approach to Building Digital Product Ecosystem
-                          </p>
-                        </div>
-                        <div>
-                          <img
-                            src="./images/design-blog.png"
-                            alt="recent-1"
-                            className="w-100 case-study-image"
-                          />
-                        </div>
-                        <div>
-                          <p className="hide-text">
-                            Coming Soon
-                            <span className="read-more-insights">
-                              Read more
-                            </span>{" "}
-                          </p>
-                        </div>
-
-                        <div className="card-body">
-                          <h6 className="rvs-praveen">Posted by D.O Team</h6>
-                          <div className="d-flex domain-share">
-                            <div className="domain-insigts">
-                              <p className="domain">Domain</p>
-                            </div>
-                            <div>
-                              <img
-                                className="share"
-                                src="./images/share.png"
-                                alt="like"
-                                width={28}
-                                height={28}
-                              />
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </Link>
-                  </div>
-                </Slider>
+                <BlogsCarousel BlogJson={BlogJson} />
+                <Modal isOpen={isModalOpen} onClose={closeModal}>
+                  <AllBlogsModalContent BlogJson={BlogJson} closeModal={closeModal} />
+                </Modal>
               </div>
             </div>
           </div>
         </div>
       </section>
+
 
       {/* blog and articles close */}
 
@@ -932,6 +816,6 @@ function Allinsights() {
       {/* ebooks close */}
     </div>
   );
-}
+              }
 
 export default Allinsights;

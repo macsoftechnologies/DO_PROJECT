@@ -2,55 +2,78 @@ import React from "react";
 import "./Dataeng.css";
 // import Faq from "../products/Faq";
 import Navbar from "../products/Navbar";
-import dataengineer from "../../src/videos/dataenginner.mp4";
+// import dataengineer from "../../src/videos/dataenginner.mp4";
 import Footer from "../products/Footer";
+import Slider from "react-slick";
 
+function Arrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block", background: "black" }}
+      onClick={onClick}
+    />
+  );
+}
 const Dataeng = () => {
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 2,
+    // nextArrow: <Arrow />,
+    // prevArrow: <Arrow />,
+
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+    ],
+  };
+
   return (
     <div>
       <Navbar />
       <div className="enterprise">
         <div>
           <video className="data-engineer" autoPlay loop muted>
-            <source src={dataengineer} type="video/mp4" />
+            <source
+              src="https://storage.googleapis.com/do-website-resources/dataenginner.mp4"
+              type="video/mp4"
+            />
           </video>
-          <div className="container">
-            <div
-              style={{
-                display: "inline-flex",
-                minHeight: "1080px",
-                flexDirection: "column",
-                alignItems: "flex-start",
-                marginTop: "115px",
-                position: "absolute",
-                top: "128px",
-                left: "10%",
-              }}
-            >
+          <div className="Cloud-Main-hEading">
+            <p className="cLOUD-TRANSFORM">
               <p
+                className="cloud-transform-Size"
                 style={{
-                  color: "white",
-                  fontSize: "18px",
-                  fontStyle: "normal",
                   fontWeight: "600",
+                  fontSize: "20px",
+                  letterSpacing: "1px",
                 }}
               >
-                Data Engineering
+                Cloud Transformation
               </p>
-              <h4
-                style={{
-                  color: "white",
-                  fontSize: "33px",
-                  fontStyle: "normal",
-                  fontWeight: "700",
-                  lineHeight: "43px",
-                  paddingRight: "540px",
-                }}
-              >
-                Enable business agility with advanced data engineering services
-                that prepare you for the future.
-              </h4>
+
+              <p className="col-md-6 Navigate-Journey">
+                Empower Your Business Transformation Through Cloud Migration
+              </p>
               <button
+                className="datatypes"
                 style={{
                   display: "flex",
                   height: "61px",
@@ -64,8 +87,9 @@ const Dataeng = () => {
                 }}
               >
                 <span
+                  className="spans"
                   style={{
-                    color: "#FF4925",
+                    color: "#0046E8",
                     fontSize: "14px",
                     fontStyle: "normal",
                     fontWeight: "600",
@@ -73,23 +97,25 @@ const Dataeng = () => {
                   }}
                 >
                   Talk to us now
-                </span>
+                </span>{" "}
                 <i
-                  className="fa fa-long-arrow-right ml-3"
+                  className="fa fa-long-arrow-right ARROW-RIGHT-CLOUD"
                   style={{
                     width: "23px",
                     fontSize: "29px",
                     flexShrink: "0",
-                    color: "#FF4925",
+                    color: "#0046E8",
+                    marginLeft: "12px",
                   }}
                   aria-hidden="true"
                 ></i>
               </button>
-            </div>
+            </p>
           </div>
         </div>
       </div>
       <div
+        className="container"
         style={{
           display: "flex",
           flexDirection: "column",
@@ -97,20 +123,18 @@ const Dataeng = () => {
           alignItems: "center",
         }}
       >
-        <h4 style={{ textAlign: "center", fontWeight: 700, fontSize: "43px" }}>
-          Our Data Engineering Services
-        </h4>
-        <p style={{ textAlign: "center", marginTop: "10px", width: "755px" }}>
-          DataObserve’s data engineering services and analytics solutions are
-          designed to grow businesses and help them stand out from the crowd.
-          How do we do it? Glad you asked! We begin with thoroughly
-          understanding your current business model and identifying optimization
-          opportunities. This allows us to create user-friendly data engineering
-          solutions to modernize data platforms and streamline data processing
-          pipelines.
+        <h4 className="migration">Our Data Engineering Services</h4>
+        <p className="operational">
+          DataObserve's data engineering services and analytics solutions are
+          tailored to foster business growth and set you apart from the
+          competition. How do we achieve this? We're glad you asked! We commence
+          by gaining a comprehensive understanding of your existing business
+          model and identifying areas for optimization. This enables us to craft
+          user-friendly data engineering solutions for modernizing data
+          platforms and optimizing data processing pipelines.
         </p>
       </div>
-      <div className="cloudcards">
+      <div className="cloudcards d-md-block d-none">
         <div class="ccdiv w-100">
           <div className="cloudimgcard">
             <img className="notrepimg" src="/images/dwm.png" alt="" />
@@ -171,8 +195,78 @@ const Dataeng = () => {
           </div>
         </div>
       </div>
+
+      <div className="d-block d-md-none">
+        <section>
+          <div className="container">
+            <div>
+              <Slider {...settings}>
+              <div className="cloudimgcard">
+            <img className="notrepimg" src="/images/dwm.png" alt="" />
+            <div className="cloudcard card">
+              <h1 className="cloudcardheading">Data Warehouse Migration</h1>
+              <p className="cloudcardpara mb-0">
+                Harness the potential of the cloud to seamlessly transition your
+                data to a high-end, cloud-enabled system capable of generating
+                significantly improved insights.
+              </p>
+            </div>
+          </div>
+          <div className="cloudimgcard">
+            <img className="notrepimg" src="/images/etldp.png" alt="" />
+            <div className="cloudcard card">
+              <h1 className="cloudcardheading">ELT/ETL Data Processing  </h1>
+              <p className="cloudcardpara mb-0">
+                Fed up with the burdensome management of legacy data lakes?
+                Revolutionize your business with our agile and scalable data
+                modernization solutions.
+              </p>
+            </div>
+          </div>
+          <div className="cloudimgcard">
+            <img className="notrepimg" src="/images/datam.png" alt="" />
+            <div className="cloudcard card">
+              <h1 className="cloudcardheading">Database Modernization  </h1>
+              <p className="cloudcardpara mb-0">
+                Frustrated with the complexities of managing legacy data lakes?
+                Revitalize your business with our agile and scalable data
+                modernization solutions.
+              </p>
+            </div>
+          </div>
+          <div className="cloudimgcard">
+            <img className="notrepimg" src="/images/dataops.png" alt="" />
+            <div className="cloudcard card">
+              <h1 className="cloudcardheading">DataOps</h1>
+              <p className="cloudcardpara mb-0">
+                Enhance processing efficiency and introduce greater agility to
+                your data engineering capabilities through DataOps, an automated
+                solution that combines the principles of DevOps with data
+                management.
+              </p>
+            </div>
+          </div>
+          <div className="cloudimgcard">
+            <img className="notrepimg" src="/images/diap.png" alt="" />
+            <div className="cloudcard card">
+              <h1 className="cloudcardheading">
+                Data Integration and Pipelines
+              </h1>
+              <p className="cloudcardpara mb-0">
+                Incorporate cloud data pipelines into your business to
+                streamline the flow and transformation of your data.
+              </p>
+            </div>
+          </div>
+              </Slider>
+            </div>
+          </div>
+        </section>
+      </div>
+
+
       <div
-        class="container card mb-3 mt-5 Built-back-colour"
+        class="container  mb-3 mt-5 Built-back-colour"
         style={{
           backgroundColor: "#1A4AB9",
           borderRadius: "20px",
@@ -198,16 +292,16 @@ const Dataeng = () => {
         >
           <div class="col-md-5">
             <img
-              style={{ height: "252px", width: "100%" }}
+              style={{ height: "250px", width: "100%" }}
               src="./images/build.png"
               className="card-img"
               alt="..."
             />
           </div>
-          <div class="col-md-7">
-            <div class="card-body">
+          <div class="col-md-7 cLOUD-Unified">
+            <div class="card-body CLOUD-bODY">
               <h5
-                class="card-title"
+                class="col-md-9 card-title CLouD-BULIT"
                 style={{
                   color: "white",
                   letterSpacing: "0.68px",
@@ -218,17 +312,14 @@ const Dataeng = () => {
                 <br /> decision intelligence Platform
               </h5>
               <p
-                class="card-text-3"
+                class="col-md-9 card-text-3"
                 style={{ fontSize: "13px", color: "#fff", opacity: "0.5" }}
               >
                 Learn how we created a self-service, predictive, insights
-                platform driven
-                <br /> by an adaptive machine learning engine which helps
-                improve decision-
-                <br />
-                making.
+                platform driven by an adaptive machine learning engine which
+                helps improve decision-making.
               </p>
-              <p class="card-text" style={{ color: "white" }}>
+              <p class=" col-md-9 card-text" style={{ color: "white" }}>
                 <p style={{ fontSize: 16 }}>
                   Read case study
                   <i class="fa fa-long-arrow-right ml-2" aria-hidden="true"></i>
@@ -239,7 +330,6 @@ const Dataeng = () => {
                   display: "flex",
                   alignItems: "center",
                   justifyContent: "space-around",
-                  marginLeft: "-20px",
                 }}
               >
                 <img
@@ -257,7 +347,7 @@ const Dataeng = () => {
                   alt=""
                   style={{ width: "95px" }}
                 />
-                <img
+                <img className="srdsystems-cloud"
                   src="./images/srdsystems.png"
                   alt=""
                   style={{ width: "70px" }}
@@ -268,21 +358,25 @@ const Dataeng = () => {
         </div>
       </div>
       <div>
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
-            flexDirection: "column",
-          }}
+      <div
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          marginTop: "30px",
+          alignItems: "center",
+        }}
+      >
+        <h4
+          className="mt-5 EXPERIENCE-cloud"
+          style={{ textAlign: "center", fontWeight: 700, fontSize: "43px" }}
         >
-          <h3 className="cloud-head">Experience the DataObserve Advantage</h3>
-          <p style={{ width: "700px", textAlign: "center" }}>
-            At DataObserve, as a data engineering firm, we are fueled by
-            continuous innovation and relentlessly pursue excellence in crafting
-            cloud-compatible solutions.
-          </p>
-        </div>
+          Experience the Data Observe Advantage
+        </h4>
+
+        <p className="wides">
+        At DataObserve, as a data engineering firm, we are fueled by continuous innovation and relentlessly pursue excellence in crafting cloud-compatible solutions.
+        </p>
+      </div>
         <div className="container mt-3">
           <div className="row box">
             <div
@@ -364,79 +458,89 @@ const Dataeng = () => {
               </div>
             </div>
           </div>
+         
           <div>
+          <div
+            class="mb-3 mt-5"
+            style={{
+              backgroundColor: "#1A4AB9",
+              maxWidth: "100%",
+              borderRadius: "30px",
+            }}
+          >
             <div
-              class="card mb-3 mt-5"
+              class="row no-gutters"
               style={{
-                backgroundColor: "#1A4AB9",
-                maxWidth: "100%",
-                borderRadius: "20px",
+                alignItems: "center",
+                justifyContent: "spacebetween",
               }}
             >
-              <div
-                class="row no-gutters"
-                style={{
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "spacebetween",
-                }}
-              >
-                <div class="col-md-1"></div>
-                <div class="col-md-8">
-                  <div class="card-body expertcardbody d-flex">
-                    <div>
-                      <h5 class="card-title" style={{ color: "white" }}>
-                        Revamp Your Cloud Infrastructure with Our Data
-                        Engineering Services
-                      </h5>
-                      <p
-                        class="card-text"
-                        style={{ color: "white", width: "500px" }}
-                      >
-                        Attain business agility and flexibility through our
-                        technology expertise in cloud and data warehouses. Our
-                        team of data engineers is ready to guide you from
-                        inception to completion.
-                      </p>
-                    </div>
-                    <div>
-                      <button
-                        style={{
-                          width: "200px",
-                          border: "none",
-                          height: "55px",
-                          margin: "42px",
-                          borderRadius: "6px",
-                        }}
-                      >
-                        Talk to us now{" "}
-                        <i
-                          class="fa fa-long-arrow-right ml-3"
-                          aria-hidden="true"
-                        ></i>
-                      </button>
-                    </div>
+              <div class="col-md-8">
+                <div class="">
+                  <div>
+                    <h5
+                      class="card-title Cloud-title"
+                      style={{ color: "white", fontSize: "24px" }}
+                    >
+                      Maximize Your Cloud Capabilities with the DataObserve
+                      Advantage
+                    </h5>
+                    <p class="card-text Cloud-color-paragraph">
+                      Streamline your cloud-driven business transformation with
+                      DataObserve's comprehensive suite of cloud services,
+                      encompassing consulting, optimization, migration, and
+                      modernization. Our team of seasoned cloud experts is at
+                      your disposal, ready to provide guidance and support.
+                    </p>
                   </div>
                 </div>
+              </div>
+              <div className="col-md-4">
+                <button
+                  className="observers"
+                  style={{
+                    width: "200px",
+                    border: "none",
+                    height: "55px",
+                    margin: "42px",
+                    borderRadius: "6px",
+                  }}
+                >
+                  Talk to us now{" "}
+                  <i
+                    class="fa fa-long-arrow-right Arrow-cloud"
+                    aria-hidden="true"
+                  ></i>
+                </button>
               </div>
             </div>
           </div>
         </div>
+        </div>
       </div>
       <div>
-        <h3 className="cloud-head"> What Makes Us Stand Out</h3>
-        <p
+
+      <div
           className="container"
-          style={{ width: "700px", textAlign: "center" }}
+          style={{
+            justifyContent: "center",
+            flexDirection: "column",
+            display: "flex",
+          }}
         >
-          With a wealth of experience in delivering data engineering services
-          over the years, we aspire to be a trusted source of data and cloud
-          solutions for businesses worldwide. Our team of data engineering
-          experts is well-equipped to guide you through every facet of setting
-          up data lakehouses, creating data pipelines, and constructing a robust
-          ETL process in data engineering. Here are several compelling reasons
-          why we are the perfect choice:
-        </p>
+          <h3 className="cloud-head" style={{ textAlign: "center" }}>
+            What Makes Us Stand Out
+          </h3>
+          <p
+            className="CLoud-Text-pARA"
+            style={{
+              textAlign: "center",
+            }}
+          >
+           With a wealth of experience in delivering data engineering services over the years, we aspire to be a trusted source of data and cloud solutions for businesses worldwide. Our team of data engineering experts is well-equipped to guide you through every facet of setting up data lakehouses, creating data pipelines, and constructing a robust ETL process in data engineering. Here are several compelling reasons why we are the perfect choice:
+          </p>
+        </div>
+       
         <div className="container mt-3">
           <div className="row box">
             <div className="col-md-4">

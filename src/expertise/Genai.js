@@ -1,34 +1,75 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "../products/Navbar";
 import "../expertise/Genai.css";
 import Faq from "../products/Faq";
 import Footer from "../products/Footer";
 import { Link } from "react-router-dom";
-import genai from "../../src/videos/genaivdbg.mp4";
+// import genai from "../../src/videos/genaivdbg.mp4";
+import Slider from "react-slick";
+
+function Arrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block", background: "black" }}
+      onClick={onClick}
+    />
+  );
+}
 
 function Genai() {
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 2,
+    // nextArrow: <Arrow />,
+    // prevArrow: <Arrow />,
+
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+    ],
+  };
+
   return (
     <div>
       <Navbar />
       <div className="genaibg">
         <video className="genai-transform-video" autoPlay loop muted>
-          <source src={genai} type="video/mp4" />
+          <source src="https://storage.googleapis.com/do-website-resources/genaivdbg.mp4" type="video/mp4" />
         </video>
         <div
+          className="GenAI-DO"
           style={{
             display: "inline-flex",
-            // minHeight: "1080px",
-            // padding: "42px 570px 100px 690px",
+
             flexDirection: "column",
             alignItems: "flex-start",
             position: "absolute",
             top: "234px",
             right: "0%",
             left: "21%",
-            paddingLeft:"31%"
+            paddingLeft: "31%",
           }}
         >
           <h4
+            className="GENAI-HEADing"
             style={{
               color: "white",
               fontSize: "45px",
@@ -37,7 +78,8 @@ function Genai() {
               lineHeight: "45px",
             }}
           >
-            Generative AI Consulting <br/>Services
+            Generative AI Consulting <br />
+            Services
           </h4>
           <p className="text-muted" style={{ fontSize: "22px" }}>
             Ignite your business with AI's creative spark
@@ -52,15 +94,19 @@ function Genai() {
           alignItems: "center",
         }}
       >
-        <h4 style={{ textAlign: "center", fontWeight: 700, fontSize: "35px" }}>
+        <h4
+          className="GenAI-Redefine"
+          style={{ textAlign: "center", fontWeight: 700, fontSize: "35px" }}
+        >
           Redefine what’s possible for your business with <br />
           Generative AI technology
         </h4>
         <p
+          className="container Genai-pioneer"
           style={{
             textAlign: "center",
             marginTop: "10px",
-            width: "755px",
+
             fontSize: "13px",
           }}
         >
@@ -73,7 +119,8 @@ function Genai() {
           through the power of generative AI solutions.
         </p>
       </div>
-      <div className="cloudcards1">
+
+      <div className="cloudcards1 d-md-block d-none">
         <div class="ccdiv1">
           <div className="cloudimgcard1">
             <img className="notrepimg" src="/images/ccon.png" alt="" />
@@ -167,27 +214,142 @@ function Genai() {
           </div>
         </div>
       </div>
-      <div className="generativeAI">
-        <h3 className="businessachive-genai">
-          Make your business achieve more using
-          <br /> generative AI now
+
+      <div className="d-block d-md-none">
+        <section>
+          <div className="container">
+            <div>
+              <Slider {...settings}>
+                <div className="cloudimgcard1">
+                  <img className="notrepimg" src="/images/ccon.png" alt="" />
+                  <div className="cloudcard1 card">
+                    <h1 className="cloudcardheading1">
+                      Generative AI consulting
+                    </h1>
+                    <p className="cloudcardpara1 mb-0">
+                      Our expert team discerns chances for seamlessly
+                      incorporating generative AI into your current business
+                      operations and products. We offer tailored solutions
+                      designed to meet your precise requirements, encompassing
+                      data preparation and modeling, algorithm creation and
+                      integration, along with continuous support and
+                      maintenance.
+                    </p>
+                  </div>
+                </div>
+                <div className="cloudimgcard1">
+                  <img className="notrepimg" src="/images/cmig.png" alt="" />
+                  <div className="cloudcard1 card">
+                    <h1 className="cloudcardheading1">
+                      Generative AI strategy
+                    </h1>
+                    <p className="cloudcardpara1 mb-0">
+                      Our team offers comprehensive services for model
+                      integration and deployment, covering everything from data
+                      preparation and modeling, performance optimization, to
+                      algorithm development and implementation, along with
+                      continuous support and maintenance. These services are
+                      designed to ensure the successful deployment of generative
+                      AI models within your business operations.
+                    </p>
+                  </div>
+                </div>
+                <div className="cloudimgcard1">
+                  <img className="notrepimg" src="/images/ccop.png" alt="" />
+                  <div className="cloudcard1 card">
+                    <h1 className="cloudcardheading1">
+                      Generative AI ApplicationDevelopment
+                    </h1>
+                    <p className="cloudcardpara1 mb-0">
+                      Our team offers comprehensive services for model
+                      integration and deployment, covering everything from data
+                      preparation and modeling, performance optimization, to
+                      algorithm development and implementation, along with
+                      continuous support and maintenance. These services are
+                      designed to ensure the successful deployment of generative
+                      AI models within your business operations.
+                    </p>
+                  </div>
+                </div>
+                <div className="cloudimgcard1">
+                  <img className="notrepimg" src="/images/cops.png" alt="" />
+                  <div className="cloudcard1 card">
+                    <h1 className="cloudcardheading1">
+                      Generative AI model replication
+                    </h1>
+                    <p className="cloudcardpara1 mb-0">
+                      Our team offers comprehensive services for model
+                      integration and deployment, covering everything from data
+                      preparation and modeling, performance optimization, to
+                      algorithm development and implementation, along with
+                      continuous support and maintenance. These services are
+                      designed to ensure the successful deployment of generative
+                      AI models within your business operations.
+                    </p>
+                  </div>
+                </div>
+                <div className="cloudimgcard1">
+                  <img className="notrepimg" src="/images/inas.png" alt="" />
+                  <div className="cloudcard1 card">
+                    <h1 className="cloudcardheading1">
+                      Model Integration & Deployment
+                    </h1>
+                    <p className="cloudcardpara1 mb-0">
+                      Our team offers comprehensive services for model
+                      integration and deployment, covering everything from data
+                      preparation and modeling, performance optimization, to
+                      algorithm development and implementation, along with
+                      continuous support and maintenance. These services are
+                      designed to ensure the successful deployment of generative
+                      AI models within your business operations.
+                    </p>
+                  </div>
+                </div>
+                <div className="cloudimgcard1">
+                  <img
+                    className="notrepimg"
+                    src="/images/rtct-genai.png"
+                    alt=""
+                  />
+                  <div className="cloudcard1 card">
+                    <h1 className="cloudcardheading1">Fine Tuning LLMs</h1>
+                    <p className="cloudcardpara1 mb-0">
+                      Our experts employ prompt engineering, selecting suitable
+                      pretrained models and enhancing their performance through
+                      transfer learning, data augmentation, gradient descent,
+                      and hyperparameter tuning. Rigorous data curation, precise
+                      instructions, and performance evaluations guarantee the
+                      efficacy of LLMs for your specific tasks.
+                    </p>
+                  </div>
+                </div>
+              </Slider>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <div className="row generativeAI">
+        <h3 className="col-md-8 businessachive-genai">
+          Make your business achieve more using generative AI now
         </h3>
-        <Link to="/contact" style={{ textDecoration: "none" }}>
-          <button className="btn-genai">
-            <span className="btn-text">
+        <a href="/contact" style={{ textDecoration: "none" }}>
+          <button className="col-md-4 btn-genai">
+            <p className="btn-text">
               Let's Get The
-              <br /> Ball Rolling
-            </span>
+              <br />
+              Ball Rolling
+            </p>
             <i
               class="fa fa-arrow-circle-o-right"
               style={{ color: "blue", marginLeft: "5px", fontSize: "20px" }}
               aria-hidden="true"
             ></i>
           </button>
-        </Link>
+        </a>
       </div>
       <div className="container mt-5">
-        <h2>Generative AI Applications</h2>
+        <h2 className="genai-AI-Application">Generative AI Applications</h2>
         <table class="table table-striped">
           <thead class="thead-dark">
             <tr>
@@ -273,7 +435,7 @@ function Genai() {
           background: "#F8F8F8",
         }}
       >
-        <div class="row no-gutters">
+        <div class="row no-gutters-genai">
           <div
             class="col-md-4"
             style={{ display: "flex", alignItems: "center" }}
@@ -353,13 +515,12 @@ function Genai() {
           </div>
         </div>
       </div>
-      <div className="generativeAI">
-        <h3 className="businessachive-genai">
-          Discover the power of generative AI to
-          <br /> reduce turnaround time
+      <div className="row generativeAI">
+        <h3 className="col-md-8 businessachive-genai">
+          Discover the power of generative AI to reduce turnaround time
         </h3>
         <a href="/contact" style={{ textDecoration: "none" }}>
-          <button className="btn-genai">
+          <button className="col-md-4 btn-genai">
             <span className="btn-text">
               Let's Get The
               <br /> Ball Rolling
@@ -379,7 +540,7 @@ function Genai() {
             business
           </h2>
           <div class="row" style={{ marginTop: "2rem" }}>
-            <div class="col-3" style={{ background: "#F8F8F8" }}>
+            <div class="col-md-3" style={{ background: "#F8F8F8" }}>
               <div
                 class="nav flex-column nav-pills"
                 id="v-pills-tab"
@@ -454,7 +615,7 @@ function Genai() {
                 </a>
               </div>
             </div>
-            <div class="col-9">
+            <div class="col-md-9">
               <div class="tab-content" id="v-pills-tabContent">
                 <div
                   class="tab-pane fade show active"
@@ -462,8 +623,10 @@ function Genai() {
                   role="tabpanel"
                   aria-labelledby="v-pills-home-tab"
                 >
-                  <h3>Generative AI for healthcare industry</h3>
-                  <p>
+                  <h3 className="genai-Healthcare">
+                    Generative AI for healthcare industry
+                  </h3>
+                  <p className="genai-Health-Para">
                     Our generative AI consulting services help healthcare
                     providers enhance patient care and streamline operations. We
                     use machine learning and natural language processing to
@@ -530,8 +693,10 @@ function Genai() {
                   role="tabpanel"
                   aria-labelledby="v-pills-profile-tab"
                 >
-                  <h3>Generative AI for manufacturing industry</h3>
-                  <p>
+                  <h3 className="genai-Healthcare">
+                    Generative AI for manufacturing industry
+                  </h3>
+                  <p className="genai-Health-Para">
                     Our generative AI consulting services help manufacturers
                     improve product design, reduce waste, and enhance production
                     processes. We leverage machine learning algorithms and
@@ -598,8 +763,10 @@ function Genai() {
                   role="tabpanel"
                   aria-labelledby="v-pills-messages-tab"
                 >
-                  <h3>Generative AI for retail industry</h3>
-                  <p>
+                  <h3 className="genai-Healthcare">
+                    Generative AI for retail industry
+                  </h3>
+                  <p className="genai-Health-Para">
                     Our generative AI consulting services help retailers
                     increase sales and customer engagement through personalized
                     experiences and improved supply chain management. We use
@@ -666,8 +833,10 @@ function Genai() {
                   role="tabpanel"
                   aria-labelledby="v-pills-settings-tab"
                 >
-                  <h3>Generative AI for supply chain & logistics industry</h3>
-                  <p>
+                  <h3 className="genai-Healthcare">
+                    Generative AI for supply chain & logistics industry
+                  </h3>
+                  <p className="genai-Health-Para">
                     Our generative AI consulting services help supply chain and
                     logistics companies optimize operations and efficiency. We
                     use machine learning algorithms and predictive analytics to
@@ -733,8 +902,10 @@ function Genai() {
                   role="tabpanel"
                   aria-labelledby="v-pills-bank-tab"
                 >
-                  <h3>Generative AI for banking & finance industry</h3>
-                  <p>
+                  <h3 className="genai-Healthcare">
+                    Generative AI for banking & finance industry
+                  </h3>
+                  <p className="genai-Health-Para">
                     Our generative AI consulting services help financial
                     institutions improve customer experiences and reduce risks.
                     We use machine learning algorithms and natural language
@@ -801,8 +972,10 @@ function Genai() {
                   role="tabpanel"
                   aria-labelledby="v-pills-insurance-tab"
                 >
-                  <h3>Generative AI for insurance industry</h3>
-                  <p>
+                  <h3 className="genai-Healthcare">
+                    Generative AI for insurance industry
+                  </h3>
+                  <p className="genai-Health-Para">
                     Our generative AI consulting services help insurance
                     companies optimize operations and improve customer
                     satisfaction. We use machine learning algorithms and
@@ -867,16 +1040,9 @@ function Genai() {
           </div>
         </div>
       </div>
-      <div style={{ background: "#0046E8", height: "579px" }}>
+      <div className="Genai-main-car" style={{ background: "#0046E8" }}>
         <div className="container">
-          <div
-            class="card mb-3"
-            style={{
-              maxWidth: "100%",
-              border: "none",
-              background: "#0046E8",
-            }}
-          >
+          <div>
             <div
               id="carouselExampleIndicators"
               class="carousel slide"
@@ -896,9 +1062,9 @@ function Genai() {
               </ol>
               <div class="carousel-inner">
                 <div class="carousel-item active">
-                  <div class="row no-gutters">
+                  <div class="row no-gutters-genai-1">
                     <div class="col-md-8">
-                      <div class="card-body">
+                      <div>
                         <p
                           style={{
                             color: "white",
@@ -1010,16 +1176,16 @@ function Genai() {
                     >
                       <img
                         src="/images/G-AI-img2.webp1.png"
-                        class="card-img"
+                        class="card-img-1"
                         alt="..."
                       />
                     </div>
                   </div>
                 </div>
                 <div class="carousel-item">
-                  <div class="row no-gutters">
+                  <div class="row no-gutters-genai">
                     <div class="col-md-8">
-                      <div class="card-body">
+                      <div>
                         <p
                           style={{
                             color: "white",
@@ -1030,7 +1196,7 @@ function Genai() {
                           <em>Success Stories</em>
                         </p>
                         <h5
-                          class="card-title generative-genai3"
+                          class="card-title generative-genai1"
                           style={{ color: "white" }}
                         >
                           Revolutionizing Hardware Schematic Design with
@@ -1137,7 +1303,7 @@ function Genai() {
                           ultimately elevating product quality and
                           competitiveness.
                         </p>
-                        <button
+                        <button className="Genai-Read-button"
                           style={{
                             display: "flex",
                             height: "61px",
@@ -1150,7 +1316,7 @@ function Genai() {
                             borderRadius: "5px",
                           }}
                         >
-                          <span
+                          <span className="READ-Genai-more"
                             style={{
                               color: "rgb(0, 70, 232)",
                               fontSize: "20px",
@@ -1163,7 +1329,7 @@ function Genai() {
                             Read More
                           </span>{" "}
                           <i
-                            className="fa fa-arrow-circle-o-right"
+                            className="fa fa-arrow-circle-o-right READ-Genai-more"
                             style={{
                               width: "23px",
                               fontSize: "24px",
@@ -1182,7 +1348,7 @@ function Genai() {
                     >
                       <img
                         src="/images/success-genai-2.png"
-                        class="card-img"
+                        class="card-img-1"
                         alt="..."
                       />
                     </div>
@@ -1218,43 +1384,55 @@ function Genai() {
         </div>
       </div>
       <div className="container mt-5">
-        <div className="row">
-          <div className="col-md-4 texthead-genai">
+        <div className="row Genai-OVERALL-Body">
+          <div className="col-md-4 texthead-genai-framework">
             <h4 className="texthead1-genai">Frame Work</h4>
           </div>
-          <div className="col-md-8" style={{ background: "#F8F8F8" }}>
-            <img
-              src="/images/tensorflow.webp (1).png"
-              alt="..."
-              className="icon-genai col-md-3"
-            />
-            <img
-              src="/images/pytorch.webp (1).png"
-              alt="..."
-              className="icon-genai col-md-3"
-              style={{ marginLeft: "15px" }}
-            />
-            <img
-              src="/images/Transformers (1).png"
-              alt="..."
-              className="icon-genai col-md-3"
-              style={{ marginLeft: "15px" }}
-            />
-            <img
-              src="/images/hugging-face.webp (1).png"
-              alt="..."
-              className="icon-genai col-md-3"
-              style={{ marginLeft: "15px" }}
-            />
-            <img
-              src="/images/LangChain.webp.png"
-              alt="..."
-              className="icon-genai col-md-3"
-              style={{ marginTop: "10px" }}
-            />
+          <div
+            className="col-md-8"
+            style={{ background: "#F8F8F8", padding: "20px" }}
+          >
+            <div className="row">
+              <div className="col-md-3 genaiFramework">
+                <img
+                  src="/images/tensorflow.webp (1).png"
+                  alt="..."
+                  className="icon-genai"
+                />
+              </div>
+              <div className="col-md-3 genaiFramework">
+                <img
+                  src="/images/pytorch.webp (1).png"
+                  alt="..."
+                  className="icon-genai"
+                />
+              </div>
+              <div className="col-md-3 genaiFramework">
+                <img
+                  src="/images/Transformers (1).png"
+                  alt="..."
+                  className="icon-genai"
+                />
+              </div>
+              <div className="col-md-3 genaiFramework">
+                <img
+                  src="/images/hugging-face.webp (1).png"
+                  alt="..."
+                  className="icon-genai"
+                />
+              </div>
+              <div className="col-md-3 genaiFramework">
+                <img
+                  src="/images/LangChain.webp.png"
+                  alt="..."
+                  className="icon-genai"
+                  style={{ marginTop: "13px" }}
+                />
+              </div>
+            </div>
           </div>
         </div>
-        <div className="row mt-1">
+        <div className="row Genai-OVERALL-Body mt-1">
           <div
             className="col-md-4 texthead-genai"
             style={{ background: "#062D89" }}
@@ -1262,43 +1440,49 @@ function Genai() {
             <h4 className="texthead1-genai">Language</h4>
           </div>
           <div className="col-md-8" style={{ background: "#D7D7D7" }}>
-            <div style={{ marginTop: "25px" }}>
-              <img
-                src="/images/python.png"
-                alt="..."
-                className="icon-genai col-md-3"
-              />
+            <div className="row">
+              <div className="col-md-3 genaiFramework" style={{ marginTop: "25px" }}>
+                <img
+                  src="/images/python.png"
+                  alt="..."
+                  className="icon-genai"
+                />
+              </div>
             </div>
           </div>
         </div>
-        <div className="row mt-1">
+        <div className="row Genai-OVERALL-Body mt-1">
           <div className="col-md-4 texthead-genai">
             <h4 className="texthead1-genai">IDEs</h4>
           </div>
 
           <div className="col-md-8" style={{ background: "#F8F8F8" }}>
-            <div style={{ marginTop: "25px" }}>
-              <img
-                src="/images/pycharm.png"
-                alt="..."
-                className="icon-genai col-md-3"
-              />
-              <img
-                src="/images/jupyter.png"
-                alt="..."
-                className="icon-genai col-md-3"
-                style={{ marginLeft: "15px" }}
-              />
-              <img
-                src="/images/vscode.png"
-                alt="..."
-                className="icon-genai col-md-3"
-                style={{ marginLeft: "15px" }}
-              />
+            <div className="row" style={{ marginTop: "25px" }}>
+              <div className="col-md-3 genaiFramework">
+                <img
+                  src="/images/pycharm.png"
+                  alt="..."
+                  className="icon-genai"
+                />
+              </div>
+              <div className="col-md-3 genaiFramework">
+                <img
+                  src="/images/jupyter.png"
+                  alt="..."
+                  className="icon-genai"
+                />
+              </div>
+              <div className="col-md-3 genaiFramework">
+                <img
+                  src="/images/vscode.png"
+                  alt="..."
+                  className="icon-genai"
+                />
+              </div>
             </div>
           </div>
         </div>
-        <div className="row mt-1">
+        <div className="row Genai-OVERALL-Body mt-1">
           <div
             className="col-md-4 texthead-genai"
             style={{ background: "#062D89" }}
@@ -1306,104 +1490,121 @@ function Genai() {
             <h4 className="texthead1-genai">Deployments</h4>
           </div>
           <div className="col-md-8" style={{ background: "#D7D7D7" }}>
-            <div style={{ marginTop: "25px" }}>
-              <img
-                src="/images/azure1.png"
-                alt="..."
-                className="icon-genai col-md-3"
-              />
-              <img
-                src="/images/aws1.png"
-                alt="..."
-                className="icon-genai col-md-3"
-                style={{ marginLeft: "15px" }}
-              />
-              <img
-                src="/images/googlecloud1.png"
-                alt="..."
-                className="icon-genai col-md-3"
-                style={{ marginLeft: "15px" }}
-              />
-              <img
-                src="/images/ibmwatson.png"
-                alt="..."
-                className="icon-genai col-md-3"
-                style={{ marginLeft: "15px" }}
-              />
+            <div className="row" style={{ marginTop: "25px" }}>
+              <div className="col-md-3 genaiFramework">
+                <img
+                  src="/images/azure1.png"
+                  alt="..."
+                  className="icon-genai"
+                />
+              </div>
+              <div className="col-md-3 genaiFramework">
+                <img src="/images/aws1.png" alt="..." className="icon-genai" />
+              </div>
+              <div className="col-md-3 genaiFramework">
+                <img
+                  src="/images/googlecloud1.png"
+                  alt="..."
+                  className="icon-genai"
+                />
+              </div>
+              <div className="col-md-3 genaiFramework">
+                <img
+                  src="/images/ibmwatson.png"
+                  alt="..."
+                  className="icon-genai"
+                />
+              </div>
             </div>
           </div>
         </div>
-        <div className="row mt-1">
-          <div className="col-md-4 texthead-genai">
+        <div className="row Genai-OVERALL-Body mt-1">
+          <div className="col-md-4 texthead-genai-framework">
             <h4 className="texthead1-genai">Models</h4>
           </div>
-          <div className="col-md-8" style={{ background: "#F8F8F8" }}>
-            <img
-              src="/images/gpt3.png"
-              alt="..."
-              className="icon-genai col-md-3"
-            />
-            <img
-              src="/images/gpt2.png"
-              alt="..."
-              className="icon-genai col-md-3"
-              style={{ marginLeft: "15px" }}
-            />
-            <img
-              src="/images/t5.png"
-              alt="..."
-              className="icon-genai col-md-3"
-              style={{ marginLeft: "15px" }}
-            />
-            <img
-              src="/images/lambda.png"
-              alt="..."
-              className="icon-genai col-md-3"
-              style={{ marginLeft: "15px" }}
-            />
-            <img
-              src="/images/bert.png"
-              alt="..."
-              className="icon-genai col-md-3"
-              style={{ marginTop: "10px" }}
-            />
+          <div
+            className="col-md-8"
+            style={{ background: "#F8F8F8", padding: "20px" }}
+          >
+            <div className="row">
+              <div className="col-md-3 genaiFramework">
+                <img
+                  src="/images/gpt3.png"
+                  alt="..."
+                  className="icon-genai"
+                />
+              </div>
+              <div className="col-md-3 genaiFramework">
+                <img
+                  src="/images/gpt2.png"
+                  alt="..."
+                  className="icon-genai"
+                />
+              </div>
+              <div className="col-md-3 genaiFramework">
+                <img
+                  src="/images/t5.png"
+                  alt="..."
+                  className="icon-genai"
+                />
+              </div>
+              <div className="col-md-3 genaiFramework">
+                <img
+                  src="/images/lambda.png"
+                  alt="..."
+                  className="icon-genai"
+                />
+              </div>
+              <div className="col-md-3 genaiFramework">
+                <img
+                  src="/images/bert.png"
+                  alt="..."
+                  className="icon-genai"
+                  style={{ marginTop: "13px" }}
+                />
+              </div>
+            </div>
           </div>
         </div>
-        <div className="row mt-1">
+        <div className="row Genai-OVERALL-Body mt-1">
           <div
             className="col-md-4 texthead-genai"
             style={{ background: "#062D89" }}
           >
-            <h4 className="texthead1-genai">Commercial platforms</h4>
+            <h4 className="texthead1-genai">Deployments</h4>
           </div>
           <div className="col-md-8" style={{ background: "#D7D7D7" }}>
-            <div style={{ marginTop: "25px" }}>
-              <img
-                src="/images/openai.png"
-                alt="..."
-                className="icon-genai col-md-3"
-              />
-              <img
-                src="/images/openai1.png"
-                alt="..."
-                className="icon-genai col-md-3"
-                style={{ marginLeft: "15px" }}
-              />
-              <img
-                src="/images/vertexai.png"
-                alt="..."
-                className="icon-genai col-md-3"
-                style={{ marginLeft: "15px" }}
-              />
-              <img
-                src="/images/ibmwatson.png"
-                alt="..."
-                className="icon-genai col-md-3"
-                style={{ marginLeft: "15px" }}
-              />
+            <div className="row" style={{ marginTop: "25px" }}>
+              <div className="col-md-3 genaiFramework">
+                <img
+                  src="/images/openai.png"
+                  alt="..."
+                  className="icon-genai"
+                />
+              </div>
+              <div className="col-md-3 genaiFramework">
+                <img src="/images/openai1.png" alt="..." className="icon-genai" />
+              </div>
+              <div className="col-md-3 genaiFramework">
+                <img
+                  src="/images/vertexai.png"
+                  alt="..."
+                  className="icon-genai"
+                />
+              </div>
+              <div className="col-md-3 genaiFramework">
+                <img
+                  src="/images/ibmwatson.png"
+                  alt="..."
+                  className="icon-genai"
+                />
+              </div>
             </div>
           </div>
         </div>
+
+
+
       </div>
       <div className="container" style={{ marginTop: "50px" }}>
         <h2 className="generative-genai1">
@@ -1411,9 +1612,9 @@ function Genai() {
         </h2>
         <div class="row row-cols-1 row-cols-md-2">
           <div class="col mb-4">
-            <div class="card">
+            <div class="card GENAI-overall-bussiness">
               <div
-                class="card-body"
+                class="card-body Genai-One"
                 style={{ height: "256px", background: "#F8F8F8" }}
               >
                 <h5 class="generative-genai2">
@@ -1428,7 +1629,7 @@ function Genai() {
                     >
                       {" "}
                     </i>
-                    <p style={{ marginLeft: "5px" }}>
+                    <p className="GenAI-Paragraph" style={{ marginLeft: "5px" }}>
                       DataObserve comprehends your business objectives and
                       tailors AI solutions accordingly
                     </p>
@@ -1441,7 +1642,7 @@ function Genai() {
                     >
                       {" "}
                     </i>
-                    <p style={{ marginLeft: "5px" }}>
+                    <p className="GenAI-Paragraph" style={{ marginLeft: "5px" }}>
                       Our proficiency is dedicated to fine-tuning AI solutions
                       to cater to your distinct requirements.
                     </p>
@@ -1454,7 +1655,7 @@ function Genai() {
                     >
                       {" "}
                     </i>
-                    <p style={{ marginLeft: "5px" }}>
+                    <p className="GenAI-Paragraph" style={{ marginLeft: "5px" }}>
                       Our AI solutions propel business expansion and triumph.
                     </p>
                   </li>
@@ -1466,7 +1667,7 @@ function Genai() {
                     >
                       {" "}
                     </i>
-                    <p style={{ marginLeft: "5px" }}>
+                    <p className="GenAI-Paragraph" style={{ marginLeft: "5px" }}>
                       We are dedicated to furnishing AI solutions that bring
                       value and maximize your return on investment (ROI).
                     </p>
@@ -1476,9 +1677,9 @@ function Genai() {
             </div>
           </div>
           <div class="col mb-4">
-            <div class="card">
+            <div class="card GENAI-overall-bussiness">
               <div
-                class="card-body"
+                class="card-body Genai-One"
                 style={{ height: "256px", background: "#F8F8F8" }}
               >
                 <h5 class="generative-genai2">Boost Ecosystem Innovation</h5>
@@ -1491,7 +1692,7 @@ function Genai() {
                     >
                       {" "}
                     </i>
-                    <p style={{ marginLeft: "5px" }}>
+                    <p className="GenAI-Paragraph" style={{ marginLeft: "5px" }}>
                       DataObserve harnesses cutting-edge AI technologies to
                       ignite innovation within your enterprise.
                     </p>
@@ -1504,7 +1705,7 @@ function Genai() {
                     >
                       {" "}
                     </i>
-                    <p style={{ marginLeft: "5px" }}>
+                    <p className="GenAI-Paragraph" style={{ marginLeft: "5px" }}>
                       Our AI solutions are meticulously crafted to revolutionize
                       your business processes and attain your objectives.
                     </p>
@@ -1517,7 +1718,7 @@ function Genai() {
                     >
                       {" "}
                     </i>
-                    <p style={{ marginLeft: "5px" }}>
+                    <p className="GenAI-Paragraph" style={{ marginLeft: "5px" }}>
                       We expedite the pace of innovation and position you at the
                       forefront of your competitive landscape.
                     </p>
@@ -1530,7 +1731,7 @@ function Genai() {
                     >
                       {" "}
                     </i>
-                    <p style={{ marginLeft: "5px" }}>
+                    <p className="GenAI-Paragraph" style={{ marginLeft: "5px" }}>
                       With our AI solutions, you can seize fresh prospects and
                       propel the growth of your business.
                     </p>
@@ -1540,9 +1741,9 @@ function Genai() {
             </div>
           </div>
           <div class="col mb-4">
-            <div class="card">
+            <div class="card GENAI-overall-bussiness">
               <div
-                class="card-body"
+                class="card-body Genai-One"
                 style={{ height: "256px", background: "#F8F8F8" }}
               >
                 <h5 class="generative-genai2">
@@ -1557,7 +1758,7 @@ function Genai() {
                     >
                       {" "}
                     </i>
-                    <p style={{ marginLeft: "5px" }}>
+                    <p className="GenAI-Paragraph"  style={{ marginLeft: "5px" }}>
                       Softweb Solutions is committed to developing AI solutions
                       that are ethical, transparent, and responsible.
                     </p>
@@ -1570,7 +1771,7 @@ function Genai() {
                     >
                       {" "}
                     </i>
-                    <p style={{ marginLeft: "5px" }}>
+                    <p className="GenAI-Paragraph" style={{ marginLeft: "5px" }}>
                       We ensure that our AI solutions comply with regulatory and
                       industry standards.
                     </p>
@@ -1583,7 +1784,7 @@ function Genai() {
                     >
                       {" "}
                     </i>
-                    <p style={{ marginLeft: "5px" }}>
+                    <p className="GenAI-Paragraph" style={{ marginLeft: "5px" }}>
                       Our team of experts develops AI solutions that are secure,
                       trustworthy, and protect user privacy.
                     </p>
@@ -1596,7 +1797,7 @@ function Genai() {
                     >
                       {" "}
                     </i>
-                    <p style={{ marginLeft: "5px" }}>
+                    <p className="GenAI-Paragraph" style={{ marginLeft: "5px" }}>
                       We believe that responsible AI is critical to building
                       trust and achieving long-term success.
                     </p>
@@ -1606,9 +1807,9 @@ function Genai() {
             </div>
           </div>
           <div class="col mb-4">
-            <div class="card">
+            <div class="card GENAI-overall-bussiness">
               <div
-                class="card-body"
+                class="card-body Genai-One"
                 style={{ height: "256px", background: "#F8F8F8" }}
               >
                 <h5 class="generative-genai2">Expertise in generative AI</h5>
@@ -1621,9 +1822,9 @@ function Genai() {
                     >
                       {" "}
                     </i>
-                    <p style={{ marginLeft: "5px" }}>
+                    <p className="GenAI-Paragraph" style={{ marginLeft: "5px" }}>
                       Softweb Solutions has unparalleled expertise in generative
-                      <br />
+                    
                       AI technologies.
                     </p>
                   </li>
@@ -1635,7 +1836,7 @@ function Genai() {
                     >
                       {" "}
                     </i>
-                    <p style={{ marginLeft: "5px" }}>
+                    <p className="GenAI-Paragraph" style={{ marginLeft: "5px" }}>
                       Our team of experts develops innovative generative AI
                       solutions that help you stay ahead of the competition.
                     </p>
@@ -1648,7 +1849,7 @@ function Genai() {
                     >
                       {" "}
                     </i>
-                    <p style={{ marginLeft: "5px" }}>
+                    <p className="GenAI-Paragraph" style={{ marginLeft: "5px" }}>
                       We work closely with you to understand your unique needs
                       and deliver customized generative AI solutions.
                     </p>
@@ -1661,7 +1862,7 @@ function Genai() {
                     >
                       {" "}
                     </i>
-                    <p style={{ marginLeft: "5px" }}>
+                    <p className="GenAI-Paragraph" style={{ marginLeft: "5px" }}>
                       Our generative AI solutions drive business growth, enable
                       creativity, and deliver exceptional results.
                     </p>
@@ -2460,6 +2661,7 @@ function Genai() {
           </div>
         </div>
       </div>
+
       <Footer />
     </div>
   );

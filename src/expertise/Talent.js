@@ -4,8 +4,47 @@ import Faq from "../products/Faq";
 import Navbar from "../products/Navbar";
 import talent from "../../src/videos/talent.MOV";
 import Footer from "../../src/products/Footer";
+import Slider from "react-slick";
+
+function Arrow(props) {
+  const { className, style, onClick } = props;
+  return (
+    <div
+      className={className}
+      style={{ ...style, display: "block", background: "black" }}
+      onClick={onClick}
+    />
+  );
+}
 
 const Talent = () => {
+  var settings = {
+    dots: true,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 2,
+    // nextArrow: <Arrow />,
+    // prevArrow: <Arrow />,
+
+    initialSlide: 0,
+    responsive: [
+      {
+        breakpoint: 1024,
+        settings: {
+          slidesToShow: 2,
+        },
+      },
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          initialSlide: 1,
+        },
+      },
+    ],
+  };
   return (
     <div>
       <Navbar />
@@ -15,77 +54,61 @@ const Talent = () => {
             <video className="talent" autoPlay loop muted>
               <source src={talent} type="video/mp4" />
             </video>
-            <div
-              style={{
-                display: "inline-flex",
-                minHeight: "1080px",
-                padding: "42px 400px 100px 255px",
-                flexDirection: "column",
-                alignItems: "flex-start",
-                position: "absolute",
-                top: "170px",
-                left: "-121px",
-              }}
-            >
-              <p
-                style={{
-                  color: "white",
-                  fontSize: "18px",
-                  fontStyle: "normal",
-                  fontWeight: "600",
-                }}
-              >
-                Talent as a Service
-              </p>
-              <h4
-                style={{
-                  color: "white",
-                  fontSize: "32px",
-                  fontStyle: "normal",
-                  fontWeight: "700",
-                  lineHeight: "47px",
-                }}
-              >
-                Hire “Enterprise-grade”
-                <br /> Data & Analytics <br />
-                experts in next 48 hours
-              </h4>
-              <button
-                style={{
-                  display: "flex",
-                  height: "61px",
-                  maxWidth: "255px",
-                  padding: "20px 46px 21px 48px",
-                  justifyContent: "center",
-                  alignItems: "center",
-                  border: "none",
-                  marginTop: "70px",
-                  borderRadius: "5px",
-                }}
-              >
-                <span
+            <div className="Cloud-Main-hEading">
+              <p className="cLOUD-TRANSFORM">
+                <p
+                  className="cloud-transform-Size"
                   style={{
-                    color: "#FF4925",
-                    fontSize: "14px",
-                    fontStyle: "normal",
                     fontWeight: "600",
-                    lineHeight: "19px",
+                    fontSize: "20px",
+                    letterSpacing: "1px",
                   }}
                 >
-                  Talk to us now
-                </span>
-                <i
-                  className="fa fa-long-arrow-right"
+                  Talent as a service
+                </p>
+
+                <p className="col-md-6 Navigate-Journey">
+                  Empower Your Business Transformation Through Cloud Migration
+                </p>
+                <button
+                  className="datatypes"
                   style={{
-                    width: "23px",
-                    fontSize: "29px",
-                    flexShrink: "0",
-                    color: "#FF4925",
-                    marginLeft: "12px",
+                    display: "flex",
+                    height: "61px",
+                    maxWidth: "255px",
+                    padding: "20px 46px 21px 48px",
+                    justifyContent: "center",
+                    alignItems: "center",
+                    border: "none",
+                    marginTop: "70px",
+                    borderRadius: "5px",
                   }}
-                  aria-hidden="true"
-                ></i>
-              </button>
+                >
+                  <span
+                    className="spans"
+                    style={{
+                      color: "#0046E8",
+                      fontSize: "14px",
+                      fontStyle: "normal",
+                      fontWeight: "600",
+                      lineHeight: "19px",
+                    }}
+                  >
+                    Talk to us now
+                  </span>{" "}
+                  <i
+                    className="fa fa-long-arrow-right ARROW-RIGHT-CLOUD"
+                    style={{
+                      width: "23px",
+                      fontSize: "29px",
+                      flexShrink: "0",
+                      color: "#0046E8",
+                      marginLeft: "12px",
+                    }}
+                    aria-hidden="true"
+                  ></i>
+                </button>
+              </p>
             </div>
           </div>
         </div>
@@ -99,19 +122,17 @@ const Talent = () => {
           marginTop: "50px",
         }}
       >
-      
-          
-          <div className=" container d-flex talent-leading-icons">
+        <div className="container d-flex talent-leading-icons">
           <div>
-          <img
+            <img
               className=""
               src="./images/talentleading.png"
               alt="..."
               // style={{ width: "153px", height: "70px" }}
-              width={150}
+              width={100}
             />
-            </div>
-            <div>
+          </div>
+          <div>
             <img
               className=""
               src="./images/talentsolakh.png"
@@ -119,8 +140,8 @@ const Talent = () => {
               // style={{ width: "153px", height: "70px" }}
               width={100}
             />
-            </div>
-            <div>
+          </div>
+          <div>
             <img
               className=""
               src="./images/talentgbreco.png"
@@ -128,8 +149,8 @@ const Talent = () => {
               // style={{ width: "153px", height: "70px" }}
               width={100}
             />
-            </div>
-            <div>
+          </div>
+          <div>
             <img
               className=""
               src="./images/talentsrd.png"
@@ -137,8 +158,8 @@ const Talent = () => {
               // style={{ width: "153px", height: "70px" }}
               width={100}
             />
-            </div>
-            <div>
+          </div>
+          <div>
             <img
               className=""
               src="./images/talentcliq.png"
@@ -146,8 +167,8 @@ const Talent = () => {
               // style={{ width: "153px", height: "70px" }}
               width={100}
             />
-            </div>
-            <div>
+          </div>
+          <div>
             <img
               className=""
               src="./images/talentfusion.png"
@@ -155,10 +176,9 @@ const Talent = () => {
               // style={{ width: "153px", height: "70px" }}
               width={100}
             />
-            </div>
-           
           </div>
-       
+        </div>
+
         <div style={{ marginTop: "50px" }}>
           <h4 className="cloudcardheadings">What DataObserve Offers</h4>
         </div>
@@ -194,7 +214,7 @@ const Talent = () => {
                   className="App-logo"
                   alt="logo"
                   width={100}
-                  style={{ width: "62px", height: "62px" }}
+                  style={{ width: "53px", height: "62px" }}
                 />
                 <p>Time saved</p>
                 <h4 className="cloudcardheadings">85%</h4>
@@ -214,7 +234,7 @@ const Talent = () => {
                   className="App-logo"
                   alt="logo"
                   width={100}
-                  style={{ width: "53px", height: "62px" }}
+                  style={{ width: "47px", height: "62px" }}
                 />
                 <p>High retention rate</p>
                 <h4 className="cloudcardheadings">97%</h4>
@@ -288,466 +308,80 @@ const Talent = () => {
           </div>
         </div>
       </div>
-      <section style={{ background: "#1A4AB9", padding: "50px" }}>
-        <div className="container">
-          <div
-            id="carouselExampleIndicators"
-            class="carousel slide"
-            data-ride="carousel"
-          >
-            <ol class="carousel-indicators">
-              <li
-                data-target="#carouselExampleIndicators"
-                data-slide-to="0"
-                class="active"
-              ></li>
-              <li
-                data-target="#carouselExampleIndicators"
-                data-slide-to="1"
-              ></li>
-              <li
-                data-target="#carouselExampleIndicators"
-                data-slide-to="2"
-              ></li>
-            </ol>
-            <div class="carousel-inner">
-              <div class="carousel-item active">
+
+      <section className="Talent-Overall-Background d-md-block d-none">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div>
                 <div className="container">
                   <div className="row">
-                    <div
-                      class="col-md-4 offset-md-2"
-                      style={{
-                        width: "25%",
-                        marginBottom: "50px",
-                        position: "relative",
-                      }}
-                    >
-                      <div className="talentcarosalbg">
-                        <div style={{ padding: "13px" }}>
-                          <h6 className="talentheading">Steve Stutts</h6>
-                          <p
-                            style={{
-                              fontSize: "25px",
-                              color: "#fff",
-                              opacity: "0.7",
-                              marginBottom: "5px",
-                              textAlign: "center",
-                            }}
-                          >
-                            Python Developer
-                          </p>
-                          <p
-                            style={{
-                              color: "#fff",
-                              fontWeight: "600",
-                              marginLeft: "10px",
-                            }}
-                          >
-                            Expert IN
-                          </p>
-                          <div>
-                            <button
-                              style={{
-                                backgroundColor: "rgba(255, 255, 255, 0.04)",
-                                borderRadius: "20px",
-                                border: "none",
-                                padding: "6px 18px",
-                                marginRight: "5px",
-                                marginBottom: "5px",
-                              }}
-                            >
-                              <span style={{ color: "#fff", opacity: "0.7" }}>
-                                AWS
-                              </span>
-                            </button>
-                            <button
-                              style={{
-                                backgroundColor: "rgba(255, 255, 255, 0.04)",
-                                borderRadius: "20px",
-                                border: "none",
-                                padding: "6px 18px",
-                                marginRight: "5px",
-                              }}
-                            >
-                              <span style={{ color: "#fff", opacity: "0.7" }}>
-                                TABLEAU
-                              </span>
-                            </button>
-                            <button
-                              style={{
-                                backgroundColor: "rgba(255, 255, 255, 0.04)",
-                                borderRadius: "20px",
-                                border: "none",
-                                padding: "6px 18px",
-                                marginRight: "5px",
-                              }}
-                            >
-                              <span style={{ color: "#fff", opacity: "0.7" }}>
-                                ETL
-                              </span>
-                            </button>
-                            <button
-                              style={{
-                                backgroundColor: "rgba(255, 255, 255, 0.04)",
-                                borderRadius: "20px",
-                                border: "none",
-                                padding: "6px 18px",
-                                marginRight: "5px",
-                              }}
-                            >
-                              <span style={{ color: "#fff", opacity: "0.7" }}>
-                                AWS GLUE
-                              </span>
-                            </button>
-                            <button
-                              style={{
-                                backgroundColor: "rgba(255, 255, 255, 0.04)",
-                                borderRadius: "20px",
-                                border: "none",
-                                padding: "6px 18px",
-                                marginRight: "5px",
-                              }}
-                            >
-                              <span style={{ color: "#fff", opacity: "0.7" }}>
-                                REDSHIFT
-                              </span>
-                            </button>
+                    <div className="col-md-5">
+                      <div className="TALENT-NAMES">
+                        <div className="container Talent-stu-develop">
+                          <h3 className="Talent-Steve">Steve Stutts</h3>
+                          <h4 className="Talent-Python">Python Developer</h4>
+                        </div>
+
+                        <div className="container">
+                          <p className="TaLent-EXPERT">EXPERT IN</p>
+                        </div>
+                        <div className="container Talent-Course-Names">
+                          <div className="row TALEnt-ate">
+                            <div>
+                              <button className="Talent-Aws">AWS</button>
+                            </div>
+                            <div>
+                              <button className="Talent-Aws">TABLEAU</button>
+                            </div>
+                            <div>
+                              <button className="Talent-Aws">ETL</button>
+                            </div>
                           </div>
-                          <div
-                            className="d-flex"
-                            style={{
-                              marginTop: "15px",
-                              justifyContent: "space-evenly",
-                              alignItems: "center",
-                              display: "flex",
-                            }}
-                          >
+                        </div>
+                        <div className="container">
+                          <div className="row TALEnt-ate-1">
                             <div>
-                              <h6 style={{ fontWeight: "600", color: "white" }}>
-                                EXPERIENCE
-                              </h6>
-                              <p style={{ color: "#fff", opacity: "0.7" }}>
-                                6 +YEARS
-                              </p>
+                              <button className="Talent-Aws">AWS GLUE</button>
                             </div>
                             <div>
-                              <h6 style={{ fontWeight: "600", color: "white" }}>
-                                AVAILABILTY
-                              </h6>
-                              <p style={{ color: "#fff", opacity: "0.7" }}>
-                                Full Time
-                              </p>
+                              <button className="Talent-Aws">REDSHIFT</button>
                             </div>
+                          </div>
+                        </div>
+
+                        <div className="container">
+                          <div className="row EXPERIENCE-TALENT">
+                            <ul className="TaleNT-Exp-Years">
+                              <li className="Talent-EXP">EXPERIENCE</li>
+                              <li className="Talent-Years">6+ Years</li>
+                            </ul>
+                            <ul className="TaleNT-Exp-Years">
+                              <li className="Talent-EXP">AVAILABILITY</li>
+                              <li className="Talent-Years">Full Time</li>
+                            </ul>
                           </div>
                         </div>
                       </div>
                     </div>
-                    <div className="col-md-6">
-                      <div className="">
+                    <div className="col-md-7">
+                      <div>
                         <img
                           src="./images/steves.png"
-                          alt="..."
-                          className="talentimages"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div className="container">
-                  <div className="row">
-                    <div
-                      class="col-md-4 offset-md-2"
-                      style={{
-                        width: "25%",
-                        marginBottom: "50px",
-                        position: "relative",
-                      }}
-                    >
-                      <div className="talentcarosalbg">
-                        <div style={{ padding: "13px" }}>
-                          <h6
-                            className="talentheading"
-                            style={{ marginBottom: "0px" }}
-                          >
-                            Harish Angal
-                          </h6>
-                          <p
-                            style={{
-                              fontSize: "25px",
-                              color: "#fff",
-                              opacity: "0.7",
-                              marginBottom: "1px",
-                              textAlign: "center",
-                            }}
-                          >
-                            Cloud Expert
-                          </p>
-                          <p
-                            style={{
-                              color: "#fff",
-                              fontWeight: "600",
-                              marginBottom: "0px",
-                              marginLeft: "10px",
-                            }}
-                          >
-                            Expert IN
-                          </p>
-                          <div>
-                            <button
-                              style={{
-                                backgroundColor: "rgba(255, 255, 255, 0.04)",
-                                borderRadius: "20px",
-                                border: "none",
-                                padding: "6px 18px",
-                                marginRight: "5px",
-                                marginBottom: "5px",
-                              }}
-                            >
-                              <span style={{ color: "#fff", opacity: "0.7" }}>
-                                Azure
-                              </span>
-                            </button>
-                            <button
-                              style={{
-                                backgroundColor: "rgba(255, 255, 255, 0.04)",
-                                borderRadius: "20px",
-                                border: "none",
-                                padding: "6px 18px",
-                                marginRight: "5px",
-                              }}
-                            >
-                              <span style={{ color: "#fff", opacity: "0.7" }}>
-                                Power Bi
-                              </span>
-                            </button>
-                            <button
-                              style={{
-                                backgroundColor: "rgba(255, 255, 255, 0.04)",
-                                borderRadius: "20px",
-                                border: "none",
-                                padding: "6px 18px",
-                                marginRight: "5px",
-                                marginBottom: "5px",
-                              }}
-                            >
-                              <span style={{ color: "#fff", opacity: "0.7" }}>
-                                ETL/ELT
-                              </span>
-                            </button>
-                            <button
-                              style={{
-                                backgroundColor: "rgba(255, 255, 255, 0.04)",
-                                borderRadius: "20px",
-                                border: "none",
-                                padding: "6px 18px",
-                                marginRight: "5px",
-                              }}
-                            >
-                              <span style={{ color: "#fff", opacity: "0.7" }}>
-                                Azure Stack HCI
-                              </span>
-                            </button>
-                            <button
-                              className="w3-button w3-black w3-round-xlarge"
-                              style={{
-                                backgroundColor: "rgba(255, 255, 255, 0.04)",
-                                borderRadius: "20px",
-                                border: "none",
-                                padding: "6px 18px",
-                              }}
-                            >
-                              <span style={{ color: "#fff", opacity: "0.7" }}>
-                                ADI
-                              </span>
-                            </button>
-                          </div>
-                          <div
-                            className="d-flex"
-                            style={{
-                              marginTop: "15px",
-                              justifyContent: "space-evenly",
-                              alignItems: "center",
-                              display: "flex",
-                            }}
-                          >
-                            <div>
-                              <h6 style={{ fontWeight: "600", color: "white" }}>
-                                EXPERIENCE
-                              </h6>
-                              <p style={{ color: "#fff", opacity: "0.7" }}>
-                                6 +YEARS
-                              </p>
-                            </div>
-                            <div>
-                              <h6 style={{ fontWeight: "600", color: "white" }}>
-                                AVAILABILTY
-                              </h6>
-                              <p style={{ color: "#fff", opacity: "0.7" }}>
-                                Full Time
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="">
-                        <img
-                          src="./images/harish.png"
-                          alt="..."
-                          className="talentimages"
-                        />
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </div>
-              <div class="carousel-item">
-                <div className="container">
-                  <div className="row">
-                    <div
-                      class="col-md-4 offset-md-2"
-                      style={{
-                        width: "25%",
-                        marginBottom: "50px",
-                        position: "relative",
-                      }}
-                    >
-                      <div className="talentcarosalbg">
-                        <div style={{ padding: "13px" }}>
-                          <h6
-                            className="talentheading"
-                            style={{ marginBottom: "0px" }}
-                          >
-                            Gayatri Suniti
-                          </h6>
-                          <p
-                            style={{
-                              fontSize: "25px",
-                              color: "#fff",
-                              opacity: "0.7",
-                              marginBottom: "2px",
-                              textAlign: "center",
-                            }}
-                          >
-                            DevOps Expert
-                          </p>
-                          <p
-                            style={{
-                              color: "#fff",
-                              fontWeight: "600",
-                              marginBottom: "0px",
-                              marginLeft: "10px",
-                            }}
-                          >
-                            Expert IN
-                          </p>
-                          <div>
-                            <button
-                              style={{
-                                backgroundColor: "rgba(255, 255, 255, 0.04)",
-                                borderRadius: "20px",
-                                border: "none",
-                                padding: "6px 18px",
-                                marginRight: "5px",
-                                marginBottom: "5px",
-                              }}
-                            >
-                              <span style={{ color: "#fff", opacity: "0.7" }}>
-                                Jenkins
-                              </span>
-                            </button>
-                            <button
-                              style={{
-                                backgroundColor: "rgba(255, 255, 255, 0.04)",
-                                borderRadius: "20px",
-                                border: "none",
-                                padding: "6px 18px",
-                                marginRight: "5px",
-                              }}
-                            >
-                              <span style={{ color: "#fff", opacity: "0.7" }}>
-                                Terraform
-                              </span>
-                            </button>
-                            <button
-                              style={{
-                                backgroundColor: "rgba(255, 255, 255, 0.04)",
-                                borderRadius: "20px",
-                                border: "none",
-                                padding: "6px 18px",
-                                marginRight: "5px",
-                                marginBottom: "5px",
-                              }}
-                            >
-                              <span style={{ color: "#fff", opacity: "0.7" }}>
-                                K8S
-                              </span>
-                            </button>
-                            <button
-                              style={{
-                                backgroundColor: "rgba(255, 255, 255, 0.04)",
-                                borderRadius: "20px",
-                                border: "none",
-                                padding: "6px 18px",
-                                marginRight: "5px",
-                              }}
-                            >
-                              <span style={{ color: "#fff", opacity: "0.7" }}>
-                                GitOps/GitLabs
-                              </span>
-                            </button>
-                            <button
-                              style={{
-                                backgroundColor: "rgba(255, 255, 255, 0.04)",
-                                borderRadius: "20px",
-                                border: "none",
-                                padding: "6px 18px",
-                                marginRight: "5px",
-                              }}
-                            >
-                              <span style={{ color: "#fff", opacity: "0.7" }}>
-                                platform Engg
-                              </span>
-                            </button>
-                          </div>
-                          <div
-                            className="d-flex"
-                            style={{
-                              marginTop: "15px",
-                              justifyContent: "space-evenly",
-                              alignItems: "center",
-                              display: "flex",
-                            }}
-                          >
-                            <div>
-                              <h6 style={{ fontWeight: "600", color: "white" }}>
-                                EXPERIENCE
-                              </h6>
-                              <p style={{ color: "#fff", opacity: "0.7" }}>
-                                6 +YEARS
-                              </p>
-                            </div>
-                            <div>
-                              <h6 style={{ fontWeight: "600", color: "white" }}>
-                                AVAILABILTY
-                              </h6>
-                              <p style={{ color: "#fff", opacity: "0.7" }}>
-                                Full Time
-                              </p>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <div className="col-md-6">
-                      <div className="">
-                        <img
-                          src="./images/gayatri.png"
-                          alt="..."
-                          className="talentimages"
+                          className="Talent-gayatri"
                         />
                       </div>
                     </div>
@@ -755,32 +389,395 @@ const Talent = () => {
                 </div>
               </div>
             </div>
-            <a
-              class="carousel-control-prev"
-              href="#carouselExampleIndicators"
-              role="button"
-              data-slide="prev"
-            >
-              <span
-                class="carousel-control-prev-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a
-              class="carousel-control-next"
-              href="#carouselExampleIndicators"
-              role="button"
-              data-slide="next"
-              style={{ right: "-92px" }}
-            >
-              <span
-                class="carousel-control-next-icon"
-                aria-hidden="true"
-              ></span>
-              <span class="sr-only">Next</span>
-            </a>
+            <div class="carousel-item">
+              <div>
+                <div className="container">
+                  <div className="row">
+                    <div className="col-md-5">
+                      <div className="TALENT-NAMES">
+                        <div className="container Talent-stu-develop">
+                          <h3 className="Talent-Steve">Harish Angal</h3>
+                          <h4 className="Talent-Python">Cloud Expert</h4>
+                        </div>
+
+                        <div className="container">
+                          <p className="TaLent-EXPERT">EXPERT IN</p>
+                        </div>
+                        <div className="container Talent-Course-Names">
+                          <div className="row TALEnt-ate">
+                            <div>
+                              <button className="Talent-Aws">Azure</button>
+                            </div>
+                            <div>
+                              <button className="Talent-Aws">Power BI</button>
+                            </div>
+                            <div>
+                              <button className="Talent-Aws">ETL/ELT</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="container">
+                          <div className="row TALEnt-ate-1">
+                            <div>
+                              <button className="Talent-Aws">
+                                Azure Stack HCI
+                              </button>
+                            </div>
+                            <div>
+                              <button className="Talent-Aws">ADF</button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="container">
+                          <div className="row EXPERIENCE-TALENT">
+                            <ul className="">
+                              <li className="Talent-EXP">EXPERIENCE</li>
+                              <li className="Talent-Years">5+ Years</li>
+                            </ul>
+                            <ul className="">
+                              <li className="Talent-EXP">AVAILABILITY</li>
+                              <li className="Talent-Years">Full Time</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-md-7">
+                      <div>
+                        <img
+                          src="./images/harish.png"
+                          className="Talent-gayatri"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div>
+                <div className="container">
+                  <div className="row">
+                    <div className="col-md-5">
+                      <div className="TALENT-NAMES">
+                        <div className="container Talent-stu-develop">
+                          <h3 className="Talent-Steve">Gayatri Suniti</h3>
+                          <h4 className="Talent-Python">DevOps Expert</h4>
+                        </div>
+
+                        <div className="container">
+                          <p className="TaLent-EXPERT">EXPERT IN</p>
+                        </div>
+                        <div className="container Talent-Course-Names">
+                          <div className="row TALEnt-ate">
+                            <div>
+                              <button className="Talent-Aws">Jenkins</button>
+                            </div>
+                            <div>
+                              <button className="Talent-Aws">Terraform</button>
+                            </div>
+                            <div>
+                              <button className="Talent-Aws">K8s</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="container">
+                          <div className="row TALEnt-ate-1">
+                            <div>
+                              <button className="Talent-Aws">
+                                GitOps/ GitLabs
+                              </button>
+                            </div>
+                            <div>
+                              <button className="Talent-Aws">
+                                Platform Engg
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="container">
+                          <div className="row EXPERIENCE-TALENT">
+                            <ul className="">
+                              <li className="Talent-EXP">EXPERIENCE</li>
+                              <li className="Talent-Years">7+ Years</li>
+                            </ul>
+                            <ul className="">
+                              <li className="Talent-EXP">AVAILABILITY</li>
+                              <li className="Talent-Years">Full Time</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div className="col-md-7">
+                      <div>
+                        <img
+                          src="./images/gayatri.png"
+                          className="Talent-gayatri"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
           </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </section>
+
+      <section className="Talent-Overall-Background d-block d-md-none">
+        <div
+          id="carouselExampleIndicators"
+          class="carousel slide"
+          data-ride="carousel"
+        >
+          <ol class="carousel-indicators">
+            <li
+              data-target="#carouselExampleIndicators"
+              data-slide-to="0"
+              class="active"
+            ></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div>
+                <div className="container">
+                  <div className="row">
+                    <div className="col-md-5">
+                      <div className="TALENT-NAMES">
+                        <div className="container Talent-stu-develop">
+                          <h3 className="Talent-Steve">Steve Stutts</h3>
+                          <h4 className="Talent-Python">Python Developer</h4>
+                        </div>
+
+                        <div className="container">
+                          <p className="TaLent-EXPERT">EXPERT IN</p>
+                        </div>
+                        <div className="container Talent-Course-Names">
+                          <div className="row TALEnt-ate">
+                            <div>
+                              <button className="Talent-Aws">AWS</button>
+                            </div>
+                            <div>
+                              <button className="Talent-Aws">TABLEAU</button>
+                            </div>
+                            <div>
+                              <button className="Talent-Aws">ETL</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="container">
+                          <div className="row TALEnt-ate-1">
+                            <div>
+                              <button className="Talent-Aws">AWS GLUE</button>
+                            </div>
+                            <div>
+                              <button className="Talent-Aws">REDSHIFT</button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="container">
+                          <div className="row EXPERIENCE-TALENT">
+                            <ul className="">
+                              <li className="Talent-EXP">EXPERIENCE</li>
+                              <li className="Talent-Years">6+ Years</li>
+                            </ul>
+                            <ul className="">
+                              <li className="Talent-EXP">AVAILABILITY</li>
+                              <li className="Talent-Years">Full Time</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    {/* <div className="col-md-7">
+                    <div>
+                      <img
+                        src="./images/steves.png"
+                        className="Talent-gayatri"
+                      />
+                    </div>
+                  </div> */}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div>
+                <div className="container">
+                  <div className="row">
+                    <div className="col-md-5">
+                      <div className="TALENT-NAMES">
+                        <div className="container Talent-stu-develop">
+                          <h3 className="Talent-Steve">Harish Angal</h3>
+                          <h4 className="Talent-Python">Cloud Expert</h4>
+                        </div>
+
+                        <div className="container">
+                          <p className="TaLent-EXPERT">EXPERT IN</p>
+                        </div>
+                        <div className="container Talent-Course-Names">
+                          <div className="row TALEnt-ate">
+                            <div>
+                              <button className="Talent-Aws">Azure</button>
+                            </div>
+                            <div>
+                              <button className="Talent-Aws">Power BI</button>
+                            </div>
+                            <div>
+                              <button className="Talent-Aws">ETL/ELT</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="container">
+                          <div className="row TALEnt-ate-1">
+                            <div>
+                              <button className="Talent-Aws">
+                                Azure Stack HCI
+                              </button>
+                            </div>
+                            <div>
+                              <button className="Talent-Aws">ADF</button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="container">
+                          <div className="row EXPERIENCE-TALENT">
+                            <ul className="">
+                              <li className="Talent-EXP">EXPERIENCE</li>
+                              <li className="Talent-Years">5+ Years</li>
+                            </ul>
+                            <ul className="">
+                              <li className="Talent-EXP">AVAILABILITY</li>
+                              <li className="Talent-Years">Full Time</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    {/* <div className="col-md-7">
+                    <div>
+                      <img
+                        src="./images/harish.png"
+                        className="Talent-gayatri"
+                      />
+                    </div>
+                  </div> */}
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div>
+                <div className="container">
+                  <div className="row">
+                    <div className="col-md-5">
+                      <div className="TALENT-NAMES">
+                        <div className="container Talent-stu-develop">
+                          <h3 className="Talent-Steve">Gayatri Suniti</h3>
+                          <h4 className="Talent-Python">DevOps Expert</h4>
+                        </div>
+
+                        <div className="container">
+                          <p className="TaLent-EXPERT">EXPERT IN</p>
+                        </div>
+                        <div className="container Talent-Course-Names">
+                          <div className="row TALEnt-ate">
+                            <div>
+                              <button className="Talent-Aws">Jenkins</button>
+                            </div>
+                            <div>
+                              <button className="Talent-Aws">Terraform</button>
+                            </div>
+                            <div>
+                              <button className="Talent-Aws">K8s</button>
+                            </div>
+                          </div>
+                        </div>
+                        <div className="container">
+                          <div className="row TALEnt-ate-1">
+                            <div>
+                              <button className="Talent-Aws">
+                                GitOps/ GitLabs
+                              </button>
+                            </div>
+                            <div>
+                              <button className="Talent-Aws">
+                                Platform Engg
+                              </button>
+                            </div>
+                          </div>
+                        </div>
+
+                        <div className="container">
+                          <div className="row EXPERIENCE-TALENT">
+                            <ul className="">
+                              <li className="Talent-EXP">EXPERIENCE</li>
+                              <li className="Talent-Years">7+ Years</li>
+                            </ul>
+                            <ul className="">
+                              <li className="Talent-EXP">AVAILABILITY</li>
+                              <li className="Talent-Years">Full Time</li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    {/* <div className="col-md-7">
+                    <div>
+                      <img
+                        src="./images/gayatri.png"
+                        className="Talent-gayatri"
+                      />
+                    </div>
+                  </div> */}
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <a
+            class="carousel-control-prev"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a
+            class="carousel-control-next"
+            href="#carouselExampleIndicators"
+            role="button"
+            data-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
         </div>
       </section>
       <div
@@ -887,111 +884,41 @@ const Talent = () => {
               marginTop: "30px",
             }}
           >
-            <h4 className="cloudcardheadings">Client Testimonial</h4>
-            <div
-              className="row energydo"
-              style={{
-                height: "460px",
-                padding: "40px 40px 40px 40px",
-                flexDirection: "column",
-                justifyContent: "space-between",
-                alignItems: "flex-start",
-                display: "flex",
-                textAlign: "left",
-              }}
-            >
-              <div className="col-md-4">
-                <h4
-                  style={{
-                    fontSize: "30px",
-                    fontStyle: "normal",
-                    fontWeight: "700px",
-                    lineHeight: "56px",
-                    letterSpacing: "1px",
-                    color: "#ffff",
-                  }}
-                >
-                  Energy Domain
-                </h4>
-                <p
-                  style={{
-                    fontSize: "16px",
-                    textAlign: "left",
-                    color: "#ffff",
-                  }}
-                >
-                  Advance Data Lakehouse Solution
-                </p>
+            <h4 className="cloudcardheadings">Client Testimonials</h4>
+          </div>
+          <section className="Talent-advanced-1">
+            <div className="container">
+              <div className="">
                 <img
-                  src="./images/gbr.png"
-                  alt="..."
-                  style={{
-                    width: "194px",
-                    height: "194px",
-                    marginTop: "105px",
-                  }}
+                  src="./images/energydo-2.png"
+                  className="Talent-Energy"
+                  alt="energy"
                 />
               </div>
-              <div
-                className="col-md-8"
-                style={{
-                  flexDirection: "column",
-                  justifyContent: "center",
-                  alignItems: "flex-start",
-                }}
-              >
-                <h4
-                  style={{
-                    fontSize: "30px",
-                    fontStyle: "normal",
-                    fontWeight: "700px",
-                    lineHeight: "56px",
-                    letterSpacing: "1px",
-                    textAlign: "left",
-                    color: "#ffff",
-                  }}
-                >
-                  GBR Eco
-                </h4>
-                <p
-                  style={{
-                    fontSize: "16px",
-                    width: "440px",
-                    textAlign: "left",
-                    color: "#ffff",
-                    fontWeight: "500",
-                    lineHeight: "35px",
-                  }}
-                >
-                  From limitless computing power to shortened cycle times and
-                  simplified data accessibility, the newfound efficiency
-                  facilitated by DataObserve empowers us to generate timely
-                  insights about products, customers, and vendors, markedly
-                  improving their experiences.
-                </p>
-                <p
-                  style={{
-                    fontSize: "16px",
-                    textAlign: "left",
-                    color: "#ffff",
-                    marginTop: "100px",
-                  }}
-                >
-                  Rama Krishna Raju Dandu
-                </p>
-                <p
-                  style={{
-                    fontSize: "16px",
-                    textAlign: "left",
-                    color: "#ffff",
-                    marginTop: "-15px",
-                  }}
-                >
-                  Chief Operating Officer, GBR Eco
-                </p>
+              <div className="row Talent-Domain-02">
+                <div className="col-md-4 Talent-DOMAIN-Energy">
+                  <h4 className="talent-ENergy-domain">Energy Domain</h4>
+                  <p className="Talent-Data-lakeHouse">
+                    Advanced Data Lakehouse Solution
+                  </p>
+                </div>
+                <div className="col-md-8 Talent-Domain-limit">
+                  <h4 className="Talent-GBR-ECO">GBR Eco</h4>
+                  <p className="Talent-test-Paragraph">
+                    From limitless computing power to shortened cycle times and
+                    simplified data accessibility, the newfound efficiency
+                    facilitated by DataObserve empowers us to generate timely
+                    insights about products, customers, and vendors, markedly
+                    improving their experiences.
+                  </p>
+                  <h5 className="TALENT-RAMA-krishna">
+                    Rama Krishna Raju Dandu
+                  </h5>
+                  <p className="talent-CEO">Chief Operating Officer, GBR Eco</p>
+                </div>
               </div>
             </div>
-          </div>
+          </section>
         </div>
       </div>
       <div
@@ -1002,12 +929,11 @@ const Talent = () => {
           alignItems: "center",
           flexDirection: "column",
           marginTop: "50px",
-          width: "1210px",
+          // width: "1210px",
         }}
       >
-                <div className=" container d-flex talent-leading-icons-1">
-          
-            <div>
+        <div className=" container d-flex talent-leading-icons">
+          <div>
             <img
               className=""
               src="./images/talentsolakh.png"
@@ -1015,7 +941,7 @@ const Talent = () => {
               // style={{ width: "153px", height: "70px" }}
               width={100}
             />
-            </div>
+          </div>
           <div>
             <img
               className=""
@@ -1024,8 +950,8 @@ const Talent = () => {
               // style={{ width: "153px", height: "70px" }}
               width={100}
             />
-            </div>
-            <div>
+          </div>
+          <div>
             <img
               className=""
               src="./images/talentsrd.png"
@@ -1033,8 +959,8 @@ const Talent = () => {
               // style={{ width: "153px", height: "70px" }}
               width={100}
             />
-            </div>
-            <div>
+          </div>
+          <div>
             <img
               className=""
               src="./images/talentcliq.png"
@@ -1042,8 +968,8 @@ const Talent = () => {
               // style={{ width: "153px", height: "70px" }}
               width={100}
             />
-            </div>
-            <div>
+          </div>
+          <div>
             <img
               className=""
               src="./images/talentfusion.png"
@@ -1051,9 +977,8 @@ const Talent = () => {
               // style={{ width: "153px", height: "70px" }}
               width={100}
             />
-            </div>
-           
           </div>
+        </div>
         <div
           className="container"
           style={{
@@ -1064,52 +989,41 @@ const Talent = () => {
             marginTop: "60px",
           }}
         >
-          <h2 className="cloudcardheadings">Talent as a Service</h2>
-          <p className="text-center" style={{ width: "800px" }}>
+          <h2 className="EXPERIENCE-cloud">Talent as a Service</h2>
+          <p className="wides">
             Recruit highly skilled employees as needed through a cloud-based
             platform. These hires will not only perform tasks efficiently but
             also contribute to cost savings.
           </p>
-          <div className="cocreater mb-5">
-            <p
-              style={{
-                fontSize: "18px",
-                fontStyle: "normal",
-                fontWeight: "500",
-                lineHeight: "27px",
-                width: "460px",
-                marginLeft: "50%",
-                marginTop: "60px",
-              }}
-            >
-              We're introducing a new approach to hiring cloud Engineers. This
-              service will help your cloud engineering team to build innovative
-              digital transformation solutions.
-            </p>
-            <h6
-              style={{
-                fontSize: "25px",
-                fontStyle: "normal",
-                fontWeight: "600",
-                lineHeight: "30px",
-                marginLeft: "50%",
-              }}
-            >
-              Meet Docreater
-            </h6>
-            <button
-              className="botn"
-              style={{
-                padding: "16px 50px 16px 50px",
-                fontSize: "15px",
-                color: "white",
-                marginLeft: "50%",
-              }}
-            >
-              Explore DoCreater{" "}
-              <i class="fa fa-long-arrow-right ml-2" aria-hidden="true"></i>
-            </button>
-          </div>
+          <section className="Talent-overall-SERVICE">
+            <div className="container Talent-DOcreaters">
+              <div>
+                <img
+                  src="./images/cocreater.jpeg"
+                  className="Cocreater-talent"
+                  alt="cocreater"
+                />
+              </div>
+              <div className="row Talent-MEET-Creatores">
+                <div className="col-md-6"></div>
+                <div className="col-md-6">
+                  <p className="Talent-HIRING">
+                    We're introducing a new approach to hiring cloud Engineers.
+                    This service will help your cloud engineering team to build
+                    innovative digital transformation solutions.
+                  </p>
+                  <h4 className="Talent-meet-creator-heading">Meet DOcreators !</h4>
+                  <button className="Talent-explore-DO-1">
+                    Explore DOcreators{" "}
+                    <i
+                      class="fa fa-long-arrow-right ml-2"
+                      aria-hidden="true"
+                    ></i>
+                  </button>
+                </div>
+              </div>
+            </div>
+          </section>
         </div>
       </div>
       <div class="card text-center" style={{ border: "0px" }}>
