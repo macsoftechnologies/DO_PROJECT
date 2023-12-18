@@ -44,6 +44,7 @@ const Cloud = () => {
           initialSlide: 1,
         },
       },
+      
     ],
   };
   return (
@@ -95,7 +96,7 @@ const Cloud = () => {
                 lineHeight: "19px",
               }}
             >
-              Talk to us now
+              Talk to us now!
             </span>{" "}
             <i
               className="fa fa-long-arrow-right ARROW-RIGHT-CLOUD"
@@ -122,7 +123,7 @@ const Cloud = () => {
         }}
       >
         <h4 className="migration">Our Expertise in Cloud Migration Services</h4>
-        <p className="operational">
+        <p className="container col-md-9 operational">
           With a collective industry experience exceeding four decades, our
           cloud migration services are custom-designed to guide you towards
           operational excellence and comprehensive growth. We specialize in
@@ -273,6 +274,8 @@ const Cloud = () => {
         </section>
       </div>
 
+      <h1 className="case mt-5">Our Case Studies</h1>
+
       <div
         class="container  mb-3 mt-5 Built-back-colour"
         style={{
@@ -385,12 +388,15 @@ const Cloud = () => {
           offer you a wide range of advantages.
         </p>
       </div>
+
+
+      
       <div className="container mt-3">
         <div className="row box">
           <div className="col-md-4">
             <div
-              className="text-center box-padding"
-              style={{ height: "400px" }}
+              className="text-center box-padding-cloud"
+              style={{ height: "380px" }}
             >
               <img
                 src="./images/money.png"
@@ -411,8 +417,8 @@ const Cloud = () => {
 
           <div className="col-md-4">
             <div
-              className="text-center box-padding"
-              style={{ height: "400px" }}
+              className="text-center box-padding-cloud"
+              style={{ height: "380px" }}
             >
               <img
                 src="./images/time.png"
@@ -433,8 +439,8 @@ const Cloud = () => {
 
           <div className="col-md-4">
             <div
-              className="text-center box-padding"
-              style={{ height: "400px" }}
+              className="text-center box-padding-cloud"
+              style={{ height: "380px" }}
             >
               <img
                 src="./images/dc.png"
@@ -469,17 +475,17 @@ const Cloud = () => {
                 justifyContent: "spacebetween",
               }}
             >
-              <div class="col-md-8">
+              <div class="col-md-9">
                 <div class="">
                   <div>
-                    <h5
-                      class="card-title Cloud-title"
+                    <h5 
+                      class="col-md-8 card-title Cloud-title"
                       style={{ color: "white", fontSize: "24px" }}
                     >
-                      Maximize Your Cloud Capabilities with the DataObserve
+                      Maximize Your Cloud Capabilities with the  DataObserve
                       Advantage
                     </h5>
-                    <p class="card-text Cloud-color-paragraph">
+                    <p class="col-md-9 card-text Cloud-color-paragraph">
                       Streamline your cloud-driven business transformation with
                       DataObserve's comprehensive suite of cloud services,
                       encompassing consulting, optimization, migration, and
@@ -489,15 +495,16 @@ const Cloud = () => {
                   </div>
                 </div>
               </div>
-              <div className="col-md-4">
+              <div className="col-md-3 ObserverS-Cloud">
                 <button
                   className="observers"
                   style={{
                     width: "200px",
                     border: "none",
                     height: "55px",
-                    margin: "42px",
+                    margin: "50px",
                     borderRadius: "6px",
+                    color:"#0046E8",
                   }}
                 >
                   Talk to us now{" "}
@@ -511,7 +518,10 @@ const Cloud = () => {
           </div>
         </div>
       </div>
-      <div>
+
+
+<section className="back-point mt-5">
+<div>
         <div
           className="container"
           style={{
@@ -520,11 +530,11 @@ const Cloud = () => {
             display: "flex",
           }}
         >
-          <h3 className="cloud-head" style={{ textAlign: "center" }}>
+          {/* <h3 className="cloud-head" style={{ textAlign: "center" }}>
             What Makes Us Stand Out
           </h3>
           <p
-            className="CLoud-Text-pARA"
+            className="container col-md-7  CLoud-Text-pARA"
             style={{
               textAlign: "center",
             }}
@@ -533,22 +543,23 @@ const Cloud = () => {
             enabled us to construct enduring cloud solutions and infrastructure
             that drive business optimization. Explore some key factors that
             position us as an industry leader for the years ahead.
-          </p>
+          </p> */}
         </div>
         <div className="container mt-3">
           <div className="row box">
             <div className="col-md-4">
               <div
-                className="text-center box-padding"
-                style={{ height: "435px" }}
+                className="text-center box-padding-cloud"
+                style={{ height: "380px" }}
               >
                 <img
                   src="./images/ddma.png"
                   className="App-logo"
                   alt="logo"
-                  width={100}
+                  width={80}
+                  height={100}
                 />
-                <h5 className="cloudcardheadings">
+                <h5 className="cloudcardheadings text-center">
                   Data-Driven Migration Assessment
                 </h5>
 
@@ -564,16 +575,17 @@ const Cloud = () => {
 
             <div className="col-md-4">
               <div
-                className="text-center box-padding"
-                style={{ height: "435px" }}
+                className="text-center box-padding-cloud"
+                style={{ height: "380px" }}
               >
                 <img
                   src="./images/unte.png"
                   className="App-logo"
                   alt="logo"
-                  width={100}
+                  w width={80}
+                  height={100}
                 />
-                <h5 className="cloudcardheadings">
+                <h5 className="cloudcardheadings text-center">
                   Unparalleled Talent and Experience
                 </h5>
 
@@ -588,16 +600,17 @@ const Cloud = () => {
 
             <div className="col-md-4">
               <div
-                className="text-center box-padding"
-                style={{ height: "435px" }}
+                className="text-center box-padding-cloud"
+                style={{ height: "380px" }}
               >
                 <img
                   src="./images/pics.png"
                   className="App-logo"
                   alt="logo"
-                  width={100}
+                  width={80}
+                  height={100}
                 />
-                <h5 className="cloudcardheadings">
+                <h5 className="cloudcardheadings text-center">
                   Proven, Industry-tailored Cloud Solutions
                 </h5>
 
@@ -612,22 +625,23 @@ const Cloud = () => {
 
             <div className="col-md-4">
               <div
-                className="text-center box-padding"
-                style={{ height: "435px" }}
+                className="text-center box-padding-cloud"
+                style={{ height: "380px" }}
               >
                 <img
                   src="./images/tep.png"
-                  className="App-logo"
+                  className="App-logo CLOUD-APP-LOGO"
                   alt="logo"
-                  width={100}
+                  width={80}
+                  height={80}
                 />
-                <h5 className="cloudcardheadings" style={{ marginTop: "24px" }}>
+                <h5 className="cloudcardheadings text-center" style={{ marginTop: "24px" }}>
                   Trusted Enterprise Partner
                 </h5>
 
                 <p className="arrowtext text-left">
                   With over incredible amount of data migrated and managed
-                  annually, DataObserve is in the process to establisheditself
+                  annually, DataObserve is in the process to establishedit self
                   as one of the most highly trusted cloud migration providers.
                   We firmly believe in delivering 100% customer satisfaction and
                   cater to a global clientele of happy customers.
@@ -637,16 +651,17 @@ const Cloud = () => {
 
             <div className="col-md-4">
               <div
-                className="text-center box-padding"
-                style={{ height: "435px" }}
+                className="text-center box-padding-cloud"
+                style={{ height: "380px" }}
               >
                 <img
                   src="./images/pa.png"
                   className="App-logo"
                   alt="logo"
-                  width={100}
+                  width={80}
+                  height={100}
                 />
-                <h5 className="cloudcardheadings">Proven Accelerators</h5>
+                <h5 className="cloudcardheadings text-center">Proven Accelerators</h5>
 
                 <p className="arrowtext text-left">
                   Unlock exponential growth through DataObserve's cloud
@@ -660,6 +675,15 @@ const Cloud = () => {
           </div>
         </div>
       </div>
+
+</section>
+
+
+      
+
+
+
+
       {/* <Faq /> */}
       <div class="card text-center" style={{ border: "0px" }}>
         {/* {/ <div class="card-header">Featured</div> /} */}

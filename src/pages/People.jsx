@@ -11,7 +11,10 @@ function People() {
       <section>
         <div className="People-Careers-Main">
           <video className="people-careers-video" autoPlay loop muted>
-            <source src="https://storage.googleapis.com/do-website-resources/careers.mp4" type="video/mp4" />
+            <source
+              src="https://storage.googleapis.com/do-website-resources/careers.mp4"
+              type="video/mp4"
+            />
           </video>
           <div className="background">
             <div className="container people-data-observe">
@@ -32,7 +35,7 @@ function People() {
 
       <section>
         <div>
-          <p className="life">Life at DataObserve</p>
+          <p className="life-People">Life at DataObserve</p>
           <div className="container dataobserve-paragraph-1">
             <div className="row">
               <div className="col-md-12 paragraph-observe">
@@ -94,13 +97,11 @@ function People() {
           <div>
             <p className="life-2">Our values</p>
             <div className="dataobserve-paragraph-2">
-              <p className="col-md-12 People-Career-product">
-                We are not just a great product company – we have a cool work
-                culture too! Here are the
-                <br />
-                <span>
-                  six core values that are driving our company’s culture:
-                </span>
+              <p className="container col-md-9 People-Career-product">
+                We're more than just a fantastic product company; we also boast
+                an awesome work culture! Here are the six core values that are
+                shaping our company's cultural foundation: six core values that
+                are driving our company’s culture:
               </p>
             </div>
           </div>
@@ -288,17 +289,13 @@ function People() {
       <section>
         <div>
           <div>
-            <p className="life">Perks and benefits</p>
+            <p className="life-People">Perks and benefits</p>
             <div className="dataobserve-paragraph-1">
-              <p className="data-observe-paragraph">
+              <p className="container col-md-8 data-observe-paragraph">
                 At DataObserve, our foremost concern is the holistic well-being
-                of our employees, encompassing their physical,
-                <br />
-                <span>
-                  {" "}
-                  financial, and emotional aspects. Here's how we empower our
-                  workforce to achieve their utmost potential.
-                </span>
+                of our employees, encompassing their physical, financial, and
+                emotional aspects. Here's how we empower our workforce to
+                achieve their utmost potential.
               </p>
             </div>
           </div>
@@ -430,44 +427,45 @@ function People() {
               <div className="col-md-6">
                 <div className="row inclusive-work-main">
                   <div className="d-flex">
-                  <div className="col-md-6 people-pad-ing">
-                    <img
-                      className="inclusion-img-1"
-                      src="./images/inclusion-1.png"
-                      alt="inclu"
-                      width={140}
-                    />
-                  </div>
-                  <div className="col-md-6 people-pad-ing">
-                    <img
-                      className="inclusion-img-2"
-                      src="./images/inclusion-4.png"
-                      alt="inclu"
-                      width={140}
-                    />
-                  </div>
+                    <div className="col-md-6 people-pad-ing">
+                      <img
+                        className="inclusion-img-1"
+                        src="./images/inclusion-1.png"
+                        alt="inclu"
+                        width={140}
+                      />
+                    </div>
+                    <div className="col-md-6 people-pad-ing">
+                      <img
+                        className="inclusion-img-2"
+                        src="./images/inclusion-4.png"
+                        alt="inclu"
+                        width={140}
+                      />
+                    </div>
                   </div>
                   <div className="d-flex">
-                  <div className="col-md-6 people-pad-ing">
-                    <img
-                      className="inclusion-img-3"
-                      src="./images/inclusion-2.png"
-                      alt="inclu"
-                      width={140}
-                    />
-                  </div>
-                  <div className="col-md-6 people-pad-ing">
-                    <img
-                      className="inclusion-img-4"
-                      src="./images/inclusion-3.png"
-                      alt="inclu"
-                      width={140}
-                    />
-                  </div>
+                    <div className="col-md-6 people-pad-ing">
+                      <img
+                        className="inclusion-img-3"
+                        src="./images/inclusion-2.png"
+                        alt="inclu"
+                        width={140}
+                      />
+                    </div>
+                    <div className="col-md-6 people-pad-ing">
+                      <img
+                        className="inclusion-img-4"
+                        src="./images/inclusion-3.png"
+                        alt="inclu"
+                        width={140}
+                      />
+                    </div>
                   </div>
                 </div>
                 <div className="people-circle-top-1">
-                  <img className="people-CirclE"
+                  <img
+                    className="people-CirclE"
                     src="./images/people-circle-1.png"
                     alt="people-circle"
                     style={{ height: "100px" }}
@@ -503,9 +501,8 @@ function People() {
             <div className="joinus">
               <div className="head-paragraph">
                 <h3 className="text-center joinus-heading">Join Us</h3>
-                <p className="col-md-12 text-center joinus-paragraph">
+                <p className="container col-md-6  joinus-paragraph">
                   Explore our exciting array of job opportunities. Join us and
-                 <br/>
                   become a valuable part of this incredible journey.
                 </p>
               </div>

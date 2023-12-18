@@ -156,7 +156,13 @@
   .headingpillars-01 {
     text-align: center;
     font-weight: 700;
+    
 } 
+
+.charts-maps-ParagrapH{
+  padding-top: 40px;
+  padding-bottom: 30px;
+}
 .showdowclass-data {
   border-radius: 30px;
   background: #fff;
@@ -232,6 +238,10 @@
 
     .mobile-data{
       font-size: 19px !important;
+    }
+    .showdowclass-data{
+      height: fit-content;
+      margin-bottom: 20px;
     }
 
   }
@@ -371,13 +381,10 @@
   .headingpillars-01{
     font-size: 30px !important;
   }
-  .do360Datacharts-01{
-
+  
   }
 
-  }
-
-  @media only screen and (min-width: 991px) and (max-width: 1024px)  {
+  @media only screen and (min-width: 991px) and (max-width: 1200px)  {
     .mobile-data{
       font-size: 35px !important;
     }

@@ -98,7 +98,7 @@ const Devops = () => {
                     lineHeight: "19px",
                   }}
                 >
-                  Talk to us now
+                  Talk to us now!
                 </span>{" "}
                 <i
                   className="fa fa-long-arrow-right ARROW-RIGHT-CLOUD"
@@ -126,7 +126,7 @@ const Devops = () => {
         }}
       >
         <h4 className="migration">Our DevOps Services</h4>
-        <p className="operational">
+        <p className=" col-md-9 operational">
           DataObserve's DevOps services offer cutting-edge and established
           technologies to enhance your organization's efficiency. By
           streamlining data flow, we foster improved collaboration between your
@@ -293,6 +293,8 @@ const Devops = () => {
         </section>
       </div>
 
+      <h1 className="case mt-5">Our Case Studies</h1>
+
       <div
         class="container  mb-3 mt-5 Built-back-colour"
         style={{
@@ -375,7 +377,8 @@ const Devops = () => {
                   alt=""
                   style={{ width: "95px" }}
                 />
-                <img className="srdsystems-cloud"
+                <img
+                  className="srdsystems-cloud"
                   src="./images/srdsystems.png"
                   alt=""
                   style={{ width: "70px" }}
@@ -394,7 +397,7 @@ const Devops = () => {
         </h4>
 
         <div className="container">
-          <p className="wides">
+          <p className="container col-md-9 wides">
             DataObserve is the rapidly expanding leader in Cloud Transformation
             and Data Analytics, distinguished by its substantial proficiency in
             Data Lake solutions, Data Warehouse Engineering, and Data Migration
@@ -415,7 +418,7 @@ const Devops = () => {
             >
               <div
                 className="text-center box-padding"
-                style={{ height: "330px" }}
+                style={{ height: "290px" }}
               >
                 <img
                   src="./images/premium.png"
@@ -438,7 +441,7 @@ const Devops = () => {
             <div className="col-md-4">
               <div
                 className="text-center box-padding"
-                style={{ height: "330px" }}
+                style={{ height: "290px" }}
               >
                 <img
                   src="./images/wide.png"
@@ -461,7 +464,7 @@ const Devops = () => {
             <div className="col-md-4">
               <div
                 className="text-center box-padding"
-                style={{ height: "330px" }}
+                style={{ height: "290px" }}
               >
                 <img
                   src="./images/tech.png"
@@ -484,7 +487,7 @@ const Devops = () => {
             <div className="col-md-4">
               <div
                 className="text-center box-padding"
-                style={{ height: "330px" }}
+                style={{ height: "290px" }}
               >
                 <img
                   src="./images/clock.png"
@@ -499,7 +502,7 @@ const Devops = () => {
                   By analyzing this data, you can gain in-depth market knowledge
                   and stay ahead of your competition. Keep up with industry
                   changes, anticipate customer needs and improve your
-                  performance.
+                  performance.{" "}
                 </p>
               </div>
             </div>
@@ -507,7 +510,7 @@ const Devops = () => {
             <div className="col-md-4">
               <div
                 className="text-center box-padding"
-                style={{ height: "330px" }}
+                style={{ height: "290px" }}
               >
                 <img
                   src="./images/disaster.png"
@@ -529,7 +532,7 @@ const Devops = () => {
             <div className="col-md-4">
               <div
                 className="text-center box-padding"
-                style={{ height: "330px" }}
+                style={{ height: "290px" }}
               >
                 <img
                   src="./images/manage.png"
@@ -565,28 +568,26 @@ const Devops = () => {
                   justifyContent: "spacebetween",
                 }}
               >
-                <div class="col-md-8">
+                <div class="col-md-9">
                   <div class="">
                     <div>
                       <h5
-                        class="card-title Cloud-title"
+                        class="col-md-9 card-title Cloud-title"
                         style={{ color: "white", fontSize: "24px" }}
                       >
-                        Maximize Your Cloud Capabilities with the DataObserve
-                        Advantage
+                        Maximize Your Cloud Capabilities with the
+                        DataObserve Advantage
                       </h5>
-                      <p class="card-text Cloud-color-paragraph">
-                        Streamline your cloud-driven business transformation
-                        with DataObserve's comprehensive suite of cloud
-                        services, encompassing consulting, optimization,
-                        migration, and modernization. Our team of seasoned cloud
-                        experts is at your disposal, ready to provide guidance
-                        and support.
+                      <p class="col-md-9 card-text Cloud-color-paragraph">
+                        Facing an issue or stuck with a problem regarding BI and
+                        Analytics Services? Connect with our support services at
+                        any time of the day, and our experts will help you with
+                        your queries.
                       </p>
                     </div>
                   </div>
                 </div>
-                <div className="col-md-4">
+                <div className="col-md-3 ObserverS-Cloud">
                   <button
                     className="observers"
                     style={{
@@ -595,9 +596,10 @@ const Devops = () => {
                       height: "55px",
                       margin: "42px",
                       borderRadius: "6px",
+                      color: "#0046E8",
                     }}
                   >
-                    Talk to us now{" "}
+                    Get a demo{" "}
                     <i
                       class="fa fa-long-arrow-right Arrow-cloud"
                       aria-hidden="true"
@@ -609,149 +611,164 @@ const Devops = () => {
           </div>
         </div>
       </div>
-      <div className="container mt-3">
-        <div className="row box">
-          <div className="col-md-4">
-            <div
-              className="text-center box-padding"
-              style={{ height: "330px" }}
-            >
-              <img
-                src="./images/premium.png"
-                className="App-logo"
-                alt="logo"
-                width={100}
-                style={{ height: "63px", width: "44px" }}
-              />
-              <h5 className="cloudcardheadings">Premium quality</h5>
 
-              <p className="arrowtext text-center">
-                Every project completed by our DevOps teams goes through
-                internal quality checks to ensure quality before being
-                delivered.
-              </p>
+      <section className="back-point mt-5">
+        <div className="container pt-3">
+          <h3 className="cloud-head" style={{ textAlign: "center" }}>
+            What Makes Us Stand Out
+          </h3>
+          <p className="container col-md-9 text-center devops-Ourselves">
+            Our aim is to establish ourselves as a reputable business
+            intelligence and data analytics service provider, leveraging our
+            extensive experience and global collaborations with businesses. Our
+            team of BI and data analytics experts is poised to assist you in
+            data collection and analysis, enabling you to extract valuable
+            insights and enhance your business processes for improved execution
+            and optimization. Here are a few compelling reasons why we are the
+            ideal choice:
+          </p>
+          <div className="row box">
+            <div className="col-md-4">
+              <div
+                className="text-center box-padding"
+                style={{ height: "290px" }}
+              >
+                <img
+                  src="./images/premium.png"
+                  className="App-logo"
+                  alt="logo"
+                  width={100}
+                  style={{ height: "63px", width: "44px" }}
+                />
+                <h5 className="cloudcardheadings">Premium Quality</h5>
+
+                <p className="arrowtext text-center">
+                Every project completed by our DevOps teams goes through internal quality checks to ensure quality before being delivered.
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div className="col-md-4">
-            <div
-              className="text-center box-padding"
-              style={{ height: "330px" }}
-            >
-              <img
-                src="./images/wide1.png"
-                className="App-logo"
-                alt="logo"
-                width={100}
-                style={{ height: "63px", width: "44px" }}
-              />
-              <h5 className="cloudcardheadings">Scrum and Agile Expertise</h5>
+            <div className="col-md-4">
+              <div
+                className="text-center box-padding"
+                style={{ height: "290px" }}
+              >
+                <img
+                  src="./images/wide1.png"
+                  className="App-logo"
+                  alt="logo"
+                  width={100}
+                  style={{ height: "63px", width: "49px" }}
+                />
+                <h5 className="cloudcardheadings">Scrum and Agile Expertise</h5>
 
-              <p className="arrowtext text-center">
-                Our certified Scrum Masters empower you to deliver efficient
-                software products with flexibility. We assume complete
-                responsibility for project quality, scheduling, scope planning,
-                and cost management.
-              </p>
+                <p className="arrowtext text-center">
+                  Our certified Scrum Masters empower you to deliver efficient
+                  software products with flexibility. We assume complete
+                  responsibility for project quality, scheduling, scope
+                  planning, and cost management.
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div className="col-md-4">
-            <div
-              className="text-center box-padding"
-              style={{ height: "330px" }}
-            >
-              <img
-                src="./images/customand.png"
-                className="App-logo"
-                alt="logo"
-                width={100}
-                style={{ height: "63px", width: "44px" }}
-              />
-              <h5 className="cloudcardheadings">
-                Custom and Modular Framework
-              </h5>
+            <div className="col-md-4">
+              <div
+                className="text-center box-padding"
+                style={{ height: "290px" }}
+              >
+                <img
+                  src="./images/customand.png"
+                  className="App-logo"
+                  alt="logo"
+                  width={100}
+                  style={{ height: "63px", width: "49px" }}
+                />
+                <h5 className="cloudcardheadings">
+                  Custom and Modular Framework
+                </h5>
 
-              <p className="arrowtext text-center">
-                We've merged our best practices with extensive experience and
-                automation tools to develop our proprietary framework. Its
-                modular and customizable design ensures seamless integration
-                with your existing infrastructure.
-              </p>
+                <p className="arrowtext text-center">
+                  We've merged our best practices with extensive experience and
+                  automation tools to develop our proprietary framework. Its
+                  modular and customizable design ensures seamless integration
+                  with your existing infrastructure.
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div className="col-md-4">
-            <div
-              className="text-center box-padding"
-              style={{ height: "330px" }}
-            >
-              <img
-                src="./images/shakehand.png"
-                className="App-logo"
-                alt="logo"
-                width={100}
-                style={{ height: "63px", width: "44px" }}
-              />
-              <h5 className="cloudcardheadings">
-                Improved Internal Collaboration
-              </h5>
+            <div className="col-md-4">
+              <div
+                className="text-center box-padding"
+                style={{ height: "290px" }}
+              >
+                <img
+                  src="./images/shakehand.png"
+                  className="App-logo"
+                  alt="logo"
+                  width={100}
+                  style={{ height: "63px", width: "49px" }}
+                />
+                <h5 className="cloudcardheadings">
+                  Improved Internal Collaboration
+                </h5>
 
-              <p className="arrowtext text-center">
-                Our DevOps practices and methodologies bridge the gap between
-                software engineering and IT operations teams, providing them
-                with high-quality software-based solutions.
-              </p>
+                <p className="arrowtext text-center">
+                  Our DevOps practices and methodologies bridge the gap between
+                  software engineering and IT operations teams, providing them
+                  with high-quality software-based solutions.
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div className="col-md-4">
-            <div
-              className="text-center box-padding"
-              style={{ height: "330px" }}
-            >
-              <img
-                src="./images/issues4.png"
-                className="App-logo"
-                alt="logo"
-                width={100}
-                style={{ height: "63px", width: "44px" }}
-              />
-              <h5 className="cloudcardheadings">Efficient ROI Measurement</h5>
+            <div className="col-md-4">
+              <div
+                className="text-center box-padding"
+                style={{ height: "290px" }}
+              >
+                <img
+                  src="./images/issues4.png"
+                  className="App-logo"
+                  alt="logo"
+                  width={100}
+                  style={{ height: "63px", width: "44px" }}
+                />
+                <h5 className="cloudcardheadings">Efficient ROI Measurement</h5>
 
-              <p className="arrowtext text-center">
-                Monitor every facet of DevOps with our tailored analytical
-                dashboard, providing 24/7 system monitoring. We guarantee full
-                traceability and transparency in our DevOps services.
-              </p>
+                <p className="arrowtext text-center">
+                  Monitor every facet of DevOps with our tailored analytical
+                  dashboard, providing 24/7 system monitoring. We guarantee full
+                  traceability and transparency in our DevOps services.
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div className="col-md-4">
-            <div
-              className="text-center box-padding"
-              style={{ height: "330px" }}
-            >
-              <img
-                src="./images/accelerate.png"
-                className="App-logo"
-                alt="logo"
-                width={100}
-                style={{ height: "63px", width: "44px" }}
-              />
-              <h5 className="cloudcardheadings">
-                Accelerate Product Time to Market
-              </h5>
+            <div className="col-md-4">
+              <div
+                className="text-center box-padding"
+                style={{ height: "290px" }}
+              >
+                <img
+                  src="./images/accelerate.png"
+                  className="App-logo"
+                  alt="logo"
+                  width={100}
+                  style={{ height: "63px", width: "49px" }}
+                />
+                <h5 className="cloudcardheadings">
+                  Accelerate Product Time to Market
+                </h5>
 
-              <p className="arrowtext text-center">
-                Our specialized DevOps tools have the capability to automate
-                manual and time-consuming tasks, resulting in reduced product
-                development and release times for your organization.
-              </p>
+                <p className="arrowtext text-center">
+                  Our specialized DevOps tools have the capability to automate
+                  manual and time-consuming tasks, resulting in reduced product
+                  development and release times for your organization.
+                </p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
       <div class="card text-center" style={{ border: "0px" }}>
         {/* {/ <div class="card-header">Featured</div> /} */}
         <div class="card-body faq-class">

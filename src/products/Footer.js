@@ -38,7 +38,7 @@ function Footer() {
                     </p>
                     <i class="fa fa-envelope" aria-hidden="true" style={{fontSize:"14px"}}>
                       <span classname="hello" style={{ marginLeft: "10px" ,fontSize:"14px"}}>
-                        hello@dataserve.io
+                        hello@dataobserve.io
                       </span>
                     </i>
                   </div>
@@ -121,7 +121,7 @@ function Footer() {
                       DO{" "}
                       <span
                         style={{
-                          color: "rgba(255, 255, 255, 0.70)",
+                          color: "white",
                           fontSize: "15px",
                           fontWeight: "700",
                           lineHeight: "22.5px",

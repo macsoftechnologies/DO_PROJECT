@@ -321,6 +321,9 @@ align-items: center;
 .gaming-card-last{
 margin-left: 0px;
 margin-top: 0px;
+display: flex;
+justify-content: center;
+align-items: center;
 }
   
   .newaccedes{

@@ -2,6 +2,7 @@
     {
         "title": "Core Principles Of Design Thinking",
         "id": 1,
+        "domain":"Design",
         "tags": [
             "Design Thinking",
             "Product Engineering"
@@ -372,6 +373,7 @@
     {
         "title": "Key considerations for Greenfield Product Engineering to build futuristic solutions",
         "id": 2,
+        "domain":"Product Engineering",
         "tags":[
             "Product Engineering",
             "Product Development"
@@ -535,6 +537,7 @@
     {
         "id": 3,
         "title": "DataSecOps — Key to Data as a Product Enablement",
+        "domain": "DataSecOps",
         "tags": [
             "Datasecops"
         ],
@@ -734,6 +737,7 @@
     {
         "id": 4,
         "title": "Challenges within the Modern Data Stack",
+        "domain":"Data Engineering",
         "children": [
             {
                 "type": "image",
@@ -1026,9 +1030,11 @@
     {
         "id": 5,
         "title": "Enhance Your Data Governance with These 7 Unconventional Data Observability Use Cases",
+        "domain": "Data Engineering",
         "children": [
             {
                 "type": "paragraph",
+                "src": "/images/blogImages/dataGovernance/governance1.png",
                 "content": "Data Observability has become a popular trend in the industry at present."
             },
             {
@@ -1047,7 +1053,7 @@
             },
             {
                 "type": "image",
-                "src": "/images/blogImages/dataGovernance/governance1.png",
+                "src": "/images/blogImages/dataGovernance/governance1.jpg",
                 "caption": "data1"
             },
             {
@@ -1225,6 +1231,7 @@
     {
         "id": 6,
         "title": "How Does Multi-cloud Differ From A Hybrid Cloud",
+        "domain":"Data Engineering",
         "tags":["Multi Cloud"],
         "children": [
             {
@@ -1384,6 +1391,7 @@
     {
         "id": 7,
         "title": "Design Thinking Led Approach to Building Digital Product Ecosystem",
+        "domain":"Design",
         "tags":["Design Thinking","Design Thinking Culture", "Design Thinking Mindset"],
         "children": [
             {
@@ -1526,6 +1534,7 @@
     },
     {
         "id": 8,
+        "domain":"AI Engineering",
         "title": "Ethical Bias In AI-Based Security Systems: The Big Data Disconnect",
         "children": [
             {
@@ -1738,6 +1747,7 @@
     {
         "id": 9,
         "title": "Data as a Product: Data Architecture Principles for Management Blueprint",
+        "domain":"Data Engineering",
         "tags": [
             "Data As a Product",
             "Data Architecture",
@@ -1891,6 +1901,7 @@
     },
     {
         "id": 10,
+        "domain":"Data Architecture",
         "tags":[
             "Data As a Product",
             "Architecture",
@@ -2085,10 +2096,12 @@
     },
     {
         "id": 11,
+        "domain":"Data Architecture",
         "title": "Deep Dive into Application Architecture: Understanding the Concepts Through a Real-World Example",
         "children": [
             {
                 "type": "paragraph",
+                "src": "/images/blogImages/applicationArchitecture/deepDive1.png",
                 "content": "In a previous post,I delved into the intricate components that make up a scalable web application architecture. By exploring the fundamental building blocks, that article serves as a valuable resource for comprehending the essentials of application architecture."
             },
             {
@@ -2103,7 +2116,7 @@
             },
             {
                 "type": "image",
-                "src": "/images/blogImages/applicationArchitecture/deepDive1.png",
+                "src": "/images/blogImages/applicationArchitecture/deepDive20.png",
                 "caption": "application1"
             },
             {

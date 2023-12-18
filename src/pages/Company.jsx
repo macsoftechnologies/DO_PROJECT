@@ -170,7 +170,7 @@ function company() {
           <div className="row">
             <div className="col-md-4 our-card-boder">
               <div class="card our-card" style={{ width: "19.5rem" }}>
-                <div class="card-body">
+                <div class="card-body About-Purpose">
                   <img
                     className="target"
                     src="./images/target.png"
@@ -188,7 +188,7 @@ function company() {
             </div>
             <div className="col-md-4 our-card-boder">
               <div class="card our-card" style={{ width: "19.5rem" }}>
-                <div class="card-body">
+                <div class="card-body About-Purpose">
                   <img
                     className="target"
                     src="./images/vision.png"
@@ -207,7 +207,7 @@ function company() {
             </div>
             <div className="col-md-4 our-card-boder">
               <div class="card our-card" style={{ width: "19.5rem" }}>
-                <div class="card-body">
+                <div class="card-body About-Purpose">
                   <img
                     className="target"
                     src="./images/eye.png"

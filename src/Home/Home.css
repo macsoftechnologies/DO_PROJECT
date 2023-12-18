@@ -1,12 +1,13 @@
 .HomePage-Video{
   position: relative;
-  height: 764px;
+  /* height: 764px; */
+  height: fit-content;
 }
 .Landing-Page-video {
   width: 100%;
   object-fit: cover;
-  /* background-color: lightgray 50%;
-opacity: 0.8; */
+ background-color: lightgray 50%; 
+opacity: 0.8; 
 
 }
 
@@ -33,7 +34,7 @@ opacity: 0.8; */
 }
 
 .Landing-page-DES{
-  color: #FFF;
+  color: rgba(0, 70, 232, 0.69);
 font-family: Poppins;
 font-size: 65px;
 font-style: normal;
@@ -45,7 +46,7 @@ letter-spacing: -0.32px;
 
 .Homepage-dataobserve-content{
 
-color: rgba(255, 255, 255, 0.70);
+color: #2c2929;
 font-family: Poppins;
 font-size: 16px;
 font-style: normal;
@@ -81,25 +82,27 @@ background: #FFF;
   background-color: #0046E8;
   width: 100%;
   height: 666px;
+  margin-top: -7px;
   
 }
 
 .confidence-landing-Page{
   color: #F4F4F4;
   font-family: Poppins;
-  font-size: 34.563px;
+  font-size: 36.563px;
   font-style: normal;
   font-weight: 700;
-  line-height: normal;
+  padding-bottom: 10px;
+  /* line-height: normal; */
 }
 
 .Effective-landing-wedo{
 color: #F4F4F4;
 font-family: Poppins;
-font-size: 15px;
+font-size: 13px;
 font-style: normal;
 font-weight: 400;
-line-height: 28px; /* 266.667% */
+line-height: 26px; /* 266.667% */
 text-align: justify;
 }
 
@@ -114,14 +117,25 @@ text-transform: uppercase;
 }
 
 .landing-Read{
-  color: #FFF;
-font-family: Poppins;
-font-size: 15px;
-font-style: normal;
-font-weight: 500;
-margin-bottom: 9px;
-/* border-bottom: 1px solid white; */
-/* width: 200px; */
+  color: #197FF3;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px; /* 141.667% */
+  /* text-decoration-line: underline; */
+  /* margin-left: 17px; */
+}
+
+.landing-Read-1{
+  color: #197FF3;
+  font-family: Poppins;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 34px; /* 141.667% */
+  text-decoration-line: underline;
+  margin-left: 17px;
 }
 
 
@@ -302,12 +316,17 @@ font-weight: 500;
   }
 
   .advisory-landing{
-    width: 230px;
-    height: 230px;
-    margin-top: 44px;
+    width: 100%;
+    height: 283px;
+    margin-top: 28px;
+    margin-bottom: 10px;
     display: flex;
     align-items: center;
     justify-content: center;
+  }
+
+  .Landing-page-circles-MAIN{
+    margin-left: 0px !important;
   }
 
   .Gen-devops-talent{
@@ -340,7 +359,7 @@ line-height: 28.6px; /* 130% */
   .Landing-strategy-all{
     border-radius: 16px;
 background: rgba(0, 70, 232, 0.10);
-height: 500px;
+height: 530px;
 max-width: 24%!important;
 margin: 4px;
   }
@@ -368,7 +387,7 @@ font-weight: 700;
 line-height: 44px; /* 113.092% */
   }
   .Building-paragraph{
-    color: #092556;
+    color: hsl(218, 81%, 19%);
 font-family: Poppins;
 font-size: 13.75px;
 /* font-style: normal; */
@@ -378,30 +397,39 @@ line-height: 28px; /* 160% */
 
 
   .AI-Journey{
-    color: #F4F4F4;
-font-family: Poppins;
-font-size: 29.625px;
-font-style: normal;
-font-weight: 300;
-line-height: 35.2px; /* 111.304% */
-
-margin: 30px 0px;
-padding: 30px 0px;
+    color: #197FF3;
+    font-family: Poppins;
+    font-size: 32px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 34px; /* 106.25% */
+    max-width: 76% !important;
 
   }
   .ai-Journey-image{
     width: 100%;
     border-radius: 5px;
+    height: 100%;
   }
+
+
+  .journey-Landing-mainpage{
+    position: absolute;
+    top: 30%;
+    left: 23%;
+  }
+
+  .BINARY-Landing{
+    position: relative;
+  }
+ 
 
   .AI-journey-main-background{
-    background: linear-gradient(94deg, #031730 2.95%, #393A61 99.46%);
-    height: 550px;
+    /* background: linear-gradient(94deg, #031730 2.95%, #393A61 99.46%); */
+    /* height: 673px; */
   }
 
-  .journey-Ai{
-    padding-top: 6%;
-  }
+ 
   .Microsoft{
     width: 168.23px;
 /* height: 100.19px; */
@@ -445,6 +473,7 @@ padding-top: 33px;
 
   .potential-Landing{
     padding-top: 7%;
+    padding-left: 30px
   }
 
   .Unlock-landing{
@@ -464,7 +493,7 @@ height: 375px;
 
   .limit-Image-1{
     width: 100%;
-    height: 461px;
+    height: 472px;
     border-radius: 5px 5px 0px 0px;
    
   }
@@ -495,6 +524,7 @@ line-height: 40px; /* 179.272% */
 
   .Coures-IMAGES{
     margin-right: 0px !important;
+    
   }
 
   .Intelligent-Action{
@@ -511,10 +541,41 @@ line-height: 40px; /* 179.272% */
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
-    line-height: 25.6px;
-    letter-spacing: -0.32px;
-    padding-bottom: 28%;
+    margin-bottom: 4px;
+    /* line-height: 25.6px; */
+    /* letter-spacing: -0.32px; */
+    /* padding-bottom: 28%; */
   }
+
+
+  .landing-service-Overall{
+    margin-bottom: 20%;
+  }
+  /* .landing-service-Overall-1{
+    margin-bottom: 10%;
+  } */
+
+  .Home-Service-AI{
+    color: rgba(0, 0, 0, 0.70);
+  
+  }
+
+  .Machine-LEARNING-Home{
+    color: #fff !important;
+  }
+
+  .Machine-LEARNING-Home:hover{
+    text-decoration: none;
+  }
+
+
+  .Build-HEAD-Main{
+    margin-top: 6%;
+  }
+
+  /* .Home-Service-AI:hover{
+    text-decoration: none;
+  } */
 
   .Intelligent-Heading{
     color: #312E2D;
@@ -528,12 +589,50 @@ margin: 22px 0px;
   }
 
 
+  .WHAT-we-dataobserve{
+    margin-right: 0px !important;
+    margin-left: 0px !important;
+    
+  }
+
+
+
 
   @media only screen and (min-width: 320px) and (max-width: 468px)
 {
   .Landing-page-Main{
     top: 0px;
     left: 0px;
+  }
+
+  .landing-building-text{
+    top: 0%;
+  }
+
+  .landing-Read{
+    font-size: 17px;
+    list-style: 22px;
+    line-height: 17px;
+  }
+
+  .line-hr-home{
+    width: 250px !important;
+  }
+  .line-hr-home-1{
+    width: 239px !important;
+  }
+  .WHAT-we-dataobserve{
+    margin-right: 0px !important; 
+     margin-left: 0px !important; 
+    
+  }
+
+  .Landing-page-circles-MAIN{
+    margin-right: 0px !important;
+  }
+
+  .UnlcocK-PotentiaL{
+    margin-right: 0px !important;
   }
 
   .Landing-page-DES{
@@ -546,9 +645,10 @@ margin: 22px 0px;
   .Homepage-dataobserve-content{
     font-size: 14px;
     line-height: 19.6px;
+    padding-left: 0px;
   }
   .HomePage-Video{
-    height: 181px;
+    /* height: 181px; */
   }
 
   .confidence-landing-Page{
@@ -561,12 +661,11 @@ margin: 22px 0px;
   .landing-page-what-we-do-02 {
     background-color: #0046E8;
     width: 100%;
-    /* height: 665px; */
-    /* padding-top: 42px; */
+    /* margin-top: 0px; */
+    /* height: 623px; */
+   
 }
-/* .WHAT-LANDING{
-  padding-top: 40px;
-} */
+
 .customers{
   font-size: 17px;
 }
@@ -616,29 +715,53 @@ margin: 22px 0px;
 .Landing-strategy-all{
   max-width: 100% !important;
   margin: 0px 20px 10px 20px;
+  height: 100%;
 }
 .Building-Heading{
   font-size: 15px;
-  line-height: 22px;
+  line-height: 19px;
+}
+
+.building-Landing{
+  height: 228px;
+}
+
+.Machine-LEARNING-Home{
+  font-size: 15px;
 }
 .Building-paragraph{
   font-size: 12px;
-  line-height: 12px;
+  line-height: 14px;
 }
 .AI-Journey{
-  font-size: 17px;
-  line-height: 32px;
+  font-size: 13px;
+  line-height: 19px;
   margin-bottom: 10px;
   padding-bottom: 10px;
   
 }
 
+.landing-Read-1{
+  font-size: 14px;
+  line-height: 21px;
+}
+
+.journey-Landing-mainpage{
+  top: 24%;
+}
+
+.rocket-Home{
+  padding-right: 0px !important;
+  margin: 10%;
+}
+
 .AI-journey-main-background {
-  height: 450px;
+  /* height: 450px; */
 }
 
 .landing-PartnerdBRING{
-  font-size: 20px;
+  font-size: 17px;
+  padding-bottom: 0px;
 }
 .Home-PAGE-Latest{
   padding-left: 39px;
@@ -646,7 +769,9 @@ margin: 22px 0px;
 .Microsoft {
   width: 91px;
 }
-
+/* .software-homePAGE{
+  margin-top: 53%;
+} */
 .Potential {
   font-size: 16px;
   line-height: 23px;
@@ -681,7 +806,7 @@ margin: 22px 0px;
 }
 
 .Landing-Page-what-wedo-2{
-  padding-top: 15%;
+  /* padding-top: 20%; */
 }
 
 .landing-dna-paragraph{

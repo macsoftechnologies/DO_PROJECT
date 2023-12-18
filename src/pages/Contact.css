@@ -4,6 +4,12 @@
   position: relative;
 }
 
+.required:after {
+  content:" *";
+  color: red;
+}
+
+
 .name-1 {
   width: 42%;
   padding: 12px 20px;
@@ -433,7 +439,7 @@ font-weight: 600;
   padding: 0;
 }
 .footer .coll ul li {
-  color: #999999;
+  color: #fff;
   font-size: 14px;
   font-family: inherit;
   font-weight: bold;

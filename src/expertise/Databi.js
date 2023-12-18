@@ -97,7 +97,7 @@ const Databi = () => {
                     lineHeight: "19px",
                   }}
                 >
-                  Talk to us now
+                  Talk to us now!
                 </span>{" "}
                 <i
                   className="fa fa-long-arrow-right ARROW-RIGHT-CLOUD"
@@ -115,7 +115,8 @@ const Databi = () => {
           </div>
         </div>
       </div>
-      <div className="container"
+      <div
+        className="container"
         style={{
           display: "flex",
           flexDirection: "column",
@@ -126,7 +127,7 @@ const Databi = () => {
         <h4 className="DataBi-migration">
           Our Expertis in BI and Analytics services
         </h4>
-        <p className="DataBi-operational">
+        <p className="container col-md-9 DataBi-operational">
           With a collective industry experience exceeding four decades, our
           business intelligence and analytics services are custom-designed to
           guide you toward operational excellence and comprehensive growth.
@@ -271,6 +272,8 @@ const Databi = () => {
         </section>
       </div>
 
+      <h1 className="case mt-5">Our Case Studies</h1>
+
       <div
         class="container mb-3 mt-5 DATAbi-Built-back-colour"
         style={{
@@ -298,7 +301,7 @@ const Databi = () => {
         >
           <div class="col-md-5">
             <img
-              style={{ height: "250px", width: "100%"}}
+              style={{ height: "250px", width: "100%" }}
               src="./images/build.png"
               className="card-img"
               alt="..."
@@ -353,8 +356,9 @@ const Databi = () => {
                   alt=""
                   style={{ width: "95px" }}
                 />
-                <img className="srdsystems-cloud"
-                  src="./images/srdsystems.png" 
+                <img
+                  className="srdsystems-cloud"
+                  src="./images/srdsystems.png"
                   alt=""
                   style={{ width: "70px" }}
                 />
@@ -363,8 +367,9 @@ const Databi = () => {
           </div>
         </div>
       </div>
-      <div> 
-        <div className="container"
+      <div>
+        <div
+          className="container"
           style={{
             display: "flex",
             flexDirection: "column",
@@ -379,7 +384,7 @@ const Databi = () => {
             Benefits
           </h4>
 
-          <p className="Databi-wides">
+          <p className="container col-md-8 Databi-wides">
             DataObserve is the rapidly expanding Business Intelligence & Data
             Analytics company, renowned for its robust expertise in Data Lake
             solutions, Data Warehouse Engineering, Data Migration, and
@@ -419,7 +424,7 @@ const Databi = () => {
                 style={{ height: "390px" }}
               >
                 <img
-                  src="./images/increased.png"
+                  src="./images/business.png"
                   className="App-logo"
                   alt="logo"
                   width={100}
@@ -433,7 +438,7 @@ const Databi = () => {
                   Business leaders can get a holistic view of the company and
                   identify areas of opportunity with efficient BI. Access to
                   business data helps increase the organizational efficiency of
-                  a company.
+                  a company
                 </p>
               </div>
             </div>
@@ -450,7 +455,7 @@ const Databi = () => {
                   width={100}
                   // style={{ width: "59px", height: "59px" }}
                 />
-                <h5 className="cloudcardheadings" style={{ marginTop: "8px" }}>
+                <h5 className="cloudcardheadings" style={{ marginTop: "21px" }}>
                   24*7 support service
                 </h5>
 
@@ -505,9 +510,9 @@ const Databi = () => {
                 </h5>
 
                 <p className="arrowtext text-center">
-                  DataObserve has a unified information architecture that
-                  enables experts to address existing complexities and solve
-                  them efficiently in this rapidly evolving tech landscape.
+                  DataObserve possesses a unified information architecture that
+                  empowers experts to effectively tackle existing complexities
+                  within this fast-evolving tech landscape.
                 </p>
               </div>
             </div>
@@ -554,17 +559,17 @@ const Databi = () => {
                   justifyContent: "spacebetween",
                 }}
               >
-                <div class="col-md-8">
+                <div class="col-md-9">
                   <div class="">
                     <div>
                       <h5
-                        class="card-title Cloud-title"
+                        class="col-md-9 card-title Cloud-title"
                         style={{ color: "white", fontSize: "24px" }}
                       >
-                        Elevate Your Business Decision-Making with Amazon
-                        QuickSight or Microsoft Power BI.
+                        Elevate Your Business Decision-Making 
+                        with Amazon QuickSight or Microsoft Power BI.
                       </h5>
-                      <p class="card-text Cloud-color-paragraph">
+                      <p class=" col-md-9 card-text Cloud-color-paragraph">
                         Looking to maximize the potential of Business
                         Intelligence (BI) in Amazon QuickSight or Microsoft
                         Power BI? Our team of BI experts is ready to provide
@@ -574,7 +579,7 @@ const Databi = () => {
                     </div>
                   </div>
                 </div>
-                <div className="col-md-4">
+                <div className="col-md-3 ObserverS-Cloud">
                   <button
                     className="observers"
                     style={{
@@ -583,9 +588,10 @@ const Databi = () => {
                       height: "55px",
                       margin: "42px",
                       borderRadius: "6px",
+                      color: "#0046E8",
                     }}
                   >
-                    Talk to us now{" "}
+                    Get a demo{" "}
                     <i
                       class="fa fa-long-arrow-right Arrow-cloud"
                       aria-hidden="true"
@@ -597,126 +603,148 @@ const Databi = () => {
           </div>
         </div>
       </div>
-      <div className="container mt-3">
-        <div className="row box">
-          <div className="col-md-4">
-            <div
-              className="text-center box-padding"
-              style={{ height: "390px" }}
-            >
-              <img
-                src="./images/high.png"
-                className="App-logo"
-                alt="logo"
-                width={100}
-                // style={{ height: "73px", width: "63px" }}
-              />
-              <h5 className="cloudcardheadings">High accuracy</h5>
 
-              <p className="arrowtext text-center">
-                Take your business to the clouds with DataObserve's cloud
-                certified architects, who can assist you in minimizing
-                downtimes, enhancing agility, and elevating your capacity to
-                innovate through efficient cloud migration.
-              </p>
+      <section className="back-point mt-5">
+        <div className="container pt-3">
+          {/* <h3 className="cloud-head" style={{ textAlign: "center" }}>
+            What Makes Us Stand Out
+          </h3>
+          <p className="text-center">
+            Our aim is to establish ourselves as a reputable business
+            intelligence and data analytics service provider, leveraging our
+            extensive experience and global collaborations with businesses. Our
+            team of BI and data analytics experts is poised to assist you in
+            data collection and analysis, enabling you to extract valuable
+            insights and enhance your business processes for improved execution
+            and optimization. Here are a few compelling reasons why we are the
+            ideal choice:
+          </p> */}
+          <div className="row box">
+            <div className="col-md-4">
+              <div
+                className="text-center box-padding"
+                style={{ height: "330px" }}
+              >
+                <img
+                  src="./images/high.png"
+                  className="App-logo"
+                  alt="logo"
+                  width={70}
+                  height={90}
+                  // style={{ height: "73px", width: "63px" }}
+                />
+                <h5 className="cloudcardheadings">High accuracy</h5>
+
+                <p className="arrowtext text-center">
+                  Take your business to the clouds with DataObserve's cloud
+                  certified architects, who can assist you in minimizing
+                  downtimes, enhancing agility, and elevating your capacity to
+                  innovate through efficient cloud migration.
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div className="col-md-4">
-            <div
-              className="text-center box-padding"
-              style={{ height: "390px" }}
-            >
-              <img
-                src="./images/operation.png"
-                className="App-logo"
-                alt="logo"
-                width={100}
-                // style={{ height: "73px", width: "63px" }}
-              />
-              <h5 className="cloudcardheadings">Operational intelligence</h5>
+            <div className="col-md-4">
+              <div
+                className="text-center box-padding"
+                style={{ height: "330px" }}
+              >
+                <img
+                  src="./images/operation.png"
+                  className="App-logo"
+                  alt="logo"
+                  width={70}
+                  height={90}
+                  // style={{ height: "73px", width: "63px" }}
+                />
+                <h5 className="cloudcardheadings">Operational intelligence</h5>
 
-              <p className="arrowtext text-center">
-                Reconsider current procedures to ensure data transparency and
-                effortless accessibility. Our Data Engineering ensures fast
-                query retrieval, enabling businesses to fully unlock the
-                potential of big data solutions.
-              </p>
+                <p className="arrowtext text-center">
+                  Reconsider current procedures to ensure data transparency and
+                  effortless accessibility. Our Data Engineering ensures fast
+                  query retrieval, enabling businesses to fully unlock the
+                  potential of big data solutions.
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div className="col-md-4">
-            <div
-              className="text-center box-padding"
-              style={{ height: "390px" }}
-            >
-              <img
-                src="./images/cross.png"
-                className="App-logo"
-                alt="logo"
-                width={100}
-                // style={{ height: "73px", width: "63px" }}
-              />
-              <h5 className="cloudcardheadings">Cross-platform integration</h5>
+            <div className="col-md-4">
+              <div
+                className="text-center box-padding"
+                style={{ height: "330px" }}
+              >
+                <img
+                  src="./images/cross.png"
+                  className="App-logo"
+                  alt="logo"
+                  width={70}
+                  height={90}
+                  // style={{ height: "73px", width: "63px" }}
+                />
+                <h5 className="cloudcardheadings">
+                  Cross-platform integration
+                </h5>
 
-              <p className="arrowtext text-center">
-                Business Intelligence involves data structures and visualization
-                to enhance decision-making. DataObserve's business intelligence
-                solutions make comprehending shopper behavior more
-                straightforward than ever.
-              </p>
+                <p className="arrowtext text-center">
+                  Business Intelligence involves data structures and
+                  visualization to enhance decision-making. DataObserve's
+                  business intelligence solutions make comprehending shopper
+                  behavior more straightforward than ever.
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div className="col-md-4">
-            <div
-              className="text-center box-padding"
-              style={{ height: "390px" }}
-            >
-              <img
-                src="./images/dataan.png"
-                className="App-logo"
-                alt="logo"
-                width={100}
-                // style={{ height: "73px", width: "63px" }}
-              />
-              <h5 className="cloudcardheadings" style={{ marginTop: "40px" }}>
-                Power BI
-              </h5>
+            <div className="col-md-4">
+              <div
+                className="text-center box-padding"
+                style={{ height: "330px" }}
+              >
+                <img
+                  src="./images/dataan.png"
+                  className="App-logo power-Bi-data"
+                  alt="logo"
+                  width={80}
+                  height={80}
+                  // style={{ height: "73px", width: "63px" }}
+                />
+                <h5 className="cloudcardheadings" style={{ marginTop: "20px" }}>
+                  Power BI
+                </h5>
 
-              <p className="arrowtext text-center">
-                DevOps-as-a-Service is an advanced delivery model created to
-                enhance application development. Utilize our DevOps as a service
-                (DaaS) solutions to achieve time and cost savings through the
-                automation of deployment processes.
-              </p>
+                <p className="arrowtext text-center">
+                  DevOps-as-a-Service is an advanced delivery model created to
+                  enhance application development. Utilize our DevOps as a
+                  service (DaaS) solutions to achieve time and cost savings
+                  through the automation of deployment processes.
+                </p>
+              </div>
             </div>
-          </div>
 
-          <div className="col-md-4">
-            <div
-              className="text-center box-padding"
-              style={{ height: "390px" }}
-            >
-              <img
-                src="./images/dc.png"
-                className="App-logo"
-                alt="logo"
-                width={100}
-                // style={{ height: "73px", width: "63px" }}
-              />
-              <h5 className="cloudcardheadings">Secure on-cloud data</h5>
+            <div className="col-md-4">
+              <div
+                className="text-center box-padding"
+                style={{ height: "330px" }}
+              >
+                <img
+                  src="./images/dc.png"
+                  className="App-logo"
+                  alt="logo"
+                  width={80}
+                  height={100}
+                  // style={{ height: "73px", width: "63px" }}
+                />
+                <h5 className="cloudcardheadings">Secure on-cloud data</h5>
 
-              <p className="arrowtext text-center">
-                DevOps-as-a-Service is an advanced delivery model created to
-                enhance application development. Utilize our DevOps as a service
-                (DaaS) solutions to achieve time and cost savings through the
-                automation of deployment processes.
-              </p>
+                <p className="arrowtext text-center">
+                  DevOps-as-a-Service is an advanced delivery model created to
+                  enhance application development. Utilize our DevOps as a
+                  service (DaaS) solutions to achieve time and cost savings
+                  through the automation of deployment processes.
+                </p>
+              </div>
             </div>
-          </div>
 
-          {/* <div className="col-md-4">
+            {/* <div className="col-md-4">
             <div className="text-center box-padding">
               <img
                 src="./images/application.png"
@@ -735,8 +763,10 @@ const Databi = () => {
               </p>
             </div>
           </div> */}
+          </div>
         </div>
-      </div>
+      </section>
+
       <div class="card text-center" style={{ border: "0px" }}>
         {/* {/ <div class="card-header">Featured</div> /} */}
         <div class="card-body faq-class">

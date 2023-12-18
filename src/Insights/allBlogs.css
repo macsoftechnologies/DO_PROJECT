@@ -23,3 +23,13 @@
 .blog-child-content a {
     font-size: 12px;
 }
+
+
+@media only screen and (min-width: 320px) and (max-width: 468px) {
+    .keen-slider:not([data-keen-slider-disabled]) .keen-slider__slide{
+        min-width: 330px !important;
+    }
+    .container-fluid, .container-lg, .container-md, .container-sm, .container-xl{
+        padding-right: 0px !important;
+    }
+}

@@ -67,11 +67,12 @@ const Application = () => {
                 letterSpacing: "1px",
               }}
             >
-              Cloud Transformation
+              Application Modernization
             </p>
 
-            <p className="col-md-6 Navigate-Journey">
-              Empower Your Business Transformation Through Cloud Migration
+            <p className="col-md-6 Navigate-Journey leagacy-application">
+              Revitalize your business by modernizing legacy applications,
+              ensuring you are prepared for the future.
             </p>
             <button
               className="datatypes"
@@ -90,14 +91,14 @@ const Application = () => {
               <span
                 className="spans"
                 style={{
-                  color: "#0046E8",
+                  color: "#FF4925",
                   fontSize: "14px",
                   fontStyle: "normal",
                   fontWeight: "600",
                   lineHeight: "19px",
                 }}
               >
-                Talk to us now
+                Get in touch
               </span>{" "}
               <i
                 className="fa fa-long-arrow-right ARROW-RIGHT-CLOUD"
@@ -105,7 +106,7 @@ const Application = () => {
                   width: "23px",
                   fontSize: "29px",
                   flexShrink: "0",
-                  color: "#0046E8",
+                  color: "#FF4925",
                   marginLeft: "12px",
                 }}
                 aria-hidden="true"
@@ -127,7 +128,7 @@ const Application = () => {
         <h4 className="migration">
           Our Expertise in Application Modernization Services
         </h4>
-        <p className="operational">
+        <p className="container col-md-9 operational">
           At DataObserve, we bring over 40 years of experience in application
           modernization services across industries. Through legacy application
           modernization, we offer our expertise in more than just modernizing
@@ -213,89 +214,95 @@ const Application = () => {
           </div>
         </div>
         <div className="d-block d-md-none">
-        <section>
-          <div className="container">
-            <div>
-              <Slider {...settings}>
-              <div className="cloudimgcard">
-              <img
-                className="notrepimg"
-                src="/images/applicationcard1.png"
-                alt=""
-              />
-              <div className="cloudcard card">
-                <h1 className="cloudcardheading">Enterprise web apps</h1>
-                <p className="cloudcardpara mb-0">
-                  Revamp your enterprise web app environment, transitioning it
-                  from a legacy and monolithic system into a more agile one.
-                </p>
+          <section>
+            <div className="container">
+              <div>
+                <Slider {...settings}>
+                  <div className="cloudimgcard">
+                    <img
+                      className="notrepimg"
+                      src="/images/applicationcard1.png"
+                      alt=""
+                    />
+                    <div className="cloudcard card">
+                      <h1 className="cloudcardheading">Enterprise web apps</h1>
+                      <p className="cloudcardpara mb-0">
+                        Revamp your enterprise web app environment,
+                        transitioning it from a legacy and monolithic system
+                        into a more agile one.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="cloudimgcard">
+                    <img
+                      className="notrepimg"
+                      src="/images/applicationcard2.png"
+                      alt=""
+                    />
+                    <div className="cloudcard card">
+                      <h1 className="cloudcardheading">
+                        Application Migration
+                      </h1>
+                      <p className="cloudcardpara mb-0">
+                        Relocate your in-house applications to the cloud
+                        environment with minimal disruption to your business
+                        operations.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="cloudimgcard">
+                    <img
+                      className="notrepimg"
+                      src="/images/applicationcard3.png"
+                      alt=""
+                    />
+                    <div className="cloudcard card">
+                      <h1 className="cloudcardheading">Re-platform Services</h1>
+                      <p className="cloudcardpara mb-0">
+                        Enhance your legacy applications to operate seamlessly
+                        on modern, efficient cloud-based platforms, complete
+                        with seamless optimization for the new environment.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="cloudimgcard">
+                    <img
+                      className="notrepimg"
+                      src="/images/applicationcard4.png"
+                      alt=""
+                    />
+                    <div className="cloudcard card">
+                      <h1 className="cloudcardheading">Remediation Services</h1>
+                      <p className="cloudcardpara mb-0">
+                        Enhance your legacy applications to operate seamlessly
+                        on modern, efficient cloud-based platforms, complete
+                        with seamless optimization for the new environment.
+                      </p>
+                    </div>
+                  </div>
+                  <div className="cloudimgcard">
+                    <img
+                      className="notrepimg"
+                      src="/images/applicationcard5.png"
+                      alt=""
+                    />
+                    <div className="cloudcard card">
+                      <h1 className="cloudcardheading">Cloud Applications</h1>
+                      <p className="cloudcardpara mb-0">
+                        Shorten your time to market and attain scalability
+                        through cloud applications, harnessing the power of
+                        cloud-native computing capabilities.
+                      </p>
+                    </div>
+                  </div>
+                </Slider>
               </div>
             </div>
-            <div className="cloudimgcard">
-              <img
-                className="notrepimg"
-                src="/images/applicationcard2.png"
-                alt=""
-              />
-              <div className="cloudcard card">
-                <h1 className="cloudcardheading">Application Migration</h1>
-                <p className="cloudcardpara mb-0">
-                  Relocate your in-house applications to the cloud environment
-                  with minimal disruption to your business operations.
-                </p>
-              </div>
-            </div>
-            <div className="cloudimgcard">
-              <img
-                className="notrepimg"
-                src="/images/applicationcard3.png"
-                alt=""
-              />
-              <div className="cloudcard card">
-                <h1 className="cloudcardheading">Re-platform Services</h1>
-                <p className="cloudcardpara mb-0">
-                  Enhance your legacy applications to operate seamlessly on
-                  modern, efficient cloud-based platforms, complete with
-                  seamless optimization for the new environment.
-                </p>
-              </div>
-            </div>
-            <div className="cloudimgcard">
-              <img
-                className="notrepimg"
-                src="/images/applicationcard4.png"
-                alt=""
-              />
-              <div className="cloudcard card">
-                <h1 className="cloudcardheading">Remediation Services</h1>
-                <p className="cloudcardpara mb-0">
-                  Enhance your legacy applications to operate seamlessly on
-                  modern, efficient cloud-based platforms, complete with
-                  seamless optimization for the new environment.
-                </p>
-              </div>
-            </div>
-            <div className="cloudimgcard">
-              <img
-                className="notrepimg"
-                src="/images/applicationcard5.png"
-                alt=""
-              />
-              <div className="cloudcard card">
-                <h1 className="cloudcardheading">Cloud Applications</h1>
-                <p className="cloudcardpara mb-0">
-                  Shorten your time to market and attain scalability through
-                  cloud applications, harnessing the power of cloud-native
-                  computing capabilities.
-                </p>
-              </div>
-            </div>
-              </Slider>
-            </div>
-          </div>
-        </section>
+          </section>
+        </div>
       </div>
-      </div>
+
+      <h1 className="case mt-5">Our Case Studies</h1>
       <div
         class="container  mb-3 mt-5 Built-back-colour"
         style={{
@@ -378,7 +385,8 @@ const Application = () => {
                   alt=""
                   style={{ width: "95px" }}
                 />
-                <img className="srdsystems-cloud"
+                <img
+                  className="srdsystems-cloud"
                   src="./images/srdsystems.png"
                   alt=""
                   style={{ width: "70px" }}
@@ -389,25 +397,26 @@ const Application = () => {
         </div>
       </div>
       <div>
-      <div
-        style={{
-          display: "flex",
-          flexDirection: "column",
-          marginTop: "30px",
-          alignItems: "center",
-        }}
-      >
-        <h4
-          className="mt-5 EXPERIENCE-cloud"
-          style={{ textAlign: "center", fontWeight: 700, fontSize: "43px" }}
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column",
+            marginTop: "30px",
+            alignItems: "center",
+          }}
         >
-         Benefits
-        </h4>
+          <h4
+            className="mt-5 EXPERIENCE-cloud"
+            style={{ textAlign: "center", fontWeight: 700, fontSize: "43px" }}
+          >
+            Benefits
+          </h4>
 
-        <p className="wides">
-        Here are the advantages of teaming up with DataObserve for your application modernization needs:
-        </p>
-      </div>
+          <p className="wides">
+            Here are the advantages of teaming up with DataObserve for your
+            application modernization needs:
+          </p>
+        </div>
         <div className="container mt-3">
           <div className="row box">
             <div className="col-md-4">
@@ -422,7 +431,9 @@ const Application = () => {
                   width={100}
                   style={{ width: "69px", height: "70px" }}
                 />
-                <h5 className="cloudcardheadings" style={{ marginTop: "10px" }}>High Technical Expertise</h5>
+                <h5 className="cloudcardheadings" style={{ marginTop: "10px" }}>
+                  High Technical Expertise
+                </h5>
 
                 <p className="arrowtext text-center">
                   Our technical experts have enabled our customers modernize and
@@ -444,7 +455,9 @@ const Application = () => {
                   width={100}
                   style={{ width: "59px", height: "79px" }}
                 />
-                <h5 className="cloudcardheadings">Focus on organizational goals</h5>
+                <h5 className="cloudcardheadings">
+                  Focus on organizational goals
+                </h5>
 
                 <p className="arrowtext text-center">
                   Our legacy application modernization approach focus on
@@ -478,226 +491,239 @@ const Application = () => {
             </div>
           </div>
           <div>
-          <div
-            class="mb-3 mt-5"
-            style={{
-              backgroundColor: "#1A4AB9",
-              maxWidth: "100%",
-              borderRadius: "30px",
-            }}
-          >
             <div
-              class="row no-gutters"
+              class="mb-3 mt-5"
               style={{
-                alignItems: "center",
-                justifyContent: "spacebetween",
+                backgroundColor: "#1A4AB9",
+                maxWidth: "100%",
+                borderRadius: "30px",
               }}
             >
-              <div class="col-md-8">
-                <div class="">
-                  <div>
-                    <h5
-                      class="card-title Cloud-title"
-                      style={{ color: "white", fontSize: "24px" }}
-                    >
-                     Modernize Your Applications with Optimal Efficiency
-                    </h5>
-                    <p class="card-text Cloud-color-paragraph">
-                    Modernize Your Applications Seamlessly with Zero Downtime, Supported by Our Dedicated Team
-                    </p>
+              <div
+                class="row no-gutters"
+                style={{
+                  alignItems: "center",
+                  justifyContent: "spacebetween",
+                }}
+              >
+                <div class="col-md-9">
+                  <div class="">
+                    <div>
+                      <h5
+                        class="card-title Cloud-title"
+                        style={{ color: "white", fontSize: "24px" }}
+                      >
+                        Modernize Your Applications with Optimal Efficiency
+                      </h5>
+                      <p class="col-md-9 card-text Cloud-color-paragraph">
+                        Modernize Your Applications Seamlessly with Zero
+                        Downtime, Supported by Our Dedicated Team
+                      </p>
+                    </div>
                   </div>
                 </div>
-              </div>
-              <div className="col-md-4">
-                <button
-                  className="observers"
-                  style={{
-                    width: "200px",
-                    border: "none",
-                    height: "55px",
-                    margin: "42px",
-                    borderRadius: "6px",
-                  }}
-                >Get a demo{" "}
-                  <i
-                    class="fa fa-long-arrow-right Arrow-cloud"
-                    aria-hidden="true"
-                  ></i>
-                </button>
+                <div className="col-md-3 ObserverS-Cloud">
+                  <button
+                    className="observers"
+                    style={{
+                      width: "200px",
+                      border: "none",
+                      height: "55px",
+                      margin: "42px",
+                      borderRadius: "6px",
+                      color: "#0046E8",
+                    }}
+                  >
+                    Get a demo{" "}
+                    <i
+                      class="fa fa-long-arrow-right Arrow-cloud"
+                      aria-hidden="true"
+                    ></i>
+                  </button>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        </div>
       </div>
-      <div>
-      <div
-          className="container"
-          style={{
-            justifyContent: "center",
-            flexDirection: "column",
-            display: "flex",
-          }}
-        >
-          <h3 className="cloud-head" style={{ textAlign: "center" }}>
-            What Makes Us Stand Out
-          </h3>
-          <p
-            className="CLoud-Text-pARA"
+
+      <section className="back-point mt-5">
+        <div>
+          <div
+            className="container"
             style={{
-              textAlign: "center",
+              justifyContent: "center",
+              flexDirection: "column",
+              display: "flex",
             }}
           >
-            At DataObserve, we recognize the significance of application modernization to remain competitive in today's digital era. Here's why we excel in the industry:
-          </p>
-        </div>
-        <div className="container mt-3">
-          <div className="row box">
-            <div className="col-md-4">
-              <div
-                className="text-center box-padding"
-                style={{ height: "400px" }}
-              >
-                <img
-                  src="./images/provenm.png"
-                  className="App-logo"
-                  alt="logo"
-                  width={100}
-                  style={{ width: "53px", height: "69px" }}
-                />
-                <h5 className="cloudcardheadings">Proven Methodologies </h5>
+            <h3 className="cloud-head" style={{ textAlign: "center" }}>
+              What Makes Us Stand Out
+            </h3>
+            <p
+              className="container col-md-7 CLoud-Text-pARA"
+              style={{
+                textAlign: "center",
+              }}
+            >
+              At DataObserve, we recognize the significance of application
+              modernization to remain competitive in today's digital era. Here's
+              why we excel in the industry:
+            </p>
+          </div>
+          <div className="container mt-3">
+            <div className="row box">
+              <div className="col-md-4">
+                <div
+                  className="text-center box-padding"
+                  style={{ height: "320px" }}
+                >
+                  <img
+                    src="./images/provenm.png"
+                    className="App-logo"
+                    alt="logo"
+                    width={100}
+                    style={{ width: "53px", height: "69px" }}
+                  />
+                  <h5 className="cloudcardheadings">Proven Methodologies </h5>
 
-                <p className="arrowtext text-center">
-                  Our team employs a blend of agile and cloud-driven DevOps
-                  methodologies to complete application modernization projects
-                  punctually and within your specified budget. Our strategy is
-                  centered around delivering gradual value to our clients,
-                  guaranteeing a seamless transition to the newly modernized
-                  system.
-                </p>
+                  <p className="arrowtext text-center">
+                    Our team employs a blend of agile and cloud-driven DevOps
+                    methodologies to complete application modernization projects
+                    punctually and within your specified budget. Our strategy is
+                    centered around delivering gradual value to our clients,
+                    guaranteeing a seamless transition to the newly modernized
+                    system.
+                  </p>
+                </div>
               </div>
-            </div>
 
-            <div className="col-md-4">
-              <div
-                className="text-center box-padding"
-                style={{ height: "400px" }}
-              >
-                <img
-                  src="./images/scrum.png"
-                  className="App-logo"
-                  alt="logo"
-                  width={100}
-                  style={{ width: "53px", height: "69px" }}
-                />
-                <h5 className="cloudcardheadings">Expertise in Cloud Technologies</h5>
+              <div className="col-md-4">
+                <div
+                  className="text-center box-padding"
+                  style={{ height: "320px" }}
+                >
+                  <img
+                    src="./images/scrum.png"
+                    className="App-logo"
+                    alt="logo"
+                    width={100}
+                    style={{ width: "53px", height: "69px" }}
+                  />
+                  <h5 className="cloudcardheadings">
+                    Expertise in Cloud Technologies
+                  </h5>
 
-                <p className="arrowtext text-center">
-                  We possess a profound understanding of cutting-edge cloud
-                  technologies and how to harness them for application
-                  modernization. Our team boasts expertise in diverse cloud
-                  platforms like AWS, Azure, and Google Cloud, enabling us to
-                  assist you in selecting the most suitable platform for your
-                  requirements.
-                </p>
+                  <p className="arrowtext text-center">
+                    We possess a profound understanding of cutting-edge cloud
+                    technologies and how to harness them for application
+                    modernization. Our team boasts expertise in diverse cloud
+                    platforms like AWS, Azure, and Google Cloud, enabling us to
+                    assist you in selecting the most suitable platform for your
+                    requirements.
+                  </p>
+                </div>
               </div>
-            </div>
 
-            <div className="col-md-4">
-              <div
-                className="text-center box-padding"
-                style={{ height: "400px" }}
-              >
-                <img
-                  src="./images/endtoends.png"
-                  className="App-logo"
-                  alt="logo"
-                  width={100}
-                  style={{ width: "53px", height: "69px" }}
-                />
-                <h5 className="cloudcardheadings">End-to-end Support</h5>
+              <div className="col-md-4">
+                <div
+                  className="text-center box-padding"
+                  style={{ height: "320px" }}
+                >
+                  <img
+                    src="./images/endtoends.png"
+                    className="App-logo"
+                    alt="logo"
+                    width={100}
+                    style={{ width: "53px", height: "69px" }}
+                  />
+                  <h5 className="cloudcardheadings">End-to-end Support</h5>
 
-                <p className="arrowtext text-center">
-                  We offer comprehensive support throughout the entire
-                  application modernization process. Starting from the initial
-                  assessment to deployment and continuous maintenance, the
-                  DataObserve team will be alongside you at every stage.
-                </p>
+                  <p className="arrowtext text-center">
+                    We offer comprehensive support throughout the entire
+                    application modernization process. Starting from the initial
+                    assessment to deployment and continuous maintenance, the
+                    DataObserve team will be alongside you at every stage.
+                  </p>
+                </div>
               </div>
-            </div>
 
-            <div className="col-md-4">
-              <div
-                className="text-center box-padding"
-                style={{ height: "370px" }}
-              >
-                <img
-                  src="./images/tailored.png"
-                  className="App-logo"
-                  alt="logo"
-                  width={100}
-                  style={{ width: "53px", height: "69px" }}
-                />
-                <h5 className="cloudcardheadings">Tailored Solutions</h5>
+              <div className="col-md-4">
+                <div
+                  className="text-center box-padding"
+                  style={{ height: "320px" }}
+                >
+                  <img
+                    src="./images/tailored.png"
+                    className="App-logo"
+                    alt="logo"
+                    width={100}
+                    style={{ width: "53px", height: "69px" }}
+                  />
+                  <h5 className="cloudcardheadings">Tailored Solutions</h5>
 
-                <p className="arrowtext text-center">
-                  Our solutions are customized to align with your business's
-                  distinct needs. We invest the effort to comprehend your
-                  specific requirements and offer a personalized solution
-                  designed to resolve your unique challenges.
-                </p>
+                  <p className="arrowtext text-center">
+                    Our solutions are customized to align with your business's
+                    distinct needs. We invest the effort to comprehend your
+                    specific requirements and offer a personalized solution
+                    designed to resolve your unique challenges.
+                  </p>
+                </div>
               </div>
-            </div>
 
-            <div className="col-md-4">
-              <div
-                className="text-center box-padding"
-                style={{ height: "370px" }}
-              >
-                <img
-                  src="./images/dc.png"
-                  className="App-logo"
-                  alt="logo"
-                  width={100}
-                  style={{ width: "53px", height: "69px" }}
-                />
-                <h5 className="cloudcardheadings">Focused Data Integrity</h5>
+              <div className="col-md-4">
+                <div
+                  className="text-center box-padding"
+                  style={{ height: "320px" }}
+                >
+                  <img
+                    src="./images/dc.png"
+                    className="App-logo"
+                    alt="logo"
+                    width={100}
+                    style={{ width: "53px", height: "69px" }}
+                  />
+                  <h5 className="cloudcardheadings">Focused Data Integrity</h5>
 
-                <p className="arrowtext text-center">
-                  Ensuring the integrity, security, and accessibility of your
-                  company's data is paramount. Our tailored data governance
-                  solutions, enhanced by cloud-based efficiencies,
-                  comprehensively address all facets of data management.
-                </p>
+                  <p className="arrowtext text-center">
+                    Ensuring the integrity, security, and accessibility of your
+                    company's data is paramount. Our tailored data governance
+                    solutions, enhanced by cloud-based efficiencies,
+                    comprehensively address all facets of data management.
+                  </p>
+                </div>
               </div>
-            </div>
 
-            <div className="col-md-4">
-              <div
-                className="text-center box-padding"
-                style={{ height: "370px" }}
-              >
-                <img
-                  src="./images/clouden.png"
-                  className="App-logo"
-                  alt="logo"
-                  width={100}
-                  style={{ width: "63px", height: "69px" }}
-                />
-                <h5 className="cloudcardheadings">Your Go-to Modernization Partner</h5>
+              <div className="col-md-4">
+                <div
+                  className="text-center box-padding"
+                  style={{ height: "320px" }}
+                >
+                  <img
+                    src="./images/clouden.png"
+                    className="App-logo"
+                    alt="logo"
+                    width={100}
+                    style={{ width: "63px", height: "69px" }}
+                  />
+                  <h5 className="cloudcardheadings">
+                    Your Go-to Modernization Partner
+                  </h5>
 
-                <p className="arrowtext text-center">
-                  DataObserve has everything to cement its position as a
-                  reliable enterprise partner for application modernization
-                  solutions. Our primary objective is to ensure the highest
-                  level of customer satisfaction, continuously striving to
-                  surpass our clients' expectations.
-                </p>
+                  <p className="arrowtext text-center">
+                    DataObserve has everything to cement its position as a
+                    reliable enterprise partner for application modernization
+                    solutions. Our primary objective is to ensure the highest
+                    level of customer satisfaction, continuously striving to
+                    surpass our clients' expectations.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
         </div>
-      </div>
+      </section>
+
       <div class="card text-center" style={{ border: "0px" }}>
         {/* {/ <div class="card-header">Featured</div> /} */}
         <div class="card-body faq-class">

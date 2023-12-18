@@ -269,9 +269,9 @@ function Gaming() {
 
       <div>
         <h1 className="case">Our Case Studies</h1>
-        <p className="media-case-para" style={{ marginTop: "40px" }}>
+        <p className="container col-md-7 media-case-para" style={{ marginTop: "40px" }}>
           The DataObserve team, consisting of industry experts, stands prepared
-          to help online gaming enterprises achieve their business objectives.<br/>
+          to help online gaming enterprises achieve their business objectives.
           Explore our customer success stories to learn how you can maximize the
           potential of cloud solutions for games and esports.
         </p>

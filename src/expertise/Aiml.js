@@ -90,7 +90,7 @@ const Aiml = () => {
               <span
                 className="spans"
                 style={{
-                  color: "#0046E8",
+                  color: "#FF4925",
                   fontSize: "14px",
                   fontStyle: "normal",
                   fontWeight: "600",
@@ -105,7 +105,7 @@ const Aiml = () => {
                   width: "23px",
                   fontSize: "29px",
                   flexShrink: "0",
-                  color: "#0046E8",
+                  color: "#FF4925",
                   marginLeft: "12px",
                 }}
                 aria-hidden="true"
@@ -125,7 +125,7 @@ const Aiml = () => {
         }}
       >
         <h4 className="migration">Our Expertise in AWS AI and ML Services</h4>
-        <p className="operational">
+        <p className=" col-md-9 operational">
           With a collective industry experience exceeding four decades, our
           Artificial Intelligence and Machine Learning services are
           custom-designed to guide you toward operational excellence and
@@ -273,6 +273,9 @@ const Aiml = () => {
           </section>
         </div>
       </div>
+
+      <h1 className="case mt-5">Our Case Studies</h1>
+
       <div
         class="container  mb-3 mt-5 Built-back-colour"
         style={{
@@ -382,7 +385,7 @@ const Aiml = () => {
           </h4>
 
           <div className="container">
-          <p className="wides">
+          <p className=" container col-md-9 wides">
             DataObserve is the fastest-growing Cloud Transformation & Data
             Analytics company with strong expertise in Data lake solutions, Data
             Warehouse Engineering, Data Migration & Modernization.
@@ -521,25 +524,24 @@ const Aiml = () => {
                   justifyContent: "spacebetween",
                 }}
               >
-                <div class="col-md-8">
+                <div class="col-md-9">
                   <div class="">
                     <div>
                       <h5
-                        class="card-title Cloud-title"
+                        class="col-md-9 card-title Cloud-title"
                         style={{ color: "white", fontSize: "24px" }}
                       >
-                        Maximize Your AI/ML Investments For Powerful
-Data Insights
+                        Maximize Your AI/ML Investments For Powerful Data Insights
                       </h5>
-                      <p class="card-text Cloud-color-paragraph">
+                      <p class="col-md-9 card-text Cloud-color-paragraph">
                       Build a host of AI and ML-based data models for maximum business benefit.
-Our team of AI/ML experts can help you craft customized solutions for your
-business needs.
+                        Our team of AI/ML experts can help you craft customized solutions for your
+                        business needs.
                       </p>
                     </div>
                   </div>
                 </div>
-                <div className="col-md-4">
+                <div className="col-md-3 ObserverS-Cloud">
                   <button
                     className="observers"
                     style={{
@@ -548,6 +550,7 @@ business needs.
                       height: "55px",
                       margin: "42px",
                       borderRadius: "6px",
+                      color:"#0046E8",
                     }}
                   >
                     Get a demo{" "}
@@ -562,6 +565,8 @@ business needs.
           </div>
         </div>
       </div>
+
+      <section className="back-point mt-5">
       <div>
         <div
           className="container"
@@ -575,7 +580,7 @@ business needs.
             What Makes Us Stand Out
           </h3>
           <p
-            className="CLoud-Text-pARA"
+            className="container col-md-9 CLoud-Text-pARA"
             style={{
               textAlign: "center",
             }}
@@ -587,6 +592,8 @@ business needs.
             Here are several compelling reasons why we are the perfect choice:
           </p>
         </div>
+
+
         <div className="container mt-3">
           <div className="row box">
             <div className="col-md-4">
@@ -664,6 +671,12 @@ business needs.
           </div>
         </div>
       </div>
+
+      </section>
+      
+
+
+
       <div class="card text-center" style={{ border: "0px" }}>
         {/* {/ <div class="card-header">Featured</div> /} */}
         <div class="card-body faq-class">

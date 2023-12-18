@@ -6,6 +6,7 @@
   font-weight: 500;
   border: 1px solid blue;
 }
+
 .dvc {
   background-image: url("../../public/images/dvc.png");
   height: 351px;
@@ -15,6 +16,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .dap {
   background-image: url("../../public/images/dap.png");
   height: 351px;
@@ -24,6 +26,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .bim {
   background-image: url("../../public/images/bim.png");
   height: 351px;
@@ -33,6 +36,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .ssbi {
   background-image: url("../../public/images/ssbi.png");
   height: 351px;
@@ -42,6 +46,7 @@
   background-repeat: no-repeat;
   background-size: cover;
 }
+
 .dg {
   background-image: url("../../public/images/dg.png");
   height: 351px;
@@ -53,27 +58,29 @@
 }
 
 
-.drives{
+.drives {
   position: relative;
 }
+
 .ccondummy {
   height: 50%;
   width: 100%;
   background: none;
 }
+
 .daba-bi-anal {
   width: 100%;
   object-fit: cover;
-  
+
 }
 
-.DATA-Main-hEading{
-  position:absolute;
-  top:125px;
-  left:133px;
+.DATA-Main-hEading {
+  position: absolute;
+  top: 125px;
+  left: 133px;
 }
 
-.DATA-TRANSFORM{
+.DATA-TRANSFORM {
   color: white;
   font-size: 40px;
   font-family: Poppins;
@@ -81,14 +88,15 @@
 
 }
 
-.DataBi-migration{
+.DataBi-migration {
   text-align: center;
   font-weight: 700;
   font-size: 43px;
 }
-.DataBi-operational{
+
+.DataBi-operational {
   text-align: center;
-   margin-top: 10px; 
+  margin-top: 10px;
   /* width: 755px; */
 }
 
@@ -98,38 +106,28 @@
   border-radius: 25px;
 
 }
-.logo-main {
+
+/* .logo-main {
   width: 38px;
   height: 24px;
   margin-top: 17px;
   margin-right: 10px;
-}
+} */
+
 .logo-text {
   margin-top: 10px;
 }
 
-.data {
-  color: #0046e8;
-  font-size: 19.6px;
-  font-family: Roboto;
-  font-weight: 200;
-  line-height: 30.49px;
-  letter-spacing: 0.39px;
-  word-wrap: break-word;
-}
-.observe {
-  color: #0046e8;
-  font-size: 19.6px;
-  font-family: Roboto;
-  font-weight: 800;
-  line-height: 30.49px;
-}
+
+
 .expertise {
   margin-left: 50px;
 }
+
 .slide {
   width: 100%;
 }
+
 /* .faq-class {
   background-color: #1a4ab9;
   border-radius: 10px 10px 0px 0px !important;
@@ -143,6 +141,7 @@
   height: auto;
   background-color: black;
 }
+
 .footer .col {
   width: 190px;
   height: auto;
@@ -152,6 +151,7 @@
   -moz-box-sizing: border-box;
   padding: 0px 20px 20px 20px;
 }
+
 .footer .col h1 {
   margin: 0;
   padding: 0;
@@ -164,11 +164,13 @@
   text-transform: uppercase;
   letter-spacing: 0.25em;
 }
+
 .footer .col ul {
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
+
 .footer .col ul li {
   color: #999999;
   font-size: 14px;
@@ -180,6 +182,7 @@
   -webkit-transition: 0.2s;
   -moz-transition: 0.2s;
 }
+
 .social ul li {
   display: inline-block;
   padding-right: 5px !important;
@@ -191,17 +194,20 @@
   -webkit-transition: 0.1s;
   -moz-transition: 0.1s;
 }
+
 .bg-color {
   background-color: #1a4ab9;
   height: 418px;
   padding: 60px 0px 0px 0px;
 }
+
 .expertcardbody {
   background-color: #1a4ab9;
   border-radius: 10px 10px 0px 0px !important;
   height: fit-content;
   padding: 67px;
 }
+
 /* .card {
   border-radius: 10px !important;
 } */
@@ -210,6 +216,7 @@
   font-weight: 700;
   font-size: 30px;
 }
+
 .question {
   color: white;
 }
@@ -217,18 +224,22 @@
 .fa-envelope {
   color: white;
 }
+
 .hello {
   margin: 10px;
 }
+
 .bg-white {
   padding-top: 30px;
   border-radius: 13px 13px 0px 0px;
 }
+
 .name {
   border: none;
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
 .contact-us-2 {
   width: 100%;
   /* margin-top: 16px; */
@@ -248,10 +259,12 @@
 .footer-heading {
   color: #0046e8 !important;
 }
+
 .cloud-head {
   text-align: center;
   font-weight: 700;
 }
+
 .box {
   margin: 0px !important;
 }
@@ -264,17 +277,20 @@
   margin-bottom: 10px;
   margin-left: 90px;
 }
+
 .arrowtext {
   font-size: 14px;
   text-align: center;
   justify-content: center;
 }
+
 .box-padding {
   padding: 30px 20px;
-  /* box-shadow: 2px 2px 35px -18px #323c8d; */
+  box-shadow: 2px 2px 35px -18px #323c8d;
   border-radius: 20px;
   margin: 25px 0px;
 }
+
 .accordion .accordion-item {
   border-bottom: 1px solid #e5e5e5;
 }
@@ -335,6 +351,7 @@
   height: 2px;
   background: currentColor;
 }
+
 .accordion button .icon::after {
   display: block;
   position: absolute;
@@ -349,15 +366,18 @@
 .accordion button[aria-expanded="true"] {
   color: #03b5d2;
 }
+
 .accordion button[aria-expanded="true"] .icon::after {
   width: 0;
 }
-.accordion button[aria-expanded="true"] + .accordion-content {
+
+.accordion button[aria-expanded="true"]+.accordion-content {
   opacity: 1;
   max-height: 9em;
   transition: all 200ms linear;
   will-change: opacity, max-height;
 }
+
 .accordion .accordion-content {
   opacity: 0;
   max-height: 0;
@@ -365,17 +385,20 @@
   transition: opacity 200ms linear, max-height 200ms linear;
   will-change: opacity, max-height;
 }
+
 .accordion .accordion-content p {
   font-size: 1rem;
   font-weight: 300;
   margin: 2em 0;
 }
+
 .card-body1 {
   background-color: #1a4ab9;
   border-radius: 10px 10px 0px 0px !important;
   height: 327px;
   padding: 67px;
 }
+
 /* .faq-class {
   background-color: #1a4ab9;
   border-radius: 10px 10px 0px 0px !important;
@@ -397,66 +420,261 @@
   border-top-right-radius: 25px;
 }
 
-.Databi-wides{
-  text-Align: center; 
+.Databi-wides {
+  text-Align: center;
   margin-Top: 10px;
-   /* width: 755px; */
+  /* width: 755px; */
 }
 
-@media only screen and (min-width: 320px) and (max-width: 468px){
-  .DATA-Main-hEading{
-    top:30px;
+@media only screen and (min-width: 320px) and (max-width: 467px) {
+  .DATA-Main-hEading {
+    top: 20px;
     font-size: 14px;
     left: 20px;
-    
   }
 
-  .DATA-TRANSFORM{
+  .DATA-TRANSFORM {
     padding-top: 0px;
     padding-left: 0px;
     font-size: 14px;
-}
-.DATA-transform-Size{
-  font-size: 10px !important;
-}
+  }
 
-.DataBi-migration{
-  text-align: center;
-  font-weight: 600;
-  font-size: 17px;
-}
+  .DATA-transform-Size {
+    font-size: 10px !important;
+  }
 
-.DataBi-operational{
-  text-align: justify;
-   margin-top: 10px; 
-  
-  padding-right: 9px;
-  padding-left: 9px;
-  font-size: 12px;
+  .DataBi-migration {
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+  }
 
-}
-.DATAbi-Built-back-colour{
-  height: 544px!important;
-  margin: 0px;
-}
-.Databi-wides{
-  font-size: 14px;
+  .DataBi-operational {
+    text-align: justify;
+    margin-top: 10px;
+    padding-right: 9px;
+    padding-left: 9px;
+    font-size: 12px;
+  }
+
+  .DATAbi-Built-back-colour {
+    height: 544px !important;
+    margin: 0px;
+  }
+
+  .Databi-wides {
+    font-size: 14px;
     padding-left: 10px;
     padding-right: 10px;
     text-align: justify;
     margin-top: 10px;
     /* width: 320px; */
     /* width: 0px !important; */
-}
-.slick-next{
-  right: 0px !important;
-}
-
-
-.DATAbi-right-media-Corner {
-  right: 1px !important;
   }
-  .srdsystems-cloud{
+
+  .slick-next {
+    right: 0px !important;
+  }
+
+  .DATAbi-right-media-Corner {
+    right: 1px !important;
+  }
+
+  .srdsystems-cloud {
     width: 49px !important;
+  }
+
+  .box-padding {
+    height: fit-content !important;
+    padding: 20px !important;
+  }
+  .power-Bi-data{
+    height: 60px !important;
+  }
+}
+
+@media only screen and (min-width: 468px) and (max-width: 767px) {
+  .DATA-Main-hEading {
+    top: 50px;
+    font-size: 14px;
+    left: 50px;
+  }
+
+  .DATA-TRANSFORM {
+    padding-top: 0px;
+    padding-left: 0px;
+    font-size: 20px;
+  }
+
+  .DATA-transform-Size {
+    font-size: 15px !important;
+  }
+
+  .DataBi-migration {
+    text-align: center;
+    font-weight: 600;
+    font-size: 25px;
+  }
+
+  .DataBi-operational {
+    text-align: justify;
+    margin-top: 10px;
+    padding: 0px 10px;
+    font-size: 18px;
+  }
+
+  .DATAbi-Built-back-colour {
+    height: 500px !important;
+
+  }
+
+  .Databi-wides {
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+    margin-top: 10px;
+    /* width: 320px; */
+    /* width: 0px !important; */
+  }
+
+  .slick-next {
+    right: 0px !important;
+  }
+
+  .DATAbi-right-media-Corner {
+    right: 1px !important;
+  }
+
+  .srdsystems-cloud {
+    width: 49px !important;
+  }
+
+  .box-padding {
+    height: 300px !important;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+  .DATA-Main-hEading {
+    top: 14%;
+    font-size: 14px;
+    left: 15%;
+  }
+
+  .DATA-TRANSFORM {
+    padding-top: 0px;
+    padding-left: 0px;
+    font-size: 25px;
+  }
+
+  .DATA-transform-Size {
+    font-size: 15px !important;
+  }
+
+  .DataBi-migration {
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+  }
+
+  .DataBi-operational {
+    text-align: justify;
+    margin-top: 10px;
+    padding: 0px 10px;
+    font-size: 18px;
+  }
+
+  .DATAbi-Built-back-colour {
+    height: 280px !important;
+
+  }
+
+  .Databi-wides {
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+    margin-top: 10px;
+    /* width: 320px; */
+    /* width: 0px !important; */
+  }
+
+  .slick-next {
+    right: 0px !important;
+  }
+
+  .DATAbi-right-media-Corner {
+    right: 1px !important;
+  }
+
+  .srdsystems-cloud {
+    width: 49px !important;
+  }
+
+  .box-padding {
+    height: 360px !important;
+  }
+}
+
+@media only screen and (min-width: 992px) and (max-width: 1200px) {
+  .DATA-Main-hEading {
+    top: 20%;
+    font-size: 14px;
+    left: 15%;
+  }
+
+  .DATA-TRANSFORM {
+    padding-top: 0px;
+    padding-left: 0px;
+    font-size: 25px;
+  }
+
+  .DATA-transform-Size {
+    font-size: 15px !important;
+  }
+
+  .DataBi-migration {
+    text-align: center;
+    font-weight: 600;
+    font-size: 30px;
+  }
+
+  .DataBi-operational {
+    text-align: justify;
+    margin-top: 10px;
+    padding: 0px 10px;
+    font-size: 18px;
+  }
+
+  .DATAbi-Built-back-colour {
+    height: 280px !important;
+
+  }
+
+  .Databi-wides {
+    font-size: 18px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: justify;
+    margin-top: 10px;
+    /* width: 320px; */
+    /* width: 0px !important; */
+  }
+
+  .slick-next {
+    right: 0px !important;
+  }
+
+  .DATAbi-right-media-Corner {
+    right: 1px !important;
+  }
+
+  .srdsystems-cloud {
+    width: 49px !important;
+  }
+
+  .box-padding {
+    height: 360px !important;
   }
 }

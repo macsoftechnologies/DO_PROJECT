@@ -107,7 +107,7 @@ function Datasense() {
             <div className="mt-5 pt-2">
               <div className="row">
                 <div className="col-md-4 text-center">
-                  <div>
+                  <div className="box-padding-360">
                     <img
                       className="mobile-size1"
                       src="images/dollarprod.png"
@@ -120,7 +120,7 @@ function Datasense() {
                   </div>
                 </div>
                 <div className="col-md-4 text-center">
-                  <div>
+                  <div className="box-padding-360">
                     <img
                       className="mobile-size1"
                       src="images/minimizerisk.png"
@@ -134,7 +134,7 @@ function Datasense() {
                   </div>
                 </div>
                 <div className="col-md-4 text-center">
-                  <div>
+                  <div className="box-padding-360">
                     <img
                       className="mobile-size1"
                       src="images/savetime.png"

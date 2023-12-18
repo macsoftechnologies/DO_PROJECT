@@ -20,7 +20,7 @@ function Ebooks() {
           <h1 className="ebooktitle2 col-md-10">
           AWS FOR APPLICATION MODERNIZATION: UPDATING YOUR LEGACY SYSTEMS FOR THE CLOUD
           </h1>
-          <button className="domainbuttonclass">Domain</button>
+          <button className="domainbuttonclass">Cloud Migration"</button>
           {/* <p className='ebooktitle3'>Learn the key differences between generative AI and traditional AI, and how they are transforming our world.</p> */}
         </div>
       </section>

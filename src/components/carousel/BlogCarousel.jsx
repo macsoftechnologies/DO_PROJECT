@@ -21,7 +21,7 @@ export const BlogsCarousel = ({ BlogJson }) => {
   })
 
   const Article = (props) => {
-    const { image, title, id} = props
+    const { image, title, id, domain} = props
     return (
       <>
         <figure className="snip1584">
@@ -29,12 +29,14 @@ export const BlogsCarousel = ({ BlogJson }) => {
           <figcaption>
             <h3>{title}</h3>
             <a href={`/blog/${id}`}>Read more</a>
+
           </figcaption>
         </figure>
+      
         <p>Posted by DO team</p>
         <div className="d-flex domain-share">
           <div className="domain-insigts">
-            <p className="domain">Domain</p>
+            <p className="domain">{domain}</p>
           </div>
           <div>
             <img
@@ -57,7 +59,7 @@ export const BlogsCarousel = ({ BlogJson }) => {
           {BlogJson?.map((ele) => {
             return (
               <div className="keen-slider__slide">
-                <Article title={ele?.title} image={ele.children[0]?.src} id={ele?.id}/>
+                <Article title={ele?.title} image={ele.children[0]?.src} id={ele?.id} domain={ele?.domain}/>
               </div>
             )
           })}

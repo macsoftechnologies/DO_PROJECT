@@ -19,7 +19,7 @@ const CasestudiesRedirect = () => {
           <h1 className="blogtitle2 col-md-10">
             Enhanced data management for a fintech firm using Snowflake
           </h1>
-          <button className="domainbuttonclass">Domain</button>
+          <button className="domainbuttonclass">Fintech</button>
         </div>
       </section>
       <section>

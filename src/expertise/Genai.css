@@ -62,7 +62,6 @@
   padding: 10px;
   border: none;
   max-width: 100% !important;
-  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,7 +84,7 @@
 }
 .generative-genai1 {
   color: black;
-  font-size: 25px;
+  font-size: 30px;
   font-weight: 700;
   margin-bottom: 20px;
 }
@@ -249,39 +248,7 @@
 
 
 
-@media only screen and (min-width: 1100px) and (max-width: 1200px) {
-  .cloudcard1 {
-    position: absolute;
-    top: 55%;
-    background: rgba(31, 31, 31, 0.4);
-    backdrop-filter: blur(13px);
-    width: 88.4%;
-    height: 42.6%;
-    padding: 9px;
-    border-radius: 0px !important;
-  }
-  .cardimgcard1 .cloudcard1:hover {
-    color: #03b5d2;
-  }
-  .cloudimgcard1:hover {
-    transform: scale(1.1);
-  }
-  .cloudimgcard1:hover .cloudcardpara1 {
-    font-size: 14px;
-    opacity: 1;
-  }
-  .cloudimgcard1:hover .cloudcard1 {
-    top: 40%;
-    height: 259px;
-  }
-  .cloudimgcard1:hover .cloudcardheading1 {
-    font-size: 19px;
-    opacity: 1;
-  }
-  .cloudcardheadings {
-    font-weight: 700;
-  }
-}
+
 .table td,
 .table th {
   padding: 0.51rem;
@@ -326,13 +293,21 @@ p {
   flex-shrink: 0;
 }
 
+.table .thead-dark th{
+  background-color: #000 !important;
+}
+
+.genai-point{
+  padding: 0px 25px !important;
+  font-weight: 700;
+}
 
 
 
-@media only screen and (min-width: 320px) and (max-width: 468px){
+@media only screen and (min-width: 320px) and (max-width: 467px){
 
   .GenAI-DO{
-    top:0px !important;
+    top:40px !important;
     padding-left: 0px !important;
     left: 10% !important;
   
@@ -346,11 +321,13 @@ p {
   }
 
   .GENAI-HEADing{
-    font-size: 20px !important;
+    font-size: 22px !important;
+    line-height: 30px !important;
   }
 
   .GenAI-Redefine{
-  font-size: 16px !important;
+  font-size: 18px !important;
+  padding: 0px 10px;
   }
 
   .Genai-pioneer{
@@ -369,7 +346,7 @@ p {
   }
 
   .genai-Healthcare{
-    font-size: 19px;
+    font-size: 22px;
   }
 .genai-Health-Para{
   font-size: 15px;
@@ -394,22 +371,18 @@ p {
   font-size: 19px
 }
 .generative-genai2 {
-  font-size: 14px;
+  font-size: 17px;
 }
 .GenAI-Paragraph{
-  font-size: 11px;
+  font-size: 13px;
 }
-
-
 .texthead-genai-framework {
   height: 70px;
   width: 100%;
 }
 .texthead-genai {
   height: 70px;
-  width: 100%;
-
-  
+  width: 100%; 
 }
 .icon-genai{
   margin: 10px;
@@ -454,7 +427,7 @@ p {
 }
 
 .genaiviewrecentbutton {
-  margin-top: 43px;
+ margin: 25px 0px;
   display: flex;
   padding: 10px 20px;
   justify-content: center;
@@ -470,5 +443,328 @@ p {
   margin-left: 0px !important;
 }
 }
+
+@media only screen and (min-width: 468px) and (max-width:767px){
+
+  .GenAI-DO{
+    top:18% !important;
+    padding-left: 0px !important;
+    left:12% !important;
+  }
+  .recentworks {
+    padding: 0px;
+  }
+  .text-muted {
+  font-size: 20px !important;
+  }
+  .GENAI-HEADing{
+    font-size: 30px !important;
+    line-height: 35px !important;
+  }
+  .GenAI-Redefine{
+  font-size:22px !important;
+  padding: 0px 10px;
+  }
+  .Genai-pioneer{
+    text-align: justify !important;
+    font-size: 16px;
+  }
+  .businessachive-genai {
+    font-size: 25px;
+    text-align: center;
+  }
+  .genai-AI-Application{
+    font-size: 20px;
+  }
+  .unleash-gen-ai{
+    font-size: 25px;
+  }
+
+  .genai-Healthcare{
+    font-size: 19px;
+  }
+  .genai-Health-Para{
+    font-size: 15px;
+    text-align: justify;
+    word-spacing: -2px;
+  }
+  .card-text{
+    letter-spacing: 0.68px;
+    font-size: 15px;
+    line-height: 20px !important;
+  }
+
+.no-gutters-genai-1 {
+  align-items: center;
+  /* height: 558px; */
+  padding: 30px;
+}
+.table td, .table th{
+  font-size: 12px;
+}
+.generative-genai1 {
+  font-size: 25px !important;
+}
+.generative-genai2 {
+  font-size: 20px;
+}
+.GenAI-Paragraph{
+  font-size: 15px;
+}
+.texthead-genai-framework {
+  height: 70px;
+  width: 100%;
+}
+.texthead-genai {
+  height: 70px;
+  width: 100%; 
+}
+.icon-genai{
+  margin: 10px;
+}
+
+.Genai-OVERALL-Body{
+  margin-left: 0px;
+}
+.cloudimgcard1{
+  padding: 0px !important;
+}
+.cloudcard1{
+  width: 100% !important;
+  top: 57%;
+}
+.cloudcardheadings1{
+  font-size: 14px;
+}
+.cloudcardpara1 {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 14px;
+  font-weight: 400;
+  /* line-height: 23.2px; */
+  letter-spacing: -0.32px;
+  visibility: visible;
+  line-height: 23px;
+}
+.generativeAI{
+  margin-top: 50px;
+}
+.Genai-Read-button{
+  margin-bottom: 10px;
+  height: 49px !important;
+  padding: 13px 16px 13px 16px !important;
+
+}
+.READ-Genai-more{
+  font-size: 14px !important;
+}
+.Genai-One{
+  height: fit-content !important;
+}
+
+.genaiviewrecentbutton {
+ margin: 25px 0px;
+  display: flex;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 12.83px;
+  border-radius: 4px;
+  background: #1a4ab9;
+  color: #fff;
+  font-size: 13.6px;
+  font-weight: 600;
+  line-height: 25.6px;
+  letter-spacing: -0.32px;
+  margin-left: 0px !important;
+}
+.cloudcardheading1 {
+  font-size: 20px;
+}
+.mobile-text{
+  width: 97%;
+}
+
+}
+
+@media only screen and (min-width: 768px) and (max-width:991px){
+
+  .GenAI-DO{
+    top:18% !important;
+    padding-left: 0px !important;
+    left:12% !important;
+  }
+  .recentworks {
+    padding: 0px;
+  }
+  .text-muted {
+  font-size: 20px !important;
+  }
+  .GENAI-HEADing{
+    font-size: 30px !important;
+    line-height: 35px !important;
+  }
+  .GenAI-Redefine{
+  font-size:30px !important;
+  padding: 0px 10px;
+  }
+  .Genai-pioneer{
+    text-align: justify !important;
+    font-size: 16px;
+  }
+  .businessachive-genai {
+    font-size: 30px;
+    text-align: center;
+  }
+  .genai-AI-Application{
+    font-size: 20px;
+  }
+  .unleash-gen-ai{
+    font-size: 25px;
+  }
+
+  .genai-Healthcare{
+    font-size: 19px;
+  }
+  .genai-Health-Para{
+    font-size: 15px;
+    text-align: justify;
+    word-spacing: -2px;
+  }
+  .card-text{
+    letter-spacing: 0.68px;
+    font-size: 15px;
+    line-height: 20px !important;
+  }
+
+.no-gutters-genai-1 {
+  align-items: center;
+  /* height: 558px; */
+  padding: 30px;
+}
+.table td, .table th{
+  font-size: 12px;
+}
+.generative-genai1 {
+  font-size: 25px !important;
+}
+.generative-genai2 {
+  font-size: 20px;
+}
+.GenAI-Paragraph{
+  font-size: 15px;
+}
+.texthead-genai-framework {
+  /* height: 70px; */
+  width: 100%;
+}
+.texthead-genai {
+  height: 70px;
+  width: 100%; 
+}
+.icon-genai{
+  margin: 10px;
+}
+
+.Genai-OVERALL-Body{
+  margin-left: 0px;
+}
+.cloudimgcard1{
+  padding: 0px !important;
+}
+.cloudcard1{
+  width: 100% !important;
+  top: 57%;
+}
+.cloudcardheadings1{
+  font-size: 14px;
+}
+.cloudcardpara1 {
+  color: rgba(255, 255, 255, 0.7);
+  font-size: 9px;
+  font-weight: 400;
+  /* line-height: 23.2px; */
+  letter-spacing: -0.32px;
+  visibility: visible;
+  line-height: 14px;
+}
+.generativeAI{
+  margin-top: 50px;
+}
+.Genai-Read-button{
+  margin-bottom: 10px;
+  height: 49px !important;
+  padding: 13px 16px 13px 16px !important;
+
+}
+.READ-Genai-more{
+  font-size: 14px !important;
+}
+.Genai-One{
+  height: fit-content !important;
+}
+
+.genaiviewrecentbutton {
+ margin: 25px 0px;
+  display: flex;
+  padding: 10px 20px;
+  justify-content: center;
+  align-items: center;
+  gap: 12.83px;
+  border-radius: 4px;
+  background: #1a4ab9;
+  color: #fff;
+  font-size: 13.6px;
+  font-weight: 600;
+  line-height: 25.6px;
+  letter-spacing: -0.32px;
+  margin-left: 0px !important;
+}
+.cloudcardheading1 {
+  font-size: 12px;
+}
+.mobile-text{
+  width: 97%;
+}
+
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
+  .cloudcard1 {
+    position: absolute;
+    top: 55%;
+    background: rgba(31, 31, 31, 0.4);
+    backdrop-filter: blur(13px);
+    width: 88.4%;
+    height: 42.6%;
+    padding: 9px;
+    border-radius: 0px !important;
+  }
+  .cardimgcard1 .cloudcard1:hover {
+    color: #03b5d2;
+  }
+  .cloudimgcard1:hover {
+    transform: scale(1.1);
+  }
+  .cloudimgcard1:hover .cloudcardpara1 {
+    font-size: 14px;
+    opacity: 1;
+  }
+  .cloudimgcard1:hover .cloudcard1 {
+    top: 40%;
+    height: 259px;
+  }
+  .cloudimgcard1:hover .cloudcardheading1 {
+    font-size: 19px;
+    opacity: 1;
+  }
+  .cloudcardheadings {
+    font-weight: 700;
+  }
+  .GenAI-Redefine {
+    font-size: 40px;
+  }
+}
+
+
 
 

@@ -11,81 +11,6 @@ function Datacharts() {
   return (
     <>
       <Navbar />
-      {/* <video className="doinsightsvideo w-100 h-100" autoPlay loop muted>
-        <source src={bussiness} type="video/mp4" />
-      </video> */}
-      {/* <div alt="#" className="doinsightsvideo-1 w-100" />
-      <section className="doinsightsheader">
-        <div>
-          <h1
-            className="container"
-            style={{
-              color: "#FFF",
-              fontSize: "20px",
-              fontWeight: "700",
-              marginBottom: "20px",
-            }}
-          >
-            Datacharts
-          </h1>
-          <div className="container d-flex">
-            <div className="row">
-              <div className="col-md-6 charts-width">
-                <h1 className="doinsightsheading-1  mb-0">
-                  A JavaScript Visualization Library with AI Chart generator and
-                  simulator
-                </h1>
-
-                <p className="doinsightsheaderpara-1 ">
-                  Meet DO Charts, a ready to use JavaScript Visual Library for
-                  your Business Applications.
-                </p>
-                <input
-                  placeholder="Businees Email"
-                  className="emailClass"
-                  style={{
-                    background: "none",
-                    borderBottom: "1px solid #FFFFFF",
-                    borderTop: "none",
-                    borderLeft: "none",
-                    borderRight: "none",
-                    color: "#FFFFFF",
-                  }}
-                />
-                <div className="container">
-                  <button className="demoClass">Get a demo</button>
-                </div>
-              </div>
-            </div>
-            <div className="col-md-6">
-              <div className="charts-frame">
-                <img
-                  src="./images/datacharts-frame.png"
-                  alt="charts"
-                  width={413}
-                />
-              </div>
-            </div>
-          </div>
-          <div className="productvideoClass-1 col-md-8">
-            {/* <video className="productplayClass" autoPlay loop muted>
-                <source src={productVideo} type="video/mp4" />
-              </video> */}
-      {/* <img
-              src="images/product360videoimg.png"
-              alt="#"
-              className="playClass-1"
-            />
-          </div>
-        </div>
-      </section> */}
-      {/* <section className="doinsightsplayvideoclass-1">
-        <div className="container">
-          <div className="row">
-
-          </div>
-        </div>
-      </section> */}
 
       <div className="observability-MAIN">
         <img
@@ -154,7 +79,7 @@ function Datacharts() {
           <div>
             <h1 className="obsheading">What is DO Charts?</h1>
 
-            <p className="obspara1 text-center">
+            <p className="container col-md-8 obspara1 text-center">
               DO Charts is a Declarative Framework for Rapid Construction of
               Web-based Visualization. It provides a wide range of chart types
               with AI driven chart generator and simulator, including bar
@@ -174,7 +99,7 @@ function Datacharts() {
           <div className="mt-5 pt-2">
             <div className="row">
               <div className="col-md-4 text-center">
-                <div>
+                <div className="box-padding-360">
                   <img
                     className="mobile-size-01"
                     src="images/dollarprod.png"
@@ -189,7 +114,7 @@ function Datacharts() {
               </div>
 
               <div className="col-md-4 text-center">
-                <div>
+                <div className="box-padding-360">
                   <img
                     className="mobile-size-01"
                     src="images/minimizerisk.png"
@@ -204,7 +129,7 @@ function Datacharts() {
               </div>
 
               <div className="col-md-4 text-center">
-                <div>
+                <div className="box-padding-360">
                   <img
                     className="mobile-size-01"
                     src="images/savetime.png"
@@ -226,6 +151,17 @@ function Datacharts() {
         <div className="container pt-5 mt-3">
           <div>
             <h1 className="headingpillars-01">Types of DO Charts</h1>
+          </div>
+          <div>
+            <p className="container col-md-10 charts-maps-ParagrapH">
+              The basic chart types DO Charts supports include line series, bar
+              series, scatter series, pie charts, candle-stick series, boxplot
+              series for statistics, map series, heatmap series, lines series
+              for directional information, graph series for relationships,
+              treemap series, sunburst series, parallel series for
+              multi-dimensional data, funnel series, gauge series. And it's
+              extremely easy to create a combination of them with DO Charts.
+            </p>
           </div>
           <div className="pillarnavs mt-4">
             <ul

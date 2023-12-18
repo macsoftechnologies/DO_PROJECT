@@ -111,7 +111,7 @@ function Contact() {
             />
 
             <div className="icon-tool-1">
-              <a href="#" data-tooltip="Canada comingsoon">
+              <a href="#" data-tooltip="Canada &nbsp; &nbsp; comingsoon">
                 <i
                   class="fa fa-map-marker map-location-size"
                   style={{ color: "red" }}
@@ -139,7 +139,7 @@ function Contact() {
               </a>
             </div>
             <div className="icon-tool-4">
-              <a href="#" data-tooltip="Dubai &nbsp; &nbsp;  comingsoon">
+              <a href="#" data-tooltip="Dubai &nbsp; comingsoon">
                 <i
                   class="fa fa-map-marker map-location-size"
                   style={{ color: "red" }}
@@ -265,7 +265,7 @@ function Contact() {
                       DO{" "}
                       <span
                         style={{
-                          color: "rgba(255, 255, 255, 0.70)",
+                          color: "white",
                           fontSize: "15px",
                           fontWeight: "700",
                           lineHeight: "22.5px",

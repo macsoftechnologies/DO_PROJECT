@@ -102,12 +102,12 @@ function Genai() {
           Generative AI technology
         </h4>
         <p
-          className="container Genai-pioneer"
+          className="container col-md-9 Genai-pioneer"
           style={{
             textAlign: "center",
             marginTop: "10px",
 
-            fontSize: "13px",
+            fontSize: "18px",
           }}
         >
           Pioneering the frontier of AI innovation, generative AI harnesses
@@ -335,7 +335,7 @@ function Genai() {
         </h3>
         <a href="/contact" style={{ textDecoration: "none" }}>
           <button className="col-md-4 btn-genai">
-            <p className="btn-text">
+            <p className="btn-text genai-point">
               Let's Get The
               <br />
               Ball Rolling
@@ -435,14 +435,15 @@ function Genai() {
           background: "#F8F8F8",
         }}
       >
+        <div className="container">
         <div class="row no-gutters-genai">
           <div
-            class="col-md-4"
+            class="col-md-6"
             style={{ display: "flex", alignItems: "center" }}
           >
             <img src="/images/generativeaibg.png" class="card-img" alt="..." />
           </div>
-          <div class="col-md-8">
+          <div class="col-md-6">
             <div class="card-body">
               <h5 class="card-title generative-genai1">
                 Generative AI
@@ -514,6 +515,10 @@ function Genai() {
             </div>
           </div>
         </div>
+        </div>
+
+
+
       </div>
       <div className="row generativeAI">
         <h3 className="col-md-8 businessachive-genai">
@@ -521,7 +526,7 @@ function Genai() {
         </h3>
         <a href="/contact" style={{ textDecoration: "none" }}>
           <button className="col-md-4 btn-genai">
-            <span className="btn-text">
+            <span className="btn-text genai-point">
               Let's Get The
               <br /> Ball Rolling
             </span>
@@ -697,13 +702,7 @@ function Genai() {
                     Generative AI for manufacturing industry
                   </h3>
                   <p className="genai-Health-Para">
-                    Our generative AI consulting services help manufacturers
-                    improve product design, reduce waste, and enhance production
-                    processes. We leverage machine learning algorithms and
-                    generative design to optimize product development and reduce
-                    time-to-market. Our generative AI solutions for the
-                    manufacturing industry help businesses make data-driven
-                    decisions and improve efficiency through:
+                  Our generative AI consulting services empower manufacturers to elevate product design, minimize waste, and optimize production procedures. We harness machine learning algorithms and generative design to streamline product development and expedite time-to-market. Our generative AI solutions for the manufacturing sector assist companies in data-informed decision-making and operational efficiency enhancements by:
                   </p>
                   <li className="para-genai">
                     <i
@@ -713,7 +712,7 @@ function Genai() {
                     ></i>
                     <p style={{ marginLeft: "5px" }}>
                       {" "}
-                      Generative design and optimization for product development
+                      Employing generative design for product development and optimization
                     </p>
                   </li>
                   <li className="para-genai">
@@ -723,7 +722,7 @@ function Genai() {
                       aria-hidden="true"
                     ></i>
                     <p style={{ marginLeft: "5px" }}>
-                      Machine learning-based process optimization
+                    Utilizing machine learning to optimize manufacturing processes
                     </p>
                   </li>
                   <li className="para-genai">
@@ -733,7 +732,7 @@ function Genai() {
                       aria-hidden="true"
                     ></i>
                     <p style={{ marginLeft: "5px" }}>
-                      Waste reduction and material optimization
+                    Reducing waste and optimizing material usage
                     </p>
                   </li>
                   <li className="para-genai">
@@ -743,7 +742,7 @@ function Genai() {
                       aria-hidden="true"
                     ></i>
                     <p style={{ marginLeft: "5px" }}>
-                      Real-time quality control and defect detection
+                    Implementing real-time quality control and defect detection
                     </p>
                   </li>
                   <li className="para-genai">
@@ -753,7 +752,7 @@ function Genai() {
                       aria-hidden="true"
                     ></i>
                     <p style={{ marginLeft: "5px" }}>
-                      Intelligent automation for manufacturing processes
+                    Enabling intelligent automation in manufacturing processes
                     </p>
                   </li>
                 </div>
@@ -764,17 +763,11 @@ function Genai() {
                   aria-labelledby="v-pills-messages-tab"
                 >
                   <h3 className="genai-Healthcare">
-                    Generative AI for retail industry
+                    Generative AI for Retail
                   </h3>
                   <p className="genai-Health-Para">
-                    Our generative AI consulting services help retailers
-                    increase sales and customer engagement through personalized
-                    experiences and improved supply chain management. We use
-                    machine learning algorithms and generative models to provide
-                    personalized recommendations and optimize inventory
-                    management. Our generative AI solutions for the retail
-                    industry help businesses make data-driven decisions and
-                    improve customer experiences through:
+                  Our generative AI consultancy empowers retailers to boost sales and enhance customer engagement by delivering tailored experiences and optimizing supply chain management. We leverage machine learning algorithms and generative models to offer personalized recommendations and streamline inventory control. Our generative AI solutions for the retail sector enable data-driven decision-making and elevate customer experiences through:
+
                   </p>
                   <li className="para-genai">
                     <i
@@ -793,7 +786,8 @@ function Genai() {
                       aria-hidden="true"
                     ></i>
                     <p style={{ marginLeft: "5px" }}>
-                      Optimization of inventory management and supply chain
+                    Inventory management and supply chain optimization
+
                     </p>
                   </li>
                   <li className="para-genai">
@@ -803,7 +797,8 @@ function Genai() {
                       aria-hidden="true"
                     ></i>
                     <p style={{ marginLeft: "5px" }}>
-                      In-store analytics for personalized customer experiences
+                    In-store analytics to create personalized customer experiences
+
                     </p>
                   </li>
                   <li className="para-genai">
@@ -823,7 +818,7 @@ function Genai() {
                       aria-hidden="true"
                     ></i>
                     <p style={{ marginLeft: "5px" }}>
-                      Intelligent automation for retail processes
+                    Implementing intelligent automation in retail processes
                     </p>
                   </li>
                 </div>
@@ -834,7 +829,7 @@ function Genai() {
                   aria-labelledby="v-pills-settings-tab"
                 >
                   <h3 className="genai-Healthcare">
-                    Generative AI for supply chain & logistics industry
+                    Supply Chain
                   </h3>
                   <p className="genai-Health-Para">
                     Our generative AI consulting services help supply chain and
@@ -852,7 +847,8 @@ function Genai() {
                       aria-hidden="true"
                     ></i>
                     <p style={{ marginLeft: "5px" }}>
-                      Supply chain optimization and demand forecasting
+                    Optimizing supply chain operations and forecasting demand
+
                     </p>
                   </li>
                   <li className="para-genai">
@@ -862,7 +858,8 @@ function Genai() {
                       aria-hidden="true"
                     ></i>
                     <p style={{ marginLeft: "5px" }}>
-                      Inventory management and predictive maintenance
+                    Enhancing inventory management and enabling predictive maintenance
+
                     </p>
                   </li>
                   <li className="para-genai">
@@ -882,7 +879,8 @@ function Genai() {
                       aria-hidden="true"
                     ></i>
                     <p style={{ marginLeft: "5px" }}>
-                      Warehouse automation and management
+                    Implementing warehouse automation and efficient management
+
                     </p>
                   </li>
                   <li className="para-genai">
@@ -892,7 +890,7 @@ function Genai() {
                       aria-hidden="true"
                     ></i>
                     <p style={{ marginLeft: "5px" }}>
-                      Transportation and route optimization
+                    Streamlining transportation and optimizing routes
                     </p>
                   </li>
                 </div>
@@ -921,8 +919,8 @@ function Genai() {
                       aria-hidden="true"
                     ></i>
                     <p style={{ marginLeft: "5px" }}>
-                      Personalized financial advice and recommendation
-                      generation
+                    Generating personalized financial advice and recommendations
+
                     </p>
                   </li>
                   <li className="para-genai">
@@ -932,7 +930,8 @@ function Genai() {
                       aria-hidden="true"
                     ></i>
                     <p style={{ marginLeft: "5px" }}>
-                      Investment analysis and portfolio optimization
+                    Conducting investment analysis and optimizing portfolios
+
                     </p>
                   </li>
                   <li className="para-genai">
@@ -942,7 +941,8 @@ function Genai() {
                       aria-hidden="true"
                     ></i>
                     <p style={{ marginLeft: "5px" }}>
-                      Automated customer service and support
+                    Implementing automated customer service and support
+
                     </p>
                   </li>
                   <li className="para-genai">
@@ -952,7 +952,8 @@ function Genai() {
                       aria-hidden="true"
                     ></i>
                     <p style={{ marginLeft: "5px" }}>
-                      Credit scoring and risk assessment
+                    Enhancing credit scoring and risk assessment
+
                     </p>
                   </li>
                   <li className="para-genai">
@@ -962,7 +963,7 @@ function Genai() {
                       aria-hidden="true"
                     ></i>
                     <p style={{ marginLeft: "5px" }}>
-                      Fraud detection and prevention
+                    Detecting and preventing fraud
                     </p>
                   </li>
                 </div>
@@ -1011,7 +1012,7 @@ function Genai() {
                       aria-hidden="true"
                     ></i>
                     <p style={{ marginLeft: "5px" }}>
-                      Automated customer service and support
+                    Implementing automated customer service and support
                     </p>
                   </li>
                   <li className="para-genai">
@@ -1021,7 +1022,7 @@ function Genai() {
                       aria-hidden="true"
                     ></i>
                     <p style={{ marginLeft: "5px" }}>
-                      Real-time data analysis and forecasting
+                    Conducting real-time data analysis and forecasting
                     </p>
                   </li>
                   <li className="para-genai">
@@ -1031,7 +1032,7 @@ function Genai() {
                       aria-hidden="true"
                     ></i>
                     <p style={{ marginLeft: "5px" }}>
-                      Risk assessment and fraud detection
+                    Enhancing risk assessment and detecting fraud
                     </p>
                   </li>
                 </div>
@@ -1571,7 +1572,7 @@ function Genai() {
             className="col-md-4 texthead-genai"
             style={{ background: "#062D89" }}
           >
-            <h4 className="texthead1-genai">Deployments</h4>
+            <h4 className="texthead1-genai">Commerical platforms</h4>
           </div>
           <div className="col-md-8" style={{ background: "#D7D7D7" }}>
             <div className="row" style={{ marginTop: "25px" }}>
@@ -1881,7 +1882,7 @@ function Genai() {
               <div className="col-md-4 cardcol">
                 <div className="recentworkimgclass">
                   {/* <div className="dummyclass"></div> */}
-                  <div className="card therecentcard">
+                  <div className="card therecentcard mobile-text">
                     <div className="workcard">
                       <div className="recentcardhead">
                         <img src="images/recentworksebook.png" alt="#" />

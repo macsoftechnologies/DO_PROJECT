@@ -42,15 +42,7 @@ const Industries = () => {
               collaboration.
             </p>
           </p>
-          {/* <div className="btn" style={{ border: "none", borderRadius: "4px" }}>
-            <button
-              className="btninner"
-              style={{ display: "flex", border: "none" }}
-            >
-              Get in touch
-              <img className="arpng" src="./images/vector.png" />
-            </button>
-          </div> */}
+        
           <button className="button1">
             <span
               className="span1"
@@ -77,7 +69,7 @@ const Industries = () => {
             <h4 className="expertiseind">Our Expertise</h4>
           </div>
           <div>
-            <p className="exp-para">
+            <p className="container col-md-9 exp-para">
               DataObserve provides a wide range of solutions tailored to the
               unique needs of the life science and pharmaceutical industry.
               Explore the breadth of our cloud-driven services designed to meet
@@ -1119,7 +1111,7 @@ const Industries = () => {
           <br />
           Journey!
         </h3>
-        <p className="ind-platformspara">
+        <p className="container col-md-11 ind-platformspara">
           DataObserve aims to establish itself as a prominent provider of cloud
           and data solutions, serving a worldwide clientele of life science{" "}
           organizations. We combine the ideal fusion of data and cloud
@@ -1187,7 +1179,7 @@ const Industries = () => {
                 <div className="text-initial">
                   <div className="d-flex">
                     <img
-                      src="./images/data-driven.png"
+                      src="./images/Data-driven.png"
                       className="App-logo-industrie business"
                       alt="logo"
                       width={45}
@@ -1483,7 +1475,7 @@ const Industries = () => {
         <div className="talent-div ">
           <div>
             <h1 className="tlnt-heading">Talent as a Service</h1>
-            <p className="tlnt-para">
+            <p className="container col-md-8 tlnt-para">
               Recruit highly skilled employees as needed through a cloud-based
               platform. These hires will not only perform tasks efficiently but
               also contribute to cost savings.
@@ -1503,7 +1495,7 @@ const Industries = () => {
             </div>
             <div
               className="col-md-6 eng"
-              // style={{ marginTop: "40px", marginLeft: "-100px" }}
+            // style={{ marginTop: "40px", marginLeft: "-100px" }}
             >
               <p className="tlnt-card-para">
                 We're introducing a new approach to hiring cloud Engineers. This
@@ -1526,67 +1518,86 @@ const Industries = () => {
         </div>
       </div>
 
-      <div className="labimg">
+      <div className="lifescience-labimg">
         <div className="lab-img-section">
           <img src="./images/newlabdown.png" alt="#" className="lab-img" />
         </div>
 
-        <div className="lab-data-industries ">
-          <div className="card-industries">
-            <div
-              class="card-body industries-bg-pink"
-              style={{ borderRadius: "27px", height: "263px", width: "390px" }}
-            >
-              <p className="doc">
-                {" "}
-                <span>
-                  <img src="./images/doc.png" />
-                </span>{" "}
-                BLOG{" "}
-              </p>
-              <h5
-                class="ind-card-title"
-                style={{ fontSize: "15px", fontWeight: "600px" }}
-              >
-                Big data analytics for the pharmaceutical
-                <br />
-                industry- A big leap towards digital success
-              </h5>
-              <h6
-                class="card-subtitle mb-2 "
-                style={{
-                  fontSize: "11px",
-                  marginTop: "5px",
-                  lineHeight: "16px",
-                }}
-              >
-                Today’s world is data-driven. From your phone, to your laptop,
-                <br />
-                to your smart home devices, everyday data is being generated
-                <br />
-                in the quintillions. This can be a mess, especially if you run a
-                <br />
-                business.
-              </h6>
-              <p class="readmore" style={{ color: "white", marginTop: "14px" }}>
-                <small>
-                  Read more
-                  <i class="fa fa-long-arrow-right ghgh" aria-hidden="true"></i>
-                </small>
-              </p>
-            </div>
+        {/* <div className="lab-data-industries ">
+          <div class="card-body industries-bg-pink">
+            <p className="doc">
+              {" "}
+              <span>
+                <img src="./images/doc.png" />
+              </span>{" "}
+              BLOG{" "}
+            </p>
+            <h5 class="ind-card-title" >
+              Big data analytics for the pharmaceutical industry- A big leap towards digital success
+            </h5>
+            <h6
+              class="card-subtitle mb-2 "  >
+              Today’s world is data-driven. From your phone, to your laptop,
+              to your smart home devices, everyday data is being generated
+              in the quintillions. This can be a mess, especially if you run a
+              business.
+            </h6>
+            <p class="readmore">
+              <small>
+                Read more
+                <i class="fa fa-long-arrow-right ghgh" aria-hidden="true"></i>
+              </small>
+            </p>
           </div>
-        </div>
+
+        </div> */}
+
+<div className="lifescience-pink-wholediv">
+  <div className="container">
+  <div className="row">
+  <div className="col-md-7"></div>
+  <div className="col-md-5 lifescience-n-pink">
+  <p className="lifescience-doc">
+              {" "}
+              <span>
+                <img src="./images/doc.png" />
+              </span>{" "}
+              BLOG{" "}
+            </p>
+            <h5 class="lifescience-card-title" >
+              Big data analytics for the pharmaceutical industry- A big leap towards digital success
+            </h5>
+            <h6
+              class="lifescience-subtitle  "  >
+              Today’s world is data-driven. From your phone, to your laptop,
+              to your smart home devices, everyday data is being generated
+              in the quintillions. This can be a mess, especially if you run a
+              business.
+            </h6>
+            <p class="lifescience-readmore">
+              <small>
+                Read more
+                <i class="fa fa-long-arrow-right ghgh" aria-hidden="true"></i>
+              </small>
+            </p>
+
+  </div>
+  </div>
+  </div>
+
+</div>
+           
+
       </div>
       <div class="container">
         <h1 className="benfits">
           {" "}
           Digital Transformation Benefits in Life Science
         </h1>
-        <p className="benfits-para">
+        <p className="container col-md-9 benfits-para">
           DataObserve is the fastest-growing Cloud Transformation & Data
           Analytics company with strong expertise in
-          <br />
+         
           Data lake solutions, Data Warehouse Engineering, Data Migration &
           Modernization.
         </p>

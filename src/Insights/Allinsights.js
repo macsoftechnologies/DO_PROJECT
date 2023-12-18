@@ -12,6 +12,7 @@ import Modal from "../components/modal/Modal";
 import BlogJson from './insightsJsons/blogs.json';
 import AllBlogsModalContent from "./AllBlogsModal";
 // import { useSection } from './SectionContext';
+import { useKeenSlider } from 'keen-slider/react';
 
 
 function Arrow(props) {
@@ -61,6 +62,22 @@ function Allinsights() {
       },
     ],
   };
+
+
+
+
+  const [sliderRef] = useKeenSlider({
+    breakpoints: {
+      "(min-width: 100px)": {
+        slides: { perView: 1, spacing: 2 },
+      },
+      "(min-width: 1000px)": {
+        slides: { perView: 3, spacing: 10 },
+      },
+    },
+    slides: { perView: 1 },
+    
+  })
 
 
 
@@ -181,7 +198,7 @@ function Allinsights() {
                           <h6 className="rvs-praveen">Posted by D.O Team</h6>
                           <div className="d-flex domain-share">
                             <div className="domain-insigts">
-                              <p className="domain">Domain</p>
+                              <p className="domain">Fintech</p>
                             </div>
                             <div>
                               <img
@@ -202,8 +219,8 @@ function Allinsights() {
                       <div className="card myDIV">
                         <div>
                           <p className="insights-paragraph-future-blog">
-                            Coming SMaximizing manufacturing efficiency with
-                            data engineeringoon
+                            Maximizing manufacturing efficiency with
+                            data engineering
                           </p>
                         </div>
                         <div>
@@ -226,7 +243,7 @@ function Allinsights() {
                           <h6 className="rvs-praveen">Posted by D.O Team</h6>
                           <div className="d-flex domain-share">
                             <div className="domain-insigts">
-                              <p className="domain">Domain</p>
+                              <p className="domain">Manufacturing</p>
                             </div>
                             <div>
                               <img
@@ -246,9 +263,9 @@ function Allinsights() {
                     <Link to="#" className="insights-main">
                       <div className="card myDIV">
                         <div>
-                          <p className="insights-paragraph-future">
-                            Transformed HR analytics with Tableau for an
-                            e-commerce fashion company
+                          <p className="insights-paragraph-future-cloud">
+                          Empoering a fashion e-commerce brand with advanced HR analytics
+
                           </p>
                         </div>
                         <div>
@@ -271,7 +288,7 @@ function Allinsights() {
                           <h6 className="rvs-praveen">Posted by D.O Team</h6>
                           <div className="d-flex domain-share">
                             <div className="domain-insigts">
-                              <p className="domain">Domain</p>
+                              <p className="domain">E-Commerce</p>
                             </div>
                             <div>
                               <img
@@ -296,7 +313,7 @@ function Allinsights() {
       {/* case studies end */}
 
       {/* //top 10 insights */}
-      <section className="All-insights-back-ground" id="top10insights">
+      {/* <section className="All-insights-back-ground" id="top10insights">
         <div className="container-fluid">
           <div>
             <h3 className="case-study-insights">Top 10 Insights</h3>
@@ -623,12 +640,12 @@ function Allinsights() {
             </div>
           </div>
         </div>
-      </section>
+      </section> */}
 
       {/* //top 10 insights close */}
 
       {/* blog and articles */}
-      <section className="All-insights-back-ground" id="blogs">
+      <section className="All-insights-back-ground keen-slider" id="blogs" ref={sliderRef}>
         <div className="container-fluid">
           <div>
             <h3 className="case-study-insights">
@@ -641,6 +658,9 @@ function Allinsights() {
                   <img src="/images/doubleArrow.png" alt="doublearrow" height="15px" />
                 </span>}
             </h3>
+
+
+
           </div>
           <div>
             <div className="container-fluid">
@@ -699,7 +719,7 @@ function Allinsights() {
                           <h6 className="rvs-praveen">Posted by D.O Team</h6>
                           <div className="d-flex domain-share">
                             <div className="domain-insigts">
-                              <p className="domain">Domain</p>
+                              <p className="domain">Cloud Migration"</p>
                             </div>
                             <div>
                               <img
@@ -744,7 +764,7 @@ function Allinsights() {
                           <h6 className="rvs-praveen">Posted by D.O Team</h6>
                           <div className="d-flex domain-share">
                             <div className="domain-insigts">
-                              <p className="domain">Domain</p>
+                              <p className="domain">Application modernization</p>
                             </div>
                             <div>
                               <img
@@ -789,7 +809,7 @@ function Allinsights() {
                           <h6 className="rvs-praveen">Posted by D.O Team</h6>
                           <div className="d-flex domain-share">
                             <div className="domain-insigts">
-                              <p className="domain">Domain</p>
+                              <p className="domain">DevOps</p>
                             </div>
                             <div>
                               <img

@@ -309,15 +309,60 @@ margin-left: 17px;
  margin: 25px 0px;
 }
 
+/* ...changes... */
+.Gaming-Main-media{
+  position:absolute;
+  top:125px;
+  left:133px;
+}
+
+.Gaming-HeadiNG-media{
+  font-size: 1.5rem;
+}
+
+.Gaming-DES-media{
+  color: #FFF;
+  font-family: Poppins;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 67px; /* 120% */
+  letter-spacing: -0.32px;
+}
+
+.Gaming-content-media{
+  color: rgba(255, 255, 255, 0.70);
+  font-family: Poppins;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 25.6px; /* 160% */
+  letter-spacing: -0.32px;
+}
 
 
-
-
-@media only screen  and (min-width:320px) and (max-width:430px){
+@media only screen  and (min-width:320px) and (max-width:468px){
 
 
   .Media-Box{
     height: fit-content !important;
+  }
+
+  .Gaming-DES-media{
+    font-size: 13px;
+    line-height: 20px;
+    margin-bottom: 7px !important;
+  }
+  .Gaming-HeadiNG-media{
+    font-size: 13px;
+  }
+  .Gaming-content-media{
+    font-size: 12px;
+    line-height: 18px;
+  }
+  .Gaming-Main-media{
+    top: 0px;
+    left: 0px;
   }
   .media-main-img{
     top: 23px;
@@ -414,7 +459,8 @@ margin-left: 17px;
  }
 
  .lab-data-media{
-  margin-left: 0px;
+  /* margin-left: 0px; */
+  margin: 10px;
  }
 
  .media-img-section{

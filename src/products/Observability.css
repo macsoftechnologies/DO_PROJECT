@@ -126,7 +126,7 @@
 .cardHead {
   color: #050505;
   text-align: center;
-  font-size: 40px;
+  font-size: 30px;
   font-style: normal;
   font-weight: 700;
   line-height: 52px;
@@ -245,11 +245,11 @@
   display: flex;
 }
 .observabilityclass {
-  padding: 33px;
+  padding: 30px;
   border-radius: 30px;
   background-color: rgba(1, 187, 138, 0.1);
   margin-left: 2px;
-  height: 92%;
+  height: 100%;
 }
 .observehead {
   color: #00b686;
@@ -690,13 +690,24 @@
 }
 
 
+.box-padding-360 {
+  padding: 46px 20px;
+  box-shadow: 2px 2px 35px -18px #323c8d;
+  border-radius: 20px;
+  margin: 25px 0px;
+  height: 450px;
+}
+
 
 
 @media only screen and (min-width: 320px) and (max-width: 468px)  {
   .cardcol {
     margin-right: 15px;
   }
-
+.box-padding-360{
+  height: fit-content !important;
+  padding: 20px !important;
+}
   .mobile-observa{
     font-size: 15px !important;
   }
@@ -1303,7 +1314,7 @@ margin-left: 0px !important;
 
 }
 
-@media only screen and (min-width: 991px) and (max-width: 1024px)  {
+@media only screen and (min-width: 991px) and (max-width: 1200px)  {
 
   .text-observa {
     margin-top: 10px;

@@ -66,11 +66,11 @@ const Dataeng = () => {
                   letterSpacing: "1px",
                 }}
               >
-                Cloud Transformation
+                Data Engineering
               </p>
 
               <p className="col-md-6 Navigate-Journey">
-                Empower Your Business Transformation Through Cloud Migration
+              Enable business agility with advanced data engineering services that prepare you for the future.
               </p>
               <button
                 className="datatypes"
@@ -89,7 +89,7 @@ const Dataeng = () => {
                 <span
                   className="spans"
                   style={{
-                    color: "#0046E8",
+                    color: "#FF4925",
                     fontSize: "14px",
                     fontStyle: "normal",
                     fontWeight: "600",
@@ -104,7 +104,7 @@ const Dataeng = () => {
                     width: "23px",
                     fontSize: "29px",
                     flexShrink: "0",
-                    color: "#0046E8",
+                    color: "#FF4925",
                     marginLeft: "12px",
                   }}
                   aria-hidden="true"
@@ -124,7 +124,7 @@ const Dataeng = () => {
         }}
       >
         <h4 className="migration">Our Data Engineering Services</h4>
-        <p className="operational">
+        <p className="col-md-9 operational">
           DataObserve's data engineering services and analytics solutions are
           tailored to foster business growth and set you apart from the
           competition. How do we achieve this? We're glad you asked! We commence
@@ -264,6 +264,7 @@ const Dataeng = () => {
         </section>
       </div>
 
+      <h1 className="case mt-5">Our Case Studies</h1> 
 
       <div
         class="container  mb-3 mt-5 Built-back-colour"
@@ -373,7 +374,7 @@ const Dataeng = () => {
           Experience the Data Observe Advantage
         </h4>
 
-        <p className="wides">
+        <p className="container col-md-6 wides">
         At DataObserve, as a data engineering firm, we are fueled by continuous innovation and relentlessly pursue excellence in crafting cloud-compatible solutions.
         </p>
       </div>
@@ -397,7 +398,7 @@ const Dataeng = () => {
                   className="App-logo"
                   alt="logo"
                   width={100}
-                  style={{ height: "63px", width: "60px" }}
+                  style={{ height: "63px", width: "68px" }}
                 />
                 <h5 className="cloudcardheadings" style={{ marginTop: "18px" }}>
                   Improved Operational Efficiency
@@ -475,27 +476,22 @@ const Dataeng = () => {
                 justifyContent: "spacebetween",
               }}
             >
-              <div class="col-md-8">
+              <div class="col-md-9">
                 <div class="">
                   <div>
                     <h5
-                      class="card-title Cloud-title"
+                      class="col-md-9 card-title Cloud-title"
                       style={{ color: "white", fontSize: "24px" }}
                     >
-                      Maximize Your Cloud Capabilities with the DataObserve
-                      Advantage
+                      Revamp Your Cloud Infrastructure with Our Data  Engineering Services
                     </h5>
-                    <p class="card-text Cloud-color-paragraph">
-                      Streamline your cloud-driven business transformation with
-                      DataObserve's comprehensive suite of cloud services,
-                      encompassing consulting, optimization, migration, and
-                      modernization. Our team of seasoned cloud experts is at
-                      your disposal, ready to provide guidance and support.
+                    <p class="col-md-9 card-text Cloud-color-paragraph">
+                    Attain business agility and flexibility through our technology expertise in cloud and data warehouses. Our team of data engineers is ready to guide you from inception to completion.
                     </p>
                   </div>
                 </div>
               </div>
-              <div className="col-md-4">
+              <div className="col-md-3 ObserverS-Cloud">
                 <button
                   className="observers"
                   style={{
@@ -504,9 +500,10 @@ const Dataeng = () => {
                     height: "55px",
                     margin: "42px",
                     borderRadius: "6px",
+                    color:"#0046E8",
                   }}
                 >
-                  Talk to us now{" "}
+                 Get a demo {" "}
                   <i
                     class="fa fa-long-arrow-right Arrow-cloud"
                     aria-hidden="true"
@@ -518,172 +515,194 @@ const Dataeng = () => {
         </div>
         </div>
       </div>
+
+      <section className="back-point mt-5">
       <div>
 
-      <div
-          className="container"
-          style={{
-            justifyContent: "center",
-            flexDirection: "column",
-            display: "flex",
-          }}
+<div
+    className="container"
+    style={{
+      justifyContent: "center",
+      flexDirection: "column",
+      display: "flex",
+    }}
+  >
+    <h3 className="cloud-head" style={{ textAlign: "center" }}>
+      What Makes Us Stand Out
+    </h3>
+    <p
+      className="container col-md-9 CLoud-Text-pARA"
+      style={{
+        textAlign: "center",
+      }}
+    >
+     With a wealth of experience in delivering data engineering services over the years, we aspire to be a trusted source of data and cloud solutions for businesses worldwide. Our team of data engineering experts is well-equipped to guide you through every facet of setting up data lakehouses, creating data pipelines, and constructing a robust ETL process in data engineering. Here are several compelling reasons why we are the perfect choice:
+    </p>
+  </div>
+ 
+  <div className="container mt-3">
+    <div className="row box">
+
+      
+    <div className="col-md-4">
+        <div
+          className="text-center box-padding"
+          style={{ height: "340px" }}
         >
-          <h3 className="cloud-head" style={{ textAlign: "center" }}>
-            What Makes Us Stand Out
-          </h3>
-          <p
-            className="CLoud-Text-pARA"
-            style={{
-              textAlign: "center",
-            }}
-          >
-           With a wealth of experience in delivering data engineering services over the years, we aspire to be a trusted source of data and cloud solutions for businesses worldwide. Our team of data engineering experts is well-equipped to guide you through every facet of setting up data lakehouses, creating data pipelines, and constructing a robust ETL process in data engineering. Here are several compelling reasons why we are the perfect choice:
+          <img
+            src="./images/iden.png"
+            className="App-logo"
+            alt="logo"
+            width={80}
+            height={100}
+          />
+          <h5 className="cloudcardheadings">
+            Identify Patterns for Business Growth{" "}
+          </h5>
+
+          <p className="arrowtext text-center">
+            From identifying data anomalies to recommending pertinent
+            cloud actions through tools like Power BI and Tableau, we
+            assist you in foreseeing both challenges and opportunities.
+            Harness these insights to revolutionize your business with
+            data-driven transformations powered by the cloud.
           </p>
         </div>
-       
-        <div className="container mt-3">
-          <div className="row box">
-            <div className="col-md-4">
-              <div
-                className="text-center box-padding"
-                style={{ height: "450px" }}
-              >
-                <img
-                  src="./images/iden.png"
-                  className="App-logo"
-                  alt="logo"
-                  width={100}
-                />
-                <h5 className="cloudcardheadings">
-                  Identify Patterns for Business Growth{" "}
-                </h5>
+      </div>
 
-                <p className="arrowtext text-center">
-                  From identifying data anomalies to recommending pertinent
-                  cloud actions through tools like Power BI and Tableau, we
-                  assist you in foreseeing both challenges and opportunities.
-                  Harness these insights to revolutionize your business with
-                  data-driven transformations powered by the cloud.
-                </p>
-              </div>
-            </div>
+    <div className="col-md-4">
+        <div
+          className="text-center box-padding"
+          style={{ height: "340px" }}
+        >
+          <img
+            src="./images/getb.png"
+            className="App-logo"
+            alt="logo"
+            width={80}
+            height={100}
+          />
+          <h5 className="cloudcardheadings">Get Better Data Insights</h5>
 
-            <div className="col-md-4">
-              <div
-                className="text-center box-padding"
-                style={{ height: "450px" }}
-              >
-                <img
-                  src="./images/getb.png"
-                  className="App-logo"
-                  alt="logo"
-                  width={100}
-                />
-                <h5 className="cloudcardheadings">Get Better Data Insights</h5>
-
-                <p className="arrowtext text-center">
-                  With DataObserve's assistance, you can develop customized
-                  algorithms that offer enhanced insights into various facets of
-                  your customers' requirements. Leveraging these insights, you
-                  can also forecast future trends and proactively prepare for
-                  whatever lies ahead.
-                </p>
-              </div>
-            </div>
-
-            <div className="col-md-4">
-              <div
-                className="text-center box-padding"
-                style={{ height: "450px" }}
-              >
-                <img
-                  src="./images/eff.png"
-                  className="App-logo"
-                  alt="logo"
-                  width={100}
-                />
-                <h5 className="cloudcardheadings">
-                  Efficiency in Data Models 
-                </h5>
-
-                <p className="arrowtext text-center">
-                  Our team of experienced data engineering consultants and
-                  experts will construct CI/CD pipelines tailored to your
-                  specific model and ensure their regular upkeep. Are you ready
-                  to push your boundaries with our data engineering solutions?
-                </p>
-              </div>
-            </div>
-
-            <div className="col-md-4">
-              <div
-                className="text-center box-padding"
-                style={{ height: "450px" }}
-              >
-                <img
-                  src="./images/robust.png"
-                  className="App-logo"
-                  alt="logo"
-                  width={100}
-                />
-                <h5 className="cloudcardheadings">Robust AWS databases</h5>
-
-                <p className="arrowtext text-center">
-                  Our specialization lies in data engineering and database
-                  services, including Amazon Dynamo DB and Azure Synapse. These
-                  databases facilitate the automation of time-consuming
-                  operational tasks, such as patching and backups.
-                </p>
-              </div>
-            </div>
-
-            <div className="col-md-4">
-              <div
-                className="text-center box-padding"
-                style={{ height: "450px" }}
-              >
-                <img
-                  src="./images/centered.png"
-                  className="App-logo"
-                  alt="logo"
-                  width={100}
-                />
-                <h5 className="cloudcardheadings">Centered Data Governance</h5>
-
-                <p className="arrowtext text-center">
-                  Data governance encompasses all activities related to ensuring
-                  a company's data is secure, accurate, and accessible. Our
-                  customized data governance systems, coupled with cloud
-                  efficiencies, fulfill all these requirements, ensuring the
-                  security and accessibility of your data.
-                </p>
-              </div>
-            </div>
-
-            <div className="col-md-4">
-              <div
-                className="text-center box-padding"
-                style={{ height: "450px" }}
-              >
-                <img
-                  src="./images/endto.png"
-                  className="App-logo"
-                  alt="logo"
-                  width={100}
-                />
-                <h5 className="cloudcardheadings">End-to-end Support</h5>
-
-                <p className="arrowtext text-center">
-                  At DataObserve, as a data engineering consulting firm, we take
-                  pride in our team of experienced cloud data scientists who
-                  assist you throughout the entire data migration,
-                  transformation, and warehousing process.
-                </p>
-              </div>
-            </div>
-          </div>
+          <p className="arrowtext text-center">
+            With DataObserve's assistance, you can develop customized
+            algorithms that offer enhanced insights into various facets of
+            your customers' requirements. Leveraging these insights, you
+            can also forecast future trends and proactively prepare for
+            whatever lies ahead.
+          </p>
         </div>
       </div>
+
+      <div className="col-md-4">
+        <div
+          className="text-center box-padding"
+          style={{ height: "340px" }}
+        >
+          <img
+            src="./images/eff.png"
+            className="App-logo"
+            alt="logo"
+            width={80}
+            height={100}
+          />
+          <h5 className="cloudcardheadings">
+            Efficiency in Data Models 
+          </h5>
+
+          <p className="arrowtext text-center">
+            Our team of experienced data engineering consultants and
+            experts will construct CI/CD pipelines tailored to your
+            specific model and ensure their regular upkeep. Are you ready
+            to push your boundaries with our data engineering solutions?
+          </p>
+        </div>
+      </div>
+
+      
+      <div className="col-md-4">
+        <div
+          className="text-center box-padding"
+          style={{ height: "340px" }}
+        >
+          <img
+            src="./images/robust.png"
+            className="App-logo"
+            alt="logo"
+            width={80}
+            height={100}
+          />
+          <h5 className="cloudcardheadings">Robust AWS databases</h5>
+
+          <p className="arrowtext text-center">
+            Our specialization lies in data engineering and database
+            services, including Amazon Dynamo DB and Azure Synapse. These
+            databases facilitate the automation of time-consuming
+            operational tasks, such as patching and backups.
+          </p>
+        </div>
+      </div>
+
+      
+      <div className="col-md-4">
+        <div
+          className="text-center box-padding"
+          style={{ height: "340px" }}
+        >
+          <img
+            src="./images/centered.png"
+            className="App-logo"
+            alt="logo"
+            width={80}
+            height={100}
+          />
+          <h5 className="cloudcardheadings">Centered Data Governance</h5>
+
+          <p className="arrowtext text-center">
+            Data governance encompasses all activities related to ensuring
+            a company's data is secure, accurate, and accessible. Our
+            customized data governance systems, coupled with cloud
+            efficiencies, fulfill all these requirements, ensuring the
+            security and accessibility of your data.
+          </p>
+        </div>
+      </div>
+
+
+      
+
+
+
+      <div className="col-md-4">
+        <div
+          className="text-center box-padding"
+          style={{ height: "340px" }}
+        >
+          <img
+            src="./images/endto.png"
+            className="App-logo"
+            alt="logo"
+            width={80}
+            height={100}
+          />
+          <h5 className="cloudcardheadings">End-to-end Support</h5>
+
+          <p className="arrowtext text-center">
+            At DataObserve, as a data engineering consulting firm, we take
+            pride in our team of experienced cloud data scientists who
+            assist you throughout the entire data migration,
+            transformation, and warehousing process.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  
+</div>
+      </section>
+      
       <div class="card text-center" style={{ border: "0px" }}>
         {/* {/ <div class="card-header">Featured</div> /} */}
         <div class="card-body faq-class">

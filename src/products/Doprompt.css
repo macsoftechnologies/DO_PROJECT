@@ -1,12 +1,17 @@
 .dopromptvideo {
-  position: relative;
+  /* position: relative; */
   height: 730px;
   width: 100%;
 }
 
+.doprompt-back {
+  position: relative;
+}
+
+
 .dopromptheader {
   position: absolute;
-  top: 19%;
+  top: 5%;
   left: 10%;
   height: 964px;
 }
@@ -55,6 +60,11 @@
   background: #FFF;
   box-shadow: 0px 28px 65px 0px #F1F4F9;
   margin-bottom: 10%;
+  padding: 35px;
+}
+
+.feedback-disv1 {
+  padding-bottom: 10px;
 }
 
 .generative-h1 {
@@ -85,6 +95,11 @@
   border-radius: 30px;
   background: #FFF;
   box-shadow: 0px 28px 65px 0px #F1F4F9;
+  padding: 35px;
+}
+
+.feedback-div2 {
+  padding-bottom: 10px;
 }
 
 .prompt-library {
@@ -92,6 +107,10 @@
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+.DO-Prompt-lib-image {
+  margin: auto;
 }
 
 .applygai {
@@ -111,7 +130,7 @@
 .promptsection3 {
   background: #F7F6FE;
   width: 100% !important;
-  height:100% !important;
+  height: 100% !important;
 }
 
 .available-full-div {
@@ -213,6 +232,7 @@
   /* 160% */
   letter-spacing: 0.08px;
   text-align: center;
+  margin-bottom: 12%;
 }
 
 .benfits-h1 {
@@ -227,7 +247,7 @@
   margin-top: 38px;
 }
 
-.benfits-h1b{
+.benfits-Prompt {
   color: #050505;
   text-align: center;
   font-family: Poppins;
@@ -236,10 +256,22 @@
   font-weight: 600;
   line-height: 28.6px;
   /* 130% */
-  margin-top: 10px;
+  margin-top: 38px;
 }
 
-.benfits-para {
+.benfits-h1b {
+  color: #050505;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 22px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 28.6px;
+  /* 130% */
+  /* margin-top: 10px; */
+}
+
+.benfits-para-prompt {
   color: #25252F;
   text-align: center;
   font-family: Poppins;
@@ -263,7 +295,7 @@
   flex-direction: column;
   margin-right: 15px;
   max-width: 31.333333%;
-  
+
 }
 
 .benfit-divs2ndrow {
@@ -309,8 +341,9 @@
   box-shadow: 0px 0px 12px 0px rgba(0, 70, 232, 0.08);
   margin-bottom: 18px;
   display: flex;
-    align-items: center;
-    justify-content: start;
+  align-items: center;
+  justify-content: start;
+  padding: 10px;
 }
 
 .translate-heads {
@@ -365,6 +398,7 @@
   align-items: center;
   justify-content: center;
   margin-top: 10%;
+  margin-bottom: 8%;
 }
 
 .library-divs {
@@ -392,7 +426,7 @@
   font-size: 16px;
   font-style: normal;
   font-weight: 400;
-  line-height: 33.6px;
+  line-height: 25.6px;
   /* 160% */
   letter-spacing: 0.08px;
   margin-top: 5%;
@@ -412,6 +446,16 @@
   justify-content: center;
 }
 
+.prompT-SECTION-7 {
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.prompT-section-6 {
+  margin-top: 5%;
+  margin-bottom: 7%;
+}
+
 .everyone-h1 {
   color: #25252F;
   font-family: Poppins;
@@ -421,7 +465,8 @@
   line-height: 48px;
   /* 120% */
   letter-spacing: 0.08px;
-  padding-top: 20px;
+  /* padding-top: 20px; */
+  margin-bottom: 25px;
 }
 
 .everyone-p {
@@ -444,10 +489,11 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  padding:  10px ;
-  
+  padding: 10px;
+
 }
-.everyone-heads{
+
+.everyone-heads {
   margin-left: 15px;
 }
 
@@ -468,6 +514,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  margin-top: 3.5rem !important;
 }
 
 .ppt-api-h1 {
@@ -531,195 +578,247 @@
   /* 160% */
   letter-spacing: 0.08px;
 }
-.ppt-api-para{
+
+.ppt-api-para {
   margin-top: 20px;
 }
 
 
 /* new style */
-.pro-available{
+.pro-available {
   margin: 50px 0px;
   padding: 30px;
 }
 
 
-@media only screen and (min-width: 320px) and (max-width: 467px)  {
+@media only screen and (min-width: 320px) and (max-width: 467px) {
 
   .dopromptheading-pro {
     font-size: 20px;
     line-height: 23.2px !important;
   }
+
+  .new-point {
+    margin-top: 20px;
+  }
+
+
   .dopromptheaderpara {
     margin-right: 0px;
     font-size: 12px;
     line-height: 17.6px;
   }
+
   .dopromptvideo {
-    height: 440px;
+    height: 360px;
   }
+
   .dopromptvideoClass {
     left: -6%;
-    top: 38%;
+    top: 32%;
   }
-  .promptsection2{
+
+  .promptsection2 {
     margin-top: 35%;
   }
+
   .generative-h1 {
     font-size: 15px;
-    line-height: 34px;
+    line-height: 21px;
   }
-  .pro-available{
+
+  .pro-available {
     padding: 0px;
   }
+
   .available-heads {
     font-size: 13px;
   }
+
   .available-p {
     font-size: 14px;
     line-height: 25px;
   }
+
   .available-h1 {
     line-height: 30px;
     font-size: 20px;
     padding-top: 20px;
   }
+
   .benfit-divs {
     margin-left: 20px;
     margin-bottom: 20px;
     max-width: 100%;
   }
+
   .translate-p {
     font-size: 15px;
     line-height: 25px;
   }
+
   .library-divs {
     margin-left: 20px;
     margin-bottom: 20px;
     margin: 0px 15px 15px;
     max-width: 100%;
   }
+
   .library-para {
     line-height: 28.6px;
   }
+
   .everyone-h1 {
     line-height: 35px;
     padding-top: 20px;
     font-size: 25px;
   }
+
   .library-head-para {
     font-size: 16px;
   }
+
   .everyone-p {
     font-size: 15px;
   }
+
   .ppt-api-img {
     align-items: normal;
   }
+
   .ppt-api-divs {
     height: 250px;
     margin-left: 10px;
     max-width: 100%;
   }
-  .text-img{
+
+  .text-img {
     height: 50px;
   }
 
-  .do360bannerclass-1{
+  .do360bannerclass-1 {
     height: 550px !important;
   }
+
   .productvideoClass-1 {
     left: 0%;
   }
+
   .iodefinitionClass-1 {
     /* height: 1220px !important; */
     margin-top: 30px;
   }
-  .mobile-size{
+
+  .mobile-size {
     width: 70px;
     height: 91px;
   }
+
   .tenetsheading-1 {
     font-size: 18px;
     line-height: 35px;
   }
+
   .doinsightguideclass-1 {
     padding: 0;
   }
-  .text-mb{
+
+  .text-mb {
     font-size: 10px !important;
   }
+
   .guidetext {
     font-size: 8px !important;
     line-height: 12px !important;
   }
+
   .tenetsclass-1 {
-  margin: 20px 0px;
+    margin: 20px 0px;
   }
+
   .prompt-library {
     margin-top: 30px;
   }
+
   .benfits-head {
     font-size: 25px;
   }
+
   .benfits-head-para {
     font-size: 17px;
     line-height: 25px;
   }
-  .benfits-h1{
+
+  .benfits-h1 {
     font-size: 16px;
   }
-  .benfits-h1b{
+
+  .benfits-h1b {
     font-size: 16px;
   }
+
   .translate-h1 {
     font-size: 30px;
   }
+
   .library-head {
     font-size: 25px;
     line-height: 35px;
   }
+
   .ppt-api-h1 {
     font-size: 21px;
+  }
+  .generative-para{
+    font-size: 14px;
   }
 
 }
 
-@media only screen and (min-width: 468px) and (max-width: 767px)  {
+@media only screen and (min-width: 468px) and (max-width: 767px) {
 
   .dopromptheading-pro {
     font-size: 24px;
     line-height: 30.2px !important;
   }
+
   .dopromptheaderpara {
     margin-right: 0px;
     font-size: 15px;
     line-height: 20.6px;
   }
+
   .dopromptvideo {
     height: 400px;
   }
+
   .dopromptvideoClass {
     left: -6%;
     top: 32%;
   }
-  .promptsection2{
+
+  .promptsection2 {
     margin-top: 40%;
   }
+
   .generative-h1 {
     font-size: 25px;
     line-height: 34px;
   }
-  .pro-available{
+
+  .pro-available {
     padding: 0px;
   }
+
   .available-heads {
     font-size: 18px;
   }
-  
+
   .available-p {
     font-size: 20px;
     line-height: 30px;
   }
+
   .available-h1 {
     line-height: 35px;
     font-size: 20px;
@@ -727,280 +826,349 @@
     font-size: 25px;
     text-align: center;
   }
+
   .benfit-divs {
     margin-left: 20px;
     margin-bottom: 20px;
     max-width: 100%;
   }
+
   .translate-p {
     font-size: 18px;
     line-height: 30px;
   }
+
   .library-divs {
-  
+
     margin: 0px 15px 15px;
     max-width: 100%;
   }
+
   .library-para {
     line-height: 28.6px;
   }
+
   .everyone-h1 {
     line-height: 40px;
     padding-top: 20px;
     font-size: 32px;
     text-align: center;
   }
+
   .library-head-para {
     font-size: 20px;
   }
+
   .everyone-p {
     font-size: 15px;
   }
+
   .ppt-api-img {
     align-items: normal;
   }
+
   .ppt-api-divs {
     height: 250px;
     margin-left: 10px;
     max-width: 100%;
   }
-  .text-img{
+
+  .text-img {
     height: 50px;
   }
 
-  .do360bannerclass-1{
+  .do360bannerclass-1 {
     height: 550px !important;
   }
+
   .productvideoClass-1 {
     left: 0%;
   }
+
   .iodefinitionClass-1 {
     /* height: 1220px !important; */
     margin-top: 30px;
   }
-  .mobile-size{
+
+  .mobile-size {
     width: 70px;
     height: 91px;
   }
+
   .tenetsheading-1 {
     font-size: 18px;
     line-height: 35px;
   }
+
   .doinsightguideclass-1 {
     padding: 0;
   }
-  .text-mb{
+
+  .text-mb {
     font-size: 10px !important;
   }
+
   .guidetext {
     font-size: 8px !important;
     line-height: 12px !important;
   }
+
   .tenetsclass-1 {
-  margin: 20px 0px;
+    margin: 20px 0px;
   }
+
   .prompt-library {
     margin-top: 30px;
   }
+
   .benfits-head {
     font-size: 30px;
   }
+
   .benfits-head-para {
     font-size: 22px;
     line-height: 30px;
   }
-  .benfits-h1{
+
+  .benfits-h1 {
     font-size: 24px;
   }
-  .benfits-h1b{
+
+  .benfits-h1b {
     font-size: 24px;
   }
+
   .translate-h1 {
     font-size: 35px;
   }
+
   .library-head {
     font-size: 30px;
     line-height: 35px;
   }
+
   .ppt-api-h1 {
     font-size: 30px;
   }
+
   .translate-heads {
     font-size: 15px;
     line-height: 26.6px;
   }
+
   .everyone-heads {
     font-size: 16px;
   }
+
   .ppt-api-para {
     font-size: 20;
   }
 
 }
 
-@media only screen and (min-width: 768px) and (max-width: 991px)  {
+@media only screen and (min-width: 768px) and (max-width: 991px) {
 
   .dopromptheading-pro {
     font-size: 27px;
     line-height: 30.2px !important;
   }
+
   .dopromptheaderpara {
     margin-right: 0px;
     font-size: 15px;
     line-height: 20.6px;
   }
+
   .dopromptvideo {
     height: 480px;
   }
+
   .dopromptvideoClass {
     left: 15%;
     top: 42%;
   }
-  .dopromptheader{
-    top:4%;
+
+  .dopromptheader {
+    top: 4%;
   }
-  .promptsection2{
+
+  .promptsection2 {
     margin-top: 30%;
   }
+
   .generative-h1 {
     font-size: 25px;
     line-height: 34px;
   }
-  .pro-available{
+
+  .pro-available {
     padding: 0px;
   }
+
   .available-heads {
     font-size: 18px;
   }
-  
+
   .available-p {
     font-size: 20px;
     line-height: 30px;
   }
+
   .available-h1 {
     line-height: 44px;
     font-size: 33px;
     margin-top: 13px;
     font-size: 32px;
   }
+
   .benfit-divs {
     margin-left: 10px;
     margin-bottom: 10px;
     max-width: 29%;
   }
+
   .translate-p {
     font-size: 18px;
     line-height: 30px;
   }
+
   .library-divs {
     margin: 0px 10px 10px;
     max-width: 29%;
   }
+
   .library-para {
     line-height: 28.6px;
   }
+
   .everyone-h1 {
     line-height: 40px;
     padding-top: 20px;
     font-size: 32px;
   }
+
   .library-head-para {
     font-size: 20px;
   }
+
   .everyone-p {
     font-size: 15px;
   }
+
   .ppt-api-img {
     align-items: normal;
   }
+
   .ppt-api-divs {
     height: 250px;
     margin-left: 10px;
     max-width: 30%;
   }
-  .text-img{
+
+  .text-img {
     height: 50px;
   }
 
-  .do360bannerclass-1{
+  .do360bannerclass-1 {
     height: 550px !important;
   }
+
   .productvideoClass-1 {
     left: 0%;
   }
+
   .iodefinitionClass-1 {
     /* height: 1220px !important; */
     margin-top: 30px;
   }
-  .mobile-size{
+
+  .mobile-size {
     width: 70px;
     height: 91px;
   }
+
   .tenetsheading-1 {
     font-size: 18px;
     line-height: 35px;
   }
+
   .doinsightguideclass-1 {
     padding: 0;
   }
-  .text-mb{
+
+  .text-mb {
     font-size: 10px !important;
   }
+
   .guidetext {
     font-size: 8px !important;
     line-height: 12px !important;
   }
+
   .tenetsclass-1 {
-  margin: 20px 0px;
+    margin: 20px 0px;
   }
+
   .prompt-library {
     margin-top: 30px;
   }
+
   .benfits-head {
     font-size: 30px;
   }
+
   .benfits-head-para {
     font-size: 22px;
     line-height: 30px;
   }
-  .benfits-h1{
+
+  .benfits-h1 {
     font-size: 24px;
   }
-  .benfits-h1b{
+
+  .benfits-h1b {
     font-size: 24px;
   }
+
   .translate-h1 {
     font-size: 35px;
   }
+
   .library-head {
     font-size: 30px;
     line-height: 35px;
   }
+
   .ppt-api-h1 {
     font-size: 40px;
   }
+
   .translate-heads {
     font-size: 15px;
     line-height: 26.6px;
   }
+
   .everyone-heads {
     font-size: 16px;
   }
+
   .ppt-api-para {
     font-size: 20;
   }
 
 }
 
-@media only screen and (min-width: 991px) and (max-width: 1200px)  {
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
   .dopromptheading-pro {
     font-size: 40px;
     line-height: 45px;
   }
-  .dopromptheaderpara{
+
+  .dopromptheaderpara {
     margin-top: 8px;
     font-size: 20px;
   }
+
   .dopromptvideoClass {
     left: 12%;
     top: 60%;
@@ -1010,16 +1178,18 @@
     font-size: 30px;
     line-height: 35px;
   }
+
   .promptsection2 {
     margin-top: 24%;
   }
+
   .everyone-heads {
-    font-size : 17px;
+    font-size: 17px;
     line-height: 28.6px;
   }
+
   .dopromptheader {
     top: 25%;
   }
 
 }
-

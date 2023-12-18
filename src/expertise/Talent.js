@@ -68,7 +68,7 @@ const Talent = () => {
                 </p>
 
                 <p className="col-md-6 Navigate-Journey">
-                  Empower Your Business Transformation Through Cloud Migration
+                Hire “Enterprise-grade” Data & Analytics experts in next 48 hours
                 </p>
                 <button
                   className="datatypes"
@@ -94,7 +94,7 @@ const Talent = () => {
                       lineHeight: "19px",
                     }}
                   >
-                    Talk to us now
+                    Get in touch
                   </span>{" "}
                   <i
                     className="fa fa-long-arrow-right ARROW-RIGHT-CLOUD"
@@ -180,7 +180,7 @@ const Talent = () => {
         </div>
 
         <div style={{ marginTop: "50px" }}>
-          <h4 className="cloudcardheadings">What DataObserve Offers</h4>
+          <h4 className="cloudcardheadings observe-talent">What DataObserve Offers</h4>
         </div>
         <div className="container mt-3">
           <div className="row box">
@@ -199,7 +199,7 @@ const Talent = () => {
                 <p style={{ marginTop: "10px" }}>Agility</p>
                 <h4 className="cloudcardheadings">48 Hours</h4>
                 <p className="arrowtext text-center">
-                  Fast onboarding to hire the Top 3% of Talents
+                Fast onboarding to hire the Top 3% of Talents
                 </p>
               </div>
             </div>
@@ -214,12 +214,12 @@ const Talent = () => {
                   className="App-logo"
                   alt="logo"
                   width={100}
-                  style={{ width: "53px", height: "62px" }}
+                  style={{ width: "53px", height: "68px" }}
                 />
                 <p>Time saved</p>
                 <h4 className="cloudcardheadings">85%</h4>
                 <p className="arrowtext text-center">
-                  interviewing hours saved per recruitment
+                interviewing hours saved per recruitment
                 </p>
               </div>
             </div>
@@ -239,7 +239,7 @@ const Talent = () => {
                 <p>High retention rate</p>
                 <h4 className="cloudcardheadings">97%</h4>
                 <p className="arrowtext text-center">
-                  Engagement success rates
+                Engagement success rates 
                 </p>
               </div>
             </div>
@@ -259,9 +259,7 @@ const Talent = () => {
                 <p>Enterprise Grade Engineers</p>
                 <h4 className="cloudcardheadings">90%</h4>
                 <p className="arrowtext text-center">
-                  of our In-house engineers have strong experience in working
-                  with Fortune 500s
-                </p>
+                our In-house engineers have strong experience in working with Fortune 500s                </p>
               </div>
             </div>
 
@@ -280,7 +278,7 @@ const Talent = () => {
                 <p>Trust & Reliability</p>
                 <h4 className="cloudcardheadings">100+</h4>
                 <p className="arrowtext text-center">
-                  Full-time and Contract-to-Hire candidates available.
+                Full-time and Contract-to-Hire candidates available.
                 </p>
               </div>
             </div>
@@ -300,8 +298,7 @@ const Talent = () => {
                 <p>Global Team</p>
                 <h4 className="cloudcardheadings">5+</h4>
                 <p className="arrowtext text-center">
-                  Global delivery centers across the USA, Canada, UK, India,
-                  Netherlands, Dubai & Singapore
+                Global delivery centers across the USA, Canada, UK, India, Netherlands, Dubai & Singapore
                 </p>
               </div>
             </div>
@@ -801,7 +798,7 @@ const Talent = () => {
                   alt="..."
                   style={{ height: "50px", width: "50px" }}
                 />
-                <p className="cloudcardheadings">Data Engineering</p>
+                <p className="cloudcardheadings pt-3">Data Engineering</p>
               </div>
             </div>
             <div class=" col-md-3">
@@ -811,7 +808,7 @@ const Talent = () => {
                   alt="..."
                   style={{ height: "50px", width: "50px" }}
                 />
-                <p className="cloudcardheadings">Cloud Engineering</p>
+                <p className="cloudcardheadings pt-3">Cloud Engineering</p>
               </div>
             </div>
             <div class="col-md-3">
@@ -821,7 +818,7 @@ const Talent = () => {
                   alt="..."
                   style={{ height: "50px", width: "50px" }}
                 />
-                <p className="cloudcardheadings">Data Analystics & Bi</p>
+                <p className="cloudcardheadings pt-3">Data Analystics & Bi</p>
               </div>
             </div>
             <div class="col-md-3">
@@ -831,7 +828,7 @@ const Talent = () => {
                   alt="..."
                   style={{ height: "50px", width: "50px" }}
                 />
-                <p>Data Science - AI & ML</p>
+                <p className="pt-3" style={{fontWeight:"bold"}}>Data Science - AI & ML</p>
               </div>
             </div>
           </div>
@@ -845,7 +842,7 @@ const Talent = () => {
                   alt="..."
                   style={{ height: "50px", width: "50px" }}
                 />
-                <p className="cloudcardheadings">DevOps</p>
+                <p className="cloudcardheadings pt-3">DevOps</p>
               </div>
             </div>
             <div class="col-md-3">
@@ -855,7 +852,7 @@ const Talent = () => {
                   alt="..."
                   style={{ height: "50px", width: "50px" }}
                 />
-                <p className="cloudcardheadings">CloudOps</p>
+                <p className="cloudcardheadings pt-3">CloudOps</p>
               </div>
             </div>
             <div class="col-md-3">
@@ -865,7 +862,7 @@ const Talent = () => {
                   alt="..."
                   style={{ height: "50px", width: "50px" }}
                 />
-                <p className="cloudcardheadings">FullStack Development</p>
+                <p className="cloudcardheadings pt-3">FullStack Development</p>
               </div>
             </div>
             <div class="col-md-3">
@@ -875,7 +872,7 @@ const Talent = () => {
                   alt="..."
                   style={{ height: "50px", width: "50px" }}
                 />
-                <p className="cloudcardheadings">QA Test Automation</p>
+                <p className="cloudcardheadings pt-3">QA Test Automation</p>
               </div>
             </div>
           </div>
@@ -990,7 +987,7 @@ const Talent = () => {
           }}
         >
           <h2 className="EXPERIENCE-cloud">Talent as a Service</h2>
-          <p className="wides">
+          <p className="container col-md-9 wides">
             Recruit highly skilled employees as needed through a cloud-based
             platform. These hires will not only perform tasks efficiently but
             also contribute to cost savings.

@@ -92,7 +92,7 @@ function Observability() {
             <div className="mt-5 pt-2">
               <div className="row">
                 <div className="col-md-4 text-center">
-                  <div>
+                  <div className="box-padding-360">
                     <img className="mobile-size" src="images/dollarprod.png" alt="#" width={100} />
                     <p className="cardText">Reduce Cost</p>
                     <h1 className="cardHead">3x</h1>
@@ -102,7 +102,7 @@ function Observability() {
                 </div>
 
                 <div className="col-md-4 text-center">
-                  <div>
+                  <div className="box-padding-360">
                     <img className="mobile-size" src="images/minimizerisk.png" alt="#" width={100} />
                     <p className="cardText">Minimize Risk</p>
                     <h1 className="cardHead">80%</h1>
@@ -112,7 +112,7 @@ function Observability() {
                 </div>
 
                 <div className="col-md-4 text-center">
-                  <div>
+                  <div className="box-padding-360">
                     <img className="mobile-size" src="images/savetime.png" alt="#" width={100} />
                     <p className="cardText">Save Time</p>
                     <h1 className="cardHead">30%</h1>
