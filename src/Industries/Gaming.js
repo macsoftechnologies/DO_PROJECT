@@ -3,6 +3,8 @@ import "./Gaming.css";
 import Navbar from "../products/Navbar";
 import Faq from "../products/Faq";
 import Footer from "../products/Footer";
+import Talktous from "../products/Talktous";
+
 // import gaming from "../../src/videos/gaming.mp4";
 function Gaming() {
   return (
@@ -1142,6 +1144,8 @@ function Gaming() {
           </div>
         </div>
       </div>
+{/* <Talktous /> */}
+
       <Footer />
     </div>
   );

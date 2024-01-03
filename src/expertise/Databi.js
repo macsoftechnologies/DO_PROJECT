@@ -5,6 +5,8 @@ import Navbar from "../products/Navbar";
 import Footer from "../products/Footer";
 // import databi from "../../src/videos/datanalytics.mp4";
 import Slider from "react-slick";
+import Talktous from "../products/Talktous";
+
 
 function Arrow(props) {
   const { className, style, onClick } = props;
@@ -1341,7 +1343,7 @@ const Databi = () => {
           </div>
         </div>
       </div>
-
+      {/* <Talktous /> */}
       <Footer />
     </div>
   );

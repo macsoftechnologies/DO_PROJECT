@@ -4,6 +4,8 @@ import "./People.css";
 import Navbar from "../products/Navbar";
 // import careers from "../../src/videos/careers.mp4";
 import Footer from "../products/Footer";
+import Talktous from "../products/Talktous";
+
 function People() {
   return (
     <div>
@@ -1137,7 +1139,7 @@ function People() {
           </div>
         </div>
       </section>
-
+      {/* <Talktous /> */}
       <Footer />
     </div>
   );

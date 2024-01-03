@@ -1,6 +1,8 @@
 import React from "react";
 import Navbar from "../products/Navbar";
 import Footer from "../products/Footer";
+import Talktous from "../products/Talktous";
+
 import "./Datacharts.css";
 
 // import Faq from "./Faq";
@@ -1378,6 +1380,8 @@ function Datacharts() {
           </div>
         </div>
       </section> */}
+{/* <Talktous /> */}
+
       <Footer />
     </>
   );

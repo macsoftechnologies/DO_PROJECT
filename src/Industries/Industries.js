@@ -2,6 +2,8 @@ import React from "react";
 import "./Industries.css";
 import Navbar from "../products/Navbar";
 import Footer from "../products/Footer";
+import Talktous from "../products/Talktous";
+
 import Faq from "../products/Faq";
 // import lifescience from "../../src/videos/life-science.mp4";
 
@@ -2345,6 +2347,7 @@ const Industries = () => {
       </div>
 
       {/* !----footer----! */}
+      {/* <Talktous /> */}
 
       <Footer />
     </div>

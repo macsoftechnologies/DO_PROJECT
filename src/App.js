@@ -23,16 +23,14 @@ import CasestudiesRedirect from "./redirectpages/CasestudiesRedirect";
 import Ebooks from "./Ebooks/Ebooks";
 import Genai from "./expertise/Genai";
 import Allinsights from "./Insights/Allinsights";
-
-
-
+import ProductLanding from "./Landingpages/ProductLanding";
 
 function App() {
   return (
     <div>
       <BrowserRouter>
         <Routes>
-        <Route path="/" element={<Home />} />
+          <Route path="/" element={<Home />} />
           <Route path="/company" element={<Company />} />
           <Route path="/people" element={<People />} />
           <Route path="/contact" element={<Contact />} />
@@ -56,10 +54,7 @@ function App() {
           <Route path="/datacharts" element={<Datacharts />} />
           <Route path="/datamonitor" element={<Domonitor />} />
           <Route path="/dataprompt" element={<Doprompt />} />
-
-
-
-          
+          <Route path="/productlanding" element={<ProductLanding/>} />
 
         </Routes>
       </BrowserRouter>

@@ -4,6 +4,7 @@ import "./Application.css";
 import Navbar from "../products/Navbar";
 // import digital from "../../src/videos/digitaltransform.mp4";
 import Footer from "../products/Footer";
+import Talktous from "../products/Talktous";
 import Slider from "react-slick";
 
 function Arrow(props) {
@@ -1295,6 +1296,7 @@ const Application = () => {
           </div>
         </div>
       </div>
+      {/* <Talktous /> */}
       <Footer />
     </div>
   );

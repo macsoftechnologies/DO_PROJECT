@@ -2,6 +2,8 @@ import React from "react";
 import Navbar from "../products/Navbar";
 import Footer from "../products/Footer";
 import "./Datasense.css";
+import Talktous from "../products/Talktous";
+
 import Faq from "./Faq";
 import bussiness from "../../src/videos/bussiness.MOV";
 import productVideo from "../../src/videos/productvideo.mp4";
@@ -1291,6 +1293,8 @@ function Datasense() {
           </div>
         </div>
       </section>
+{/* <Talktous /> */}
+
       <Footer />
     </>
   );

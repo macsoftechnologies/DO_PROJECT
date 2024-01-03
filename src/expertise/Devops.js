@@ -5,6 +5,8 @@ import Navbar from "../products/Navbar";
 // import devops from "../../src/videos/devops.mp4";
 import Footer from "../products/Footer";
 import Slider from "react-slick";
+import Talktous from "../products/Talktous";
+
 
 function Arrow(props) {
   const { className, style, onClick } = props;
@@ -1342,6 +1344,7 @@ const Devops = () => {
           </div>
         </div>
       </div>
+      {/* <Talktous /> */}
 
       <Footer />
     </div>

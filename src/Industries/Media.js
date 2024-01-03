@@ -2,6 +2,8 @@ import React from "react";
 import "./Media.css";
 import Footer from "../products/Footer";
 import Navbar from "../products/Navbar";
+import Talktous from "../products/Talktous";
+
 // import media from "../../src/videos/media.mp4";
 function Media() {
   return (
@@ -1113,6 +1115,7 @@ function Media() {
           </div>
         </div>
       </div>
+      {/* <Talktous /> */}
 
       {/* !--footer--! */}
       <Footer />

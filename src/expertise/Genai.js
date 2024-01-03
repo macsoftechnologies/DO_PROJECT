@@ -4,6 +4,8 @@ import "../expertise/Genai.css";
 import Faq from "../products/Faq";
 import Footer from "../products/Footer";
 import { Link } from "react-router-dom";
+import Talktous from "../products/Talktous";
+
 // import genai from "../../src/videos/genaivdbg.mp4";
 import Slider from "react-slick";
 
@@ -2662,6 +2664,7 @@ function Genai() {
           </div>
         </div>
       </div>
+      {/* <Talktous /> */}
 
       <Footer />
     </div>

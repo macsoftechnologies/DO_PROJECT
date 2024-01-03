@@ -5,6 +5,8 @@ import Navbar from "../products/Navbar";
 // import artificial from "../../src/videos/artificial.mp4";
 import Footer from "../products/Footer";
 import Slider from "react-slick";
+import Talktous from "../products/Talktous";
+
 
 function Arrow(props) {
   const { className, style, onClick } = props;
@@ -1252,6 +1254,7 @@ const Aiml = () => {
           </div>
         </div>
       </div>
+      {/* <Talktous /> */}
       <Footer />
     </div>
   );

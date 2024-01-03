@@ -2,6 +2,8 @@ import React from "react";
 import "./Observability.css";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import Talktous from "../products/Talktous";
+
 import bussiness from "../../src/videos/productvideo.mp4";
 
 function Observability() {
@@ -1568,6 +1570,8 @@ function Observability() {
           </div>
         </div>
       </section>
+{/* <Talktous /> */}
+
       <Footer />
     </div>
   );

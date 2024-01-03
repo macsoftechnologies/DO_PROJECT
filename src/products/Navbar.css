@@ -6,7 +6,9 @@
   font-weight: 500;
   border: 1px solid blue;
 }
-
+.mainbar-nav{
+  box-shadow: 0 4px 2px -2px rgba(0, 0, 0, 0.2); 
+}
 /* .logo-main {
   width: 38px;
   height: 24px;
@@ -19,7 +21,7 @@
 }
 
 .logo-main{
-  width: 187px;
+  width: 180px;
 }
 
 .navbar-just-up {
@@ -77,19 +79,59 @@
   /* margin: auto; */
 }
 
-.acceleratorsclass {
+/* .acceleratorsclass {
   color: rgba(0, 70, 232, 0.69);
-  /* font-size: 14px; */
+
   font-style: normal;
   font-weight: 500;
   line-height: 18.2px;
-  border-radius: 242px;
   border: 1px solid #0046E8;
-  padding: 10px;
+ 
   margin-right: 42px;
-  background: white;
+  background: #ECECEC;
+} */
+
+
+.acceleratorsclass-01{
+  
+ 
+ background: #ECECEC;
+ border: 1px solid #ECECEC;
+ font-weight: 500;
+margin-right: 8px;
+color: #2B2B2B;
+outline: none !important;
+padding-left: 16px;
+padding-right: 16px;
+
+}
+.NavBAR-Contact-Us {
+  
+ padding-top: 5px;
+ padding-bottom: 5px;
+ color: white;
+ background: #158AFF;
+ border: 1px solid #158AFF;
+ font-weight: 700;
+ outline: none !important;
+ line-height: 120%;
+ font-family: Roboto;
+ font-size: 14px;
+ height: 40px;
+ padding-left: 16px;
+ padding-right: 16px;
 }
 
+.navbar-angle{
+  color: white;
+  margin-left: 14px;
+}
+
+.navbar-angle-1{
+  margin-left: 14px;
+  color: #2B2B2B;
+
+}
 .acceleratorsclass:focus-visible {
   outline: 0px !important;
 }

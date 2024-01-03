@@ -4,6 +4,8 @@ import Faq from "../products/Faq";
 import Navbar from "../products/Navbar";
 import talent from "../../src/videos/talent.MOV";
 import Footer from "../../src/products/Footer";
+import Talktous from "../products/Talktous";
+
 import Slider from "react-slick";
 
 function Arrow(props) {
@@ -1599,6 +1601,8 @@ const Talent = () => {
           </div>
         </div>
       </div>
+{/* <Talktous /> */}
+
       <Footer />
     </div>
   );

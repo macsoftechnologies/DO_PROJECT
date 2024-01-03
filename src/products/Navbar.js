@@ -4,8 +4,19 @@ import { Link } from "react-router-dom";
 import { HashLink } from "react-router-hash-link";
 
 function Navbar() {
+
+
+// ....cms...
+
+const handleContactButtonClick = () => {
+  const cmsLink =
+    "https://dataobserve.myfreshworks.com/crm/sales/web_forms/3bb315e5ced066d76d0a5422db2d9724ded4938333d17e75ec4c1192ae934cf4/form.html";
+
+  window.location.href = cmsLink;
+};
+
   return (
-    <div className="bg-white" style={{ paddingTop: "0px" }}>
+    <div className="bg-white mainbar-nav" style={{ paddingTop: "0px" }}>
       <div className="container d-flex justify-content-between align-items-center mobile-res d-none d-md-block ">
         <nav class="navbar navbar-expand-lg navbar-light">
           <button
@@ -24,11 +35,10 @@ function Navbar() {
               <a className="d-flex homenavigateclass" href="/">
                 <img
                   className="logo-main"
-                  src="/images/DO-LOGO.png"
+                  src="/images/landing-logo.png"
                   alt="logo"
                   width={100}
                 />
-               
               </a>
             </div>
             <ul class="navbar-nav navbar-just-up">
@@ -57,8 +67,8 @@ function Navbar() {
                       <a class="dropdown-item linksclass" href="/databi">
                         Data Analytics & BI
                       </a>
-                      
-                       <a
+
+                      <a
                         class="dropdown-item linksclass data-eng-pad"
                         href="/dataeng"
                       >
@@ -72,12 +82,12 @@ function Navbar() {
                       </a>
                     </a>
                     <a href="#" className="navcard2 pt-4 pl-2">
-                     <a class="dropdown-item linksclass" href="/devops">
+                      <a class="dropdown-item linksclass" href="/devops">
                         DevOps-as-a-service
                       </a>
                       <a class="dropdown-item linksclass" href="/talent">
                         Talent-as-a-service
-                      </a> 
+                      </a>
                       <a
                         class="dropdown-item linksclass data-eng-pad"
                         href="/genai"
@@ -273,8 +283,6 @@ function Navbar() {
 
                     {/* coming soon part  */}
 
-                   
-
                     {/* coming soon image ends */}
                     <div className="col-md-3 comingsoonclass pr-3">
                       {/* <p
@@ -343,11 +351,23 @@ function Navbar() {
           </div>
 
           <div className="d-flex">
-            <button className="acceleratorsclass">Accelerators & Tools</button>
-
-            <Link to="/contact">
-              <button className="contact head-contact">contact</button>
-            </Link>
+            <div className="d-flex">
+              <button className="acceleratorsclass-01">
+                Accelerators & Tools  <i
+                    class="fa fa-angle-right navbar-angle-1"
+                    aria-hidden="true"
+                  ></i>
+              </button>
+            </div>
+            <div>
+            <button className="NavBAR-Contact-Us" onClick={handleContactButtonClick}>
+                  Contact Us
+                  <i
+                    class="fa fa-angle-right navbar-angle"
+                    aria-hidden="true"
+                  ></i>
+                </button>
+            </div>
           </div>
         </nav>
       </div>
@@ -676,11 +696,10 @@ function Navbar() {
             <a className="d-flex homenavigateclass" href="/">
               <img
                 className="logo-main"
-                src="/images/DO-LOGO.png"
+                src="/images/landing-logo.png"
                 alt="logo"
                 width={100}
               />
-             
             </a>
           </div>
         </div>

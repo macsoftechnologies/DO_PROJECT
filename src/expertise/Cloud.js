@@ -6,6 +6,8 @@ import Navbar from "../products/Navbar";
 // import cloud from "../../src/videos/cloud.mp4";
 import Footer from "../products/Footer";
 import Slider from "react-slick";
+import Talktous from "../products/Talktous";
+
 
 function Arrow(props) {
   const { className, style, onClick } = props;
@@ -1258,7 +1260,7 @@ const Cloud = () => {
           </div>
         </div>
       </div>
-
+      {/* <Talktous /> */}
       <Footer />
     </div>
   );

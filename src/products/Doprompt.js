@@ -2,6 +2,8 @@
 import React from "react";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import Talktous from "../products/Talktous";
+
 import "./Doprompt.css";
 
 function Doprompt() {
@@ -517,6 +519,7 @@ function Doprompt() {
           </div>
         </section>
       </div>
+      {/* <Talktous /> */}
 
       <Footer />
     </>

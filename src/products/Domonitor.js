@@ -2,6 +2,8 @@ import React, { useState, useEffect } from "react";
 import "./Domonitor.css";
 import Navbar from "../products/Navbar";
 import Faq from "../products/Faq";
+import Talktous from "../products/Talktous";
+
 import Footer from "./Footer";
 function Domonitor() {
   const [activeLink, setActiveLink] = useState("");
@@ -7863,6 +7865,7 @@ function Domonitor() {
         <i class="fa fa-arrow-circle-up" aria-hidden="true"></i>
       </button>
       {/* <Faq /> */}
+{/* <Talktous /> */}
       <Footer />
     </div>
   );

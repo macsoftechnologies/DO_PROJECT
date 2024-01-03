@@ -4,6 +4,8 @@ import "./Dataeng.css";
 import Navbar from "../products/Navbar";
 // import dataengineer from "../../src/videos/dataenginner.mp4";
 import Footer from "../products/Footer";
+import Talktous from "../products/Talktous";
+
 import Slider from "react-slick";
 
 function Arrow(props) {
@@ -1278,6 +1280,8 @@ const Dataeng = () => {
           </div>
         </div>
       </div>
+{/* <Talktous /> */}
+
       <Footer />
     </div>
   );
