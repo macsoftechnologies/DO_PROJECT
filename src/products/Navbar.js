@@ -15,9 +15,13 @@ const handleContactButtonClick = () => {
   window.location.href = cmsLink;
 };
 
+const toolsandaccelerator = () => {
+  const toolslink = "http://tools-and-accelerators.dataobserve.io/"
+  window.location.href = toolslink
+};
   return (
     <div className="bg-white mainbar-nav" style={{ paddingTop: "0px" }}>
-      <div className="container d-flex justify-content-between align-items-center mobile-res d-none d-md-block ">
+      <div className="container d-flex justify-content-between align-items-center mobile-res d-none d-md-block" style={{maxWidth:"1198px"}}>
         <nav class="navbar navbar-expand-lg navbar-light">
           <button
             class="navbar-toggler"
@@ -44,7 +48,7 @@ const handleContactButtonClick = () => {
             <ul class="navbar-nav navbar-just-up">
               <li class="nav-item dropdown expertise">
                 <a
-                  class="nav-link text-dark Dark-Text"
+                  class="nav-link text-dark"
                   href="#"
                   id="navbarDropdownMenuLink"
                   data-toggle="dropdown"
@@ -118,7 +122,7 @@ const handleContactButtonClick = () => {
 
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link text-dark Dark-Text"
+                  class="nav-link text-dark"
                   href="#"
                   id="navbarDropdownMenuLink"
                   data-toggle="dropdown"
@@ -181,7 +185,7 @@ const handleContactButtonClick = () => {
               </li>
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link text-dark Dark-Text"
+                  class="nav-link text-dark "
                   href="#"
                   id="navbarDropdownMenuLink"
                   data-toggle="dropdown"
@@ -223,7 +227,7 @@ const handleContactButtonClick = () => {
               </li>
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link  text-dark Dark-Text"
+                  class="nav-link  text-dark "
                   href="#"
                   id="navbarDropdownMenuLink"
                   data-toggle="dropdown"
@@ -310,7 +314,7 @@ const handleContactButtonClick = () => {
               </li>
               <li class="nav-item dropdown">
                 <a
-                  class="nav-link text-dark Dark-Text"
+                  class="nav-link text-dark "
                   href="#"
                   id="navbarDropdownMenuLink"
                   data-toggle="dropdown"
@@ -352,7 +356,7 @@ const handleContactButtonClick = () => {
 
           <div className="d-flex">
             <div className="d-flex">
-              <button className="acceleratorsclass-01">
+              <button className="acceleratorsclass-01"  onClick={toolsandaccelerator}>
                 Accelerators & Tools  <i
                     class="fa fa-angle-right navbar-angle-1"
                     aria-hidden="true"

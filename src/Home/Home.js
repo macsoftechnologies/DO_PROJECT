@@ -20,6 +20,18 @@ function Home() {
     window.location.href = cmsLink;
   };
 
+  const toolsandaccelerator = () => {
+    const toolslink = "http://tools-and-accelerators.dataobserve.io/";
+    window.location.href = toolslink;
+  };
+
+
+  const [showCards, setShowCards] = useState(false);
+  const handleTextClick = () => {
+    // Toggle the state when the text is clicked
+    setShowCards(!showCards);
+  };
+
   return (
     <div>
       <Navbar />
@@ -159,10 +171,15 @@ function Home() {
                   marginTop: "0rem",
                 }}
               /> */}
-              <button className="Homepage-Contact-Us">
-                Expertise
-                <i class="fa fa-angle-right home-angle" aria-hidden="true"></i>
-              </button>
+              <a href="./expertiselanding" style={{ textDecoration: "none" }}>
+                <button className="Homepage-Contact-Us">
+                  Expertise
+                  <i
+                    class="fa fa-angle-right home-angle"
+                    aria-hidden="true"
+                  ></i>
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -213,8 +230,8 @@ function Home() {
                   </p>
                 </div>
               </div> */}
-              <div className="pro-data-2">
-                <div className="col-md-1 new-text-dynamic">
+              <div className="pro-data">
+                <div className="col-md-1 new-text">
                   <img
                     src="./images/alphahome.svg"
                     className="tick-HOME"
@@ -246,13 +263,15 @@ function Home() {
                     complete and comprehensive solution to discovering trusted
                     data.
                   </p>
-                  <button className="Homepage-Contact-Us-insights">
-                    Check Insights
-                    <i
-                      class="fa fa-angle-right home-angle"
-                      aria-hidden="true"
-                    ></i>
-                  </button>
+                  <a href="./allinsights" style={{ textDecoration: "none" }}>
+                    <button className="Homepage-Contact-Us-insights">
+                      Check Insights
+                      <i
+                        class="fa fa-angle-right home-angle"
+                        aria-hidden="true"
+                      ></i>
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -273,7 +292,7 @@ function Home() {
             <h4 className="text-center Global-Home">
               Global Companies who trusts us
             </h4>
-            <p className="container col-md-6 text-center Lies-Landing">
+            <p className="container col-md-7 text-center Lies-Landing">
               Our emphasis lies in assisting you in charting the correct course
               of action, eliminating uncertainty & progressing confidently by
               integrating the strengths of AI & analytics.
@@ -421,10 +440,15 @@ function Home() {
                 to experiment with unconventional methods to ultimately provide
                 value.
               </p>
-              <button className="Homepage-Contact-Us">
-                Products
-                <i class="fa fa-angle-right home-angle" aria-hidden="true"></i>
-              </button>
+              <a href="./productlanding" style={{ textDecoration: "none" }}>
+                <button className="Homepage-Contact-Us">
+                  Products
+                  <i
+                    class="fa fa-angle-right home-angle"
+                    aria-hidden="true"
+                  ></i>
+                </button>
+              </a>
             </div>
           </div>
         </div>
@@ -455,13 +479,18 @@ function Home() {
                     between adhering to best practices and engaging in
                     fundamental, ground-up thinking.
                   </p>
-                  <button className="Homepage-Contact-Us-3">
-                    Industries
-                    <i
-                      class="fa fa-angle-right home-angle"
-                      aria-hidden="true"
-                    ></i>
-                  </button>
+                  <a
+                    href="./industrielanding"
+                    style={{ textDecoration: "none" }}
+                  >
+                    <button className="Homepage-Contact-Us-3">
+                      Industries
+                      <i
+                        class="fa fa-angle-right home-angle"
+                        aria-hidden="true"
+                      ></i>
+                    </button>
+                  </a>
                 </div>
               </div>
             </div>
@@ -520,16 +549,19 @@ function Home() {
       <section style={{ backgroundColor: "#EDEDED" }} className="sixth-SECTION">
         <div>
           <div className="container text-center productsandtools">
-            <h3 className="container  BOOST-Heading">
-              Boost your AI journey with <br /> our products, tools &
-              accelerators.
+            <h3 className="container col-md-8 BOOST-Heading">
+              Boost your AI journey with <br />
+              our products, tools & accelerators.
             </h3>
-            <p className="container col-md-7 emphasis-paragraph-home">
+            <p className="container col-md-9 emphasis-paragraph-home">
               Our emphasis lies in assisting you in charting the correct course
               of action, eliminating uncertainty, and progressing confidently by
               integrating the strengths of AI & analytics.
             </p>
-            <button className="Homepage-Contact-Us-3">
+            <button
+              className="Homepage-Contact-Us-3"
+              onClick={toolsandaccelerator}
+            >
               Boost now
               <i class="fa fa-angle-right home-angle" aria-hidden="true"></i>
             </button>
@@ -649,10 +681,11 @@ function Home() {
                   <h6 className="Mo-Text">Cloud Migration</h6>
                   <div className="LOREM-DUMMY">
                     <p className="ipsum-Simple">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to
+                      "Cloud migration tools and accelerators streamline and
+                      expedite the seamless transition of applications, data,
+                      and infrastructure to cloud environments, optimizing
+                      scalability, agility, and cost-effectiveness for
+                      organizations."
                     </p>
                     <i
                       class="fa fa-angle-right home-angle-lorem"
@@ -778,10 +811,11 @@ function Home() {
                   <h6 className="Mo-Text">IOT & Edge Computing</h6>
                   <div className="LOREM-DUMMY">
                     <p className="ipsum-Simple">
-                      Lorem Ipsum is simply dummy text of the printing and
-                      typesetting industry. Lorem Ipsum has been the industry's
-                      standard dummy text ever since the 1500s, when an unknown
-                      printer took a galley of type and scrambled it to
+                      "IoT and Edge Computing tools and accelerators empower
+                      decentralized processing and real-time insights, enabling
+                      efficient management, analysis, and optimization of data
+                      at the edge, enhancing responsiveness and scalability in
+                      interconnected systems."
                     </p>
                     <i
                       class="fa fa-angle-right home-angle-lorem"
@@ -792,6 +826,9 @@ function Home() {
               </div>
             </div>
           </div>
+          <div>
+            
+         {showCards && (
           <div className="row boost-now-Home-2">
             <div className="col-md-3 WORLD-HOME new-Home-last">
               <div className="moni-home">
@@ -858,15 +895,20 @@ function Home() {
               </div>
             </div>
           </div>
-          <div>
-            <div className="To-accrs">
-              <h5 className="explore-Tool-Acc">Explore Tool & Accelerators</h5>
+         )}
+          
+          </div>
+        
+
+
+          <div className="To-accrs" onClick={handleTextClick} style={{ cursor: 'pointer' }}>
+              <h5 className="explore-Tool-Acc">Explore Tool & Accelerators</h5>{showCards ? '' : ''} 
               <i
                 class="fa fa-angle-right home-angle-acc"
                 aria-hidden="true"
               ></i>
             </div>
-          </div>
+       
         </div>
       </section>
 
@@ -925,11 +967,15 @@ function Home() {
         </div>
       </section>
 
-      <section>
-        <div className="Landing-play-bg-video">
-          <video className="lANDING-VIdeo" autoPlay loop muted>
+      <section className="Landing-play-bg-video">
+        <div className="">
+          <div className="overlay-landing-page">
+            <div className="gradient-layer">
+          <video className="lANDING-VIdeo video-overlay" autoPlay loop muted>
             <source src={footerland} type="video/mp4" />
           </video>
+          </div>
+          </div>
 
           <div className="LANDING-1-science">
             <div className="container">
@@ -944,6 +990,7 @@ function Home() {
                 </p>
               </div>
               <div>
+                <a href="./people" style={{textDecoration:"none"}}>
                 <button
                   className="Homepage-Contact-Us"
                   style={{ margin: "auto" }}
@@ -954,6 +1001,7 @@ function Home() {
                     aria-hidden="true"
                   ></i>
                 </button>
+                </a>
               </div>
             </div>
           </div>

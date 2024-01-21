@@ -24,6 +24,8 @@ import Ebooks from "./Ebooks/Ebooks";
 import Genai from "./expertise/Genai";
 import Allinsights from "./Insights/Allinsights";
 import ProductLanding from "./Landingpages/ProductLanding";
+import Indredirect from "./Landingpages/Indredirect";
+import Expredirect from "./Landingpages/Expredirect"
 
 function App() {
   return (
@@ -55,6 +57,9 @@ function App() {
           <Route path="/datamonitor" element={<Domonitor />} />
           <Route path="/dataprompt" element={<Doprompt />} />
           <Route path="/productlanding" element={<ProductLanding/>} />
+          <Route path="/industrielanding" element={<Indredirect/>} />
+          <Route path="/expertiselanding" element={<Expredirect/>} />
+
 
         </Routes>
       </BrowserRouter>
