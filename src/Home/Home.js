@@ -607,6 +607,7 @@ function Home() {
                   <div className="moni-observe">
                     <img
                       src="./images/data-quality.png"
+                      
                       className="monitoring-data-Home"
                       alt="star"
                     />
